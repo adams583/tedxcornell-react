@@ -31,7 +31,9 @@ class Home extends Component {
             <p class="lead font-weight-normal">
               Speaker applications for our 2019 event are now open!
             </p>
-            <a class="btn text-danger">Apply Now</a>
+            <a class="btn text-danger" href="/apply">
+              Apply Now
+            </a>
           </div>
         </Row>
         <Row className="first-panel mx-auto">
@@ -40,8 +42,8 @@ class Home extends Component {
             <p class="lead font-weight-normal text-center">
               TEDx is a program of local and independently-organized TED-like
               events that bring people together to share amazing ideas. Cornell
-              University's independent TEDx event was operated under license
-              from TED.
+              University's independent TEDx events are operated under official
+              license from TED.
             </p>
           </div>
         </Row>

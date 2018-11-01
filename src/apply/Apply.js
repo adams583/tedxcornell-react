@@ -30,46 +30,67 @@ class Apply extends Component {
 
   render() {
     return (
-      <Grid>
-        <Row>
-          <h2>Interested in getting involved?</h2>
-        </Row>
-        <Row>
-          <h3>Speaker Applications</h3>
-          <p>
-            <b>Speaker applications are open!</b>
-            <br />
-            We are looking for presenters who will inform, inspire, and
-            entertain while spreading ideas that they are truly passionate
-            about. Submit a topic or refer someone else. What are you waiting
-            for? Round 1 Applications close Wednesday, November 28 at 11:59pm.
-          </p>
-        </Row>
-        <Row>
-          <h3>Team Applications</h3>
-          <p>
-            <b>We are finished recruiting for Fall 2018.</b>
-            <br />
-            Check back in the spring if you're interested in joining our
-            organizing team! We're a close-knit team of students who are
-            passionate about TED and determined to organize a great 2019 event.
-          </p>
-        </Row>
-        <Row>
-          <h3>FAQ</h3>
-          <PanelGroup accordion>
-            {this.faq.map(qa => (
-              <Panel key={qa.key} eventKey={qa.key}>
-                <Panel.Heading>
-                  <Panel.Title toggle>{qa.question}</Panel.Title>
-                </Panel.Heading>
-                <Panel.Body collapsible>{qa.answer}</Panel.Body>
-              </Panel>
-            ))}
-          </PanelGroup>
-          ;
-        </Row>
-      </Grid>
+      <div className="container-div">
+        <Grid>
+          <Row>
+            <h2>Interested in getting involved?</h2>
+          </Row>
+          <Row>
+            <Col md={8}>
+              <h3>Speaker Applications</h3>
+              <p>
+                <b>Speaker applications are open!</b>
+                <br />
+                We are looking for presenters who will inform, inspire, and
+                entertain while spreading ideas that they are truly passionate
+                about. Submit a topic or refer someone else. What are you
+                waiting for? Round 1 Applications close Wednesday, November 28
+                at 11:59pm.
+              </p>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={8}>
+              <h3>Team Applications</h3>
+              <p>
+                <b>We are finished recruiting for Fall 2018.</b>
+                <br />
+                Check back in the spring if you're interested in joining our
+                organizing team! We're a close-knit team of students who are
+                passionate about TED and determined to organize a great 2019
+                event.
+              </p>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={6}>
+              <h3>FAQ</h3>
+              <PanelGroup accordion>
+                {this.faq.map(qa => (
+                  <Panel key={qa.key} eventKey={qa.key}>
+                    <Panel.Heading>
+                      <Panel.Title toggle>{qa.question}</Panel.Title>
+                    </Panel.Heading>
+                    <Panel.Body collapsible>{qa.answer}</Panel.Body>
+                  </Panel>
+                ))}
+              </PanelGroup>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={6}>
+              <h3>Get in touch</h3>
+              Feel free to send us an email at tedx@cornell.edu or find us on
+              social media!
+              <br />
+              <br />
+              <i class="fab fa-facebook fa-icon" />
+              <i class="fab fa-linkedin fa-icon" />
+              <i class="fab fa-instagram fa-icon" />
+            </Col>
+          </Row>
+        </Grid>
+      </div>
     );
   }
 }

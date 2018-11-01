@@ -1,0 +1,11 @@
+.main-panel-events {
+  background-image: url("../img/2018event.jpg");
+  color: whitesmoke;
+  padding-top: 190px;
+  padding-bottom: 190px;
+  background-size: cover;
+}
+
+.events-panel {
+  padding: 80px;
+}

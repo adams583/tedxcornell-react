@@ -1,0 +1,17 @@
+.main-panel-home {
+  background-image: url("../img/pizzaro.min.jpg");
+  color: whitesmoke;
+  padding-top: 190px;
+  padding-bottom: 190px;
+  background-size: contain;
+}
+
+.first-panel {
+  padding: 80px;
+  width: 100%;
+}
+
+.second-panel {
+  padding-left: 50px;
+  padding-right: 50px;
+}

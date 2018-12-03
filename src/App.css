@@ -1,0 +1,15 @@
+.logo {
+  width: 200px;
+  height: 60px;
+  background-image: url("./img/Black_TEDx_Logo_small.png");
+  background-size: cover;
+  position: fixed;
+  top: 40px;
+  left: 60px;
+  z-index: 1; /* Stay on top */
+}
+
+.App {
+  background-color: rgb(34, 34, 34);
+  color: whitesmoke;
+}

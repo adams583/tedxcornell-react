@@ -1,17 +1,87 @@
-.main-panel-home {
-  background-image: url("../img/pizzaro.min.jpg");
+.main-panel-home-background {
+  background-image: url("../img/itai1.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  margin: auto;
+}
+
+.main-panel-home-content {
+  margin: auto;
   color: whitesmoke;
-  padding-top: 190px;
-  padding-bottom: 190px;
-  background-size: contain;
 }
 
 .first-panel {
-  padding: 80px;
   width: 100%;
 }
 
-.second-panel {
+/* .second-panel {
   padding-left: 50px;
   padding-right: 50px;
+} */
+
+.section-title {
+  padding: 20px 100px;
+}
+
+.section-title-container {
+  color: whitesmoke;
+  width: 100%;
+  display: flex;
+  margin: auto;
+  padding: 100px;
+}
+
+h1 {
+  margin: auto;
+}
+
+.home-content {
+  background-color: rgb(34, 34, 34);
+}
+
+.the-x {
+  /* color: #e62b1e; */
+}
+
+.grid {
+  padding: 100px 200px 0px 200px;
+  width: 100%;
+  background-image: url("../img/logo2.png");
+  background-size: cover;
+}
+
+.fa-angle-down {
+  position: absolute;
+  bottom: 50px;
+}
+
+.paper-div {
+  padding: 10px 20px 20px 40px;
+  border-left: solid #e62b1e thin;
+  border-radius: 10px;
+  color: whitesmoke;
+}
+
+.row-spacer {
+  height: 120px;
+  background-color: inherit;
+}
+
+/* PULSE ANIMATIONS */
+.pulse {
+  -moz-animation: pulse 1s infinite;
+  -webkit-animation: pulse 1s infinite;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
 }

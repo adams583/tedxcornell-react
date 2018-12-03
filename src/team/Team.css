@@ -1,7 +1,18 @@
-.main-panel-team {
-  background-image: url("../img/letters.jpg");
+.team-container {
   color: whitesmoke;
-  padding-top: 190px;
-  padding-bottom: 190px;
   background-size: cover;
+
+  width: 100%;
+}
+
+.images-row {
+  margin-top: 20px;
+}
+
+.team-content {
+  padding-top: 200px;
+}
+
+.team-title {
+  margin: auto;
 }

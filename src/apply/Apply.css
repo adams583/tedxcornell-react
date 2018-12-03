@@ -1,7 +1,8 @@
-.container-div {
+.apply-div {
   background-image: url("../img/logo1.png");
   background-size: cover;
   background-attachment: fixed;
+  padding: 150px 0px 150px 0px;
 }
 
 .fa-icon {

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Apply.css";
 import { Grid, Row, Col, Panel, PanelGroup } from "react-bootstrap";
+import TextField from "@material-ui/core/TextField";
 
 class Apply extends Component {
   constructor(props) {
@@ -30,7 +31,7 @@ class Apply extends Component {
 
   render() {
     return (
-      <div className="container-div">
+      <div className="apply-div">
         <Grid>
           <Row>
             <h2>Interested in getting involved?</h2>

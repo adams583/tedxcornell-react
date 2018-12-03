@@ -7,14 +7,21 @@ import Home from "./home/Home";
 import Events from "./events/Events";
 import Team from "./team/Team";
 import Apply from "./apply/Apply";
+import AOS from "aos";
+import anime from "animejs";
+import "aos/dist/aos.css";
+import RightNav from "./common/RightNav";
 
 class App extends Component {
   render() {
+    AOS.init();
     return (
       <div className="App">
         <Router>
           <div>
-            <Header />
+            {/* <Header /> */}
+            <div class="logo" />
+            <RightNav />
 
             <Route exact path="/" component={Home} />
             <Route path="/events" component={Events} />

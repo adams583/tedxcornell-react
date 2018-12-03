@@ -1,0 +1,22 @@
+.rightnav-wrapper {
+  position: fixed;
+  top: 40px;
+  right: 60px;
+  color: whitesmoke;
+  text-align: right;
+  border-right: solid #e62b1e thin;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+a:hover {
+  color: #e62b1e;
+  text-decoration: none;
+}
+
+a {
+  transition: all 0.5s ease;
+  text-decoration: none;
+  color: rgba(245, 245, 245, 0.829);
+}

@@ -1,18 +1,99 @@
-.team-container {
+#team-container {
   color: whitesmoke;
-  background-size: cover;
-
+  display: flex;
   width: 100%;
 }
 
-.images-row {
-  margin-top: 20px;
+.team-image-panel {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/logo1.png");
+  background-size: cover;
 }
 
-.team-content {
-  padding-top: 200px;
+.year-selector {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
-.team-title {
-  margin: auto;
+.year {
+  padding: 5px;
+  margin: 20px;
+  transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s;
+}
+
+.team-display {
+  display: none;
+}
+
+.team-display.active {
+  display: flex;
+  padding: 50px;
+  flex-direction: column;
+}
+
+.team-member-info {
+  display: none;
+}
+
+.team-member-info.active {
+  display: flex;
+  flex-direction: column;
+  border-left: solid #e62b1e thin;
+  border-radius: 5px;
+  margin: 50px;
+  padding: 20px;
+}
+
+.team-member-info.active > * {
+  width: 100%;
+}
+
+.team-display-pics {
+  display: flex;
+}
+
+.profile-pic {
+  transition: all 0.2s;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-pic.active {
+  z-index: 1;
+}
+
+.select-indicator {
+  transition: all 0.2s;
+  position: absolute;
+  top: 0;
+  background-image: url("../img/The_X.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  left: 0;
+  z-index: 0;
+  border-radius: 5px;
+  display: block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  opacity: 0.4;
+}
+
+.year-indicator {
+  transition: all 0.2s;
+  position: absolute;
+  top: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+  z-index: 0;
+  border-radius: 5px;
+  display: block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-bottom: solid #e62b1e thin;
 }

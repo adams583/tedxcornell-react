@@ -1,6 +1,5 @@
 .generic-panel {
-  padding: 25px;
+  padding: 100px;
   margin: auto;
-  border-left: solid 1px red;
-  border-radius: 10px;
+  width: 100%;
 }

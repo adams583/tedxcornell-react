@@ -39,6 +39,7 @@ class Team extends Component {
     yearIndicator.style.transform = `translate(${coords.left}px, ${
       coords.top
     }px)`;
+    yearIndicator.style.display = "block";
   }
 
   handleImageLoad() {
@@ -67,6 +68,7 @@ class Team extends Component {
     selectIndicator.style.transform = `translate(${imageCoords.left}px, ${
       imageCoords.top
     }px)`;
+    selectIndicator.style.display = "block";
   }
 
   changeYear(e) {
@@ -177,9 +179,14 @@ class Team extends Component {
     return (
       <div id="team-container ">
         <div className="team-image-panel">
-          <h1>Meet Our Team</h1>
+          <div className="container">
+            <h1>Meet Our Team</h1>
+            <a class="btn text-danger" href="/apply">
+              Get Involved
+            </a>
+          </div>
         </div>
-        <GenericPanel
+        {/* <GenericPanel
           title="About Us"
           content="Meet our team members! The team's responsibilities involve selecting
       and inviting speakers and performers, designing event-specific materials,
@@ -187,7 +194,7 @@ class Team extends Component {
       up everything that happens on the day of the event. We're done recruiting
       for fall 2018, but check back in the spring if you're interested in
       joining!"
-        />
+        /> */}
         <div className="team-content-panel">
           <div className="year-selector container">
             <h4
@@ -259,6 +266,7 @@ class Team extends Component {
                   data-member={member.name}
                 >
                   <h4>{member.name}</h4>
+                  <h5>{member.netid}</h5>
                   <p>{member.info}</p>
                 </div>
               ))}

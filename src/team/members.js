@@ -14,43 +14,52 @@ const emily = {
   name: "Emily Chen",
   info:
     "Emily is a junior majoring in Design and Environmental Analysis and is the director of Design and Marketing for TEDxCornellUniversity. She is also involved in Cornell University Sustainable Design, Hotel Ezra Cornell, and is the Student Life chair for the Human Ecology Dean’s Advisory Board. In her free time, you can find her hosting dog-petting programs as an RA or studying in dining halls.",
-  img: emily_pic
+  img: emily_pic,
+  netid: "ewc58"
 };
 const adam = {
   name: "Adam Skrocki",
   info:
-    "Hi, I'm Adam! I'm a sophomore majoriong in computer science, and I'm the director if IT for TEDxCornellUniversity. My favorite part of being a part of TEDxCornell is working with all my great teammates! Besides TEDx, I'm interested in web design, data science, and pretty much anything else tech related. In my free time, you can find me playing tennis, exploring campus, or just kicking back and relaxing with friends.",
-  img: adam_pic
+    "Adam is a sophomore from Arizona, a computer science major, and the director if IT for TEDxCornellUniversity. His favorite part of being a part of TEDxCornell is working with all his great teammates to spread ideas that matter! Besides TEDx, he's interested in web design, data science, and pretty much anything else tech related. In his free time, you can find him on a tennis court, exploring campus, or just kicking back and relaxing with friends.",
+  img: adam_pic,
+  netid: "ams792"
 };
 const sofiya = {
   name: "Sofiya Tsenter",
   info: "Info about Sofiya",
-  img: sofiya_pic
+  img: sofiya_pic,
+  netid: "st848"
 };
 const eri = {
   name: "Eri Kato",
-  info: "Info about Eri",
-  img: eri_pic
+  info:
+    "Eri is a junior from Tokyo, Japan, a proud hotelie, and the director of Guest Experience! When she isn’t in eHub with her TEDx team, find her rehearsing with After Eight, her a cappella group, on a wine tour, or showering her littles with gifts. Eri’s first stint with TEDx was organizing her high school’s inaugural event when she was a senior. Her favorite part of the job is being part of something that changes the perspectives of others.",
+  img: eri_pic,
+  netid: "ek564"
 };
 const kirkland = {
   name: "Kirkland Sugrim",
   info: "Info about Kirkland",
-  img: kirkland_pic
+  img: kirkland_pic,
+  netid: "kms376"
 };
 const yeon = {
   name: "Yeonsuk Kim",
   info: "Info about Yeon",
-  img: yeon_pic
+  img: yeon_pic,
+  netid: "yk568"
 };
 const akshu = {
   name: "Apekshita Alkesh",
   info: "Info about Akshu",
-  img: akshu_pic
+  img: akshu_pic,
+  netid: "aa747"
 };
 const tianyi = {
   name: "Tianyi Zhang",
   info: "Info about Tianyi",
-  img: tianyi_pic
+  img: tianyi_pic,
+  netid: "tz75"
 };
 const liz = {
   name: "Elizabeth Gunner",

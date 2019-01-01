@@ -6,7 +6,7 @@
   position: fixed;
   top: 40px;
   left: 60px;
-  z-index: 1; /* Stay on top */
+  z-index: 2; /* Stay on top */
 }
 
 .App {

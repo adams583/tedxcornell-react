@@ -1,5 +1,5 @@
 # TEDxCornellUniversity 2019 Website React Project
-This project was started to create a more customizable website for TEDxCornellUniversity. The website should be finished before 2019.
+This project was started to create a more customizable website for TEDxCornellUniversity. The website should be finished and ready for review before the 2019 semester begins.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

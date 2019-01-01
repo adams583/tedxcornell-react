@@ -1,17 +1,7 @@
 import React, { Component } from "react";
 import "./Team.css";
 import { Grid, Col, Row, Image } from "react-bootstrap";
-import kirkland_pic from "../img/kirkland.jpg";
-import sofiya_pic from "../img/Sofiya_Tsenter.png";
-import adam_pic from "../img/adam2.jpg";
-import eri_pic from "../img/eri.png";
-import emily_pic from "../img/emilychen.jpeg";
-import yeon_pic from "../img/Yeonsuk_Kim.jpg";
-import akshu_pic from "../img/Akshu.png";
-import tianyi_pic from "../img/Tianyi.jpg";
-import liz_pic from "../img/liz_gunner.jpg";
-import hebani_pic from "../img/hebani.jpeg";
-import uzair_pic from "../img/uzair.jpg";
+import { team2018, team2019 } from "./members.js";
 
 const selectIndicator = document.createElement("span");
 selectIndicator.classList.add("select-indicator");
@@ -26,24 +16,20 @@ class Team extends Component {
     super(props);
   }
 
-  changeYear(e) {
-    let year = e.target.dataset.year;
-    const displays = document.querySelectorAll(`.team-display`);
-    displays.forEach(display => {
-      if (display.dataset.year == year) {
-        display.classList.add("active");
-      } else {
-        display.classList.remove("active");
-      }
-    });
+  componentDidMount() {
+    // Select the default active info, the first member
+    const defaultInfo = document.querySelectorAll(".team-member-info-2019")[0];
+    defaultInfo.classList.add("active");
+
+    const activeYear = document.getElementById("2019-selector");
 
     // Get coordinates of year selected
-    const linkCoords = e.target.getBoundingClientRect();
+    const yearCoords = activeYear.getBoundingClientRect();
     const coords = {
-      width: linkCoords.width,
-      height: linkCoords.height,
-      top: linkCoords.top + window.scrollY,
-      left: linkCoords.left + window.scrollX
+      width: yearCoords.width,
+      height: yearCoords.height,
+      top: yearCoords.top + window.scrollY,
+      left: yearCoords.left + window.scrollX
     };
 
     // Set the year indicator's dimensions to the dimensions of the year selected.
@@ -54,18 +40,111 @@ class Team extends Component {
     }px)`;
   }
 
+  handleImageLoad() {
+    const defaultMemberImage = document.querySelectorAll(
+      ".profile-pic-2019"
+    )[0];
+    console.log(defaultMemberImage);
+    // Get coordinates of image
+    const defaultImageCoords = defaultMemberImage.getBoundingClientRect();
+    const imageCoords = {
+      width: defaultImageCoords.width,
+      height: defaultImageCoords.height,
+      top:
+        defaultImageCoords.top +
+        window.scrollY +
+        defaultImageCoords.height / 10,
+      left:
+        defaultImageCoords.left +
+        window.scrollX +
+        defaultImageCoords.height / 10
+    };
+
+    // Set the selectIndicator's dimensions to the dimensions of the image.
+    selectIndicator.style.width = `${imageCoords.width}px`;
+    selectIndicator.style.height = `${imageCoords.height}px`;
+    selectIndicator.style.transform = `translate(${imageCoords.left}px, ${
+      imageCoords.top
+    }px)`;
+  }
+
+  changeYear(e) {
+    let year = e.target.dataset.year; // Year selected
+    const displays = document.querySelectorAll(`.team-display`); // team displays for all years
+    displays.forEach(display => {
+      if (display.dataset.year == year) {
+        display.classList.add("active");
+      } else {
+        display.classList.remove("active");
+      }
+    });
+
+    // Get coordinates of year selected
+    const yearCoords = e.target.getBoundingClientRect();
+    const coords = {
+      width: yearCoords.width,
+      height: yearCoords.height,
+      top: yearCoords.top + window.scrollY,
+      left: yearCoords.left + window.scrollX
+    };
+
+    // Set the year indicator's dimensions to the dimensions of the year selected.
+    yearIndicator.style.width = `${coords.width}px`;
+    yearIndicator.style.height = `${coords.height}px`;
+    yearIndicator.style.transform = `translate(${coords.left}px, ${
+      coords.top
+    }px)`;
+
+    // When changing years, set default selection for display
+    document
+      .querySelectorAll(`.team-member-info-${year}`)
+      .forEach((info, index) => {
+        if (index == 0) {
+          info.classList.add("active");
+        } else {
+          info.classList.remove("active");
+        }
+      });
+
+    // When changing years, set default member to be selected
+    const defaultMemberImage = document.querySelectorAll(
+      `.profile-pic-${year}`
+    )[0];
+    // Get coordinates of image
+    const defaultImageCoords = defaultMemberImage.getBoundingClientRect();
+    const imageCoords = {
+      width: defaultImageCoords.width,
+      height: defaultImageCoords.height,
+      top:
+        defaultImageCoords.top +
+        window.scrollY +
+        defaultImageCoords.height / 10,
+      left:
+        defaultImageCoords.left +
+        window.scrollX +
+        defaultImageCoords.height / 10
+    };
+
+    // Set the selectIndicator's dimensions to the dimensions of the image.
+    selectIndicator.style.width = `${imageCoords.width}px`;
+    selectIndicator.style.height = `${imageCoords.height}px`;
+    selectIndicator.style.transform = `translate(${imageCoords.left}px, ${
+      imageCoords.top
+    }px)`;
+  }
+
   showInfo(e) {
     const member = e.target.dataset.member; // The selected team member
     const infos = document.querySelectorAll(".team-member-info"); // NodeList of info panels
     const images = document.querySelectorAll(".profile-pic"); // NodeList of profile pics
 
     // Get coordinates of image
-    const linkCoords = e.target.getBoundingClientRect();
+    const imageCoords = e.target.getBoundingClientRect();
     const coords = {
-      width: linkCoords.width,
-      height: linkCoords.height,
-      top: linkCoords.top + window.scrollY + linkCoords.height / 10,
-      left: linkCoords.left + window.scrollX + linkCoords.height / 10
+      width: imageCoords.width,
+      height: imageCoords.height,
+      top: imageCoords.top + window.scrollY + imageCoords.height / 10,
+      left: imageCoords.left + window.scrollX + imageCoords.height / 10
     };
 
     // Set the selectIndicator's dimensions to the dimensions of the image.
@@ -94,64 +173,6 @@ class Team extends Component {
   }
 
   render() {
-    const emily = {
-      name: "Emily Chen",
-      info: "Info about emily",
-      img: emily_pic
-    };
-    const adam = {
-      name: "Adam Skrocki",
-      info: "Info about Adam",
-      img: adam_pic
-    };
-    const sofiya = {
-      name: "Sofiya Tsenter",
-      info: "Info about Sofiya",
-      img: sofiya_pic
-    };
-    const eri = {
-      name: "Eri Kato",
-      info: "Info about Eri",
-      img: eri_pic
-    };
-    const kirkland = {
-      name: "Kirkland Sugrim",
-      info: "Info about Kirkland",
-      img: kirkland_pic
-    };
-    const yeon = {
-      name: "Yeonsuk Kim",
-      info: "Info about Yeon",
-      img: yeon_pic
-    };
-    const akshu = {
-      name: "Apekshita Alkesh",
-      info: "Info about Akshu",
-      img: akshu_pic
-    };
-    const tianyi = {
-      name: "Tianyi Zhang",
-      info: "Info about Tianyi",
-      img: tianyi_pic
-    };
-    const liz = {
-      name: "Elizabeth Gunner",
-      info: "Info about Liz",
-      img: liz_pic
-    };
-    const hebani = {
-      name: "Hebani Duggal",
-      info: "Info about Hebani",
-      img: hebani_pic
-    };
-    const uzair = {
-      name: "Uzair Butt",
-      info: "Info about Uzair",
-      img: uzair_pic
-    };
-    const team2019 = [emily, sofiya, adam, eri, kirkland, yeon, akshu, tianyi];
-    const team2018 = [liz, hebani, adam, eri, kirkland, emily, uzair];
-
     return (
       <div id="team-container ">
         <div className="team-image-panel">
@@ -179,10 +200,9 @@ class Team extends Component {
           <div id="2018-team" className="team-display " data-year="2018">
             <div className="team-display-pics">
               {team2018.map(member => (
-                <div className="container" key={member.index}>
+                <div className="container " key={member.index}>
                   <Image
-                    className="profile-pic"
-                    key={member.index}
+                    className="profile-pic profile-pic-2018"
                     src={member.img}
                     responsive
                     data-member={member.name}
@@ -195,7 +215,7 @@ class Team extends Component {
             <div className="team-member-info-container">
               {team2018.map(member => (
                 <div
-                  className="team-member-info"
+                  className="team-member-info team-member-info-2018"
                   key={member.index}
                   data-member={member.name}
                 >
@@ -210,12 +230,12 @@ class Team extends Component {
               {team2019.map(member => (
                 <div className="container" key={member.index}>
                   <Image
-                    className="profile-pic"
-                    key={member.index}
+                    className="profile-pic profile-pic-2019"
                     src={member.img}
                     responsive
                     data-member={member.name}
                     onClick={this.showInfo}
+                    onLoad={this.handleImageLoad.bind(this)}
                   />
                 </div>
               ))}
@@ -224,7 +244,7 @@ class Team extends Component {
             <div className="team-member-info-container">
               {team2019.map(member => (
                 <div
-                  className="team-member-info"
+                  className="team-member-info team-member-info-2019"
                   key={member.index}
                   data-member={member.name}
                 >

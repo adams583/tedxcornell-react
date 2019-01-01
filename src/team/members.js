@@ -13,12 +13,13 @@ import uzair_pic from "../img/uzair.jpg";
 const emily = {
   name: "Emily Chen",
   info:
-    "Emily is a junior majoring in Design and Environmental Analysis and is the director of Design and Marketing for TEDxCornell. She is also involved in Cornell University Sustainable Design, Hotel Ezra Cornell, and is the Student Life chair for the Human Ecology Dean’s Advisory Board. In her free time, you can find her hosting dog-petting programs as an RA or studying in dining halls.",
+    "Emily is a junior majoring in Design and Environmental Analysis and is the director of Design and Marketing for TEDxCornellUniversity. She is also involved in Cornell University Sustainable Design, Hotel Ezra Cornell, and is the Student Life chair for the Human Ecology Dean’s Advisory Board. In her free time, you can find her hosting dog-petting programs as an RA or studying in dining halls.",
   img: emily_pic
 };
 const adam = {
   name: "Adam Skrocki",
-  info: "Info about Adam",
+  info:
+    "Hi, I'm Adam! I'm a sophomore majoriong in computer science, and I'm the director if IT for TEDxCornellUniversity. My favorite part of being a part of TEDxCornell is working with all my great teammates! Besides TEDx, I'm interested in web design, data science, and pretty much anything else tech related. In my free time, you can find me playing tennis, exploring campus, or just kicking back and relaxing with friends.",
   img: adam_pic
 };
 const sofiya = {

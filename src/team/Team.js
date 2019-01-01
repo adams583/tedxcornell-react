@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Team.css";
 import { Grid, Col, Row, Image } from "react-bootstrap";
 import { team2018, team2019 } from "./members.js";
+import GenericPanel from "../common/GenericPanel.js";
 
 const selectIndicator = document.createElement("span");
 selectIndicator.classList.add("select-indicator");
@@ -178,24 +179,33 @@ class Team extends Component {
         <div className="team-image-panel">
           <h1>Meet Our Team</h1>
         </div>
+        <GenericPanel
+          title="About Us"
+          content="Meet our team members! The team's responsibilities involve selecting
+      and inviting speakers and performers, designing event-specific materials,
+      advertising, raising funds, establishing an online presence, and setting
+      up everything that happens on the day of the event. We're done recruiting
+      for fall 2018, but check back in the spring if you're interested in
+      joining!"
+        />
         <div className="team-content-panel">
-          <div className="year-selector">
-            <span
+          <div className="year-selector container">
+            <h4
               id="2018-selector"
               className="year"
               data-year="2018"
               onClick={this.changeYear}
             >
               2018
-            </span>
-            <span
+            </h4>
+            <h4
               id="2019-selector"
               className="year"
               data-year="2019"
               onClick={this.changeYear}
             >
               2019
-            </span>
+            </h4>
           </div>
           <div id="2018-team" className="team-display " data-year="2018">
             <div className="team-display-pics">

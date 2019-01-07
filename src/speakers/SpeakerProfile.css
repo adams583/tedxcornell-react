@@ -1,0 +1,12 @@
+.main-profile-panel {
+  height: 700px;
+  display: flex;
+  align-items: center;
+}
+
+#speaker-name-panel {
+  background-color: #e62b1e;
+  max-width: 50%;
+  padding: 50px;
+  margin: 50px;
+}

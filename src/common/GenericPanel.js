@@ -7,9 +7,12 @@ class GenericPanel extends Component {
   }
   render() {
     return (
-      <div className="container generic-panel">
-        <h3>{this.props.title}</h3>
-        <p>{this.props.content}</p>
+      <div
+        className="container generic-panel"
+        style={{ backgroundColor: this.props.color }}
+      >
+        <h3 className="generic-panel-title">{this.props.title}</h3>
+        <p className="generic-panel-content">{this.props.content}</p>
       </div>
     );
   }

@@ -1,0 +1,11 @@
+#tagged-divider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tagged-divider > h3 {
+  background-color: #e62b1e;
+  padding: 5px;
+}

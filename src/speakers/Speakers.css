@@ -1,0 +1,53 @@
+.speakers-2019 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fitted-a {
+  width: 70%;
+  height: 70%;
+}
+
+.fitted-image {
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+}
+
+.fitted-image:hover {
+  opacity: 0.7;
+}
+
+.speaker-name {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.speaker-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.speakers-title-panel {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: space-evenly;
+}
+
+.hr {
+  border-bottom: solid #e62b1e thin;
+  width: 100%;
+}
+
+.center-content {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

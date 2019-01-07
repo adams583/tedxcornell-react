@@ -10,17 +10,20 @@ class Home extends Component {
     {
       title: "Events",
       text:
-        "Speaker applications are open! We are looking for presenters who will inform, inspire, and entertain while spreading ideas that they are truly passionate about. Submit a topic or refer someone else. What are you waiting for?"
+        "Speaker applications are open! We are looking for presenters who will inform, inspire, and entertain while spreading ideas that they are truly passionate about. Submit a topic or refer someone else. What are you waiting for?",
+      buttonText: "Learn More"
     },
     {
       title: "Team",
       text:
-        "The team's responsibilities involve selecting and inviting speakers and performers, designing event-specific materials, advertising, raising funds, establishing an online presence, and setting up everything that happens on the day of the event. We're still in need of team members to complete our 2019 team, so if you're interested, let us know and we'll be happy to talk with you!"
+        "The team's responsibilities involve selecting and inviting speakers and performers, designing event-specific materials, advertising, raising funds, establishing an online presence, and setting up everything that happens on the day of the event. We're still in need of team members to complete our 2019 team, so if you're interested, let us know and we'll be happy to talk with you!",
+      buttonText: "Learn More"
     },
     {
       title: "Apply",
       text:
-        "Our team was thrilled to host Cornell's fourth TEDx event this year on May 6th, 2018. We expanded on what TEDx has been at Cornell in previous years and shot for our biggest event yet, selling around 700 tickets! After this event's success, we plan on continuing TEDx as a yearly tradition at Cornell. "
+        "Our team was thrilled to host Cornell's fourth TEDx event this year on May 6th, 2018. We expanded on what TEDx has been at Cornell in previous years and shot for our biggest event yet, selling around 700 tickets! After this event's success, we plan on continuing TEDx as a yearly tradition at Cornell. ",
+      buttonText: "Learn More"
     }
   ];
 
@@ -73,6 +76,7 @@ class Home extends Component {
                       events hope to bring some of the brightest minds and best
                       ideas together to our campus.
                     </p>
+                    <button className="standard-button">Learn More</button>
                   </div>
                 </div>
               </Col>
@@ -93,6 +97,7 @@ class Home extends Component {
                       TEDxCornell 2019, so if you're interested or know someone
                       who might be, check out our speaker application page!
                     </p>
+                    <button className="standard-button">Learn More</button>
                   </div>
                 </div>
               </Col>
@@ -111,6 +116,7 @@ class Home extends Component {
                       TEDxCornell 2019, so if you're interested or know someone
                       who might be, check out our speaker application page!
                     </p>
+                    <button className="standard-button">Learn More</button>
                   </div>
                 </div>
               </Col>
@@ -130,6 +136,7 @@ class Home extends Component {
                       amazing people - on the team and at our events. Feel free
                       to reach out to us if you'd like to learn more!
                     </p>
+                    <button className="standard-button">Learn More</button>
                   </div>
                 </div>
               </Col>

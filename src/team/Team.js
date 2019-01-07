@@ -46,7 +46,8 @@ class Team extends Component {
     const defaultMemberImage = document.querySelectorAll(
       ".profile-pic-2019"
     )[0];
-    console.log(defaultMemberImage);
+    // Make default member image active on load
+    defaultMemberImage.classList.add("active");
     // Get coordinates of image
     const defaultImageCoords = defaultMemberImage.getBoundingClientRect();
     const imageCoords = {
@@ -109,10 +110,17 @@ class Team extends Component {
         }
       });
 
+    // Set all images inactive except for the default, done below
+    document.querySelectorAll(`.profile-pic-${year}`).forEach(img => {
+      img.classList.remove("active");
+    });
+
     // When changing years, set default member to be selected
     const defaultMemberImage = document.querySelectorAll(
       `.profile-pic-${year}`
     )[0];
+    defaultMemberImage.classList.add("active");
+
     // Get coordinates of image
     const defaultImageCoords = defaultMemberImage.getBoundingClientRect();
     const imageCoords = {
@@ -186,15 +194,15 @@ class Team extends Component {
             </a>
           </div>
         </div>
-        {/* <GenericPanel
-          title="About Us"
+        <GenericPanel
+          title="Spreading Ideas that Matter"
           content="Meet our team members! The team's responsibilities involve selecting
       and inviting speakers and performers, designing event-specific materials,
       advertising, raising funds, establishing an online presence, and setting
       up everything that happens on the day of the event. We're done recruiting
       for fall 2018, but check back in the spring if you're interested in
       joining!"
-        /> */}
+        />
         <div className="team-content-panel">
           <div className="year-selector container">
             <h4

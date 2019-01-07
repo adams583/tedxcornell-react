@@ -13,8 +13,12 @@ class RightNav extends Component {
           <a href="/events">Events</a>
         </div>
         <div>
+          <a href="/speakers">Speakers</a>
+        </div>
+        <div>
           <a href="/team">Team</a>
         </div>
+
         <div>
           <a href="/apply">Apply</a>
         </div>

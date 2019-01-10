@@ -24,7 +24,7 @@ class Speakers extends Component {
     // select the speaker displays and check for the matching year
     document.querySelectorAll(".speakers-display").forEach(item => {
       if (item.dataset.year == year) {
-        yScroll = item.offsetTop;
+        yScroll = item.offsetTop - 200;
       }
     });
 

@@ -64,6 +64,9 @@
 
 .team-display-pics {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-pic {
@@ -72,6 +75,7 @@
   position: relative;
   z-index: 1;
   filter: brightness(75%);
+  margin: 20px 20px 0px 20px;
 }
 
 .profile-pic.active {
@@ -107,4 +111,18 @@
   display: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-bottom: solid #e62b1e thin;
+}
+
+/* lg --- Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .team-display-pics > * {
+    flex: 1;
+  }
+}
+
+/* xl --- Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .team-display-pics > * {
+    flex: 1;
+  }
 }

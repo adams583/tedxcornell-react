@@ -225,7 +225,7 @@ class Team extends Component {
           <div id="2018-team" className="team-display " data-year="2018">
             <div className="team-display-pics">
               {team2018.map(member => (
-                <div className="container " key={member.index}>
+                <Col xs={6} sm={4} md={2} lg={1} key={member.index}>
                   <Image
                     className="profile-pic profile-pic-2018"
                     src={member.img}
@@ -233,7 +233,7 @@ class Team extends Component {
                     data-member={member.name}
                     onClick={this.showInfo}
                   />
-                </div>
+                </Col>
               ))}
             </div>
 
@@ -253,7 +253,7 @@ class Team extends Component {
           <div id="2019-team" className="team-display active" data-year="2019">
             <div className="team-display-pics">
               {team2019.map(member => (
-                <div className="container" key={member.index}>
+                <Col xs={6} sm={4} md={2} lg={1} key={member.index}>
                   <Image
                     className="profile-pic profile-pic-2019"
                     src={member.img}
@@ -262,7 +262,7 @@ class Team extends Component {
                     onClick={this.showInfo}
                     onLoad={this.handleImageLoad.bind(this)}
                   />
-                </div>
+                </Col>
               ))}
             </div>
 

@@ -1,0 +1,14 @@
+.panel-collapse {
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.collapsible-panel {
+  cursor: pointer;
+}
+
+.collapsible-icon {
+  font-size: 1em;
+  color: #e62b1e;
+  margin-right: 20px;
+}

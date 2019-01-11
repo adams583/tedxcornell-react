@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Apply.css";
 import { Grid, Row, Col, Panel, PanelGroup } from "react-bootstrap";
 import TextField from "@material-ui/core/TextField";
+import Collapsible from "../common/Collapsible";
 
 class Apply extends Component {
   constructor(props) {
@@ -68,12 +69,9 @@ class Apply extends Component {
               <h3>FAQ</h3>
               <PanelGroup accordion>
                 {this.faq.map(qa => (
-                  <Panel key={qa.key} eventKey={qa.key}>
-                    <Panel.Heading>
-                      <Panel.Title toggle>{qa.question}</Panel.Title>
-                    </Panel.Heading>
-                    <Panel.Body collapsible>{qa.answer}</Panel.Body>
-                  </Panel>
+                  <Collapsible title={qa.question}>
+                    <div>{qa.answer}</div>
+                  </Collapsible>
                 ))}
               </PanelGroup>
             </Col>

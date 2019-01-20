@@ -1,0 +1,45 @@
+.image-text-overlap {
+  padding: 100px 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ito-txt {
+  flex: 3;
+}
+
+.ito-img {
+  flex: 4;
+}
+
+@media (min-width: 576px) {
+  .image-text-overlap {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .image-text-overlap {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 992px) {
+  .image-text-overlap {
+    flex-direction: row;
+  }
+
+  .ito-txt {
+    margin-left: -50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .image-text-overlap {
+    flex-direction: row;
+  }
+  .ito-txt {
+    margin-left: -50px;
+  }
+}

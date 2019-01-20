@@ -1,0 +1,12 @@
+.bottom-panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.bp-text {
+  max-width: 500px;
+  text-align: center;
+}

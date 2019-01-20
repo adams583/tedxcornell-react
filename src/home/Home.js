@@ -4,6 +4,10 @@ import { Row, Col, Grid, Panel, Button } from "react-bootstrap";
 import Card from "../common/Card";
 import anime from "animejs";
 import Paper from "@material-ui/core/Paper";
+import ImageTextOverlap from "../common/ImageTextOverlap";
+import pizarromin from "../img/pizzaro.min.jpg";
+import BottomPanel from "../common/BottomPanel";
+import faqimg from "../img/yamatai.jpg";
 
 class Home extends Component {
   cards = [
@@ -61,22 +65,26 @@ class Home extends Component {
           {/* <div className="section-title-container text-center">
             <h1 className="section-title">Ideas worth spreading</h1>
           </div> */}
+          <ImageTextOverlap
+            onImgLoad={() => {}}
+            src={pizarromin}
+            title="What is TEDxCornellUniversity?"
+            content="We're a student-run club dedicated to bringing great independently-organized TED events and amazing people to Cornell."
+            button="Learn More"
+          />
           <Grid className="grid">
             <Row>
               <Col md={5}>
                 <div>
                   <div data-aos="fade-right" className="paper-div">
-                    <h3>About us</h3>
+                    <h3>Our Plan</h3>
                     <p>
-                      We're a student-run club dedicated to bringing great
-                      events to Cornell. TEDx is a program of local and
-                      independently-organized TED-like events that bring people
-                      together to share amazing ideas. Operated under official
-                      license from TED, Cornell University's independent TEDx
-                      events hope to bring some of the brightest minds and best
-                      ideas together to our campus.
+                      Each year we spend two semesters planning for a big event
+                      in the spring. We believe our 2018 event was a big success
+                      and we hope to continue bringing great events to Cornell
+                      every year.
                     </p>
-                    <button className="standard-button">Learn More</button>
+                    <button className="standard-button">Past Events</button>
                   </div>
                 </div>
               </Col>
@@ -88,22 +96,20 @@ class Home extends Component {
               <Col md={5}>
                 <div>
                   <div data-aos="fade-left" className="paper-div">
-                    <h3>Our plan</h3>
+                    <h3>Get Involved</h3>
                     <p>
-                      Each year we spend two semesters planning for a big event
-                      in the spring. We believe our 2018 event was a success and
-                      we hope to continue bringing great events to Cornell every
-                      year. We're currently looking for speakers to present at
-                      TEDxCornell 2019, so if you're interested or know someone
-                      who might be, check out our speaker application page!
+                      Interested in getting involved on the speaking or
+                      organizing side? We're currently looking for speakers to
+                      present at TEDxCornell 2019 and students passionate about
+                      spreading knowledge and meeting amazing people.
                     </p>
-                    <button className="standard-button">Learn More</button>
+                    <button className="standard-button">Apply Now</button>
                   </div>
                 </div>
               </Col>
             </Row>
             <div className="row-spacer" />
-            <Row>
+            {/* <Row>
               <Col md={5}>
                 <div>
                   <div data-aos="fade-right" className="paper-div">
@@ -140,9 +146,16 @@ class Home extends Component {
                   </div>
                 </div>
               </Col>
-            </Row>
-            <div className="row-spacer" />
+            </Row> */}
+            {/* <div className="row-spacer" /> */}
           </Grid>
+
+          <BottomPanel
+            img={faqimg}
+            title="Any Questions?"
+            txt="Have any questions? Visit our FAQs page or get in touch with us to ask about anything. We'd love to hear from you"
+            button="See FAQs"
+          />
         </div>
         {/* <Row className="second-panel">
           {this.cards.map(card => (

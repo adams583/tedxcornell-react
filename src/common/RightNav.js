@@ -7,7 +7,7 @@ class RightNav extends Component {
     return (
       <div className="rightnav-wrapper container-fluid">
         <div>
-          <a href="/">Home</a>
+          <a href="/about">About</a>
         </div>
         <div>
           <a href="/events">Events</a>
@@ -15,12 +15,12 @@ class RightNav extends Component {
         <div>
           <a href="/speakers">Speakers</a>
         </div>
-        <div>
-          <a href="/team">Team</a>
-        </div>
 
         <div>
           <a href="/apply">Apply</a>
+        </div>
+        <div>
+          <a href="/faq">FAQ</a>
         </div>
       </div>
     );

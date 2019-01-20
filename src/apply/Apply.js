@@ -3,6 +3,8 @@ import "./Apply.css";
 import { Grid, Row, Col, Panel, PanelGroup } from "react-bootstrap";
 import TextField from "@material-ui/core/TextField";
 import Collapsible from "../common/Collapsible";
+import CustomButton from "../common/CustomButton";
+import ScrollMove from "../common/ScrollMove";
 
 class Apply extends Component {
   constructor(props) {
@@ -49,6 +51,7 @@ class Apply extends Component {
                 waiting for? Round 1 Applications close Wednesday, November 28
                 at 11:59pm.
               </p>
+              <CustomButton text="Apply Now" color="#e62b1e" />
             </Col>
           </Row>
           <Row>

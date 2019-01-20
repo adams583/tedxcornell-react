@@ -5,7 +5,7 @@ import Header from "./common/Header";
 import Footer from "./common/Footer";
 import Home from "./home/Home";
 import Events from "./events/Events";
-import Team from "./team/Team";
+import About from "./about/About";
 import Apply from "./apply/Apply";
 import AOS from "aos";
 import anime from "animejs";
@@ -18,6 +18,9 @@ import {
   speakers_2018,
   speakers_2015
 } from "./speakers/speaker-profiles";
+import logoImg from "./img/Black_TEDx_Logo_small.png";
+import { Image } from "react-bootstrap";
+import FAQ from "./faq/FAQ";
 
 class App extends Component {
   render() {
@@ -27,13 +30,18 @@ class App extends Component {
         <Router>
           <div>
             {/* <Header /> */}
-            <div class="logo" />
+
+            <a className="logo" href="/">
+              <Image src={logoImg} responsive />
+            </a>
+
             <RightNav />
             <Route exact path="/" component={Home} />
             <Route path="/events" component={Events} />
-            <Route path="/team" component={Team} />
+            <Route path="/about" component={About} />
             <Route path="/apply" component={Apply} />
             <Route exact path="/speakers" component={Speakers} />
+            <Route exact path="/faq" component={FAQ} />
             {Object.keys(speakers_2019).map(key => (
               <Route
                 path={`/speakers/${speakers_2019[key].url}`}

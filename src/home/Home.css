@@ -39,6 +39,8 @@ h1 {
 
 .home-content {
   background-color: rgb(34, 34, 34);
+  background-image: url("../img/logo2.png");
+  background-size: cover;
 }
 
 .the-x {
@@ -48,8 +50,6 @@ h1 {
 .grid {
   padding: 100px 200px 0px 200px;
   width: 100%;
-  background-image: url("../img/logo2.png");
-  background-size: cover;
 }
 
 .fa-angle-down {

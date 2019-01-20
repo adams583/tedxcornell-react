@@ -1,0 +1,10 @@
+.custom-button {
+  text-transform: uppercase;
+  font-weight: thin;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.custom-button:focus {
+  outline: 0;
+}

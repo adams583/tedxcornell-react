@@ -25,7 +25,7 @@ class ScrollMove extends Component {
   }
 
   handleScroll(e, elem, topLoc) {
-    let translate = (topLoc - window.scrollY) * 0.05;
+    let translate = (topLoc - window.scrollY) * 0.07;
     console.log(translate);
     elem.style.transform = `translateY(${translate}px)`;
   }

@@ -1,0 +1,30 @@
+.faq {
+  padding: 150px 200px;
+}
+
+.card-selector {
+  transition: all 0.2s;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.other-card {
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.faq-selector-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 20px;
+}
+
+.faq-content {
+  display: flex;
+}
+
+.faq-questions-container {
+  flex: 2;
+  margin: 20px;
+}

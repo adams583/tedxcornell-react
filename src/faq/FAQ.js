@@ -2,13 +2,17 @@ import React, { Component } from "react";
 import "./FAQ.css";
 import { PanelGroup } from "react-bootstrap";
 import Collapsible from "../common/Collapsible.js";
+import CardSelector from "./CardSelector";
 
 class FAQ extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      category: "general"
+    };
   }
 
-  faq = [
+  generalFaq = [
     {
       key: "1",
       question: "Can anyone apply to be a speaker?",
@@ -29,17 +33,102 @@ class FAQ extends Component {
     }
   ];
 
+  tedFaq = [
+    {
+      key: "1",
+      question: "What is TED?",
+      answer:
+        "TED is a nonprofit devoted to spreading ideas, usually in the form of short, powerful talks. TED began in 1984 as a conference where Technology, Entertainment and Design converged, and today covers almost all topics — from science to business to global issues."
+    },
+    {
+      key: "2",
+      question: "What is TEDx?",
+      answer:
+        "A TEDx event is a local gathering where live TED-like talks and videos previously recorded at TED conferences are shared with the community. TEDx events are fully planned and coordinated independently, on a community-by-community basis. "
+    },
+    {
+      key: "3",
+      question: "Who runs TEDxCornellUniversity",
+      answer:
+        "Operating under official license from TED, a group of student volunteers organize and host each TEDxCornellUniversity event."
+    }
+  ];
+
+  toggleFaq = e => {
+    console.log(this.state);
+  };
+
   render() {
     return (
       <div className="faq">
-        <h3>FAQ</h3>
-        <PanelGroup accordion>
-          {this.faq.map(qa => (
-            <Collapsible title={qa.question}>
-              <div>{qa.answer}</div>
-            </Collapsible>
-          ))}
-        </PanelGroup>
+        <div>
+          <h4>Learn more about us and our event</h4>
+          <h1>Frequently Asked Questions</h1>
+        </div>
+        <div className="faq-content">
+          <div className="faq-selector-container">
+            <div
+              onClick={() => {
+                this.setState({ category: "general" });
+              }}
+            >
+              <CardSelector
+                title="Team and event inquiries"
+                text="Our 2019 event is quickly approaching! Learn more about how the team operates and what our events are all about"
+                data-faq="general"
+                selected={this.state.category == "general"}
+              />
+            </div>
+            <div
+              onClick={() => {
+                this.setState({ category: "ted" });
+              }}
+            >
+              <CardSelector
+                title="About TED and TEDx"
+                text="We operate under an official TED license to organize an independent event. Learn more about TED and TEDx here."
+                data-faq="ted"
+                selected={this.state.category == "ted"}
+              />
+            </div>
+
+            <div className="other-card">
+              <h5>Anything else?</h5>
+              <p>
+                Feel free to email us anytime with any other questions at &nbsp;
+                <a>tedx@cornell.edu</a>
+              </p>
+            </div>
+          </div>
+
+          {this.state.category == "general" && (
+            <PanelGroup
+              accordion
+              className="faq-questions-container"
+              data-faq="general"
+            >
+              {this.generalFaq.map(qa => (
+                <Collapsible title={qa.question}>
+                  <div>{qa.answer}</div>
+                </Collapsible>
+              ))}
+            </PanelGroup>
+          )}
+
+          {this.state.category == "ted" && (
+            <PanelGroup
+              accordion
+              className="faq-questions-container"
+              data-faq="ted"
+            >
+              {this.tedFaq.map(qa => (
+                <Collapsible title={qa.question}>
+                  <div>{qa.answer}</div>
+                </Collapsible>
+              ))}
+            </PanelGroup>
+          )}
+        </div>
       </div>
     );
   }

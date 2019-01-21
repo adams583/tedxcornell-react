@@ -96,7 +96,7 @@ class FAQ extends Component {
               <h5>Anything else?</h5>
               <p>
                 Feel free to email us anytime with any other questions at &nbsp;
-                <a>tedx@cornell.edu</a>
+                <span className="text-red">tedx@cornell.edu</span>
               </p>
             </div>
           </div>

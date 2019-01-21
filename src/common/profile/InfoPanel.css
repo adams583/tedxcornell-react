@@ -1,0 +1,10 @@
+.info-panel {
+  display: flex;
+  padding: 25px 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-left: solid thin #e62b1e;
+}
+
+.info-panel > * {
+  flex: 1;
+}

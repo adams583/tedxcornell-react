@@ -1,5 +1,5 @@
 .main-panel-events {
-  background-image: url("../img/XLogo.png");
+  background-image: url("../img/thexlogo.jpg");
   color: whitesmoke;
   padding-top: 220px;
   padding-bottom: 220px;
@@ -8,4 +8,14 @@
 
 .events-panel {
   padding: 80px;
+}
+
+.speaker-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.speakers-container {
+  margin: 100px;
+  padding: 0px 100px;
 }

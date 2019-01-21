@@ -69,7 +69,7 @@ class Apply extends Component {
           </Row>
           <Row>
             <Col md={6}>
-              <h3>FAQ</h3>
+              <h3>More Information</h3>
               <PanelGroup accordion>
                 {this.faq.map(qa => (
                   <Collapsible title={qa.question}>

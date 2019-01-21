@@ -1,0 +1,17 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.profile-desc {
+  padding: 10px;
+  border-bottom: solid thick #e62b1e;
+}
+
+.profile-img {
+  height: 100%;
+  width: 100%;
+}

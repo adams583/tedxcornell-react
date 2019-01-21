@@ -4,6 +4,10 @@
   width: 100%;
 }
 
+.team-member-info-container {
+  padding: 50px;
+}
+
 .team-image-panel {
   height: 500px;
   display: flex;
@@ -74,7 +78,6 @@
   border-radius: 5px;
   position: relative;
   z-index: 1;
-  filter: brightness(75%);
   margin: 20px 20px 0px 20px;
 }
 

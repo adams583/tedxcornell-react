@@ -7,6 +7,7 @@ import cornellimg from "../img/cornell.jpg";
 import ImageTextOverlap from "../common/ImageTextOverlap";
 import audience1 from "../img/audience1.jpg";
 import audience2 from "../img/audience2.jpg";
+import InfoPanel from "../common/profile/InfoPanel";
 
 const selectIndicator = document.createElement("span");
 selectIndicator.classList.add("select-indicator");
@@ -19,13 +20,12 @@ document.body.appendChild(yearIndicator);
 class About extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      activeMember: ""
+    };
   }
 
   componentDidMount() {
-    // Select the default active info, the first member
-    const defaultInfo = document.querySelectorAll(".team-member-info-2019")[0];
-    defaultInfo.classList.add("active");
-
     const activeYear = document.getElementById("2019-selector");
 
     // Get coordinates of year selected
@@ -52,6 +52,8 @@ class About extends Component {
     )[0];
     // Make default member image active on load
     defaultMemberImage.classList.add("active");
+    this.setState({ activeMember: defaultMemberImage.dataset.member });
+
     // Get coordinates of image
     const defaultImageCoords = defaultMemberImage.getBoundingClientRect();
     const imageCoords = {
@@ -95,7 +97,7 @@ class About extends Component {
     yearIndicator.style.display = "block";
   }
 
-  changeYear(e) {
+  changeYear = e => {
     let year = e.target.dataset.year; // Year selected
     const displays = document.querySelectorAll(`.team-display`); // team displays for all years
     displays.forEach(display => {
@@ -143,6 +145,7 @@ class About extends Component {
       `.profile-pic-${year}`
     )[0];
     defaultMemberImage.classList.add("active");
+    this.setState({ activeMember: defaultMemberImage.dataset.member });
 
     // Get coordinates of image
     const defaultImageCoords = defaultMemberImage.getBoundingClientRect();
@@ -165,12 +168,15 @@ class About extends Component {
     selectIndicator.style.transform = `translate(${imageCoords.left}px, ${
       imageCoords.top
     }px)`;
-  }
+  };
 
-  showInfo(e) {
+  showInfo = e => {
     const member = e.target.dataset.member; // The selected team member
     const infos = document.querySelectorAll(".team-member-info"); // NodeList of info panels
     const images = document.querySelectorAll(".profile-pic"); // NodeList of profile pics
+
+    this.setState({ activeMember: e.target.dataset.member });
+    console.log(this.state.activeMember);
 
     // Get coordinates of image
     const imageCoords = e.target.getBoundingClientRect();
@@ -204,7 +210,7 @@ class About extends Component {
         img.classList.remove("active");
       }
     });
-  }
+  };
 
   render() {
     return (
@@ -267,16 +273,19 @@ class About extends Component {
             </div>
 
             <div className="team-member-info-container">
-              {team2018.map(member => (
-                <div
-                  className="team-member-info team-member-info-2018"
-                  key={member.index}
-                  data-member={member.name}
-                >
-                  <h4>{member.name}</h4>
-                  <p>{member.info}</p>
-                </div>
-              ))}
+              {team2018.map(
+                member =>
+                  this.state.activeMember === member.name && (
+                    <InfoPanel
+                      className="team-member-info team-member-info-2018"
+                      key={member.index}
+                      data-member={member.name}
+                      name={member.name}
+                      title={member.netid}
+                      about={member.info}
+                    />
+                  )
+              )}
             </div>
           </div>
           <div id="2019-team" className="team-display active" data-year="2019">
@@ -296,17 +305,19 @@ class About extends Component {
             </div>
 
             <div className="team-member-info-container">
-              {team2019.map(member => (
-                <div
-                  className="team-member-info team-member-info-2019"
-                  key={member.index}
-                  data-member={member.name}
-                >
-                  <h4>{member.name}</h4>
-                  <h5>{member.netid}</h5>
-                  <p>{member.info}</p>
-                </div>
-              ))}
+              {team2019.map(
+                member =>
+                  this.state.activeMember === member.name && (
+                    <InfoPanel
+                      className="team-member-info team-member-info-2019"
+                      key={member.index}
+                      data-member={member.name}
+                      name={member.name}
+                      title={member.netid}
+                      about={member.info}
+                    />
+                  )
+              )}
             </div>
           </div>
         </div>

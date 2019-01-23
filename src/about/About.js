@@ -8,6 +8,8 @@ import ImageTextOverlap from "../common/ImageTextOverlap";
 import audience1 from "../img/audience1.jpg";
 import audience2 from "../img/audience2.jpg";
 import InfoPanel from "../common/profile/InfoPanel";
+import BottomPanel from "../common/BottomPanel";
+import bottomPanelImg from "../img/teamImg.jpg";
 
 const selectIndicator = document.createElement("span");
 selectIndicator.classList.add("select-indicator");
@@ -321,6 +323,13 @@ class About extends Component {
             </div>
           </div>
         </div>
+
+        <BottomPanel
+          img={bottomPanelImg}
+          title="Want to get involved?"
+          txt="There are many ways to get involved in making our event happen - as a speaker, team member, volunteer, or sponsor. Visit our applications page to learn more."
+          button="Get Involved"
+        />
       </div>
     );
   }

@@ -30,6 +30,21 @@ class FAQ extends Component {
       question: "Are there other ways to get involved?",
       answer:
         "In March or April, we will be looking for volunteers willing to help with tasks leading up to the event and on the day of the event. If you'd like to meet the team and get a sense of what it's like being on the organizing side of the event, keep an eye out for our volunteering opportunities."
+    },
+    {
+      key: "4",
+      question: "How much do tickets cost for the upcoming event?",
+      answer: ""
+    },
+    {
+      key: "5",
+      question: "How can I register for your event?",
+      answer: ""
+    },
+    {
+      key: "6",
+      question: "Do your events have themes?",
+      answer: ""
     }
   ];
 
@@ -51,6 +66,24 @@ class FAQ extends Component {
       question: "Who runs TEDxCornellUniversity",
       answer:
         "Operating under official license from TED, a group of student volunteers organize and host each TEDxCornellUniversity event."
+    },
+    {
+      key: "4",
+      question: "What can I expect at a TEDx event?",
+      answer: ""
+    },
+    {
+      key: "5",
+      question:
+        "How many TEDxCornellUniversity conferences have been held so far?",
+      answer:
+        "Our 2019 event will be our fourth event. At Cornell in the past, TEDx events have not been a big part of the culture, but we're trying our best to change that!"
+    },
+    {
+      key: "6",
+      question: "How are TEDx events sponsored?",
+      answer:
+        "We are a nonprofit organization sponsored by donations from companies, local businesses, and organizations within Cornell University."
     }
   ];
 

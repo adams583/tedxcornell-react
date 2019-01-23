@@ -121,6 +121,10 @@
   border-bottom: solid #e62b1e thin;
 }
 
+.team-content-panel {
+  margin-bottom: 50px;
+}
+
 /* lg --- Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .team-display-pics > * {

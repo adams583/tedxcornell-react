@@ -13,13 +13,13 @@ class Events extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeMember: ""
+      activeSpeaker: ""
     };
   }
 
-  toggleActiveMember = e => {
+  toggleActiveSpeaker = e => {
     this.setState({
-      activeMember: e.currentTarget.dataset.name
+      activeSpeaker: e.currentTarget.dataset.name
     });
   };
 
@@ -56,7 +56,7 @@ class Events extends Component {
                   xl={4}
                   key={key.index}
                   data-name={speakers_2019[key].name}
-                  onClick={this.toggleActiveMember}
+                  onClick={this.toggleActiveSpeaker}
                 >
                   <div>
                     <Profile

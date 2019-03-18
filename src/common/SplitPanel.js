@@ -1,12 +1,7 @@
 import React, { Component } from "react";
-import { Image } from "react-bootstrap";
 import "./SplitPanel.css";
 
 class SplitPanel extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   styles = {
     backgroundImage: `url(${this.props.img})`,
     backgroundSize: "cover",

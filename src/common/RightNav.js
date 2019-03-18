@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./RightNav.css";
-import { Grid, Row } from "react-bootstrap";
 
 class RightNav extends Component {
   render() {

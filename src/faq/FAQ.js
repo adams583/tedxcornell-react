@@ -110,7 +110,7 @@ class FAQ extends Component {
                 title="Team and event inquiries"
                 text="Our 2019 event is quickly approaching! Learn more about how the team operates and what our events are all about"
                 data-faq="general"
-                selected={this.state.category == "general"}
+                selected={this.state.category === "general"}
               />
             </div>
             <div
@@ -123,7 +123,7 @@ class FAQ extends Component {
                 title="About TED and TEDx"
                 text="We operate under an official TED license to organize an independent event. Learn more about TED and TEDx here."
                 data-faq="ted"
-                selected={this.state.category == "ted"}
+                selected={this.state.category === "ted"}
               />
             </div>
 
@@ -136,28 +136,30 @@ class FAQ extends Component {
             </div>
           </div>
 
-          {this.state.category == "general" && (
+          {this.state.category === "general" && (
             <PanelGroup
               accordion
               className="faq-questions-container"
               data-faq="general"
+              id="faq-panel-group"
             >
-              {this.generalFaq.map(qa => (
-                <Collapsible title={qa.question}>
+              {this.generalFaq.map((qa, index) => (
+                <Collapsible key={index} title={qa.question}>
                   <div>{qa.answer}</div>
                 </Collapsible>
               ))}
             </PanelGroup>
           )}
 
-          {this.state.category == "ted" && (
+          {this.state.category === "ted" && (
             <PanelGroup
               accordion
               className="faq-questions-container"
               data-faq="ted"
+              id="faq-panel-group"
             >
-              {this.tedFaq.map(qa => (
-                <Collapsible title={qa.question}>
+              {this.tedFaq.map((qa, index) => (
+                <Collapsible key={index} title={qa.question}>
                   <div>{qa.answer}</div>
                 </Collapsible>
               ))}

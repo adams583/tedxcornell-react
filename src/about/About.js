@@ -1,20 +1,11 @@
 import React, { Component } from "react";
 import "./About.css";
-import { Grid, Col, Row, Image } from "react-bootstrap";
-import { team2018, team2019 } from "./members.js";
-import GenericPanel from "../common/GenericPanel.js";
-import cornellimg from "../img/cornell.jpg";
+import { team2019 } from "./members.js";
 import ImageTextOverlap from "../common/ImageTextOverlap";
 import audience1 from "../img/audience1.jpg";
-import audience2 from "../img/audience2.jpg";
-import tpimg1 from "../img/Team_W_Letters.jpg";
-import tpimg2 from "../img/Clubfest.jpg";
-import InfoPanel from "../common/profile/InfoPanel";
 import BottomPanel from "../common/BottomPanel";
 import bottomPanelImg from "../img/teamImg.jpg";
 import TeamProfile from "../common/gallery/TeamProfile";
-import TwoImgPanel from "../common/TwoImgPanel";
-import { func } from "prop-types";
 
 // const selectIndicator = document.createElement("span");
 // selectIndicator.classList.add("select-indicator");
@@ -355,6 +346,7 @@ class About extends Component {
           <div className="team-gallery ">
             {team2019.map(member => (
               <TeamProfile
+                key={member.name}
                 img={member.img}
                 name={member.name}
                 title={member.title}

@@ -18,7 +18,7 @@ class CustomButton extends Component {
   render() {
     return (
       <button
-        class="custom-button"
+        className="custom-button"
         style={this.styles}
         onClick={this.handleClick.bind(this)}
       >

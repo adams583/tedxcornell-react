@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import "./Apply.css";
-import { Grid, Row, Col, Panel, PanelGroup } from "react-bootstrap";
-import TextField from "@material-ui/core/TextField";
+import { Grid, Row, Col, PanelGroup } from "react-bootstrap";
 import Collapsible from "../common/Collapsible";
-import CustomButton from "../common/CustomButton";
-import ScrollMove from "../common/ScrollMove";
 
 class Apply extends Component {
   constructor(props) {
@@ -125,9 +122,9 @@ class Apply extends Component {
           <Row>
             <Col md={6}>
               <h3>More Information</h3>
-              <PanelGroup accordion>
-                {this.faq.map(qa => (
-                  <Collapsible title={qa.question}>
+              <PanelGroup accordion id="panelGroup">
+                {this.faq.map((qa, index) => (
+                  <Collapsible key={index} title={qa.question}>
                     <div>{qa.answer}</div>
                   </Collapsible>
                 ))}
@@ -144,13 +141,13 @@ class Apply extends Component {
               </p>
               <br />
               <a href="https://www.facebook.com/TEDxCornellUniversity/">
-                <i class="fab fa-facebook fa-icon" />
+                <i className="fab fa-facebook fa-icon" />
               </a>
               <a href="https://www.instagram.com/tedxcornelluniversity/">
-                <i class="fab fa-instagram fa-icon" />
+                <i className="fab fa-instagram fa-icon" />
               </a>
               <a href="https://www.linkedin.com/company/tedxcornell/about/">
-                <i class="fab fa-linkedin fa-icon" />
+                <i className="fab fa-linkedin fa-icon" />
               </a>
             </Col>
           </Row>

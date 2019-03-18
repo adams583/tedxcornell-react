@@ -30,13 +30,13 @@ class Collapsible extends Component {
         <div className="panel-heading">
           <h5>
             {!isExpanded && (
-              <span class="collapsible-icon">
-                <i class="fa fa-plus" aria-hidden="true" />
+              <span className="collapsible-icon">
+                <i className="fa fa-plus" aria-hidden="true" />
               </span>
             )}
             {isExpanded && (
-              <span class="collapsible-icon">
-                <i class="fa fa-minus" aria-hidden="true" />
+              <span className="collapsible-icon">
+                <i className="fa fa-minus" aria-hidden="true" />
               </span>
             )}
             {title}

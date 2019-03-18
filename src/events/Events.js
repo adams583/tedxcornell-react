@@ -3,13 +3,8 @@ import "./Events.css";
 import Profile from "../common/profile/Profile";
 import SplitPanel from "../common/SplitPanel";
 import eventsbg1 from "../img/fall.jpg";
-import {
-  speakers_2019,
-  speakers_2018,
-  speakers_2015
-} from "../speakers/speaker-profiles";
-import { Col, Row } from "react-bootstrap";
-import CustomButton from "../common/CustomButton";
+import { speakers_2019 } from "../speakers/speaker-profiles";
+import { Col } from "react-bootstrap";
 import BottomPanel from "../common/BottomPanel";
 import TwoImgPanel from "../common/TwoImgPanel";
 
@@ -18,7 +13,6 @@ import tipImg1 from "../img/itai3.jpg";
 import tipImg2 from "../img/booklet.jpg";
 import tipImg3 from "../img/yamatai2.jpg";
 import tipImg4 from "../img/molc.jpg";
-import InfoPanel from "../common/profile/InfoPanel";
 
 class Events extends Component {
   constructor(props) {
@@ -97,11 +91,12 @@ class Events extends Component {
             University. Here's an idea of what you can expect at our conference:
           </p>
           <div className="experience-div">
-            {Object.keys(this.experiences).map(key => (
-              <div key={key.index}>
+            {Object.keys(this.experiences).map((key, index) => (
+              <div key={index}>
                 <div className="lined-item">
                   <div className="lined-item-title">
-                    <i class="fa fa-check" aria-hidden="true" /> &emsp; {key}
+                    <i className="fa fa-check" aria-hidden="true" /> &emsp;{" "}
+                    {key}
                   </div>
                   <div className="lined-item-content">
                     {this.experiences[key]}
@@ -132,9 +127,9 @@ class Events extends Component {
                 our event host.
               </p>
             </Col>
-            {Object.keys(speakers_2019).map(key => (
+            {Object.keys(speakers_2019).map((key, index) => (
               <a
-                key={key.index}
+                key={index}
                 href={`/speakers/${speakers_2019[key].url}`}
                 className="plain-a"
               >

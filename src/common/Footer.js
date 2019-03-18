@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Footer.css";
-import { Row, Col, Panel, Grid } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 
 class Footer extends Component {
   constructor(props) {
@@ -76,13 +76,13 @@ class Footer extends Component {
         </div>
         <div className="icons-container">
           <a href="https://www.facebook.com/TEDxCornellUniversity/">
-            <i class="fab fa-facebook fa-icon" />
+            <i className="fab fa-facebook fa-icon" />
           </a>
           <a href="https://www.instagram.com/tedxcornelluniversity/">
-            <i class="fab fa-instagram fa-icon" />
+            <i className="fab fa-instagram fa-icon" />
           </a>
           <a href="https://www.linkedin.com/company/tedxcornell/about/">
-            <i class="fab fa-linkedin fa-icon" />
+            <i className="fab fa-linkedin fa-icon" />
           </a>
         </div>
         <div className="hr-div" />

@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import "./Home.css";
-import { Row, Col, Grid, Panel, Button } from "react-bootstrap";
-import Card from "../common/Card";
-import anime from "animejs";
-import Paper from "@material-ui/core/Paper";
+import { Row, Col, Grid } from "react-bootstrap";
+
 import ImageTextOverlap from "../common/ImageTextOverlap";
 import pizarromin from "../img/pizzaro.min.jpg";
 import BottomPanel from "../common/BottomPanel";
@@ -35,20 +33,20 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <div class="main-panel-home-background ">
-          <div class="main-panel-home-content text-center">
+        <div className="main-panel-home-background ">
+          <div className="main-panel-home-content text-center">
             <div>
               <strong>
-                <h1 class="the-x">TEDxCornellUniversity</h1>
+                <h1 className="the-x">TEDxCornellUniversity</h1>
               </strong>
-              {/* <p class="lead font-weight-normal">
+              {/* <p className="lead font-weight-normal">
                 Speaker applications for our 2019 event are now open!
               </p> */}
-              <a class="btn text-danger" href="/apply">
+              <a className="btn text-danger" href="/apply">
                 Apply Now
               </a>
             </div>
-            <i class="fa fa-angle-down fa-2x pulse" aria-hidden="true" />
+            <i className="fa fa-angle-down fa-2x pulse" aria-hidden="true" />
           </div>
         </div>
         <div id="about-home-panel">
@@ -70,9 +68,9 @@ class Home extends Component {
           </p>
         </div>
         {/* <div data-aos="fade-down" className="first-panel mx-auto">
-          <div class="mx-auto text-center">
-            <h2 class="font-weight-normal text-center">About us</h2>
-            <p class="lead font-weight-normal text-center">
+          <div className="mx-auto text-center">
+            <h2 className="font-weight-normal text-center">About us</h2>
+            <p className="lead font-weight-normal text-center">
               TEDx is a program of local and independently-organized TED-like
               events that bring people together to share amazing ideas. Cornell
               University's independent TEDx events are operated under official

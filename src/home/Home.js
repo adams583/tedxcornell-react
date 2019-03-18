@@ -8,6 +8,7 @@ import ImageTextOverlap from "../common/ImageTextOverlap";
 import pizarromin from "../img/pizzaro.min.jpg";
 import BottomPanel from "../common/BottomPanel";
 import faqimg from "../img/yamatai.jpg";
+import CustomButton from "../common/CustomButton";
 
 class Home extends Component {
   cards = [
@@ -50,6 +51,24 @@ class Home extends Component {
             <i class="fa fa-angle-down fa-2x pulse" aria-hidden="true" />
           </div>
         </div>
+        <div id="about-home-panel">
+          <h2>
+            <em>"I begin with an idea and then it becomes something else." </em>
+            - Pablo Picasso
+          </h2>
+          <p>
+            The political and technological turmoil of the past few years has
+            had unexpected consequences: it’s causing us to ask bigger, deeper,
+            more challenging questions. Like … where is this heading? what
+            really matters? is there more I should be doing?
+          </p>
+          <p>
+            At TEDxCornellUniversity 2019, we will be trying to answer these
+            questions and exploring ideas that inspire and urge us to think more
+            deeply about ourselves, our communities, and the future that lies
+            ahead of us.
+          </p>
+        </div>
         {/* <div data-aos="fade-down" className="first-panel mx-auto">
           <div class="mx-auto text-center">
             <h2 class="font-weight-normal text-center">About us</h2>
@@ -84,7 +103,7 @@ class Home extends Component {
                       and we hope to continue bringing great events to Cornell
                       every year.
                     </p>
-                    <button className="standard-button">Past Events</button>
+                    <CustomButton text="Our Events" color="#e62b1e" />
                   </div>
                 </div>
               </Col>
@@ -103,7 +122,7 @@ class Home extends Component {
                       present at TEDxCornell 2019 and students passionate about
                       spreading knowledge and meeting amazing people.
                     </p>
-                    <button className="standard-button">Apply Now</button>
+                    <CustomButton text="Apply Now" color="#e62b1e" />
                   </div>
                 </div>
               </Col>

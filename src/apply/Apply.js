@@ -20,15 +20,15 @@ class Apply extends Component {
     },
     {
       key: "2",
-      question: "What's it like being on the organizing team?",
+      question: "What roles are available on the organizing team?",
       answer:
-        "It's pretty great! We have a close-knit, collaborative, and fun-loving team..."
+        "Our organizers work on speaker curation, finance and sponsorship, design and marketing, website design, and more."
     },
     {
       key: "3",
       question: "Are there other ways to get involved?",
       answer:
-        "In March or April, we will be looking for volunteers willing to help with tasks leading up to the event and on the day of the event. If you'd like to meet the team and get a sense of what it's like being on the organizing side of the event, keep an eye out for our volunteering opportunities."
+        "We will be looking for volunteers willing to help with tasks leading up to the event and on the day of the event. If you'd like to meet the team and get a sense of what it's like being on the organizing side of the event, keep an eye out for our volunteering opportunities."
     }
   ];
 
@@ -42,29 +42,61 @@ class Apply extends Component {
           <Row>
             <Col md={8}>
               <h3>Speaker Applications</h3>
-              <p>
-                <b>Speaker applications are open!</b>
+              <p className="left-border">
+                <b>Speaker applications are closed for our 2019 event.</b>
                 <br />
-                We are looking for presenters who will inform, inspire, and
-                entertain while spreading ideas that they are truly passionate
-                about. Submit a topic or refer someone else. What are you
-                waiting for? Round 1 Applications close Wednesday, November 28
-                at 11:59pm.
+                We look for presenters who will inform, inspire, and entertain
+                while spreading ideas that they are truly passionate about. If
+                you are interested, or know someone who might be, get in touch
+                or keep an eye out for applications. Applications for our 2020
+                event will be posted in Fall 2019.
               </p>
-              <CustomButton text="Apply Now" color="#e62b1e" />
+              {/* <CustomButton text="Apply Now" color="#e62b1e" /> */}
             </Col>
           </Row>
           <Row>
             <Col md={8}>
               <h3>Team Applications</h3>
-              <p>
-                <b>We are finished recruiting for Fall 2018.</b>
+              <p className="left-border">
+                <b>We are finished recruiting for our 2019 event.</b>
                 <br />
-                Check back in the spring if you're interested in joining our
+                Check back in the fall if you're interested in joining our
                 organizing team! We're a close-knit team of students who are
-                passionate about TED and determined to organize a great 2019
-                event.
+                passionate about TED and determined to organize great events.
               </p>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={8}>
+              <h3>Volunteering Opportunities</h3>
+              <p className="left-border">
+                <b>
+                  Join our mailing list to hear about volunteer opportunities.
+                </b>
+                <br />
+                From tabling at our event to making sure everyone is where they
+                are supposed to be, volunteers are an essential part of running
+                a great event. Volunteering can also be a good way to get a
+                sense for whether you'd be interested in joining the team.
+              </p>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={4}>
+              <div>
+                <h3>Join our mailing list</h3>
+
+                <form action="" className="apply-page-form">
+                  <input type="text" placeholder="Enter your email" />
+                  <input
+                    className="apply-page-form-button"
+                    type="submit"
+                    value="Sign up"
+                    style={{ backgroundColor: "#e62b1e" }}
+                  />
+                </form>
+                <br />
+              </div>
             </Col>
           </Row>
           <Row>
@@ -82,13 +114,21 @@ class Apply extends Component {
           <Row>
             <Col md={6}>
               <h3>Get in touch</h3>
-              Feel free to send us an email at tedx@cornell.edu or find us on
-              social media!
+              <p>
+                Feel free to send us an email at
+                <strong> tedx@cornell.edu </strong>
+                or find us on social media!
+              </p>
               <br />
-              <br />
-              <i class="fab fa-facebook fa-icon" />
-              <i class="fab fa-linkedin fa-icon" />
-              <i class="fab fa-instagram fa-icon" />
+              <a href="https://www.facebook.com/TEDxCornellUniversity/">
+                <i class="fab fa-facebook fa-icon" />
+              </a>
+              <a href="https://www.instagram.com/tedxcornelluniversity/">
+                <i class="fab fa-instagram fa-icon" />
+              </a>
+              <a href="https://www.linkedin.com/company/tedxcornell/about/">
+                <i class="fab fa-linkedin fa-icon" />
+              </a>
             </Col>
           </Row>
         </Grid>

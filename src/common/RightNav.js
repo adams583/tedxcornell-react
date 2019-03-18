@@ -12,9 +12,9 @@ class RightNav extends Component {
         <div>
           <a href="/events">Events</a>
         </div>
-        <div>
+        {/* <div>
           <a href="/speakers">Speakers</a>
-        </div>
+        </div> */}
 
         <div>
           <a href="/apply">Apply</a>

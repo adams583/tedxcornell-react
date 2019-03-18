@@ -101,6 +101,7 @@ class FAQ extends Component {
         <div className="faq-content">
           <div className="faq-selector-container">
             <div
+              className="faq-selector"
               onClick={() => {
                 this.setState({ category: "general" });
               }}
@@ -113,6 +114,7 @@ class FAQ extends Component {
               />
             </div>
             <div
+              className="faq-selector"
               onClick={() => {
                 this.setState({ category: "ted" });
               }}
@@ -125,7 +127,7 @@ class FAQ extends Component {
               />
             </div>
 
-            <div className="other-card">
+            <div className="other-card large-screen-only">
               <h5>Anything else?</h5>
               <p>
                 Feel free to email us anytime with any other questions at &nbsp;

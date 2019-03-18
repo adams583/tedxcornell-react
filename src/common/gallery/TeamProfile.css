@@ -1,0 +1,32 @@
+.team-profile {
+  display: flex;
+  flex-direction: column;
+  padding-right: 0px;
+  padding-left: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.team-profile-desc {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(34, 34, 34);
+}
+
+.team-profile-name {
+  font-size: 2em;
+  padding: 10px 10px 0px 10px;
+}
+
+.team-profile-title {
+  font-size: 1.3em;
+  font-weight: lighter;
+  padding: 0px 10px 30px 10px;
+}
+
+.grow {
+  transition: all 0.1s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.03);
+  z-index: 1;
+}

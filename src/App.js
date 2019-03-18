@@ -40,7 +40,7 @@ class App extends Component {
             <Route path="/events" component={Events} />
             <Route path="/about" component={About} />
             <Route path="/apply" component={Apply} />
-            <Route exact path="/speakers" component={Speakers} />
+            {/* <Route exact path="/speakers" component={Speakers} /> */}
             <Route exact path="/faq" component={FAQ} />
             {Object.keys(speakers_2019).map(key => (
               <Route

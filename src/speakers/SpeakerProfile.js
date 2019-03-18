@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./SpeakerProfile.css";
-import GenericPanel from "../common/GenericPanel";
+import SplitPanel from "../common/SplitPanel";
 
 class SpeakerProfile extends Component {
   constructor(props) {
@@ -14,15 +14,27 @@ class SpeakerProfile extends Component {
     };
     return (
       <div id="speaker-profile-wrapper">
-        <div className="main-profile-panel" style={styles}>
-          <div id="speaker-name-panel">
-            <h1>{this.props.person.name}</h1>
+        <SplitPanel img={this.props.person.img}>
+          <div className="sp-content-container">
+            <div className="sp-content">
+              <h1>{this.props.person.name}</h1>
+
+              <p className="lead font-weight-normal">
+                <em>{this.props.person.title}</em>
+              </p>
+              <h4>{this.props.person.talkTitle}</h4>
+              <p className="lead font-weight-normal">
+                {this.props.person.talkInfo}
+              </p>
+            </div>
           </div>
+        </SplitPanel>
+        <div id="speaker-profile-desc">
+          <h3>
+            <b>About</b>
+          </h3>
+          <p className="left-border more-padding">{this.props.person.info}</p>
         </div>
-        <GenericPanel
-          title="Talk Title"
-          content={`${this.props.person.info}`}
-        />
       </div>
     );
   }

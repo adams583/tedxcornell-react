@@ -7,17 +7,22 @@ import cornellimg from "../img/cornell.jpg";
 import ImageTextOverlap from "../common/ImageTextOverlap";
 import audience1 from "../img/audience1.jpg";
 import audience2 from "../img/audience2.jpg";
+import tpimg1 from "../img/Team_W_Letters.jpg";
+import tpimg2 from "../img/Clubfest.jpg";
 import InfoPanel from "../common/profile/InfoPanel";
 import BottomPanel from "../common/BottomPanel";
 import bottomPanelImg from "../img/teamImg.jpg";
+import TeamProfile from "../common/gallery/TeamProfile";
+import TwoImgPanel from "../common/TwoImgPanel";
+import { func } from "prop-types";
 
-const selectIndicator = document.createElement("span");
-selectIndicator.classList.add("select-indicator");
-document.body.appendChild(selectIndicator);
+// const selectIndicator = document.createElement("span");
+// selectIndicator.classList.add("select-indicator");
+// document.body.appendChild(selectIndicator);
 
-const yearIndicator = document.createElement("span");
-yearIndicator.classList.add("year-indicator");
-document.body.appendChild(yearIndicator);
+// const yearIndicator = document.createElement("span");
+// yearIndicator.classList.add("year-indicator");
+// document.body.appendChild(yearIndicator);
 
 class About extends Component {
   constructor(props) {
@@ -28,209 +33,232 @@ class About extends Component {
   }
 
   componentDidMount() {
-    const activeYear = document.getElementById("2019-selector");
-
-    // Get coordinates of year selected
-    const yearCoords = activeYear.getBoundingClientRect();
-    const coords = {
-      width: yearCoords.width,
-      height: yearCoords.height,
-      top: yearCoords.top + window.scrollY,
-      left: yearCoords.left + window.scrollX
-    };
-
-    // Set the year indicator's dimensions to the dimensions of the year selected.
-    yearIndicator.style.width = `${coords.width}px`;
-    yearIndicator.style.height = `${coords.height}px`;
-    yearIndicator.style.transform = `translate(${coords.left}px, ${
-      coords.top
-    }px)`;
-    yearIndicator.style.display = "block";
+    // const activeYear = document.getElementById("2019-selector");
+    // // Get coordinates of year selected
+    // const yearCoords = activeYear.getBoundingClientRect();
+    // const coords = {
+    //   width: yearCoords.width,
+    //   height: yearCoords.height,
+    //   top: yearCoords.top + window.scrollY,
+    //   left: yearCoords.left + window.scrollX
+    // };
+    // // Set the year indicator's dimensions to the dimensions of the year selected.
+    // yearIndicator.style.width = `${coords.width}px`;
+    // yearIndicator.style.height = `${coords.height}px`;
+    // yearIndicator.style.transform = `translate(${coords.left}px, ${
+    //   coords.top
+    // }px)`;
+    // yearIndicator.style.display = "block";
   }
 
-  handleImageLoad() {
-    const defaultMemberImage = document.querySelectorAll(
-      ".profile-pic-2019"
-    )[0];
-    // Make default member image active on load
-    defaultMemberImage.classList.add("active");
-    this.setState({ activeMember: defaultMemberImage.dataset.member });
+  // handleImageLoad() {
+  //   const defaultMemberImage = document.querySelectorAll(
+  //     ".profile-pic-2019"
+  //   )[0];
+  //   // Make default member image active on load
+  //   defaultMemberImage.classList.add("active");
+  //   this.setState({ activeMember: defaultMemberImage.dataset.member });
 
-    // Get coordinates of image
-    const defaultImageCoords = defaultMemberImage.getBoundingClientRect();
-    const imageCoords = {
-      width: defaultImageCoords.width,
-      height: defaultImageCoords.height,
-      top:
-        defaultImageCoords.top +
-        window.scrollY +
-        defaultImageCoords.height / 10,
-      left:
-        defaultImageCoords.left +
-        window.scrollX +
-        defaultImageCoords.height / 10
-    };
+  //   // Get coordinates of image
+  //   const defaultImageCoords = defaultMemberImage.getBoundingClientRect();
+  //   const imageCoords = {
+  //     width: defaultImageCoords.width,
+  //     height: defaultImageCoords.height,
+  //     top:
+  //       defaultImageCoords.top +
+  //       window.scrollY +
+  //       defaultImageCoords.height / 10,
+  //     left:
+  //       defaultImageCoords.left +
+  //       window.scrollX +
+  //       defaultImageCoords.height / 10
+  //   };
 
-    // Set the selectIndicator's dimensions to the dimensions of the image.
-    selectIndicator.style.width = `${imageCoords.width}px`;
-    selectIndicator.style.height = `${imageCoords.height}px`;
-    selectIndicator.style.transform = `translate(${imageCoords.left}px, ${
-      imageCoords.top
-    }px)`;
-    selectIndicator.style.display = "block";
+  //   // Set the selectIndicator's dimensions to the dimensions of the image.
+  //   selectIndicator.style.width = `${imageCoords.width}px`;
+  //   selectIndicator.style.height = `${imageCoords.height}px`;
+  //   selectIndicator.style.transform = `translate(${imageCoords.left}px, ${
+  //     imageCoords.top
+  //   }px)`;
+  //   selectIndicator.style.display = "block";
 
-    const activeYear = document.getElementById("2019-selector");
+  //   const activeYear = document.getElementById("2019-selector");
 
-    // Get coordinates of year selected
-    const yearCoords = activeYear.getBoundingClientRect();
-    const coords = {
-      width: yearCoords.width,
-      height: yearCoords.height,
-      top: yearCoords.top + window.scrollY,
-      left: yearCoords.left + window.scrollX
-    };
+  //   // Get coordinates of year selected
+  //   const yearCoords = activeYear.getBoundingClientRect();
+  //   const coords = {
+  //     width: yearCoords.width,
+  //     height: yearCoords.height,
+  //     top: yearCoords.top + window.scrollY,
+  //     left: yearCoords.left + window.scrollX
+  //   };
 
-    // Set the year indicator's dimensions to the dimensions of the year selected.
-    yearIndicator.style.width = `${coords.width}px`;
-    yearIndicator.style.height = `${coords.height}px`;
-    yearIndicator.style.transform = `translate(${coords.left}px, ${
-      coords.top
-    }px)`;
-    yearIndicator.style.display = "block";
-  }
+  //   // Set the year indicator's dimensions to the dimensions of the year selected.
+  //   yearIndicator.style.width = `${coords.width}px`;
+  //   yearIndicator.style.height = `${coords.height}px`;
+  //   yearIndicator.style.transform = `translate(${coords.left}px, ${
+  //     coords.top
+  //   }px)`;
+  //   yearIndicator.style.display = "block";
+  // }
 
-  changeYear = e => {
-    let year = e.target.dataset.year; // Year selected
-    const displays = document.querySelectorAll(`.team-display`); // team displays for all years
-    displays.forEach(display => {
-      if (display.dataset.year == year) {
-        display.classList.add("active");
-      } else {
-        display.classList.remove("active");
-      }
-    });
+  // changeYear = e => {
+  //   let year = e.target.dataset.year; // Year selected
+  //   const displays = document.querySelectorAll(`.team-display`); // team displays for all years
+  //   displays.forEach(display => {
+  //     if (display.dataset.year == year) {
+  //       display.classList.add("active");
+  //     } else {
+  //       display.classList.remove("active");
+  //     }
+  //   });
 
-    // Get coordinates of year selected
-    const yearCoords = e.target.getBoundingClientRect();
-    const coords = {
-      width: yearCoords.width,
-      height: yearCoords.height,
-      top: yearCoords.top + window.scrollY,
-      left: yearCoords.left + window.scrollX
-    };
+  //   // Get coordinates of year selected
+  //   const yearCoords = e.target.getBoundingClientRect();
+  //   const coords = {
+  //     width: yearCoords.width,
+  //     height: yearCoords.height,
+  //     top: yearCoords.top + window.scrollY,
+  //     left: yearCoords.left + window.scrollX
+  //   };
 
-    // Set the year indicator's dimensions to the dimensions of the year selected.
-    yearIndicator.style.width = `${coords.width}px`;
-    yearIndicator.style.height = `${coords.height}px`;
-    yearIndicator.style.transform = `translate(${coords.left}px, ${
-      coords.top
-    }px)`;
+  //   // Set the year indicator's dimensions to the dimensions of the year selected.
+  //   yearIndicator.style.width = `${coords.width}px`;
+  //   yearIndicator.style.height = `${coords.height}px`;
+  //   yearIndicator.style.transform = `translate(${coords.left}px, ${
+  //     coords.top
+  //   }px)`;
 
-    // When changing years, set default selection for display
-    document
-      .querySelectorAll(`.team-member-info-${year}`)
-      .forEach((info, index) => {
-        if (index == 0) {
-          info.classList.add("active");
-        } else {
-          info.classList.remove("active");
-        }
-      });
+  //   // When changing years, set default selection for display
+  //   document
+  //     .querySelectorAll(`.team-member-info-${year}`)
+  //     .forEach((info, index) => {
+  //       if (index == 0) {
+  //         info.classList.add("active");
+  //       } else {
+  //         info.classList.remove("active");
+  //       }
+  //     });
 
-    // Set all images inactive except for the default, done below
-    document.querySelectorAll(`.profile-pic-${year}`).forEach(img => {
-      img.classList.remove("active");
-    });
+  //   // Set all images inactive except for the default, done below
+  //   document.querySelectorAll(`.profile-pic-${year}`).forEach(img => {
+  //     img.classList.remove("active");
+  //   });
 
-    // When changing years, set default member to be selected
-    const defaultMemberImage = document.querySelectorAll(
-      `.profile-pic-${year}`
-    )[0];
-    defaultMemberImage.classList.add("active");
-    this.setState({ activeMember: defaultMemberImage.dataset.member });
+  //   // When changing years, set default member to be selected
+  //   const defaultMemberImage = document.querySelectorAll(
+  //     `.profile-pic-${year}`
+  //   )[0];
+  //   defaultMemberImage.classList.add("active");
+  //   this.setState({ activeMember: defaultMemberImage.dataset.member });
 
-    // Get coordinates of image
-    const defaultImageCoords = defaultMemberImage.getBoundingClientRect();
-    const imageCoords = {
-      width: defaultImageCoords.width,
-      height: defaultImageCoords.height,
-      top:
-        defaultImageCoords.top +
-        window.scrollY +
-        defaultImageCoords.height / 10,
-      left:
-        defaultImageCoords.left +
-        window.scrollX +
-        defaultImageCoords.height / 10
-    };
+  //   // Get coordinates of image
+  //   const defaultImageCoords = defaultMemberImage.getBoundingClientRect();
+  //   const imageCoords = {
+  //     width: defaultImageCoords.width,
+  //     height: defaultImageCoords.height,
+  //     top:
+  //       defaultImageCoords.top +
+  //       window.scrollY +
+  //       defaultImageCoords.height / 10,
+  //     left:
+  //       defaultImageCoords.left +
+  //       window.scrollX +
+  //       defaultImageCoords.height / 10
+  //   };
 
-    // Set the selectIndicator's dimensions to the dimensions of the image.
-    selectIndicator.style.width = `${imageCoords.width}px`;
-    selectIndicator.style.height = `${imageCoords.height}px`;
-    selectIndicator.style.transform = `translate(${imageCoords.left}px, ${
-      imageCoords.top
-    }px)`;
-  };
+  //   // Set the selectIndicator's dimensions to the dimensions of the image.
+  //   selectIndicator.style.width = `${imageCoords.width}px`;
+  //   selectIndicator.style.height = `${imageCoords.height}px`;
+  //   selectIndicator.style.transform = `translate(${imageCoords.left}px, ${
+  //     imageCoords.top
+  //   }px)`;
+  // };
 
-  showInfo = e => {
-    const member = e.target.dataset.member; // The selected team member
-    const infos = document.querySelectorAll(".team-member-info"); // NodeList of info panels
-    const images = document.querySelectorAll(".profile-pic"); // NodeList of profile pics
+  // showInfo = e => {
+  //   const member = e.target.dataset.member; // The selected team member
+  //   const infos = document.querySelectorAll(".team-member-info"); // NodeList of info panels
+  //   const images = document.querySelectorAll(".profile-pic"); // NodeList of profile pics
 
-    this.setState({ activeMember: e.target.dataset.member });
-    console.log(this.state.activeMember);
+  //   this.setState({ activeMember: e.target.dataset.member });
+  //   console.log(this.state.activeMember);
 
-    // Get coordinates of image
-    const imageCoords = e.target.getBoundingClientRect();
-    const coords = {
-      width: imageCoords.width,
-      height: imageCoords.height,
-      top: imageCoords.top + window.scrollY + imageCoords.height / 10,
-      left: imageCoords.left + window.scrollX + imageCoords.height / 10
-    };
+  //   // Get coordinates of image
+  //   const imageCoords = e.target.getBoundingClientRect();
+  //   const coords = {
+  //     width: imageCoords.width,
+  //     height: imageCoords.height,
+  //     top: imageCoords.top + window.scrollY + imageCoords.height / 10,
+  //     left: imageCoords.left + window.scrollX + imageCoords.height / 10
+  //   };
 
-    // Set the selectIndicator's dimensions to the dimensions of the image.
-    selectIndicator.style.width = `${coords.width}px`;
-    selectIndicator.style.height = `${coords.height}px`;
-    selectIndicator.style.transform = `translate(${coords.left}px, ${
-      coords.top
-    }px)`;
+  //   // Set the selectIndicator's dimensions to the dimensions of the image.
+  //   selectIndicator.style.width = `${coords.width}px`;
+  //   selectIndicator.style.height = `${coords.height}px`;
+  //   selectIndicator.style.transform = `translate(${coords.left}px, ${
+  //     coords.top
+  //   }px)`;
 
-    // Active info panel if selected, not active if not
-    infos.forEach(info => {
-      if (info.dataset.member == member) {
-        info.classList.add("active");
-      } else {
-        info.classList.remove("active");
-      }
-    });
-    // Active image if selected, not active if not
-    images.forEach(img => {
-      if (img.dataset.member == member) {
-        img.classList.add("active");
-      } else {
-        img.classList.remove("active");
-      }
-    });
-  };
+  //   // Active info panel if selected, not active if not
+  //   infos.forEach(info => {
+  //     if (info.dataset.member == member) {
+  //       info.classList.add("active");
+  //     } else {
+  //       info.classList.remove("active");
+  //     }
+  //   });
+  //   // Active image if selected, not active if not
+  //   images.forEach(img => {
+  //     if (img.dataset.member == member) {
+  //       img.classList.add("active");
+  //     } else {
+  //       img.classList.remove("active");
+  //     }
+  //   });
+  // };
 
   render() {
     return (
       <div id="team-container ">
         <div className="team-image-panel">
-          <div className="container">
-            <h1>Bringing Ideas that Matter to Cornell University.</h1>
+          {/* <div className="container">
+            <h1>A unique experience</h1>
             <a class="btn text-danger" href="/apply">
               Get Involved
             </a>
+          </div> */}
+          <div className="sp-content-container half-width">
+            <div className="sp-content">
+              <h1>About</h1>
+
+              <p className="lead font-weight-normal">
+                <em>What is TEDxCornellUniversity?</em>
+              </p>
+              <p className="lead font-weight-normal">
+                Each year we organize a TEDx event operated under an official
+                license from TED. Our goal is to bring a intellectual platform
+                to Cornell unlike any other.
+              </p>
+            </div>
           </div>
         </div>
-        <GenericPanel
-          title="Spreading Ideas that Matter"
-          content="Our annual TEDx conference brings together a diverse array of speakers, performers, and audience members all hoping to learn and share knowledge. TEDxCornellUniversity is completely student-run, with team members hard at work all year planning for the conference. We hope to create an environment in which students and community members can discuss ideas and connect with great speakers and performers"
-        />
+        <div id="about-first-panel">
+          <h2>
+            <em>"Spreading Ideas that Matter" </em>
+          </h2>
+          <p>
+            Our annual TEDx conference brings together a diverse array of
+            speakers, performers, and audience members all hoping to learn and
+            share knowledge. TEDxCornellUniversity is completely student-run,
+            with team members hard at work all year planning for the conference.
+            We hope to create an environment in which students and community
+            members can discuss ideas and connect with great speakers and
+            performers
+          </p>
+        </div>
         <ImageTextOverlap
-          onImgLoad={this.handleImageLoad.bind(this)}
+          // onImgLoad={this.handleImageLoad.bind(this)}
+          onImgLoad={() => console.log("loaded")}
           title="Our Mission"
           content="We strive to provide a unique platform at Cornell through which top speakers and performers can teach, inspire, and entertain the Cornell community."
           button="See our Events"
@@ -241,7 +269,8 @@ class About extends Component {
             <h4>Meet our members</h4>
             <h1>Our Organizing Team</h1>
           </div>
-          <div className="year-selector container">
+
+          {/* <div className="year-selector container">
             <h4
               id="2018-selector"
               className="year"
@@ -321,6 +350,15 @@ class About extends Component {
                   )
               )}
             </div>
+          </div> */}
+          <div className="team-gallery ">
+            {team2019.map(member => (
+              <TeamProfile
+                img={member.img}
+                name={member.name}
+                title={member.title}
+              />
+            ))}
           </div>
         </div>
 

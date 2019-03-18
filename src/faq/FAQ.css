@@ -1,11 +1,14 @@
 .faq {
-  padding: 150px 200px;
+  padding: 150px 15%;
+  background-image: url("../img/logo1.png");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .card-selector {
   transition: all 0.2s;
   padding: 10px 20px;
-  margin: 10px;
+  margin: 20px 10px;
 }
 
 .other-card {
@@ -19,16 +22,38 @@
 
 .faq-selector-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex: 1;
   margin: 20px;
 }
 
 .faq-content {
   display: flex;
+  flex-direction: column;
 }
 
 .faq-questions-container {
   flex: 2;
   margin: 20px;
+}
+
+.large-screen-only {
+  display: none;
+}
+
+/* lg --- Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .faq-selector-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .large-screen-only {
+    display: block;
+  }
 }

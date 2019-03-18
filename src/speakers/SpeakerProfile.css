@@ -10,3 +10,19 @@
   padding: 50px;
   margin: 50px;
 }
+
+#speaker-profile-desc {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 200px;
+  box-shadow: 0 0 20px rgb(0, 0, 0.4);
+}
+#speaker-profile-desc > p {
+  font-size: 1.5em;
+  text-align: left;
+  margin: 10px;
+}
+
+.more-padding {
+  padding-left: 15px;
+}

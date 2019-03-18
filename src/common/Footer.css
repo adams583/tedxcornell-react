@@ -1,9 +1,124 @@
 .footer-panel {
-  padding: 4%;
+  padding: 7%;
   background: #e62b1e;
-  color: rgb(14, 14, 14);
 }
 
 .dark-a {
   color: inherit;
+}
+
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+/* * {
+  border: solid thin yellow;
+} */
+
+.logo-container {
+  flex: 1;
+}
+
+.links-container {
+  flex: 1;
+}
+
+.footer-left {
+  flex: 2;
+}
+
+.footer-right {
+  flex: 1;
+  display: flex;
+}
+
+.footer-right > div {
+  padding-bottom: 10px;
+}
+
+form {
+  display: flex;
+}
+
+.large-text {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+form > input[type="text"] {
+  flex: 3;
+}
+
+.join-message-container {
+  align-items: initial;
+  justify-content: right;
+}
+
+form > input[type="submit"] {
+  text-transform: uppercase;
+  background-color: rgb(36, 36, 36);
+  outline: 0;
+  border: 0;
+  padding: 15px 20px;
+  border-radius: 3px;
+  margin-left: 10px;
+  flex: 1;
+}
+
+input[type="text"] {
+  background-color: inherit;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+input:focus {
+  outline: none;
+}
+
+.hr-div {
+  border-bottom: solid 1px white;
+}
+
+.icons-container i {
+  font-size: 1.5em;
+  padding: 15px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: white;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: white;
+}
+
+.footer-content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content-container > div {
+  padding-bottom: 30px;
+}
+
+/* lg --- Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .footer-content-container {
+    flex-direction: row;
+  }
 }

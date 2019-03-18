@@ -1,7 +1,7 @@
-import maryanna_pic from "../img/maryanna-saenko.png";
-import howard_pic from "../img/howard-zucker.jpeg";
+import maryanna_pic from "../img/maryanna.jpg";
+import howard_pic from "../img/howard.jpg";
 import aida_pic from "../img/aida-mollenkamp.jpg";
-import michael_pic from "../img/michael-graziano.jpeg";
+import michael_pic from "../img/michael.jpg";
 import mason_pic from "../img/mason-peck.jpg";
 import david_pic from "../img/david_pic.jpeg";
 import ifeoma_pic from "../img/ifeoma_pic.jpg";
@@ -20,6 +20,10 @@ import adarsh_pic from "../img/adarsh_pic.jpeg";
 import nick_pic from "../img/nick_pic.jpeg";
 import miwa_pic from "../img/miwa_pic.jpeg";
 import scott_pic from "../img/scott_pic.jpeg";
+import andrew_pic from "../img/andrew.jpg";
+import lou_pic from "../img/lou.jpg";
+import chandler_pic from "../img/chandler.jpg";
+
 import howard_zucker_background from "../img/howard-zucker-background.jpg";
 import mason_peck_background from "../img/mason-peck-background.jpg";
 import aida_mollenkamp_background from "../img/aida-mollenkamp-background.jpg";
@@ -31,8 +35,11 @@ const maryanna = {
   img: maryanna_pic,
   url: "maryanna-saenko",
   backgroundImg: maryanna_saenko_background,
+  title: "Venture Capitalist",
+  talkTitle: "",
+  talkInfo: "",
   info:
-    "Maryanna Saenko is an early-stage venture capitalist with an interest in robotics, quantum computing, blockchain, aerospace, and the future of food. Previously she was at Khosla Ventures, and prior to that at DFJ, where she worked with Steve to focus on frontier technology investments. She was also an investment partner at Airbus Ventures where she led a series of venture investments strategically aligned with Airbus’ future-of-aerospace initiatives. Before Airbus, Maryanna was a consultant at Lux Research and a research engineer at Cabot Corporation."
+    "Maryanna Saenko is an early-stage venture capitalist with an interest in robotics, quantum computing, blockchain, aerospace, and the future of food. Previously she was at Khosla Ventures, and prior to that at DFJ, where she worked to focus on frontier technology investments. She was also an investment partner at Airbus Ventures where she led a series of venture investments strategically aligned with Airbus’ future-of-aerospace initiatives. Before Airbus, Maryanna was a consultant at Lux Research and a research engineer at Cabot Corporation."
 };
 
 const howard = {
@@ -40,8 +47,12 @@ const howard = {
   img: howard_pic,
   url: "howard-zucker",
   backgroundImg: howard_zucker_background,
+  title: "NY State Commissioner of Health",
+  talkTitle:
+    "From Einstein to “Baby Sharks”: Relativity in the age of Virality",
+  talkInfo: "",
   info:
-    "Dr. Howard A. Zucker is the Commissioner of Health for New York State and oversees a $70 billion agency that seeks to promote and protect the health of all New Yorkers. He is board-certified in pediatrics, anesthesiology, pediatric cardiology and pediatric critical care and trained at Johns Hopkins Hospital, Hospital of the University of Pennsylvania, Children's Hospital of Philadelphia and Boston Children's Hospital."
+    "Howard Zucker is Commissioner of Health for New York State. He trained in pediatrics (Johns Hopkins), anesthesiology (University of Pennsylvania), pediatric critical care/pediatric anesthesiology (Children's Hospital of Philadelphia) and pediatric cardiology (Boston Children's Hospital) and is board-certified in 6 specialties. Dr. Zucker was a pediatric anesthesiologist at Montefiore and ran the pediatric ICU at New York Presbyterian Hospital. He has held academic appointments at Yale, Columbia and Einstein medical schools, Georgetown law and on the NIH faculty. He served as a White House Fellow, HHS Deputy Assistant Secretary of Health, Assistant Director-General of the World Health Organization and IOP fellow at Harvard Kennedy School. He holds a BS (McGill), MD (George Washington University), JD (Fordham Law), LL.M. (Columbia Law) and a postgraduate diploma (London School of Hygiene & Tropical Medicine). Dr. Zucker worked at Massachusetts General Hospital to create a community peace index for use in international conflict regions, created the nation's Medical Reserve Corps, developed a talking book on health for Afghan women. In addition, he worked at MIT, designed experiments for the Space Shuttle, is on the board that runs the national lab on the International Space Station, was an ABC News ‘Person of the Week’ and member of the U.S. Supreme Court bar."
 };
 
 const aida = {
@@ -49,6 +60,9 @@ const aida = {
   img: aida_pic,
   url: "aida-mollenkamp",
   backgroundImg: aida_mollenkamp_background,
+  title: "Chef, Television Personality",
+  talkTitle: "",
+  talkInfo: "",
   info:
     "Food and Travel Expert. TV Host. Author. Editor-In-Chief. Aida is a food and travel expert, on-camera host, author and founder of Salt & Wind, a travel company for food lovers. The company started with the food and travel online magazine, Salt & Wind, and has expanded to include concierge services and boutique group travel for food lovers with Salt & Wind Travel."
 };
@@ -57,18 +71,56 @@ const michael = {
   name: "Michael Graziano",
   img: michael_pic,
   url: "michael-graziano",
+  title: "Princeton Professor of Neuroscience",
   backgroundImg: michael_graziano_background,
+  talkTitle: "Consciousness and the Social Brain",
+  talkInfo: "",
   info:
-    "Michael Graziano is an American scientist and novelist who is currently a professor of Psychology and Neuroscience at Princeton University. His scientific research focuses on the brain basis of awareness. He has proposed the attention schema theory, an explanation of how, and for what adaptive advantage, brains attribute the property of awareness to themselves. His previous work focused on how the cerebral cortex monitors the space around the body and controls movement within that space. Notably he has suggested that the classical map of the body in motor cortex, the homunculus, is not correct and is better described as a map of complex actions that make up the behavioral repertoire. His publications on this topic have had a widespread impact among neuroscientists but have also generated controversy. His novels rely partly on his background in psychology and are known for surrealism or magic realism. Graziano also composes music including symphonies and string quartets. He is an avid practitioner of ventriloquism and uses a puppet orangutan Kevin as a sidekick."
+    "Michael Graziano is a scientist, author, and ventriloquist, who has studied the brain for over thirty years. His TEDxCornellUniversity talk focuses on how a collection of neurons might perceive subjective consciousness in itself and other agents, how consciousness is a part of our social selves, and how we might build conscious machines in the future."
 };
 
 const mason = {
   name: "Mason Peck",
   img: mason_pic,
   url: "mason-peck",
+  title: "Former NASA Chief Technologist",
   backgroundImg: mason_peck_background,
+  talkTitle: "",
+  talkInfo: "",
   info:
     "Dr. Peck is on the engineering faculty at Cornell University, where his research and teaching focus on Aerospace Engineering and Systems Engineering. From late 2011 through 2013, he was on leave serving as NASA's Chief Technologist, one of the seven highest-ranking officials at the agency. In that capacity, he served as the primary advisor to the NASA Administrator on matters of technology-investment strategy, roadmapping, prioritization, partnerships, intellectual property, and commercialization. "
+};
+
+const andrew = {
+  name: "Andrew Rosenblatt",
+  img: andrew_pic,
+  url: "andrew-rosenblatt",
+  title: "Student, Researcher",
+  talkTitle: "",
+  talkInfo: "",
+  info: ""
+};
+
+const chandler = {
+  name: "Chandler Pfaff",
+  img: chandler_pic,
+  url: "chandler-pfaff",
+  title: "Proud Hotelie",
+  talkTitle: "Lessons from a Syrian Refugee Camp",
+  talkInfo: "",
+  info:
+    "Prior to Cornell, Chandler deferred his enrollment for 2 years to do volunteer service as a full-time missionary. When he arrived on Cornell's campus, he had already developed a strong passion for service that resonated with the hotel school culture. After completing his freshman year, he traveled independently to Jordan to engage in humanitarian efforts with Syrian refugees. He spent weeks living with locals and working in a camp on the Syrian border. Since returning to campus, he has taken with him the lessons learned from those experiences and applied them to his life at Cornell. Chandler still tries to give back in meaningful ways to those around him."
+};
+
+const lou = {
+  name: "Lou Diamond",
+  img: lou_pic,
+  url: "lou-diamond",
+  info:
+    "Lou Diamond is THE Master Connector.  He has over a quarter century of experience in sales, relationship management, business development and executive leadership.  He is an international keynote speaker, consultant, leadership & performance mentor, best-selling author, podcast & TV host and CEO of Thrive, a company focused on making the most amazing people, businesses and brands become even more amazing through the power of connecting. ",
+  title: "Host, International Speaker, CEO of Thrive",
+  talkTitle: "Lou will be hosting TEDxCornellUniversity2019",
+  talkInfo: ""
 };
 
 const speakers_2019 = {
@@ -76,7 +128,10 @@ const speakers_2019 = {
   howard,
   aida,
   michael,
-  mason
+  mason,
+  chandler,
+  andrew,
+  lou
 };
 
 const itai = {

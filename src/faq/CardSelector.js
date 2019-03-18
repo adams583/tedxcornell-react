@@ -9,7 +9,7 @@ class CardSelector extends Component {
   selectedStyles = {
     transform: "scale(1.05)",
     boxShadow: "0 0 10px rgba(0, 0, 0, 0.8)",
-    borderLeft: "solid thin #e62b1e"
+    borderLeft: "solid  #e62b1e"
   };
 
   unselectedStyles = {
@@ -26,7 +26,7 @@ class CardSelector extends Component {
         }
       >
         <h5>{this.props.title}</h5>
-        <p>{this.props.text}</p>
+        <p className="large-screen-only">{this.props.text}</p>
       </div>
     );
   }

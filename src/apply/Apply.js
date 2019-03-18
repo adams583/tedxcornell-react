@@ -11,6 +11,20 @@ class Apply extends Component {
     super(props);
   }
 
+  handleSubmit(e) {
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbwcZNKses-XNAzdA9U6LwSr4MTsD4CvuoBZrNfESnam5rMuk38m/exec";
+    e.preventDefault();
+    const form = document.forms["apply-submit-to-google-sheet"];
+
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then(function(response) {
+        form.reset();
+        console.log("Success!", response);
+      })
+      .catch(error => console.error("Error!", error.message));
+  }
+
   faq = [
     {
       key: "1",
@@ -86,8 +100,17 @@ class Apply extends Component {
               <div>
                 <h3>Join our mailing list</h3>
 
-                <form action="" className="apply-page-form">
-                  <input type="text" placeholder="Enter your email" />
+                <form
+                  onSubmit={this.handleSubmit}
+                  name="apply-submit-to-google-sheet"
+                  className="apply-page-form"
+                >
+                  <input
+                    name="email"
+                    type="email"
+                    placeholder="Enter your email"
+                    required
+                  />
                   <input
                     className="apply-page-form-button"
                     type="submit"

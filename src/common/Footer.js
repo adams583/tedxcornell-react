@@ -3,6 +3,24 @@ import "./Footer.css";
 import { Row, Col, Panel, Grid } from "react-bootstrap";
 
 class Footer extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  handleSubmit(e) {
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbwcZNKses-XNAzdA9U6LwSr4MTsD4CvuoBZrNfESnam5rMuk38m/exec";
+    e.preventDefault();
+    const form = document.forms["footer-submit-to-google-sheet"];
+
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then(function(response) {
+        form.reset();
+        console.log("Success!", response);
+      })
+      .catch(error => console.error("Error!", error.message));
+  }
+
   render() {
     return (
       <div className="footer-panel flex-vertical">
@@ -41,8 +59,16 @@ class Footer extends Component {
               </p>
             </div>
             <div className="sign-up-container">
-              <form action="">
-                <input type="text" placeholder="Enter your email" />
+              <form
+                onSubmit={this.handleSubmit}
+                name="footer-submit-to-google-sheet"
+              >
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="Enter your email"
+                  required
+                />
                 <input type="submit" value="Sign Up" />
               </form>
             </div>

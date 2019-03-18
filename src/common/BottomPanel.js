@@ -19,7 +19,11 @@ class BottomPanel extends Component {
         <h4 className="bp-title">{this.props.title}</h4>
         <p className="bp-text">{this.props.txt}</p>
         <div>
-          <CustomButton color="#e62b1e" text={this.props.button} />
+          <CustomButton
+            color="#e62b1e"
+            text={this.props.button}
+            href={this.props.buttonHref}
+          />
         </div>
       </div>
     );

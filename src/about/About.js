@@ -262,6 +262,7 @@ class About extends Component {
           title="Our Mission"
           content="We strive to provide a unique platform at Cornell through which top speakers and performers can teach, inspire, and entertain the Cornell community."
           button="See our Events"
+          buttonHref="/events"
           src={audience1}
         />
         <div className="team-content-panel">
@@ -367,6 +368,7 @@ class About extends Component {
           title="Want to get involved?"
           txt="There are many ways to get involved in making our event happen - as a speaker, team member, volunteer, or sponsor. Visit our applications page to learn more."
           button="Get Involved"
+          buttonHref="/apply"
         />
       </div>
     );
@@ -381,3 +383,5 @@ export default About;
 //       up everything that happens on the day of the event. We're done recruiting
 //       for fall 2018, but check back in the spring if you're interested in
 //       joining!"
+
+// https://script.google.com/macros/s/AKfycbwcZNKses-XNAzdA9U6LwSr4MTsD4CvuoBZrNfESnam5rMuk38m/exec

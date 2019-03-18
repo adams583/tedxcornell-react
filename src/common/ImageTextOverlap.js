@@ -31,7 +31,11 @@ class ImageTextOverlap extends Component {
           <ScrollMove>
             <h3>{this.props.title}</h3>
             <p>{this.props.content}</p>
-            <CustomButton text={this.props.button} color="#e62b1e" />
+            <CustomButton
+              text={this.props.button}
+              color="#e62b1e"
+              href={this.props.buttonHref}
+            />
           </ScrollMove>
         </div>
       </div>

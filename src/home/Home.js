@@ -90,6 +90,7 @@ class Home extends Component {
             title="What is TEDxCornellUniversity?"
             content="We're a student-run club dedicated to bringing great independently-organized TED events and amazing people to Cornell."
             button="Learn More"
+            buttonHref="/about"
           />
           <Grid className="grid">
             <Row>
@@ -103,7 +104,11 @@ class Home extends Component {
                       and we hope to continue bringing great events to Cornell
                       every year.
                     </p>
-                    <CustomButton text="Our Events" color="#e62b1e" />
+                    <CustomButton
+                      text="Our Events"
+                      color="#e62b1e"
+                      href="/events"
+                    />
                   </div>
                 </div>
               </Col>
@@ -122,7 +127,11 @@ class Home extends Component {
                       present at TEDxCornell 2019 and students passionate about
                       spreading knowledge and meeting amazing people.
                     </p>
-                    <CustomButton text="Apply Now" color="#e62b1e" />
+                    <CustomButton
+                      text="Apply Now"
+                      color="#e62b1e"
+                      href="/apply"
+                    />
                   </div>
                 </div>
               </Col>
@@ -174,6 +183,7 @@ class Home extends Component {
             title="Any Questions?"
             txt="Have any questions? Visit our FAQs page or get in touch with us to ask about anything. We'd love to hear from you"
             button="See FAQs"
+            buttonHref="/faq"
           />
         </div>
         {/* <Row className="second-panel">

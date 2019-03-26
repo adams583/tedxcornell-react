@@ -3,9 +3,13 @@ import "./Home.css";
 import { Row, Col, Grid } from "react-bootstrap";
 
 import ImageTextOverlap from "../common/ImageTextOverlap";
-import pizarromin from "../img/pizzaro.min.jpg";
+import itoImg from "../img/itai1.jpg";
 import BottomPanel from "../common/BottomPanel";
 import faqimg from "../img/yamatai.jpg";
+import tipImg2 from "../img/jessenitai2.jpg";
+import tipImg1 from "../img/jessencolin.jpg";
+import TwoImgPanel from "../common/TwoImgPanel";
+import SplitPanel from "../common/SplitPanel";
 import CustomButton from "../common/CustomButton";
 
 class Home extends Component {
@@ -51,8 +55,8 @@ class Home extends Component {
         </div>
         <div id="about-home-panel">
           <h2>
-            <em>"I begin with an idea and then it becomes something else." </em>
-            - Pablo Picasso
+            <em>“There are no facts, only interpretations.”</em> &nbsp;-
+            Friedrich Nietzsche
           </h2>
           <p>
             The political and technological turmoil of the past few years has
@@ -67,6 +71,9 @@ class Home extends Component {
             ahead of us.
           </p>
         </div>
+
+        <TwoImgPanel imgLeft={tipImg1} imgRight={tipImg2} />
+
         {/* <div data-aos="fade-down" className="first-panel mx-auto">
           <div className="mx-auto text-center">
             <h2 className="font-weight-normal text-center">About us</h2>
@@ -84,12 +91,13 @@ class Home extends Component {
           </div> */}
           <ImageTextOverlap
             onImgLoad={() => {}}
-            src={pizarromin}
+            src={itoImg}
             title="What is TEDxCornellUniversity?"
             content="We're a student-run club dedicated to bringing great independently-organized TED events and amazing people to Cornell."
             button="Learn More"
             buttonHref="/about"
           />
+
           <Grid className="grid">
             <Row>
               <Col md={5}>

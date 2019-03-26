@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import "./Events.css";
 import Profile from "../common/profile/Profile";
 import SplitPanel from "../common/SplitPanel";
-import eventsbg1 from "../img/fall.jpg";
+import eventsbg2 from "../img/fall.jpg";
+import eventsbg1 from "../img/jessenitai2.jpg";
 import { speakers_2019 } from "../speakers/speaker-profiles";
 import { Col } from "react-bootstrap";
 import BottomPanel from "../common/BottomPanel";
@@ -43,20 +44,20 @@ class Events extends Component {
     return (
       <div>
         <div className="main-panel-events ">
-          <SplitPanel img={eventsbg1}>
+          <SplitPanel img={eventsbg2} reverse={true}>
             <div className="sp-content-container">
               <div className="sp-content">
                 <h1>Events</h1>
 
                 <p className="lead font-weight-normal">
-                  <em>Upcoming: TEDxCornellUniversity 2019 | April 18, 2019</em>
+                  <em>Reframe: TEDxCornellUniversity 2019 | April 18, 2019</em>
                 </p>
                 <p className="lead font-weight-normal">
                   Get ready for our most ambitious conference to date. We're
                   bringing speakers from across the country and from our own
                   Cornell community in a one-of-a-kind event featuring talks and
                   performances that will entertain, inspire, inform, and move
-                  you. We hope to see you there!
+                  you. Hope to see you there!
                 </p>
               </div>
             </div>
@@ -112,9 +113,9 @@ class Events extends Component {
             <h1>Our Lineup</h1>
             <p>
               TEDxCornellUniversity 2019 is proud to host 7 amazing speakers.
-              From a venture capitalist to a TV personality, a former NASA
-              executive, and two of Cornell's own students, we've put together
-              an impressive lineup you won't want to miss
+              From a venture capitalist to a TV personality, two of Cornell's
+              own students, and a professional host, we've put together an
+              impressive lineup you won't want to miss
             </p>
           </div>
           {/* Speakers Rendering */}
@@ -123,8 +124,7 @@ class Events extends Component {
               <h2>Our Lineup</h2>
               <p>
                 Join us on April 28, 2019 as we hear from an incredible lineup
-                of speakers and performers, including a professional speaker as
-                our event host.
+                of speakers and performers from a wide range of disciplines.
               </p>
             </Col>
             {Object.keys(speakers_2019).map((key, index) => (
@@ -148,6 +148,7 @@ class Events extends Component {
                       src={speakers_2019[key].img}
                       title={speakers_2019[key].title}
                       name={speakers_2019[key].name}
+                      url={`/speakers/${speakers_2019[key].url}`}
                     />
                   </div>
                 </Col>

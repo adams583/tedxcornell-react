@@ -46,7 +46,7 @@ class Footer extends Component {
                 <a href="/faq">FAQ</a>
               </Col>
               <Col xs={6} sm={6} md={4} lg={4} xl={4}>
-                <a href="/apply">Contact</a>
+                <a href="/sponsors">Sponsors</a>
               </Col>
             </div>
           </div>

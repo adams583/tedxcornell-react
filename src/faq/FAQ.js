@@ -15,36 +15,39 @@ class FAQ extends Component {
   generalFaq = [
     {
       key: "1",
-      question: "Can anyone apply to be a speaker?",
+      question: "When is the event?",
       answer:
-        "Yes! We're looking for individuals who believe that they have a story, idea, or passion worth sharing."
+        "This year's event will be held on Sunday afternoon, on April 28, 2019."
     },
     {
       key: "2",
-      question: "What's it like being on the organizing team?",
+      question: "Who sponsors your event?",
       answer:
-        "It's pretty great! We have a close-knit, collaborative, and fun-loving team..."
+        "Our sponsors include different schools of Cornell, local businesses, and larger companies as well."
     },
     {
       key: "3",
-      question: "Are there other ways to get involved?",
+      question: "What can I get out of coming to a TEDx event?",
       answer:
-        "In March or April, we will be looking for volunteers willing to help with tasks leading up to the event and on the day of the event. If you'd like to meet the team and get a sense of what it's like being on the organizing side of the event, keep an eye out for our volunteering opportunities."
+        "You can learn, be inspired, and get a chance to engage with a community interested in discussing exciting new ideas. "
     },
     {
       key: "4",
-      question: "How much do tickets cost for the upcoming event?",
-      answer: ""
+      question: "Can anyone come to the event?",
+      answer:
+        "Yes! If you're going to be in town on April 28th, you're welcome at our event."
     },
     {
       key: "5",
       question: "How can I register for your event?",
-      answer: ""
+      answer:
+        "Just buy tickets! Navigate to our home page and use our ticketing link to purchase tickets. If you have trouble doing so, shoot us an email and we'll help out."
     },
     {
       key: "6",
       question: "Do your events have themes?",
-      answer: ""
+      answer:
+        'Our 2018 event did not have a theme, but we hope to hold themed events from here on out. This year\'s theme is "Reframe"'
     }
   ];
 

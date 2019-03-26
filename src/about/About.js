@@ -258,7 +258,7 @@ class About extends Component {
         />
         <div className="team-content-panel">
           <div className="container team-title">
-            <h4>Meet our members</h4>
+            <h4 className="left-border">Meet our members</h4>
             <h1>Our Organizing Team</h1>
           </div>
 

@@ -57,9 +57,8 @@ h1 {
 }
 
 .paper-div {
-  padding: 10px 20px 20px 40px;
-  border-left: solid #e62b1e thin;
-  border-radius: 10px;
+  padding: 10px 20px 20px 30px;
+  border-left: solid #e62b1e;
   color: whitesmoke;
 }
 

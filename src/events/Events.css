@@ -18,12 +18,11 @@
 }
 
 .plain-a {
-  transition: all 0.1s ease-in-out;
+  color: white;
 }
 
 .plain-a:hover {
   color: white;
-  transform: scale(1.03);
 }
 
 .speakers-container {

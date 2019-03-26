@@ -12,8 +12,13 @@ class SplitPanel extends Component {
   render() {
     return (
       <div className="split-panel">
-        <div className="sp-left">{this.props.children}</div>
+        {this.props.reverse && (
+          <div className="sp-left">{this.props.children}</div>
+        )}
         <div className="sp-right" style={this.styles} />
+        {!this.props.reverse && (
+          <div className="sp-left">{this.props.children}</div>
+        )}
       </div>
     );
   }

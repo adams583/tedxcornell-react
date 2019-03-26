@@ -13,7 +13,7 @@ class Profile extends Component {
 
   render() {
     return (
-      <div className="profile">
+      <div className="profile grow">
         <Image className="profile-img" src={this.props.src} responsive />
         <div
           className="profile-desc"

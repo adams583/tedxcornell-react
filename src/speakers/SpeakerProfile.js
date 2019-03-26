@@ -33,7 +33,35 @@ class SpeakerProfile extends Component {
           <h3>
             <b>About</b>
           </h3>
-          <p className="left-border more-padding">{this.props.person.info}</p>
+          <div className="left-border more-padding">
+            <p>{this.props.person.info}</p>
+            {this.props.person.podcastId && (
+              <div>
+                <p>
+                  In preparation for our event, our host Lou Diamond interviewed
+                  &nbsp;
+                  {this.props.person.name}. Listen to the interview here for a
+                  preview of this speaker's thoughts and ideas as they prepare
+                  for April 28th.
+                </p>
+                <div className="podcast-div">
+                  <iframe
+                    src={`//html5-player.libsyn.com/embed/episode/id/${
+                      this.props.person.podcastId
+                    }/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/e62b1e/`}
+                    height="90"
+                    width="100%"
+                    scrolling="no"
+                    allowfullscreen
+                    webkitallowfullscreen
+                    mozallowfullscreen
+                    oallowfullscreen
+                    msallowfullscreen
+                  />
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     );

@@ -38,6 +38,7 @@ const maryanna = {
   title: "Venture Capitalist",
   talkTitle: "",
   talkInfo: "",
+  podcastId: null,
   info:
     "Maryanna Saenko is an early-stage venture capitalist with an interest in robotics, quantum computing, blockchain, aerospace, and the future of food. Previously she was at Khosla Ventures, and prior to that at DFJ, where she worked to focus on frontier technology investments. She was also an investment partner at Airbus Ventures where she led a series of venture investments strategically aligned with Airbus’ future-of-aerospace initiatives. Before Airbus, Maryanna was a consultant at Lux Research and a research engineer at Cabot Corporation."
 };
@@ -51,6 +52,7 @@ const howard = {
   talkTitle:
     "From Einstein to “Baby Sharks”: Relativity in the age of Virality",
   talkInfo: "",
+  podcastId: 9079025,
   info:
     "Howard Zucker is Commissioner of Health for New York State. He trained in pediatrics (Johns Hopkins), anesthesiology (University of Pennsylvania), pediatric critical care/pediatric anesthesiology (Children's Hospital of Philadelphia) and pediatric cardiology (Boston Children's Hospital) and is board-certified in 6 specialties. Dr. Zucker was a pediatric anesthesiologist at Montefiore and ran the pediatric ICU at New York Presbyterian Hospital. He has held academic appointments at Yale, Columbia and Einstein medical schools, Georgetown law and on the NIH faculty. He served as a White House Fellow, HHS Deputy Assistant Secretary of Health, Assistant Director-General of the World Health Organization and IOP fellow at Harvard Kennedy School. He holds a BS (McGill), MD (George Washington University), JD (Fordham Law), LL.M. (Columbia Law) and a postgraduate diploma (London School of Hygiene & Tropical Medicine). Dr. Zucker worked at Massachusetts General Hospital to create a community peace index for use in international conflict regions, created the nation's Medical Reserve Corps, developed a talking book on health for Afghan women. In addition, he worked at MIT, designed experiments for the Space Shuttle, is on the board that runs the national lab on the International Space Station, was an ABC News ‘Person of the Week’ and member of the U.S. Supreme Court bar."
 };
@@ -63,6 +65,7 @@ const aida = {
   title: "Chef, Television Personality",
   talkTitle: "",
   talkInfo: "",
+  podcastId: null,
   info:
     "Food and Travel Expert. TV Host. Author. Editor-In-Chief. Aida is a food and travel expert, on-camera host, author and founder of Salt & Wind, a travel company for food lovers. The company started with the food and travel online magazine, Salt & Wind, and has expanded to include concierge services and boutique group travel for food lovers with Salt & Wind Travel."
 };
@@ -75,6 +78,7 @@ const michael = {
   backgroundImg: michael_graziano_background,
   talkTitle: "Consciousness and the Social Brain",
   talkInfo: "",
+  podcastId: 9137840,
   info:
     "Michael Graziano is a scientist, author, and ventriloquist, who has studied the brain for over thirty years. His TEDxCornellUniversity talk focuses on how a collection of neurons might perceive subjective consciousness in itself and other agents, how consciousness is a part of our social selves, and how we might build conscious machines in the future."
 };
@@ -85,10 +89,11 @@ const mason = {
   url: "mason-peck",
   title: "Former NASA Chief Technologist",
   backgroundImg: mason_peck_background,
-  talkTitle: "",
+  talkTitle: "How to Build Your Own Spacecraft",
   talkInfo: "",
+  podcastId: null,
   info:
-    "Dr. Peck is on the engineering faculty at Cornell University, where his research and teaching focus on Aerospace Engineering and Systems Engineering. From late 2011 through 2013, he was on leave serving as NASA's Chief Technologist, one of the seven highest-ranking officials at the agency. In that capacity, he served as the primary advisor to the NASA Administrator on matters of technology-investment strategy, roadmapping, prioritization, partnerships, intellectual property, and commercialization. "
+    "Dr. Peck is an Associate Professor in Mechanical and Aerospace Engineering at Cornell University and the Director of Cornell's Space Systems Design Studio. His research interests include space-systems architecture and satellite dynamics and control. From late 2011 through early 2014 he served as NASA's Chief Technologist in Washington, DC. In that role, he acted as the agency's chief strategist for technology investment and prioritization and advocate for innovation in aeronautics and space technology. His lab focuses on fundamental research in space technology that can be advanced through flight experiments. Examples include water-propelled lunar spacecraft, magnetically docked CubeSats, and Kicksat, a crowd-funded technology demonstrator for satellites-on-a-chip. His lab has flown on average one spaceflight experiment a year since 2011 and plans to launch three more spacecraft by 2019. More information on this research is available at http://www.spacecraftresearch.com and http://www.spacecraftlab.com."
 };
 
 const andrew = {
@@ -98,6 +103,7 @@ const andrew = {
   title: "Student, Researcher",
   talkTitle: "",
   talkInfo: "",
+  podcastId: null,
   info: ""
 };
 
@@ -108,6 +114,7 @@ const chandler = {
   title: "Proud Hotelie",
   talkTitle: "Lessons from a Syrian Refugee Camp",
   talkInfo: "",
+  podcastId: 9079304,
   info:
     "Prior to Cornell, Chandler deferred his enrollment for 2 years to do volunteer service as a full-time missionary. When he arrived on Cornell's campus, he had already developed a strong passion for service that resonated with the hotel school culture. After completing his freshman year, he traveled independently to Jordan to engage in humanitarian efforts with Syrian refugees. He spent weeks living with locals and working in a camp on the Syrian border. Since returning to campus, he has taken with him the lessons learned from those experiences and applied them to his life at Cornell. Chandler still tries to give back in meaningful ways to those around him."
 };
@@ -120,6 +127,7 @@ const lou = {
     "Lou Diamond is THE Master Connector.  He has over a quarter century of experience in sales, relationship management, business development and executive leadership.  He is an international keynote speaker, consultant, leadership & performance mentor, best-selling author, podcast & TV host and CEO of Thrive, a company focused on making the most amazing people, businesses and brands become even more amazing through the power of connecting. ",
   title: "Host, International Speaker, CEO of Thrive",
   talkTitle: "Lou will be hosting TEDxCornellUniversity2019",
+  podcastId: null,
   talkInfo: ""
 };
 

@@ -1,6 +1,6 @@
 .rightnav-wrapper {
   position: fixed;
-  top: 40px;
+  top: 50px;
   right: 60px;
   color: whitesmoke;
   text-align: right;
@@ -9,6 +9,7 @@
   border-radius: 10px;
   font-size: 18px;
   z-index: 2;
+  transform: scale(1.1);
 }
 
 a:hover {

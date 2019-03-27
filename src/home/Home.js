@@ -39,18 +39,21 @@ class Home extends Component {
       <div>
         <div className="main-panel-home-background ">
           <div className="main-panel-home-content text-center">
-            <div>
+            {/* <div>
               <strong>
                 <h1 className="the-x">TEDxCornellUniversity</h1>
-              </strong>
-              {/* <p className="lead font-weight-normal">
+              </strong> */}
+            {/* <p className="lead font-weight-normal">
                 Speaker applications for our 2019 event are now open!
               </p> */}
+            <div className="offset-for-bg">
               <a className="btn text-danger" href="/apply">
-                Apply Now
+                Buy Tickets
               </a>
             </div>
-            <i className="fa fa-angle-down fa-2x pulse" aria-hidden="true" />
+
+            {/* </div> */}
+            {/* <i className="fa fa-angle-down fa-2x pulse" aria-hidden="true" /> */}
           </div>
         </div>
         <div id="about-home-panel">

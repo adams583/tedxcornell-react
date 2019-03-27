@@ -21,6 +21,9 @@ class RightNav extends Component {
         <div>
           <a href="/faq">FAQ</a>
         </div>
+        <div>
+          <a href="/faq">Tickets</a>
+        </div>
       </div>
     );
   }

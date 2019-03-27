@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Events.css";
 import Profile from "../common/profile/Profile";
 import SplitPanel from "../common/SplitPanel";
-import eventsbg2 from "../img/fall.jpg";
+import eventsbg2 from "../img/events_bg1.jpg";
 import eventsbg1 from "../img/jessenitai2.jpg";
 import { speakers_2019 } from "../speakers/speaker-profiles";
 import { Col } from "react-bootstrap";
@@ -50,7 +50,9 @@ class Events extends Component {
                 <h1>Events</h1>
 
                 <p className="lead font-weight-normal">
-                  <em>Reframe: TEDxCornellUniversity 2019 | April 18, 2019</em>
+                  <em>TEDxCornellUniversity 2019 | 4.28.2019</em>
+                  <br />
+                  <b>Theme: &nbsp;Reframe</b>
                 </p>
                 <p className="lead font-weight-normal">
                   Get ready for our most ambitious conference to date. We're

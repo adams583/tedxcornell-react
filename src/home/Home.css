@@ -1,8 +1,9 @@
 .main-panel-home-background {
-  background-image: url("../img/itai1.jpg");
+  background-image: url("../img/main_bg.png");
   height: 100vh;
   width: 100%;
   background-size: cover;
+  background-position: center;
   display: flex;
   margin: auto;
 }
@@ -10,10 +11,17 @@
 .main-panel-home-content {
   margin: auto;
   color: whitesmoke;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
 }
 
 .first-panel {
   width: 100%;
+}
+
+.offset-for-bg {
+  margin-bottom: 25%;
 }
 
 /* .second-panel {

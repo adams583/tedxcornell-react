@@ -2,6 +2,7 @@
   "name": "first-react-attempt",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://adams583.github.io/tedxcornell",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.7",
     "@fortawesome/free-brands-svg-icons": "^5.4.2",
@@ -13,6 +14,7 @@
     "animejs": "^2.2.0",
     "aos": "^2.3.4",
     "bootstrap": "^4.1.3",
+    "gh-pages": "^2.0.1",
     "i": "^0.3.6",
     "jquery": "^3.3.1",
     "npm": "^6.4.1",
@@ -25,6 +27,8 @@
     "react-scripts": "^2.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

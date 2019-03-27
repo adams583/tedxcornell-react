@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/tedxcornell/precache-manifest.7e6bf1190185d56f89bc9cd8aa2161a9.js"
+  "/tedxcornell-react/precache-manifest.805c8f132543a73e07adf5ca07052849.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/tedxcornell/index.html", {
+workbox.routing.registerNavigationRoute("/tedxcornell-react/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

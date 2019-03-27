@@ -2,7 +2,7 @@
   "name": "first-react-attempt",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://adams583.github.io/tedxcornell",
+  "homepage": "https://adams583.github.io/tedxcornell-react",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.7",
     "@fortawesome/free-brands-svg-icons": "^5.4.2",

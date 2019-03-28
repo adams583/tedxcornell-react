@@ -8,7 +8,7 @@ import { speakers_2019 } from "../speakers/speaker-profiles";
 import { Col } from "react-bootstrap";
 import BottomPanel from "../common/BottomPanel";
 import TwoImgPanel from "../common/TwoImgPanel";
-
+import CustomButton from "../common/CustomButton";
 import bottomPanelImg from "../img/tickets_stock.jpg";
 import tipImg1 from "../img/itai3.jpg";
 import tipImg2 from "../img/booklet.jpg";

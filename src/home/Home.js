@@ -46,10 +46,13 @@ class Home extends Component {
             {/* <p className="lead font-weight-normal">
                 Speaker applications for our 2019 event are now open!
               </p> */}
+            <div className="home-event-details">
+              <p>Statler Auditorium | 4.28.2019 | 2:30pm</p>
+            </div>
             <div className="offset-for-bg">
               <a
                 className="cool-btn btn text-danger"
-                href="https://cornellconcerts.universitytickets.com/w/default.aspx?fbclid=IwAR2k2XgUpqTVmnCj-M9_Mpa6FYEnWx2Euus7aRv3YLsUAAVFh32SFztZTUA"
+                href="https://cornellconcerts.universitytickets.com/"
               >
                 <b>Buy Tickets</b>
               </a>

@@ -2,7 +2,7 @@ import maryanna_pic from "../img/maryanna.jpg";
 import howard_pic from "../img/howard.jpg";
 import aida_pic from "../img/aida-mollenkamp.jpg";
 import michael_pic from "../img/michael.jpg";
-import mason_pic from "../img/mason-peck.jpg";
+import mason_pic from "../img/mason2.jpg";
 import david_pic from "../img/david_pic.jpeg";
 import ifeoma_pic from "../img/ifeoma_pic.jpg";
 import susan_pic from "../img/susan_pic.jpeg";
@@ -100,11 +100,12 @@ const andrew = {
   name: "Andrew Rosenblatt",
   img: andrew_pic,
   url: "andrew-rosenblatt",
-  title: "Student, Researcher",
-  talkTitle: "",
+  title: "Sophomore in Arts and Sciences",
+  talkTitle: "Viruses: More Friend Than Foe?",
   talkInfo: "",
   podcastId: null,
-  info: ""
+  info:
+    "Andrew Rosenblatt is a third-year undergraduate studying biological sciences and public policy at Cornell University. Before coming to Cornell, Andrew researched novel methods for early cancer detection by identifying a cancer cell’s unique metabolic signature using fluorescent microscopy in the lab of Enrico Gratton and Michelle Digman at the University of California, Irvine. In college, Andrew has continued to pursue scientific inquiry in the lab of Tobias Dörr, studying new ways to overcome antibiotic resistance in cholera. His TEDxCornell talk centers on the rise of drug-resistant bacteria and the future of medicine."
 };
 
 const chandler = {

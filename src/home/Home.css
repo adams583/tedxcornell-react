@@ -1,5 +1,5 @@
 .main-panel-home-background {
-  background-image: url("../img/main_bg.png");
+  background-image: url("../img/main_bg.jpg");
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -8,12 +8,20 @@
   margin: auto;
 }
 
+.home-event-details {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
 .main-panel-home-content {
   margin: auto;
-  color: whitesmoke;
+  color: white;
   height: 100%;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .first-panel {
@@ -21,7 +29,8 @@
 }
 
 .offset-for-bg {
-  margin-bottom: 25%;
+  margin-bottom: 10%;
+  justify-self: end;
 }
 
 /* .second-panel {
@@ -34,7 +43,7 @@
 }
 
 .cool-btn {
-  border: solid #e62b1e;
+  border: solid thin #e62b1e;
 }
 
 .section-title-container {

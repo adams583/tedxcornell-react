@@ -14,7 +14,7 @@
 #speaker-profile-desc {
   display: flex;
   flex-direction: column;
-  padding: 100px 200px;
+  padding: 100px 10%;
   box-shadow: 0 0 20px rgb(0, 0, 0.4);
 }
 #speaker-profile-desc p {

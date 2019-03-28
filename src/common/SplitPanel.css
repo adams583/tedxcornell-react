@@ -8,8 +8,35 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .sp-right {
   flex: 1;
+}
+
+/* sm --- Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .sp-left {
+    padding-top: 20%;
+  }
+}
+
+/* md --- Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .sp-right {
+    display: none;
+  }
+  .sp-left {
+    padding-top: 10%;
+  }
+}
+
+/* lg --- Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* xl --- Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }

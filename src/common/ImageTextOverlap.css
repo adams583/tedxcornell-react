@@ -1,5 +1,5 @@
 .image-text-overlap {
-  padding: 100px 200px;
+  padding: 100px 15%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,16 +13,14 @@
   flex: 4;
 }
 
+.image-text-overlap {
+  flex-direction: column;
+}
+
 @media (min-width: 576px) {
-  .image-text-overlap {
-    flex-direction: column;
-  }
 }
 
 @media (min-width: 768px) {
-  .image-text-overlap {
-    flex-direction: column;
-  }
 }
 
 @media (min-width: 992px) {

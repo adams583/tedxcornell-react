@@ -1,7 +1,38 @@
 .two-img-panel {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   justify-content: center;
   align-items: center;
+}
+
+.tip-left {
+  flex: 1;
+}
+
+.tip-right {
+  flex: 1;
+}
+
+.tip-image {
+  width: 100%;
+}
+
+/* sm --- Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* md --- Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .two-img-panel {
+    flex-direction: row;
+  }
+}
+
+/* lg --- Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* xl --- Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }

@@ -10,7 +10,7 @@ class BottomPanel extends Component {
   styles = {
     backgroundImage: `url(${this.props.img})`,
     backgroundSize: "cover",
-    padding: "200px 100px"
+    padding: "200px 10%"
   };
 
   render() {

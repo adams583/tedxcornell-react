@@ -47,8 +47,11 @@ class Home extends Component {
                 Speaker applications for our 2019 event are now open!
               </p> */}
             <div className="offset-for-bg">
-              <a className="btn text-danger" href="/apply">
-                Buy Tickets
+              <a
+                className="cool-btn btn text-danger"
+                href="https://cornellconcerts.universitytickets.com/w/default.aspx?fbclid=IwAR2k2XgUpqTVmnCj-M9_Mpa6FYEnWx2Euus7aRv3YLsUAAVFh32SFztZTUA"
+              >
+                <b>Buy Tickets</b>
               </a>
             </div>
 

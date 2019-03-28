@@ -86,15 +86,15 @@ const uzair = {
   title: "Licensee"
 };
 const team2019 = [
-  emily,
+  uzair,
+  kirkland,
   sofiya,
   adam,
   eri,
-  kirkland,
+  emily,
   yeon,
   akshu,
-  tianyi,
-  uzair
+  tianyi
 ];
 const team2018 = [liz, hebani, adam, eri, kirkland, emily, uzair];
 

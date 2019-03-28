@@ -1,6 +1,6 @@
-.rightnav-wrapper {
+.rightnav-large-screen {
   position: fixed;
-  top: 50px;
+  top: 5%;
   right: 60px;
   color: whitesmoke;
   text-align: right;
@@ -9,7 +9,42 @@
   border-radius: 10px;
   font-size: 18px;
   z-index: 2;
-  transform: scale(1.1);
+  transform: scale(1.05);
+}
+
+.small-menu-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightnav-container {
+  height: 100%;
+  width: 100%;
+}
+
+#small-screen-menu {
+  color: whitesmoke;
+  text-align: right;
+  font-size: 18px;
+  transition: all 0.2s ease;
+}
+
+.rightnav-menu-sm-container {
+  text-align: right;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  color: white;
+  z-index: 2;
+  font-size: 2em;
+}
+
+.sm-display {
+  display: block;
+}
+
+.sm-display-none {
+  display: none;
 }
 
 a:hover {
@@ -21,4 +56,26 @@ a {
   transition: all 0.1s ease;
   text-decoration: none;
   color: rgba(245, 245, 245, 0.829);
+}
+
+/* sm --- Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* md --- Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .sm-display {
+    display: none;
+  }
+  .sm-display-none {
+    display: block;
+  }
+}
+
+/* lg --- Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* xl --- Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }

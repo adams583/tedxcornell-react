@@ -26,8 +26,15 @@
 }
 
 .speakers-container {
-  margin: 100px;
-  padding: 0px 100px;
+  margin: 5%;
+  padding: 0px 5%;
+}
+
+.events-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .sp-content-container {
@@ -51,7 +58,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 100px 200px;
+  padding: 100px 10%;
   /* background-color: #8a8a8a; */
   background-color: #e62b1e;
 }
@@ -67,7 +74,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 100px 250px;
+  padding: 100px 12%;
   /* background-color: #8a8a8a; */
   background-color: #8a8a8a;
 }
@@ -83,7 +90,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 100px 200px 0px 200px;
+  padding: 100px 10% 0px 10%;
 }
 
 .speakers-title-div > p {
@@ -114,4 +121,27 @@
 .lined-item-content {
   flex: 2;
   font-size: 1.3em;
+}
+
+.md-screen-only {
+  display: none;
+}
+
+/* sm --- Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .md-screen-only {
+    display: block;
+  }
+}
+
+/* md --- Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* lg --- Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* xl --- Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }

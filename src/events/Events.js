@@ -101,7 +101,7 @@ class Events extends Component {
                     <i className="fa fa-check" aria-hidden="true" /> &emsp;{" "}
                     {key}
                   </div>
-                  <div className="lined-item-content">
+                  <div className="lined-item-content md-screen-only">
                     {this.experiences[key]}
                   </div>
                 </div>
@@ -163,6 +163,7 @@ class Events extends Component {
           title="Reserve Your Spot"
           txt="Reserve your seat in Statler Auditorium on April 28th, 2019 to experience our event. Seven speakers, one performance, three hours you won't forget."
           button="Tickets"
+          buttonHref="https://cornellconcerts.universitytickets.com/w/default.aspx?fbclid=IwAR2k2XgUpqTVmnCj-M9_Mpa6FYEnWx2Euus7aRv3YLsUAAVFh32SFztZTUA"
         />
       </div>
     );

@@ -33,6 +33,10 @@
   padding: 20px 100px;
 }
 
+.cool-btn {
+  border: solid #e62b1e;
+}
+
 .section-title-container {
   color: whitesmoke;
   width: 100%;
@@ -55,7 +59,7 @@ h1 {
 }
 
 .grid {
-  padding: 100px 200px 0px 200px;
+  padding: 100px 10% 0px 10%;
   width: 100%;
 }
 
@@ -110,7 +114,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 100px 200px;
+  padding: 100px 10%;
   /* background-color: #8a8a8a; */
 }
 
@@ -118,4 +122,24 @@ h1 {
   font-size: 1.5em;
   text-align: center;
   margin: 10px;
+}
+
+/* sm --- Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* md --- Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .grid {
+    padding: 100px 15% 0px 15%;
+    width: 100%;
+  }
+}
+
+/* lg --- Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* xl --- Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }

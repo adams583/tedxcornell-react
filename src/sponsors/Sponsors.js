@@ -7,9 +7,12 @@ import cals from "../img/cornellCals.png";
 import eng from "../img/cornellEng_logo.png";
 import firelight from "../img/firelight.png";
 import dw from "../img/DW_logo.png";
+import cc from "../img/class_council.png";
+import utea from "../img/utea.png";
+import farmersmkt from "../img/farmers_market.png";
 
 class Sponsors extends Component {
-  sponsorLogos = [cals, eng, firelight, dw];
+  sponsorLogos = [cals, eng, firelight, dw, cc, farmersmkt, utea];
 
   render() {
     return (

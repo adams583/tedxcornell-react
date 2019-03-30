@@ -68,16 +68,15 @@ class Home extends Component {
             Friedrich Nietzsche
           </h2>
           <p>
-            The political and technological turmoil of the past few years has
-            had unexpected consequences: it’s causing us to ask bigger, deeper,
-            more challenging questions. Like … where is this heading? what
-            really matters? is there more I should be doing?
+            Change is now faster than ever. In order to adapt to and understand
+            the world we live in, we're having to look at problems in new ways,
+            shift our perspectives, and look for answers where we never have
+            before.
           </p>
           <p>
-            At TEDxCornellUniversity 2019, we will be trying to answer these
-            questions and exploring ideas that inspire and urge us to think more
-            deeply about ourselves, our communities, and the future that lies
-            ahead of us.
+            At TEDxCornellUniversity 2019, Reframe, we hope you will join us in
+            thinking more deeply about ourselves, our communities, and the
+            future that lies ahead of us.
           </p>
         </div>
 

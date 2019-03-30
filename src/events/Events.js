@@ -68,20 +68,19 @@ class Events extends Component {
 
         <div id="about-event-panel">
           <h2>
-            <em>"I begin with an idea and then it becomes something else." </em>
-            - Pablo Picasso
+            <em>"We are a way for the universe to know itself.” </em>- Carl
+            Sagan
           </h2>
           <p>
-            The political and technological turmoil of the past few years has
-            had unexpected consequences: it’s causing us to ask bigger, deeper,
-            more challenging questions. Like … where is this heading? what
-            really matters? is there more I should be doing?
+            At TEDxCornellUniversity 2019, from exploring the boundaries of
+            technology to challenging the way we see ourselves, we hope to
+            provide a diverse and entertaining array of ideas that everyone will
+            find accessible, interesting, and applicable to their own lives.
           </p>
           <p>
-            At TEDxCornellUniversity 2019, we will be trying to answer these
-            questions and exploring ideas that inspire and urge us to think more
-            deeply about ourselves, our communities, and the future that lies
-            ahead of us.
+            Through spreading ideas at Cornell, we continue in the spirit of all
+            of the amazing people that have passed through this university and
+            contributed to the individuals in this community and beyond.
           </p>
         </div>
 

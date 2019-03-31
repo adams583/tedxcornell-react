@@ -91,7 +91,7 @@ const mason = {
   backgroundImg: mason_peck_background,
   talkTitle: "How to Build Your Own Spacecraft",
   talkInfo: "",
-  podcastId: null,
+  podcastId: 9194138,
   info:
     "Dr. Peck is an Associate Professor in Mechanical and Aerospace Engineering at Cornell University and the Director of Cornell's Space Systems Design Studio. His research interests include space-systems architecture and satellite dynamics and control. From late 2011 through early 2014 he served as NASA's Chief Technologist in Washington, DC. In that role, he acted as the agency's chief strategist for technology investment and prioritization and advocate for innovation in aeronautics and space technology. His lab focuses on fundamental research in space technology that can be advanced through flight experiments. Examples include water-propelled lunar spacecraft, magnetically docked CubeSats, and Kicksat, a crowd-funded technology demonstrator for satellites-on-a-chip. His lab has flown on average one spaceflight experiment a year since 2011 and plans to launch three more spacecraft by 2019. More information on this research is available at http://www.spacecraftresearch.com and http://www.spacecraftlab.com."
 };

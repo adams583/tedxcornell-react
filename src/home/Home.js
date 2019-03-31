@@ -111,15 +111,17 @@ class Home extends Component {
               <Col md={5}>
                 <div>
                   <div data-aos="fade-right" className="paper-div">
-                    <h3>Our Plan</h3>
+                    <h3>Our Conference</h3>
                     <p>
-                      Each year we spend two semesters planning for a big event
-                      in the spring. We believe our 2018 event was a big success
-                      and we hope to continue bringing great events to Cornell
-                      every year.
+                      TEDxCornellUniversity presents to you our 2019 conference
+                      as we hope to continue bringing “Ideas Worth Spreading” to
+                      Cornell’s campus. Seven speakers from our local community
+                      and across the country will share the stage, each bringing
+                      light to a unique topic. Listen, learn, and be inspired.
+                      Experience TEDxCornellUniversity.
                     </p>
                     <CustomButton
-                      text="Our Events"
+                      text="About the Event"
                       color="#e62b1e"
                       href="/events"
                     />

@@ -100,7 +100,7 @@ const andrew = {
   name: "Andrew Rosenblatt",
   img: andrew_pic,
   url: "andrew-rosenblatt",
-  title: "Sophomore in Arts and Sciences",
+  title: "Junior in Arts and Sciences",
   talkTitle: "Viruses: More Friend Than Foe?",
   talkInfo: "",
   podcastId: null,

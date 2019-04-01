@@ -47,7 +47,7 @@ class Home extends Component {
                 Speaker applications for our 2019 event are now open!
               </p> */}
             <div className="home-event-details">
-              <p>Statler Auditorium | 4.28.2019 | 2:30pm</p>
+              <p>Statler Auditorium | 4.28.2019 | 2:00pm</p>
             </div>
             <div className="offset-for-bg">
               <a
@@ -70,7 +70,7 @@ class Home extends Component {
           <p>
             Change is now faster than ever. In order to adapt to and understand
             the world we live in, we're having to look at problems in new ways,
-            shift our perspectives, and look for answers where we never have
+            shift our perspectives, and search for answers where we never have
             before.
           </p>
           <p>

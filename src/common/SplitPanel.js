@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./SplitPanel.css";
+import { Image } from "react-bootstrap";
 
 class SplitPanel extends Component {
   styles = {
@@ -15,7 +16,9 @@ class SplitPanel extends Component {
         {this.props.reverse && (
           <div className="sp-left">{this.props.children}</div>
         )}
-        <div className="sp-right" style={this.styles} />
+        <div className="sp-right">
+          <Image className="full-width" src={this.props.img} responsive />
+        </div>
         {!this.props.reverse && (
           <div className="sp-left">{this.props.children}</div>
         )}

@@ -16,6 +16,10 @@
   flex: 1;
 }
 
+.full-width {
+  width: 100%;
+}
+
 /* sm --- Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
   .sp-left {

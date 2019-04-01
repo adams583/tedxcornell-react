@@ -14,7 +14,7 @@ class SpeakerProfile extends Component {
     };
     return (
       <div id="speaker-profile-wrapper">
-        <SplitPanel img={this.props.person.img}>
+        <SplitPanel img={this.props.person.img} profile={true}>
           <div className="sp-content-container">
             <div className="sp-content">
               <h1>{this.props.person.name}</h1>

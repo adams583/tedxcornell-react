@@ -44,7 +44,7 @@ class Events extends Component {
     return (
       <div>
         <div className="main-panel-events ">
-          <SplitPanel img={eventsbg2} reverse={true}>
+          <SplitPanel img={eventsbg2} reverse={true} profile={false}>
             <div className="sp-content-container">
               <div className="sp-content">
                 <h1>Events</h1>

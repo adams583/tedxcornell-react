@@ -16,8 +16,10 @@ class SplitPanel extends Component {
         {this.props.reverse && (
           <div className="sp-left">{this.props.children}</div>
         )}
-        <div className="sp-right">
-          <Image className="full-width" src={this.props.img} responsive />
+        <div className="sp-right" style={this.props.profile ? {} : this.styles}>
+          {this.props.profile && (
+            <Image className="full-width" src={this.props.img} responsive />
+          )}
         </div>
         {!this.props.reverse && (
           <div className="sp-left">{this.props.children}</div>

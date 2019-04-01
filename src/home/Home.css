@@ -9,9 +9,8 @@
 }
 
 .home-event-details {
-  font-size: 1.5em;
+  margin-bottom: 7%;
   font-weight: bold;
-  margin-bottom: 10%;
 }
 
 .main-panel-home-content {
@@ -127,10 +126,15 @@ h1 {
   /* background-color: #8a8a8a; */
 }
 
-#about-home-panel > p {
+.about-home-panel-p {
   font-size: 1.5em;
   text-align: center;
   margin: 10px;
+}
+
+.p-sm {
+  font-size: 1em !important;
+  opacity: 0.5;
 }
 
 /* sm --- Small devices (landscape phones, 576px and up) */

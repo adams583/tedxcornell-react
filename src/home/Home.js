@@ -47,7 +47,10 @@ class Home extends Component {
                 Speaker applications for our 2019 event are now open!
               </p> */}
             <div className="home-event-details">
-              <p>Statler Auditorium | 4.28.2019 | 2:00pm</p>
+              <p className="about-home-panel-p">
+                Statler Auditorium | 4.28.2019 | 2:00pm
+              </p>
+              <p className="p-sm">Early bird ticket pricing until April 9th</p>
             </div>
             <div className="offset-for-bg">
               <a

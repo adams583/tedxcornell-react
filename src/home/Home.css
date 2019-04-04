@@ -123,10 +123,17 @@ h1 {
   align-items: center;
   justify-content: center;
   padding: 100px 10%;
+  text-align: center;
   /* background-color: #8a8a8a; */
 }
 
 .about-home-panel-p {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 10px;
+}
+
+#about-home-panel > p {
   font-size: 1.5em;
   text-align: center;
   margin: 10px;

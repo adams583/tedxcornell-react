@@ -1,6 +1,6 @@
 import maryanna_pic from "../img/maryanna.jpg";
 import howard_pic from "../img/howard.jpg";
-import aida_pic from "../img/aida-mollenkamp.jpg";
+import aida_pic from "../img/aida.jpg";
 import michael_pic from "../img/michael.jpg";
 import mason_pic from "../img/mason2.jpg";
 import david_pic from "../img/david_pic.jpeg";
@@ -62,12 +62,12 @@ const aida = {
   img: aida_pic,
   url: "aida-mollenkamp",
   backgroundImg: aida_mollenkamp_background,
-  title: "Chef, Television Personality",
-  talkTitle: "",
+  title: "Founder of Salt & Wind Travel",
+  talkTitle: "Why You Should Speak Storytelling",
   talkInfo: "",
   podcastId: null,
   info:
-    "Food and Travel Expert. TV Host. Author. Editor-In-Chief. Aida is a food and travel expert, on-camera host, author and founder of Salt & Wind, a travel company for food lovers. The company started with the food and travel online magazine, Salt & Wind, and has expanded to include concierge services and boutique group travel for food lovers with Salt & Wind Travel."
+    "Aida is a food and travel expert, author, chef, Food Network personality, and founder of Salt & Wind Travel. She has made her career in food travel media and hospitality and has crossed the globe to search out the best food destinations. She studied at the Cornell Hotel School and Le Cordon Bleu Paris cooking school before joining CHOW Magazine where she worked as Food Editor. Aida then moved to television and hosted Ask Aida on the Food Network, FoodCrafters on the Cooking Channel, In The Pantry on Yahoo!, and the TasteMade series, Off Menu. Her cookbook, Keys To The Kitchen, is a go-to for home cooks who want to become more adventurous cooks. In 2015 she founded Salt & Wind Travel, the boutique travel company for food lovers. Salt & Wind Travel (saltandwind.com) helps its clients to experience bespoke food-focused travels."
 };
 
 const michael = {
@@ -103,7 +103,7 @@ const andrew = {
   title: "Junior in Arts and Sciences",
   talkTitle: "Viruses: More Friend Than Foe?",
   talkInfo: "",
-  podcastId: null,
+  podcastId: 9230582,
   info:
     "Andrew Rosenblatt is a third-year undergraduate studying biological sciences and public policy at Cornell University. Before coming to Cornell, Andrew researched novel methods for early cancer detection by identifying a cancer cell’s unique metabolic signature using fluorescent microscopy in the lab of Enrico Gratton and Michelle Digman at the University of California, Irvine. In college, Andrew has continued to pursue scientific inquiry in the lab of Tobias Dörr, studying new ways to overcome antibiotic resistance in cholera. His TEDxCornell talk centers on the rise of drug-resistant bacteria and the future of medicine."
 };

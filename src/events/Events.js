@@ -162,7 +162,7 @@ class Events extends Component {
           title="Reserve Your Spot"
           txt="Reserve your seat in Statler Auditorium on April 28th, 2019 to experience our event. Seven speakers, one performance, three hours you won't forget."
           button="Tickets"
-          buttonHref="https://cornellconcerts.universitytickets.com/w/default.aspx?fbclid=IwAR2k2XgUpqTVmnCj-M9_Mpa6FYEnWx2Euus7aRv3YLsUAAVFh32SFztZTUA"
+          buttonHref="https://cornellconcerts.universitytickets.com/w/event.aspx?id=1356&r=970e11c5b72d470baa6f610f23a7a584"
         />
       </div>
     );

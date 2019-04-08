@@ -55,7 +55,7 @@ class Home extends Component {
             <div className="offset-for-bg">
               <a
                 className="cool-btn btn text-danger"
-                href="https://cornellconcerts.universitytickets.com/"
+                href="https://cornellconcerts.universitytickets.com/w/event.aspx?id=1356&r=970e11c5b72d470baa6f610f23a7a584"
               >
                 <b>Buy Tickets</b>
               </a>

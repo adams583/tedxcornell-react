@@ -33,7 +33,7 @@ class RightNav extends Component {
               <a href="/faq">FAQ</a>
             </div>
             <div>
-              <a href="https://cornellconcerts.universitytickets.com/">
+              <a href="https://cornellconcerts.universitytickets.com/w/event.aspx?id=1356&r=970e11c5b72d470baa6f610f23a7a584">
                 Tickets
               </a>
             </div>

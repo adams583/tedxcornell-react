@@ -38,7 +38,7 @@ const maryanna = {
   title: "Venture Capitalist",
   talkTitle: "",
   talkInfo: "",
-  podcastId: null,
+  podcastId: 9320714,
   info:
     "Maryanna Saenko is an early-stage venture capitalist with an interest in robotics, quantum computing, blockchain, aerospace, and the future of food. Previously she was at Khosla Ventures, and prior to that at DFJ, where she worked to focus on frontier technology investments. She was also an investment partner at Airbus Ventures where she led a series of venture investments strategically aligned with Airbus’ future-of-aerospace initiatives. Before Airbus, Maryanna was a consultant at Lux Research and a research engineer at Cabot Corporation."
 };
@@ -101,7 +101,7 @@ const andrew = {
   img: andrew_pic,
   url: "andrew-rosenblatt",
   title: "Junior in Arts and Sciences",
-  talkTitle: "Viruses: More Friend Than Foe?",
+  talkTitle: "Going Viral: Life, War, and Engineered Zombie Armies",
   talkInfo: "",
   podcastId: 9230582,
   info:

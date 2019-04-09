@@ -1,5 +1,6 @@
 .sponsors-image-panel {
   height: 650px;
+  width: 100%;
   display: flex;
   margin: auto;
   justify-content: left;
@@ -14,12 +15,22 @@
   margin: 5% 10%;
 }
 
-.logos-container {
+.sponsors-text {
+  font-size: 1.3em;
+}
+
+#sponsors-container {
   display: flex;
   flex-direction: column;
 }
 
 .sponsor-logo-container {
-  margin: 25px;
   padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.font-weight-light {
+  opacity: 0.7;
+  padding-top: 5px;
 }

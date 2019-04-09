@@ -10,9 +10,20 @@ import dw from "../img/DW_logo.png";
 import cc from "../img/class_council.png";
 import utea from "../img/utea.png";
 import farmersmkt from "../img/farmers_market.png";
+import khouse from "../img/khouse.jpg";
 
 class Sponsors extends Component {
-  sponsorLogos = [cals, eng, firelight, dw, cc, farmersmkt, utea];
+  sponsorLogos = [cals, eng, firelight, dw, cc, farmersmkt, khouse, utea];
+  sponsorInfo = [
+    { img: cals, desc: "" },
+    { img: eng, desc: "" },
+    { img: firelight, desc: "Free 2-night Stay" },
+    { img: dw, desc: "2 Free Bundle Boxes" },
+    { img: cc, desc: "" },
+    { img: farmersmkt, desc: "$25 Certificate + Gift Bag" },
+    { img: khouse, desc: "Free Karaoke Hour + Gift Bag" },
+    { img: utea, desc: "$25 Certificate + Gift Bag" }
+  ];
 
   render() {
     return (
@@ -30,14 +41,38 @@ class Sponsors extends Component {
         </div>
 
         <div className="sponsors-content">
-          <h3>Sponsors</h3>
+          <div className="sponsors-text">
+            <h3>Sponsors</h3>
+            <div className="left-border">
+              <p>
+                Our event would not be possible without our amazing sponsors!
+                we’d love to recognize them for all their contributions to
+                TEDxCornellUniversity 2019.
+              </p>
+              <p>
+                Every event ticket gives a free entry into our raffle. See below
+                for the prizes our raffle sponsors have contributed and buy your
+                ticket for a chance to win one!
+              </p>
+            </div>
+          </div>
+
           <div className="logos-container">
-            {this.sponsorLogos.map((logo, ind) => (
-              <div key={ind} className="sponsor-logo-container">
-                <Col xl={4} lg={4} md={6} sm={12} xs={12}>
-                  <Image src={logo} responsive />
-                </Col>
-              </div>
+            {this.sponsorInfo.map((sponsor, ind) => (
+              <Col
+                xl={3}
+                lg={3}
+                md={4}
+                sm={6}
+                xs={6}
+                key={ind}
+                className="sponsor-logo-container"
+              >
+                <Image src={sponsor.img} responsive />
+                <span className="text-center font-weight-light">
+                  {sponsor.desc}
+                </span>
+              </Col>
             ))}
           </div>
         </div>

@@ -35,7 +35,7 @@ class Events extends Component {
     "Talks and Performances":
       "Our event will have 7 speakers and 1 performance group, local and from across the country, all here to share their best ideas with the Cornell community.",
     "Raffle merchandise":
-      "Thanks to our generous sponsors, we've got some awesome merchandise to raffle off at our event. From Daniel Wellington gift baskets to a two night stay at Firelight Camp, we've got something for everyone.",
+      "Every ticket comes with a free raffle entry. From Daniel Wellington gift baskets to a two night stay at Firelight Camp, we've got something for everyone.",
     "Volunteer opportunities":
       "Looking to help out on the day of the event? We're offering volunteer opportunities in which you can help with general ticketing activities or speaker assistance"
   };

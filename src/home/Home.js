@@ -50,7 +50,9 @@ class Home extends Component {
               <p className="about-home-panel-p">
                 Statler Auditorium | 4.28.2019 | 2:00pm
               </p>
-              <p className="p-sm">Early bird ticket pricing until April 9th</p>
+              <p className="p-sm">
+                Early bird ticket pricing extended to April 14th
+              </p>
             </div>
             <div className="offset-for-bg">
               <a
@@ -67,8 +69,11 @@ class Home extends Component {
         </div>
         <div id="about-home-panel">
           <h2>
-            <em>“There are no facts, only interpretations.”</em> &nbsp;-
-            Friedrich Nietzsche
+            <em>
+              “We are all trapped inside our own heads. And our beliefs and
+              understandings about the world are limited by that perspective.”
+            </em>{" "}
+            &nbsp;- Derren Brown
           </h2>
           <p>
             Change is now faster than ever. In order to adapt to and understand

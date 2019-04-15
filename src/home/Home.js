@@ -50,9 +50,7 @@ class Home extends Component {
               <p className="about-home-panel-p">
                 Statler Auditorium | 4.28.2019 | 2:00pm
               </p>
-              <p className="p-sm">
-                Early bird ticket pricing extended to April 14th
-              </p>
+              <p className="p-sm">Tickets are available to all audiences.</p>
             </div>
             <div className="offset-for-bg">
               <a

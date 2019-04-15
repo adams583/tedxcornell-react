@@ -135,7 +135,6 @@ const lou = {
 const speakers_2019 = {
   maryanna,
   howard,
-  aida,
   michael,
   mason,
   chandler,

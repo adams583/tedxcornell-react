@@ -33,7 +33,7 @@ class Events extends Component {
     "A half-day event":
       "On April 28th, 2019, we're holding an afternoon event packed with exciting talks and performances you won't want to miss.",
     "Talks and Performances":
-      "Our event will have 7 speakers and 1 performance group, local and from across the country, all here to share their best ideas with the Cornell community.",
+      "Our event will have 6 speakers and 1 performance group, local and from across the country, all here to share their best ideas with the Cornell community.",
     "Raffle merchandise":
       "Every ticket comes with a free raffle entry. From Daniel Wellington gift baskets to a two night stay at Firelight Camp, we've got something for everyone.",
     "Volunteer opportunities":
@@ -113,8 +113,8 @@ class Events extends Component {
           <div className="speakers-title-div">
             <h1>Our Lineup</h1>
             <p>
-              TEDxCornellUniversity 2019 is proud to host 7 amazing speakers.
-              From a venture capitalist to a TV personality, two of Cornell's
+              TEDxCornellUniversity 2019 is proud to host 6 amazing speakers.
+              From a venture capitalist to a neuroscientist, two of Cornell's
               own students, and a professional host, we've put together an
               impressive lineup you won't want to miss
             </p>
@@ -160,7 +160,7 @@ class Events extends Component {
         <BottomPanel
           img={bottomPanelImg}
           title="Reserve Your Spot"
-          txt="Reserve your seat in Statler Auditorium on April 28th, 2019 to experience our event. Seven speakers, one performance, three hours you won't forget."
+          txt="Reserve your seat in Statler Auditorium on April 28th, 2019 to experience our event. Six speakers, one performance, three hours you won't forget."
           button="Tickets"
           buttonHref="https://cornellconcerts.universitytickets.com/w/event.aspx?id=1356&r=970e11c5b72d470baa6f610f23a7a584"
         />

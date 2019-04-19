@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./SpeakerProfile.css";
 import SplitPanel from "../common/SplitPanel";
+import { Helmet } from "react-helmet";
 
 class SpeakerProfile extends Component {
   constructor(props) {
@@ -14,6 +15,20 @@ class SpeakerProfile extends Component {
     };
     return (
       <div id="speaker-profile-wrapper">
+        <Helmet>
+          <meta
+            property="og:title"
+            content={`${this.props.person.name}, ${this.props.person.title}`}
+          />
+          <meta property="og:description" content={this.props.person.info} />
+          <meta property="og:image" content={this.props.person.img} />
+          <meta
+            property="og:url"
+            content={`www.tedxcornell.com/speakers/${this.props.person.url}`}
+          />
+          <meta name="twitter:card" content="summary_large_image" />
+        </Helmet>
+
         <SplitPanel img={this.props.person.img} profile={true}>
           <div className="sp-content-container">
             <div className="sp-content">

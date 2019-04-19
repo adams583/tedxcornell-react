@@ -42,7 +42,7 @@ class RightNav extends Component {
         <div className="sm-display rightnav-menu-sm-container">
           {!this.state.menuOpen && (
             <div className="pointer" onClick={this.toggleMenu}>
-              <i class="fa fa-bars" />
+              <i className="fa fa-bars" />
             </div>
           )}
           {this.state.menuOpen && (

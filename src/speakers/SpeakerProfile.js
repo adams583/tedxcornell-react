@@ -67,11 +67,11 @@ class SpeakerProfile extends Component {
                     height="90"
                     width="100%"
                     scrolling="no"
-                    allowfullscreen
-                    webkitallowfullscreen
-                    mozallowfullscreen
-                    oallowfullscreen
-                    msallowfullscreen
+                    allowFullScreen=""
+                    webkitallowfullscreen=""
+                    mozallowfullscreen=""
+                    oallowfullscreen=""
+                    msallowfullscreen=""
                   />
                 </div>
               </div>

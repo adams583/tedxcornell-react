@@ -11,9 +11,10 @@ import cc from "../img/class_council.png";
 import utea from "../img/utea.png";
 import farmersmkt from "../img/farmers_market.png";
 import khouse from "../img/khouse.jpg";
+import ctb from "../img/ctb.png";
 
 class Sponsors extends Component {
-  sponsorLogos = [cals, eng, firelight, dw, cc, farmersmkt, khouse, utea];
+  sponsorLogos = [cals, eng, firelight, dw, cc, farmersmkt, khouse, utea, ctb];
   sponsorInfo = [
     { img: cals, desc: "" },
     { img: eng, desc: "" },
@@ -22,7 +23,8 @@ class Sponsors extends Component {
     { img: cc, desc: "" },
     { img: farmersmkt, desc: "$25 Certificate + Gift Bag" },
     { img: khouse, desc: "Free Karaoke Hour + Gift Bag" },
-    { img: utea, desc: "$25 Certificate + Gift Bag" }
+    { img: utea, desc: "$25 Certificate + Gift Bag" },
+    { img: ctb, desc: "" }
   ];
 
   render() {

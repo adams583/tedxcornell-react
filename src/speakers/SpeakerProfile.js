@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./SpeakerProfile.css";
 import SplitPanel from "../common/SplitPanel";
-import { Helmet } from "react-helmet";
+import MetaTags from "react-meta-tags";
 
 class SpeakerProfile extends Component {
   constructor(props) {
@@ -15,7 +15,7 @@ class SpeakerProfile extends Component {
     };
     return (
       <div id="speaker-profile-wrapper">
-        <Helmet>
+        <MetaTags>
           <meta
             property="og:title"
             content={`${this.props.person.name}, ${this.props.person.title}`}
@@ -27,7 +27,7 @@ class SpeakerProfile extends Component {
             content={`www.tedxcornell.com/speakers/${this.props.person.url}`}
           />
           <meta name="twitter:card" content="summary_large_image" />
-        </Helmet>
+        </MetaTags>
 
         <SplitPanel img={this.props.person.img} profile={true}>
           <div className="sp-content-container">

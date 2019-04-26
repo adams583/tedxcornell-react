@@ -36,7 +36,7 @@ const maryanna = {
   url: "maryanna-saenko",
   backgroundImg: maryanna_saenko_background,
   title: "Venture Capitalist",
-  talkTitle: "",
+  talkTitle: "Three Simple Life Lessons to Ignore",
   talkInfo: "",
   podcastId: 9320714,
   info:

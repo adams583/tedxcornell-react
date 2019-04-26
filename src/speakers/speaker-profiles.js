@@ -112,7 +112,7 @@ const chandler = {
   name: "Chandler Pfaff",
   img: chandler_pic,
   url: "chandler-pfaff",
-  title: "Proud Hotelie",
+  title: "Junior in Hotel Administration",
   talkTitle: "Lessons from a Syrian Refugee Camp",
   talkInfo: "",
   podcastId: 9079304,

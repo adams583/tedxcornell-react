@@ -128,7 +128,7 @@ const lou = {
     "Lou Diamond is THE Master Connector.  He has over a quarter century of experience in sales, relationship management, business development and executive leadership.  He is an international keynote speaker, consultant, leadership & performance mentor, best-selling author, podcast & TV host and CEO of Thrive, a company focused on making the most amazing people, businesses and brands become even more amazing through the power of connecting. ",
   title: "Host, International Speaker, CEO of Thrive",
   talkTitle: "Lou will be hosting TEDxCornellUniversity2019",
-  podcastId: null,
+  podcastId: 9544367,
   talkInfo: ""
 };
 

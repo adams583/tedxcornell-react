@@ -17,7 +17,7 @@ class FAQ extends Component {
       key: "1",
       question: "When is the event?",
       answer:
-        "This year's event will be held on Sunday afternoon, on April 28, 2019."
+        "This year's event was held on Sunday afternoon, on April 28, 2019. Check back soon for details on TEDxCornellUniversity 2020."
     },
     {
       key: "2",
@@ -47,7 +47,7 @@ class FAQ extends Component {
       key: "6",
       question: "Do your events have themes?",
       answer:
-        'Our 2018 event did not have a theme, but we hope to hold themed events from here on out. This year\'s theme is "Reframe"'
+        'Our 2018 event did not have a theme, but we hope to hold themed events from here on out. This year\'s theme was "Reframe"'
     }
   ];
 
@@ -80,7 +80,7 @@ class FAQ extends Component {
       question:
         "How many TEDxCornellUniversity conferences have been held so far?",
       answer:
-        "Our 2019 event will be our fourth event. At Cornell in the past, TEDx events have not been a big part of the culture, but we're trying our best to change that!"
+        "Our 2019 event was our fourth event. At Cornell in the past, TEDx events have not been a big part of the culture, but we're trying our best to change that!"
     },
     {
       key: "6",

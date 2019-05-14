@@ -47,14 +47,13 @@ class Sponsors extends Component {
             <h3>Sponsors</h3>
             <div className="left-border">
               <p>
-                Our event would not be possible without our amazing sponsors!
-                we’d love to recognize them for all their contributions to
-                TEDxCornellUniversity 2019.
+                Our event would not have been possible without our amazing
+                sponsors! we’d love to recognize them for all their
+                contributions to TEDxCornellUniversity 2019.
               </p>
               <p>
-                Every event ticket gives a free entry into our raffle. See below
-                for the prizes our raffle sponsors have contributed and buy your
-                ticket for a chance to win one!
+                Every event ticket gave a free entry into our raffle. See below
+                for the prizes our raffle sponsors contributed.
               </p>
             </div>
           </div>

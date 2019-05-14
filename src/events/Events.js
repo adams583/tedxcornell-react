@@ -55,11 +55,11 @@ class Events extends Component {
                   <b>Theme: &nbsp;Reframe</b>
                 </p>
                 <p className="lead font-weight-normal">
-                  Get ready for our most ambitious conference to date. We're
-                  bringing speakers from across the country and from our own
-                  Cornell community in a one-of-a-kind event featuring talks and
-                  performances that will entertain, inspire, inform, and move
-                  you. Hope to see you there!
+                  In our most ambitious conference to date, we brought speakers
+                  from across the country and from our own Cornell community in
+                  a one-of-a-kind event featuring talks and performances that
+                  entertained, inspired, informed, and moved our audience. Thank
+                  you to everyone who supported this year's event!
                 </p>
               </div>
             </div>
@@ -73,9 +73,10 @@ class Events extends Component {
           </h2>
           <p>
             At TEDxCornellUniversity 2019, from exploring the boundaries of
-            technology to challenging the way we see ourselves, we hope to
-            provide a diverse and entertaining array of ideas that everyone will
-            find accessible, interesting, and applicable to their own lives.
+            technology to challenging the way we see ourselves, we hoped to
+            provide a diverse and entertaining array of ideas that everyone
+            would find accessible, interesting, and applicable to their own
+            lives.
           </p>
           <p>
             Through spreading ideas at Cornell, we continue in the spirit of all
@@ -90,7 +91,8 @@ class Events extends Component {
           <h1>An afternoon of ideas and inspiration</h1>
           <p>
             Join us for an experience you won't find anywhere else at Cornell
-            University. Here's an idea of what you can expect at our conference:
+            University. Here's an idea of what our most recent conference
+            included:
           </p>
           <div className="experience-div">
             {Object.keys(this.experiences).map((key, index) => (
@@ -113,10 +115,10 @@ class Events extends Component {
           <div className="speakers-title-div">
             <h1>Our Lineup</h1>
             <p>
-              TEDxCornellUniversity 2019 is proud to host 6 amazing speakers.
-              From a venture capitalist to a neuroscientist, two of Cornell's
-              own students, and a professional host, we've put together an
-              impressive lineup you won't want to miss
+              TEDxCornellUniversity 2019 hosted 6 amazing speakers. From a
+              venture capitalist to a neuroscientist, two of Cornell's own
+              students, and a professional host, we were proud to feature
+              everyone involved in making this year's event happen.
             </p>
           </div>
           {/* Speakers Rendering */}
@@ -124,8 +126,8 @@ class Events extends Component {
             <Col xs={12} sm={6} md={4} lg={4} xl={4} className="speaker-div">
               <h2>Our Lineup</h2>
               <p>
-                Join us on April 28, 2019 as we hear from an incredible lineup
-                of speakers and performers from a wide range of disciplines.
+                On April 28, 2019 we heard from an incredible lineup of speakers
+                and performers from a wide range of disciplines.
               </p>
             </Col>
             {Object.keys(speakers_2019).map((key, index) => (
@@ -161,8 +163,8 @@ class Events extends Component {
           img={bottomPanelImg}
           title="Reserve Your Spot"
           txt="Reserve your seat in Statler Auditorium on April 28th, 2019 to experience our event. Six speakers, one performance, three hours you won't forget."
-          button="Tickets"
-          buttonHref="https://cornellconcerts.universitytickets.com/w/event.aspx?id=1356&r=970e11c5b72d470baa6f610f23a7a584"
+          button="Ticketing Closed"
+          buttonHref=""
         />
       </div>
     );

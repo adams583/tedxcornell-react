@@ -50,15 +50,18 @@ class Home extends Component {
               <p className="about-home-panel-p">
                 Statler Auditorium | 4.28.2019 | 2:00pm
               </p>
-              <p className="p-sm">Tickets are available to all audiences.</p>
+              <p className="p-sm">
+                Ticket sales closed. Now preparing for TEDxCornellUniversity
+                2020.
+              </p>
             </div>
             <div className="offset-for-bg">
-              <a
+              {/* <a
                 className="cool-btn btn text-danger"
                 href="https://cornellconcerts.universitytickets.com/w/event.aspx?id=1356&r=970e11c5b72d470baa6f610f23a7a584"
               >
                 <b>Buy Tickets</b>
-              </a>
+              </a> */}
             </div>
 
             {/* </div> */}
@@ -80,8 +83,8 @@ class Home extends Component {
             before.
           </p>
           <p>
-            At TEDxCornellUniversity 2019, Reframe, we hope you will join us in
-            thinking more deeply about ourselves, our communities, and the
+            At TEDxCornellUniversity 2019, Reframe, we thank all who joined us
+            in thinking more deeply about ourselves, our communities, and the
             future that lies ahead of us.
           </p>
         </div>
@@ -121,8 +124,8 @@ class Home extends Component {
                     <p>
                       TEDxCornellUniversity presents to you our 2019 conference
                       as we hope to continue bringing “Ideas Worth Spreading” to
-                      Cornell’s campus. Seven speakers from our local community
-                      and across the country will share the stage, each bringing
+                      Cornell’s campus. Six speakers from our local community
+                      and across the country shared the stage, each bringing
                       light to a unique topic. Listen, learn, and be inspired.
                       Experience TEDxCornellUniversity.
                     </p>
@@ -145,9 +148,10 @@ class Home extends Component {
                     <h3>Get Involved</h3>
                     <p>
                       Interested in getting involved on the speaking or
-                      organizing side? We're currently looking for speakers to
-                      present at TEDxCornell 2019 and students passionate about
-                      spreading knowledge and meeting amazing people.
+                      organizing side? Check back in fall 2019 for applications
+                      to speak or help organize our event. Anyone can apply to
+                      be a speaker, and we look for students passionate about
+                      TEDx in applications for our organizing team.
                     </p>
                     <CustomButton
                       text="Apply Now"

@@ -35,11 +35,11 @@ class RightNav extends Component {
             <div>
               <a href="/faq">FAQ</a>
             </div>
-            <div>
+            {/* <div>
               <a href="https://cornellconcerts.universitytickets.com/w/event.aspx?id=1356&r=970e11c5b72d470baa6f610f23a7a584">
                 Tickets
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="sm-display rightnav-menu-sm-container">
@@ -71,11 +71,11 @@ class RightNav extends Component {
                 <div>
                   <a href="/faq">FAQ</a>
                 </div>
-                <div>
+                {/* <div>
                   <a href="https://cornellconcerts.universitytickets.com/w/default.aspx?fbclid=IwAR2k2XgUpqTVmnCj-M9_Mpa6FYEnWx2Euus7aRv3YLsUAAVFh32SFztZTUA">
                     Tickets
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           )}

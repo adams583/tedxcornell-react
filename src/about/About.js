@@ -4,7 +4,7 @@ import { team2019 } from "./members.js";
 import ImageTextOverlap from "../common/ImageTextOverlap";
 import audience1 from "../img/audience1.jpg";
 import BottomPanel from "../common/BottomPanel";
-import bottomPanelImg from "../img/teamImg.jpg";
+import bottomPanelImg from "../img/team2019.jpg";
 import TeamProfile from "../common/gallery/TeamProfile";
 
 // const selectIndicator = document.createElement("span");

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Apply.css";
 import { Grid, Row, Col, PanelGroup } from "react-bootstrap";
 import Collapsible from "../common/Collapsible";
+import CustomButton from "../common/CustomButton";
 
 class Apply extends Component {
   constructor(props) {
@@ -33,7 +34,7 @@ class Apply extends Component {
       key: "2",
       question: "What roles are available on the organizing team?",
       answer:
-        "Our organizers work on speaker curation, finance and sponsorship, design and marketing, website design, and more."
+        "Our organizers work on speaker curation, finance and sponsorship, design and marketing, website design, and more. This year we are prioritizing finance, marketing, and website design roles, but if you're interested in another role, we encourange you to submit an application anyways!"
     },
     {
       key: "3",
@@ -54,7 +55,7 @@ class Apply extends Component {
             <Col md={8}>
               <h3>Speaker Applications</h3>
               <p className="left-border">
-                <b>Speaker applications are closed for our 2019 event.</b>
+                <b>Speaker applications for our 2020 event are coming soon.</b>
                 <br />
                 We look for presenters who will inform, inspire, and entertain
                 while spreading ideas that they are truly passionate about. If
@@ -69,11 +70,18 @@ class Apply extends Component {
             <Col md={8}>
               <h3>Team Applications</h3>
               <p className="left-border">
-                <b>We are finished recruiting for our 2019 event.</b>
+                <b>We are recruiting!</b>
                 <br />
-                Check back in the fall if you're interested in joining our
-                organizing team! We're a close-knit team of students who are
-                passionate about TED and determined to organize great events.
+                Apply now if you're interested in joining our organizing team!
+                We're a close-knit team of students who are passionate about TED
+                and determined to organize great events.
+                <div className="padding-top">
+                  <CustomButton
+                    text="Apply Now"
+                    color="#e62b1e"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfdvefoTzOe37qstAXd1I_ECZ6zEBG9NKAaA1QeD5_rsIzD7g/viewform?usp=sf_link"
+                  />
+                </div>
               </p>
             </Col>
           </Row>

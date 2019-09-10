@@ -39,32 +39,25 @@ class Home extends Component {
       <div>
         <div className="main-panel-home-background ">
           <div className="main-panel-home-content text-center">
-            {/* <div>
+            <div className="home-title">
               <strong>
-                <h1 className="the-x">TEDxCornellUniversity</h1>
-              </strong> */}
-            {/* <p className="lead font-weight-normal">
-                Speaker applications for our 2019 event are now open!
-              </p> */}
-            <div className="home-event-details">
+                <h1>TEDxCornellUniversity</h1>
+              </strong>
+              <p className="lead font-weight-normal">
+                Applications to be a part of our 2020 organizing team are open!
+              </p>
+              <div>
+                <CustomButton text="Apply Now" color="#e62b1e" href="/apply" />
+              </div>
+            </div>
+            {/* <div className="home-event-details">
               <p className="about-home-panel-p">
-                Statler Auditorium | 4.28.2019 | 2:00pm
+                Applications to be a part of our 2020 organizing team are open!
               </p>
               <p className="p-sm">
-                Ticket sales closed. Now preparing for TEDxCornellUniversity
-                2020.
+                Now preparing for TEDxCornellUniversity 2020.
               </p>
-            </div>
-            <div className="offset-for-bg">
-              {/* <a
-                className="cool-btn btn text-danger"
-                href="https://cornellconcerts.universitytickets.com/w/event.aspx?id=1356&r=970e11c5b72d470baa6f610f23a7a584"
-              >
-                <b>Buy Tickets</b>
-              </a> */}
-            </div>
-
-            {/* </div> */}
+            </div> */}
             {/* <i className="fa fa-angle-down fa-2x pulse" aria-hidden="true" /> */}
           </div>
         </div>
@@ -120,6 +113,32 @@ class Home extends Component {
               <Col md={5}>
                 <div>
                   <div data-aos="fade-right" className="paper-div">
+                    <h3>Get Involved</h3>
+                    <p>
+                      Interested in getting involved on the speaking or
+                      organizing side? Applications for our organizing team are
+                      now open, and speaker applications will be out soon! We
+                      look for students passionate about TEDx in applications
+                      for our organizing team, and anyone with a great idea for
+                      a talk can apply to be a speaker.
+                    </p>
+                    <CustomButton
+                      text="Apply Now"
+                      color="#e62b1e"
+                      href="/apply"
+                    />
+                  </div>
+                </div>
+              </Col>
+              <Col md={7} />
+            </Row>
+            <div className="row-spacer" />
+
+            <Row>
+              <Col md={7} />
+              <Col md={5}>
+                <div>
+                  <div data-aos="fade-left" className="paper-div">
                     <h3>Our Conference</h3>
                     <p>
                       TEDxCornellUniversity presents to you our 2019 conference
@@ -133,30 +152,6 @@ class Home extends Component {
                       text="About the Event"
                       color="#e62b1e"
                       href="/events"
-                    />
-                  </div>
-                </div>
-              </Col>
-              <Col md={7} />
-            </Row>
-            <div className="row-spacer" />
-            <Row>
-              <Col md={7} />
-              <Col md={5}>
-                <div>
-                  <div data-aos="fade-left" className="paper-div">
-                    <h3>Get Involved</h3>
-                    <p>
-                      Interested in getting involved on the speaking or
-                      organizing side? Check back in fall 2019 for applications
-                      to speak or help organize our event. Anyone can apply to
-                      be a speaker, and we look for students passionate about
-                      TEDx in applications for our organizing team.
-                    </p>
-                    <CustomButton
-                      text="Apply Now"
-                      color="#e62b1e"
-                      href="/apply"
                     />
                   </div>
                 </div>

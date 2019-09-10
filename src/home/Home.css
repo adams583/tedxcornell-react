@@ -1,5 +1,5 @@
 .main-panel-home-background {
-  background-image: url("../img/main_bg_sm.jpg");
+  background-image: url("../img/cornellpic.jpg");
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -19,8 +19,15 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   align-items: center;
+}
+
+.main-panel-home-content > * {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 10%;
 }
 
 .first-panel {
@@ -155,7 +162,8 @@ h1 {
     width: 100%;
   }
   .main-panel-home-background {
-    background-image: url("../img/main_bg.jpg");
+    /* background-image: url("../img/main_bg.jpg"); */
+    background-image: url("../img/cornellpic.jpg");
     height: 100vh;
     width: 100%;
     background-size: cover;

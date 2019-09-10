@@ -15,39 +15,45 @@ class FAQ extends Component {
   generalFaq = [
     {
       key: "1",
-      question: "When is the event?",
+      question: "Can I help organize the event?",
       answer:
-        "This year's event was held on Sunday afternoon, on April 28, 2019. Check back soon for details on TEDxCornellUniversity 2020."
+        'Yes! We are currently recruiting for our 2020 organizing team. Visit our "Apply" page to get involved.'
     },
     {
       key: "2",
+      question: "When is the event?",
+      answer:
+        "TEDxCornell 2020 will be held on Saturday April 25, 2020 in Statler Auditorium."
+    },
+    {
+      key: "3",
       question: "Who sponsors your event?",
       answer:
         "Our sponsors include different schools of Cornell, local businesses, and larger companies as well."
     },
     {
-      key: "3",
+      key: "4",
       question: "What can I get out of coming to a TEDx event?",
       answer:
         "You can learn, be inspired, and get a chance to engage with a community interested in discussing exciting new ideas. "
     },
     {
-      key: "4",
+      key: "5",
       question: "Can anyone come to the event?",
       answer:
         "Yes! If you're going to be in town on April 28th, you're welcome at our event."
     },
     {
-      key: "5",
+      key: "6",
       question: "How can I register for your event?",
       answer:
         "Just buy tickets! Navigate to our home page and use our ticketing link to purchase tickets. If you have trouble doing so, shoot us an email and we'll help out."
     },
     {
-      key: "6",
+      key: "7",
       question: "Do your events have themes?",
       answer:
-        'Our 2018 event did not have a theme, but we hope to hold themed events from here on out. This year\'s theme was "Reframe"'
+        'Our 2019 event\'s theme was "Reframe". While some of our previous events were not themed, we plan on having themes from here on out.'
     }
   ];
 
@@ -73,7 +79,8 @@ class FAQ extends Component {
     {
       key: "4",
       question: "What can I expect at a TEDx event?",
-      answer: ""
+      answer:
+        "TEDx events are truly unique in that they bring together a diverse range of speakers and ideas together in one place in the span of a few hours. There's no platform quite like it."
     },
     {
       key: "5",
@@ -111,7 +118,7 @@ class FAQ extends Component {
             >
               <CardSelector
                 title="Team and event inquiries"
-                text="Our 2019 event is quickly approaching! Learn more about how the team operates and what our events are all about"
+                text="Our 2020 event is coming soon! Learn more about how the team operates and what our events are all about"
                 data-faq="general"
                 selected={this.state.category === "general"}
               />

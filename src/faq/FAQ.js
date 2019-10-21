@@ -17,7 +17,7 @@ class FAQ extends Component {
       key: "1",
       question: "Can I help organize the event?",
       answer:
-        'Yes! We are currently recruiting for our 2020 organizing team. Visit our "Apply" page to get involved.'
+        'Our team is fully staffed this semester, but check back next semester! Look out for voluteer opporutnites as another way to get involved.'
     },
     {
       key: "2",

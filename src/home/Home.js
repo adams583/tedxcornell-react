@@ -44,7 +44,7 @@ class Home extends Component {
                 <h1>TEDxCornellUniversity</h1>
               </strong>
               <p className="lead font-weight-normal">
-                Applications to be a part of our 2020 organizing team are open!
+                Speaker applications for our 2020 event are now open!
               </p>
               <div>
                 <CustomButton text="Apply Now" color="#e62b1e" href="/apply" />
@@ -116,11 +116,10 @@ class Home extends Component {
                     <h3>Get Involved</h3>
                     <p>
                       Interested in getting involved on the speaking or
-                      organizing side? Applications for our organizing team are
-                      now open, and speaker applications will be out soon! We
-                      look for students passionate about TEDx in applications
-                      for our organizing team, and anyone with a great idea for
-                      a talk can apply to be a speaker.
+                      organizing side? Speaker applications a now open! Anyone 
+                      with a great idea for a talk can apply to be a speaker. If 
+                      you're looking to become a part of our organizing team, 
+                      check back next semester for details. 
                     </p>
                     <CustomButton
                       text="Apply Now"

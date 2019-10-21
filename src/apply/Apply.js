@@ -34,13 +34,19 @@ class Apply extends Component {
       key: "2",
       question: "What roles are available on the organizing team?",
       answer:
-        "Our organizers work on speaker curation, finance and sponsorship, design and marketing, website design, and more. This year we are prioritizing finance, marketing, and website design roles, but if you're interested in another role, we encourange you to submit an application anyways!"
+        "Our organizers work on speaker curation, finance and sponsorship, design and marketing, website design, and more." + 
+        "Check back next semester to see what positions we're looking for."
     },
     {
       key: "3",
       question: "Are there other ways to get involved?",
       answer:
         "We will be looking for volunteers willing to help with tasks leading up to the event and on the day of the event. If you'd like to meet the team and get a sense of what it's like being on the organizing side of the event, keep an eye out for our volunteering opportunities."
+    },
+    {
+      key: "4",
+      question: "Do you compensate speakers?",
+      answer: "TEDx events are not allowed to pay speakers; however, we can cover travel and lodging for speakers outside of Ithaca. We do our best to provide all the support we can to our speakers."
     }
   ];
 
@@ -55,32 +61,36 @@ class Apply extends Component {
             <Col md={8}>
               <h3>Speaker Applications</h3>
               <p className="left-border">
-                <b>Speaker applications for our 2020 event are coming soon.</b>
+                <b>Apply to be a speaker for our 2020 event!</b>
                 <br />
                 We look for presenters who will inform, inspire, and entertain
                 while spreading ideas that they are truly passionate about. If
-                you are interested, or know someone who might be, get in touch
-                or keep an eye out for applications. Applications for our 2020
-                event will be posted in Fall 2019.
+                you are interested, or know someone who might be, please fill out
+                the application below!
+              <div className = "padding-top">
+                <CustomButton 
+                  text="Apply Now" 
+                  color="#e62b1e"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdbprNl5FgBHC-sHxWkMor8JGqnkL6jK8TGRS0vS4CI0GJwIQ/viewform?usp=sf_link" />
+              </div>
               </p>
-              {/* <CustomButton text="Apply Now" color="#e62b1e" /> */}
             </Col>
           </Row>
           <Row>
             <Col md={8}>
               <h3>Team Applications</h3>
               <p className="left-border">
-                <b>We are recruiting!</b>
+                <b>We are not recruiting this semester.</b>
                 <br />
-                Apply now if you're interested in joining our organizing team!
+                Check back next semester if you're interested in joining our organizing team!
                 We're a close-knit team of students who are passionate about TED
                 and determined to organize great events.
                 <div className="padding-top">
-                  <CustomButton
+                  {/*<CustomButton
                     text="Apply Now"
                     color="#e62b1e"
                     href="https://docs.google.com/forms/d/e/1FAIpQLSfdvefoTzOe37qstAXd1I_ECZ6zEBG9NKAaA1QeD5_rsIzD7g/viewform?usp=sf_link"
-                  />
+                  />*/}
                 </div>
               </p>
             </Col>

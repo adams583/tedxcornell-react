@@ -66,7 +66,8 @@ class Apply extends Component {
                 We look for presenters who will inform, inspire, and entertain
                 while spreading ideas that they are truly passionate about. If
                 you are interested, or know someone who might be, please fill out
-                the application below!
+                the application below! Applications close at 11:59PM on December 2,
+                2019. 
               <div className = "padding-top">
                 <CustomButton 
                   text="Apply Now" 

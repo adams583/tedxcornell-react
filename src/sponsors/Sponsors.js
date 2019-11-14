@@ -48,8 +48,8 @@ class Sponsors extends Component {
             <div className="left-border">
               <p>
                 Our event would not have been possible without our amazing
-                sponsors! we’d love to recognize them for all their
-                contributions to TEDxCornellUniversity 2019.
+                sponsors! We’d love to recognize them for all their
+                contributions to TEDxCornell 2019.
               </p>
               <p>
                 Every event ticket gave a free entry into our raffle. See below

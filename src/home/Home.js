@@ -41,13 +41,16 @@ class Home extends Component {
           <div className="main-panel-home-content text-center">
             <div className="home-title">
               <strong>
-                <h1>TEDxCornellUniversity</h1>
+                <h1>TEDxCornell</h1>
               </strong>
               <p className="lead font-weight-normal">
                 Speaker applications for our 2020 event are now open!
               </p>
               <div>
                 <CustomButton text="Apply Now" color="#e62b1e" href="/apply" />
+              </div>
+              <div class="scroll">
+                &#8595;
               </div>
             </div>
             {/* <div className="home-event-details">
@@ -76,7 +79,7 @@ class Home extends Component {
             before.
           </p>
           <p>
-            At TEDxCornellUniversity 2019, Reframe, we thank all who joined us
+            At TEDxCornell 2019, Reframe, we thank all who joined us
             in thinking more deeply about ourselves, our communities, and the
             future that lies ahead of us.
           </p>
@@ -102,7 +105,7 @@ class Home extends Component {
           <ImageTextOverlap
             onImgLoad={() => {}}
             src={itoImg}
-            title="What is TEDxCornellUniversity?"
+            title="What is TEDxCornell?"
             content="We're a student-run club dedicated to bringing great independently-organized TED events and amazing people to Cornell."
             button="Learn More"
             buttonHref="/about"
@@ -140,12 +143,12 @@ class Home extends Component {
                   <div data-aos="fade-left" className="paper-div">
                     <h3>Our Conference</h3>
                     <p>
-                      TEDxCornellUniversity presents to you our 2019 conference
+                      TEDxCornell presents to you our 2019 conference
                       as we hope to continue bringing “Ideas Worth Spreading” to
                       Cornell’s campus. Six speakers from our local community
                       and across the country shared the stage, each bringing
                       light to a unique topic. Listen, learn, and be inspired.
-                      Experience TEDxCornellUniversity.
+                      Experience TEDxCornell.
                     </p>
                     <CustomButton
                       text="About the Event"

@@ -31,13 +31,13 @@ class Events extends Component {
 
   experiences = {
     "A half-day event":
-      "On April 28th, 2019, we're holding an afternoon event packed with exciting talks and performances you won't want to miss.",
+      "On April 28th, 2019, we held an afternoon event packed with exciting talks and performances.",
     "Talks and Performances":
-      "Our event will have 6 speakers and 1 performance group, local and from across the country, all here to share their best ideas with the Cornell community.",
+      "Our event had 6 speakers and 1 performance group, local and from across the country, all here to share their best ideas with the Cornell community.",
     "Raffle merchandise":
-      "Every ticket comes with a free raffle entry. From Daniel Wellington gift baskets to a two night stay at Firelight Camp, we've got something for everyone.",
+      "Every ticket came with a free raffle entry. From Daniel Wellington gift baskets to a two night stay at Firelight Camp, we've had something for everyone.",
     "Volunteer opportunities":
-      "Looking to help out on the day of the event? We're offering volunteer opportunities in which you can help with general ticketing activities or speaker assistance"
+      "We offered volunteer opportunities to help with general ticketing activities or speaker assistance. Everyone could get involved!"
   };
 
   render() {
@@ -50,7 +50,7 @@ class Events extends Component {
                 <h1>Events</h1>
 
                 <p className="lead font-weight-normal">
-                  <em>TEDxCornellUniversity 2019 | 4.28.2019</em>
+                  <em>TEDxCornell 2019 | 4.28.2019</em>
                   <br />
                   <b>Theme: &nbsp;Reframe</b>
                 </p>
@@ -72,7 +72,7 @@ class Events extends Component {
             Sagan
           </h2>
           <p>
-            At TEDxCornellUniversity 2019, from exploring the boundaries of
+            At TEDxCornell 2019, from exploring the boundaries of
             technology to challenging the way we see ourselves, we hoped to
             provide a diverse and entertaining array of ideas that everyone
             would find accessible, interesting, and applicable to their own
@@ -115,7 +115,7 @@ class Events extends Component {
           <div className="speakers-title-div">
             <h1>Our Lineup</h1>
             <p>
-              TEDxCornellUniversity 2019 hosted 6 amazing speakers. From a
+              TEDxCornell 2019 hosted 6 amazing speakers. From a
               venture capitalist to a neuroscientist, two of Cornell's own
               students, and a professional host, we were proud to feature
               everyone involved in making this year's event happen.
@@ -162,7 +162,7 @@ class Events extends Component {
         <BottomPanel
           img={bottomPanelImg}
           title="Reserve Your Spot"
-          txt="Reserve your seat in Statler Auditorium on April 28th, 2019 to experience our event. Six speakers, one performance, three hours you won't forget."
+          txt="Check back soon to reserve your seat in Statler Auditorium on April 25th, 2020 to experience our event. Six speakers, one performance, three hours you won't forget."
           button="Ticketing Closed"
           buttonHref=""
         />

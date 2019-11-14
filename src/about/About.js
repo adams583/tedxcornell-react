@@ -223,7 +223,7 @@ class About extends Component {
               <h1>About</h1>
 
               <p className="lead font-weight-normal">
-                <em>What is TEDxCornellUniversity?</em>
+                <em>What is TEDxCornell?</em>
               </p>
               <p className="lead font-weight-normal">
                 Each year we organize a TEDx event operated under an official
@@ -240,7 +240,7 @@ class About extends Component {
           <p>
             Our annual TEDx conference brings together a diverse array of
             speakers, performers, and audience members all hoping to learn and
-            share knowledge. TEDxCornellUniversity is completely student-run,
+            share knowledge. TEDxCornell is completely student-run,
             with team members hard at work all year planning for the conference.
             We hope to create an environment in which students and community
             members can discuss ideas and connect with great speakers and

@@ -34,7 +34,7 @@ class Apply extends Component {
       key: "2",
       question: "What roles are available on the organizing team?",
       answer:
-        "Our organizers work on speaker curation, finance and sponsorship, design and marketing, website design, and more." + 
+        "Our organizers work on speaker curation, finance and sponsorship, design and marketing, website design, and more. " + 
         "Check back next semester to see what positions we're looking for."
     },
     {

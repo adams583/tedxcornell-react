@@ -23,7 +23,7 @@ class FAQ extends Component {
       key: "2",
       question: "When is the event?",
       answer:
-        "TEDxCornell 2020 will be held on Saturday April 25, 2020 in Statler Auditorium."
+        "TEDxCornell 2020 will be held on Saturday April 25th, 2020 in Statler Auditorium."
     },
     {
       key: "3",
@@ -41,7 +41,7 @@ class FAQ extends Component {
       key: "5",
       question: "Can anyone come to the event?",
       answer:
-        "Yes! If you're going to be in town on April 28th, you're welcome at our event."
+        "Yes! If you're going to be in town on April 25th, you're welcome at our event."
     },
     {
       key: "6",
@@ -72,9 +72,9 @@ class FAQ extends Component {
     },
     {
       key: "3",
-      question: "Who runs TEDxCornellUniversity",
+      question: "Who runs TEDxCornell",
       answer:
-        "Operating under official license from TED, a group of student volunteers organize and host each TEDxCornellUniversity event."
+        "Operating under official license from TED, a group of student volunteers organize and host each TEDxCornell event."
     },
     {
       key: "4",
@@ -85,7 +85,7 @@ class FAQ extends Component {
     {
       key: "5",
       question:
-        "How many TEDxCornellUniversity conferences have been held so far?",
+        "How many TEDxCornell conferences have been held so far?",
       answer:
         "Our 2019 event was our fourth event. At Cornell in the past, TEDx events have not been a big part of the culture, but we're trying our best to change that!"
     },
@@ -94,6 +94,33 @@ class FAQ extends Component {
       question: "How are TEDx events sponsored?",
       answer:
         "We are a nonprofit organization sponsored by donations from companies, local businesses, and organizations within Cornell University."
+    }
+  ];
+
+  speakerFaq = [
+    {
+      key: "1",
+      question: "Can anyone apply to be a speaker?",
+      answer:
+        "Yes! We're looking for individuals who believe that they have a story, idea, or passion worth sharing."
+    },
+    {
+      key: "2",
+      question: "What roles are available on the organizing team?",
+      answer:
+        "Our organizers work on speaker curation, finance and sponsorship, design and marketing, website design, and more. " + 
+        "Check back next semester to see what positions we're looking for."
+    },
+    {
+      key: "3",
+      question: "Are there other ways to get involved?",
+      answer:
+        "We will be looking for volunteers willing to help with tasks leading up to the event and on the day of the event. If you'd like to meet the team and get a sense of what it's like being on the organizing side of the event, keep an eye out for our volunteering opportunities."
+    },
+    {
+      key: "4",
+      question: "Do you compensate speakers?",
+      answer: "TEDx events are not allowed to pay speakers; however, we can cover travel and lodging for speakers outside of Ithaca. We do our best to provide all the support we can to our speakers."
     }
   ];
 
@@ -136,6 +163,19 @@ class FAQ extends Component {
                 selected={this.state.category === "ted"}
               />
             </div>
+            <div
+              className="faq-selector"
+              onClick={() => {
+                this.setState({ category: "speaker" });
+              }}
+            >
+              <CardSelector
+                title="Speaking inquiries"
+                text="Want to speak or get involved? Here are some common questions."
+                data-faq="speaker"
+                selected={this.state.category === "speaker"}
+              />
+            </div>
 
             <div className="other-card large-screen-only">
               <h5>Anything else?</h5>
@@ -169,6 +209,21 @@ class FAQ extends Component {
               id="faq-panel-group"
             >
               {this.tedFaq.map((qa, index) => (
+                <Collapsible key={index} title={qa.question}>
+                  <div>{qa.answer}</div>
+                </Collapsible>
+              ))}
+            </PanelGroup>
+          )}
+
+          {this.state.category === "speaker" && (
+            <PanelGroup
+              accordion
+              className="faq-questions-container"
+              data-faq="speaker"
+              id="faq-panel-group"
+            >
+              {this.speakerFaq.map((qa, index) => (
                 <Collapsible key={index} title={qa.question}>
                   <div>{qa.answer}</div>
                 </Collapsible>

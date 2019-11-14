@@ -27,7 +27,7 @@ class Footer extends Component {
         <div className="footer-content-container">
           <div className="footer-left flex-vertical">
             <div className="logo-container">
-              <h1>TEDxCornellUniversity</h1>
+              <h1>TEDxCornell</h1>
             </div>
             <div className="links-container ">
               <Col xs={6} sm={6} md={4} lg={4} xl={4}>

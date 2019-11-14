@@ -9,7 +9,7 @@ class Header extends Component {
       <Navbar fluid collapseOnSelect className="main-nav">
         <Navbar.Header>
           <Navbar.Brand>
-            <Link to="/">TEDxCornellUniversity</Link>
+            <Link to="/">TEDxCornell</Link>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>

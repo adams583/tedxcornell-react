@@ -9,6 +9,9 @@ import tianyi_pic from "../img/Tianyi.jpg";
 import liz_pic from "../img/liz_gunner.jpg";
 import hebani_pic from "../img/hebani.jpeg";
 import uzair_pic from "../img/uzair.jpg";
+import mike_pic from "../img/liz_gunner.jpg";
+import lawrence_pic from "../img/hebani.jpeg";
+import alina_pic from "../img/uzair.jpg";
 
 const emily = {
   name: "Emily Chen",
@@ -85,6 +88,27 @@ const uzair = {
   img: uzair_pic,
   title: "Licensee"
 };
+
+const mike = {
+  name: "Mike Tyrrell",
+  info: "Info about Mike",
+  img: mike_pic,
+  title: "Website Design and IT"
+};
+
+const lawrence = {
+  name: "Lawrence Shoykhet",
+  info: "Info about Lawrence",
+  img: lawrence_pic,
+  title: "Finance and Speaker Curation"
+};
+
+const alina = {
+  name: "Alina Pereyra",
+  info: "Info about Alina",
+  img: alina_pic,
+  title: "Marketing and Finance"
+};
 const team2019 = [
   uzair,
   kirkland,
@@ -94,7 +118,10 @@ const team2019 = [
   emily,
   yeon,
   akshu,
-  tianyi
+  tianyi/*,
+  mike,
+  lawrence,
+  alina*/
 ];
 const team2018 = [liz, hebani, adam, eri, kirkland, emily, uzair];
 

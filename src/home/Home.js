@@ -49,9 +49,6 @@ class Home extends Component {
               <div>
                 <CustomButton text="Apply Now" color="#e62b1e" href="/apply" />
               </div>
-              <div class="scroll">
-                &#8595;
-              </div>
             </div>
             {/* <div className="home-event-details">
               <p className="about-home-panel-p">

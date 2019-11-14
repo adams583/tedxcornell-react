@@ -16,7 +16,7 @@
 .main-panel-home-content {
   margin: auto;
   color: white;
-  height: 100%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   /* justify-content: flex-end; */
@@ -125,15 +125,15 @@ h1 {
 }
 
 .scroll { /* this is the class for the button to scroll down */ 
-  position: absolute;
   margin: auto;
-  size: 200px; 
   color: white;
-  bottom: 80vh; 
-  height: 10vh;
   display: flex;
   flex-direction: column;
+  /* justify-content: flex-end; */
   align-items: center;
+  height: 10%; 
+  /*display: flex;
+  flex-direction: column;*/
 }
 
 #about-home-panel {

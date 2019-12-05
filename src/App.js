@@ -6,6 +6,7 @@ import Home from "./home/Home";
 import Events from "./events/Events";
 import About from "./about/About";
 import Apply from "./apply/Apply";
+import Speakers from "./speakers/Speakers"; 
 import AOS from "aos";
 import ErrorPage from "./error/ErrorPage";
 import "aos/dist/aos.css";
@@ -16,7 +17,7 @@ import {
   speakers_2018,
   speakers_2015
 } from "./speakers/speaker-profiles";
-import logoImg from "./img/Black_TEDx_Logo_small.png";
+import logoImg from "./img/HomeLogo.png";
 import { Image } from "react-bootstrap";
 import FAQ from "./faq/FAQ";
 import Sponsors from "./sponsors/Sponsors";
@@ -41,7 +42,7 @@ class App extends Component {
               <Route path="/about" component={About} />
               <Route path="/apply" component={Apply} />
               <Route path="/sponsors" component={Sponsors} />
-              {/* <Route exact path="/speakers" component={Speakers} /> */}
+              <Route path="/speakers" component={Speakers} />
               <Route exact path="/faq" component={FAQ} />
               {Object.keys(speakers_2019).map(key => (
                 <Route

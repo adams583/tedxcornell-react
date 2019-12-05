@@ -1,6 +1,6 @@
 .main-panel-home-background {
-  background-image: url("../img/cornellpic.jpg");
-  height: 100vh;
+  background-image: url("/Users/michaeltyrrell/tedxcornell-react/src/img/cornellpic2.jpg");
+  height: 90vh;
   width: 100%;
   background-size: cover; 
   background-position: center;
@@ -16,7 +16,7 @@
 .main-panel-home-content {
   margin: auto;
   color: white;
-  height: 90%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   /* justify-content: flex-end; */
@@ -124,18 +124,6 @@ h1 {
   box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.452);
 }
 
-.scroll { /* this is the class for the button to scroll down */ 
-  margin: auto;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: flex-end; */
-  align-items: center;
-  height: 10%; 
-  /*display: flex;
-  flex-direction: column;*/
-}
-
 #about-home-panel {
   display: flex;
   flex-direction: column;
@@ -175,7 +163,7 @@ h1 {
   }
   .main-panel-home-background {
     /* background-image: url("../img/main_bg.jpg"); */
-    background-image: url("../img/cornellpic.jpg");
+    background-image: url("../img/cornellpic2.jpg");
     height: 100vh;
     width: 100%;
     background-size: cover;

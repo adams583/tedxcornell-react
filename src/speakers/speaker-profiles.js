@@ -30,6 +30,8 @@ import aida_mollenkamp_background from "../img/aida-mollenkamp-background.jpg";
 import michael_graziano_background from "../img/michael-graziano-background.jpg";
 import maryanna_saenko_background from "../img/maryanna-saenko-background.jpg";
 
+
+
 const maryanna = {
   name: "Maryanna Saenko",
   img: maryanna_pic,
@@ -39,9 +41,10 @@ const maryanna = {
   talkTitle: "Three Simple Life Lessons to Ignore",
   talkInfo: "",
   podcastId: 9320714,
+  vidId: "Spm51ASa9Do", 
   info:
     "Maryanna Saenko is an early-stage venture capitalist with an interest in robotics, quantum computing, blockchain, aerospace, and the future of food. Previously she was at Khosla Ventures, and prior to that at DFJ, where she worked to focus on frontier technology investments. She was also an investment partner at Airbus Ventures where she led a series of venture investments strategically aligned with Airbus’ future-of-aerospace initiatives. Before Airbus, Maryanna was a consultant at Lux Research and a research engineer at Cabot Corporation."
-};
+  };
 
 const howard = {
   name: "Howard Zucker",
@@ -53,6 +56,7 @@ const howard = {
     "From Einstein to “Baby Sharks”: Relativity in the age of Virality",
   talkInfo: "",
   podcastId: 9079025,
+  vidId: "ak-aV6bkedE",
   info:
     "Howard Zucker is Commissioner of Health for New York State. He trained in pediatrics (Johns Hopkins), anesthesiology (University of Pennsylvania), pediatric critical care/pediatric anesthesiology (Children's Hospital of Philadelphia) and pediatric cardiology (Boston Children's Hospital) and is board-certified in 6 specialties. Dr. Zucker was a pediatric anesthesiologist at Montefiore and ran the pediatric ICU at New York Presbyterian Hospital. He has held academic appointments at Yale, Columbia and Einstein medical schools, Georgetown law and on the NIH faculty. He served as a White House Fellow, HHS Deputy Assistant Secretary of Health, Assistant Director-General of the World Health Organization and IOP fellow at Harvard Kennedy School. He holds a BS (McGill), MD (George Washington University), JD (Fordham Law), LL.M. (Columbia Law) and a postgraduate diploma (London School of Hygiene & Tropical Medicine). Dr. Zucker worked at Massachusetts General Hospital to create a community peace index for use in international conflict regions, created the nation's Medical Reserve Corps, developed a talking book on health for Afghan women. In addition, he worked at MIT, designed experiments for the Space Shuttle, is on the board that runs the national lab on the International Space Station, was an ABC News ‘Person of the Week’ and member of the U.S. Supreme Court bar."
 };
@@ -66,6 +70,7 @@ const aida = {
   talkTitle: "Why You Should Speak Storytelling",
   talkInfo: "",
   podcastId: null,
+  vidId: null,
   info:
     "Aida is a food and travel expert, author, chef, Food Network personality, and founder of Salt & Wind Travel. She has made her career in food travel media and hospitality and has crossed the globe to search out the best food destinations. She studied at the Cornell Hotel School and Le Cordon Bleu Paris cooking school before joining CHOW Magazine where she worked as Food Editor. Aida then moved to television and hosted Ask Aida on the Food Network, FoodCrafters on the Cooking Channel, In The Pantry on Yahoo!, and the TasteMade series, Off Menu. Her cookbook, Keys To The Kitchen, is a go-to for home cooks who want to become more adventurous cooks. In 2015 she founded Salt & Wind Travel, the boutique travel company for food lovers. Salt & Wind Travel (saltandwind.com) helps its clients to experience bespoke food-focused travels."
 };
@@ -79,6 +84,7 @@ const michael = {
   talkTitle: "Consciousness and the Social Brain",
   talkInfo: "",
   podcastId: 9137840,
+  vidId: "Zjak6YgCVdc",
   info:
     "Michael Graziano is a scientist, author, and ventriloquist, who has studied the brain for over thirty years. His TEDxCornellUniversity talk focuses on how a collection of neurons might perceive subjective consciousness in itself and other agents, how consciousness is a part of our social selves, and how we might build conscious machines in the future."
 };
@@ -92,6 +98,7 @@ const mason = {
   talkTitle: "How to Build Your Own Spacecraft",
   talkInfo: "",
   podcastId: 9194138,
+  vidId: "iapEm2XvUrY",
   info:
     "Dr. Peck is an Associate Professor in Mechanical and Aerospace Engineering at Cornell University and the Director of Cornell's Space Systems Design Studio. His research interests include space-systems architecture and satellite dynamics and control. From late 2011 through early 2014 he served as NASA's Chief Technologist in Washington, DC. In that role, he acted as the agency's chief strategist for technology investment and prioritization and advocate for innovation in aeronautics and space technology. His lab focuses on fundamental research in space technology that can be advanced through flight experiments. Examples include water-propelled lunar spacecraft, magnetically docked CubeSats, and Kicksat, a crowd-funded technology demonstrator for satellites-on-a-chip. His lab has flown on average one spaceflight experiment a year since 2011 and plans to launch three more spacecraft by 2019. More information on this research is available at http://www.spacecraftresearch.com and http://www.spacecraftlab.com."
 };
@@ -104,6 +111,7 @@ const andrew = {
   talkTitle: "Going Viral: Life, War, and Engineered Zombie Armies",
   talkInfo: "",
   podcastId: 9230582,
+  vidId: "4q1ZtqT86SY",
   info:
     "Andrew Rosenblatt is a third-year undergraduate studying biological sciences and public policy at Cornell University. Before coming to Cornell, Andrew researched novel methods for early cancer detection by identifying a cancer cell’s unique metabolic signature using fluorescent microscopy in the lab of Enrico Gratton and Michelle Digman at the University of California, Irvine. In college, Andrew has continued to pursue scientific inquiry in the lab of Tobias Dörr, studying new ways to overcome antibiotic resistance in cholera. His TEDxCornell talk centers on the rise of drug-resistant bacteria and the future of medicine."
 };
@@ -116,6 +124,7 @@ const chandler = {
   talkTitle: "Lessons from a Syrian Refugee Camp",
   talkInfo: "",
   podcastId: 9079304,
+  vidId: "te-W7KVvs44",
   info:
     "Prior to Cornell, Chandler deferred his enrollment for 2 years to do volunteer service as a full-time missionary. When he arrived on Cornell's campus, he had already developed a strong passion for service that resonated with the hotel school culture. After completing his freshman year, he traveled independently to Jordan to engage in humanitarian efforts with Syrian refugees. He spent weeks living with locals and working in a camp on the Syrian border. Since returning to campus, he has taken with him the lessons learned from those experiences and applied them to his life at Cornell. Chandler still tries to give back in meaningful ways to those around him."
 };
@@ -127,8 +136,9 @@ const lou = {
   info:
     "Lou Diamond is THE Master Connector.  He has over a quarter century of experience in sales, relationship management, business development and executive leadership.  He is an international keynote speaker, consultant, leadership & performance mentor, best-selling author, podcast & TV host and CEO of Thrive, a company focused on making the most amazing people, businesses and brands become even more amazing through the power of connecting. ",
   title: "Host, International Speaker, CEO of Thrive",
-  talkTitle: "Lou will be hosting TEDxCornellUniversity2019",
+  talkTitle: "Lou hosted TEDxCornell2019",
   podcastId: 9544367,
+  vidId: null,
   talkInfo: ""
 };
 
@@ -147,6 +157,7 @@ const itai = {
   img: itai_pic,
   url: "itai-cohen",
   backgroundImg: aida_mollenkamp_background,
+  vidId: "0eYDatu0lLQ",
   info:
     "Professor Itai Cohen is obsessed with matter in motion. At Cornell, his research has focused on investigating the behavior of microscopic and nanoscopic particles suspended in a fluid, exploring the mechanics of materials ranging from biological tissues to origami inspired metamaterials, discovering the mechanisms used by insects during flapping flight, and determining how Tango dancers and audiences at heavy metal concerts coordinate their movement. Understanding the out-of-equilibrium behaviors of these systems remains one of the biggest challenges in physics.  "
 };
@@ -156,6 +167,7 @@ const susan = {
   img: susan_pic,
   url: "susan-fleming",
   backgroundImg: aida_mollenkamp_background,
+  vidId: "n_cGws3qGaA",
   info:
     "Dr. Susan Fleming is a Senior Lecturer at Cornell’s Hotel School. After a successful career on Wall Street, she earned a PhD focused on understanding why there are so few women in leadership positions in U.S. society. In addition to her work researching and advocating for women’s advancement, Susan is an active angel investor and corporate director, with experience serving on the boards of six public companies as well as numerous private company and non-profit boards. Susan’s TEDx talk will focus on why both men and women should care about reducing gender bias in our society and offer specific suggestions on how to do that. "
 };
@@ -165,6 +177,7 @@ const drew = {
   img: drew_pic,
   url: "drew-margolin",
   backgroundImg: aida_mollenkamp_background,
+  vidId: null,
   info:
     "The internet, and social media in particular, have made individual and institutional discourse visible like never before. Yet the mechanisms that shape the production of discourse — what leads individuals or institutions to speak up, whom do they address, what do they say — is not yet well understood. Margolin's research focuses on understanding these dynamics through the quantitative aggregation of collective communication behavior. In particular, his approach emphasizes the role that accountability, credibility, and legitimacy within social networks and communities play in shaping observable discourse."
 };
@@ -174,6 +187,7 @@ const shimon = {
   img: shimon_pic,
   url: "shimon-edelman",
   backgroundImg: aida_mollenkamp_background,
+  vidId: "TSsTyYEuq-4",
   info:
     "Shimon Edelman holds degrees in electrical engineering and in computer science and is trying to understand the brain/mind through behavioral, neurophysiological, evolutionary, and computational studies of vision, language, happiness, and consciousness. His books include 'Computing the Mind: How the Mind Really Works', 'The Happiness of Pursuit', and, most recently, 'Beginnings', a psychological-philosophical science fiction (psy-phi sci-fi) anabasis. His TEDxCornell talk shows how the realization that the brain is a virtual reality engine can help us make a case for humanist ethics."
 };
@@ -183,6 +197,7 @@ const ifeoma = {
   img: ifeoma_pic,
   url: "ifeoma-ajunwa",
   backgroundImg: aida_mollenkamp_background,
+  vidId: null,
   info:
     "Professor Ajunwa researches the organizational behavior of organizations, particularly in relation to stigma/social evaluation, diversity, and the adoption of new work technologies. Her research has been mentioned in major media outlets such as, the New York Times, the Harvard Business Review, the Atlantic, the Guardian, Nature Biotechnology, etc. Professor Ajunwa has served as a keynote speaker or panelist at international conferences such as SXSW and has presented her work before governmental agencies such as the Consumer Financial Protection Bureau (the CFPB) and the Equal Employment Opportunity Commission (the EEOC)."
 };
@@ -192,6 +207,7 @@ const renee = {
   img: renee_pic,
   url: "renee-alexander",
   backgroundImg: aida_mollenkamp_background,
+  vidId: null,
   info:
     "As Associate Dean of Students/Senior Advisor to the Dean, “Dr. Renee” focuses on campus climate issues. Through her work with student communities, Renee Alexander’s efforts improve dialogue, collaboration, and understanding. Under her leadership, the Breaking Bread initiative – which brings participants together for a special meal and facilitated conversation – won the highly acclaimed Perkins Prize (2017) for its significant impact toward furthering the ideal of university community while respecting the values of racial and cultural diversity. Her contributions also include facilitating Town Hall meetings, convening the Leadership Roundtable of campus student leaders, working within and between groups to foster community and confront complex issues, mediation, resolving conflicts, advising students, and supporting students as they engage across the spectrum of Cornell communities."
 };
@@ -201,6 +217,7 @@ const colin = {
   img: colin_pic,
   url: "colin-campbell",
   backgroundImg: aida_mollenkamp_background,
+  vidId: "tmWoWOM16uE",
   info:
     "Professor Campbell is a well-established researcher and author. His popular book (co-authored with his son, a physician) titled The China Study (2005), has been translated into more than 50 foreign languages and has sold well over 2 million copies. His second book, Whole (2013), was a New York Times best seller. Campbell has conducted experimental research on the effect of food and nutrition on the development of cancer and related diseases. His research program was relatively large, and his findings were published in more than 300 peer reviewed professional papers. He also participated as a member of several expert panels on health of the National Academy of Sciences, the National Institutes of Health and related public agencies. He has been in his professional career for more than 60 years."
 };
@@ -210,6 +227,7 @@ const david = {
   img: david_pic,
   url: "david-pizarro",
   backgroundImg: aida_mollenkamp_background,
+  vidId: null,
   info:
     "David Pizarro is a research psychologist and associate professor at Cornell University. His primary research interests are in moral judgment and he is particularly interested in moral intuitions (especially concerning moral responsibility, and the permissibility or impermissibility of certain acts), and in biases that affect moral judgment. He also has a general interest in the influence of emotional states on thinking and deciding with particular interest in specific emotions (anger, disgust, fear, etc.) and their differential impact on how we process information, how we remember events, and how these emotions impact our moral judgments of others."
 };

@@ -10,7 +10,6 @@ import { Link } from "react-router-dom";
 import TaggedDivider from "../common/TaggedDivider";
 import GenericPanel from "../common/GenericPanel";
 
-import YouTube from 'react-youtube';
 
 class Speakers extends Component {
   constructor(props) {
@@ -65,13 +64,6 @@ class Speakers extends Component {
   }
 
   render() {
-    const opts = {
-      height: '390',
-      width: '640',
-      playerVars: { // https://developers.google.com/youtube/player_parameters
-        autoplay: 1
-      }
-    };
 
     return (
       <div className="speakers-wrapper">
@@ -116,12 +108,6 @@ class Speakers extends Component {
                 our amazing speakers"
             title="Ideas that Matter"
           />
-              <YouTube
-                videoId="2g811Eo7K8U"
-                opts={opts}
-                onReady={this._onReady}
-              />
-
           <TaggedDivider tag="2019" />
 
           <div className="speakers-display" data-year="2019">

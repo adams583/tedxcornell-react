@@ -3,6 +3,8 @@ import "./SpeakerProfile.css";
 import SplitPanel from "../common/SplitPanel";
 import MetaTags from "react-meta-tags";
 
+import YouTube from 'react-youtube';
+
 class SpeakerProfile extends Component {
   constructor(props) {
     super(props);
@@ -13,6 +15,14 @@ class SpeakerProfile extends Component {
       backgroundImage: `url(${this.props.person.backgroundImg})`,
       backgroundSize: "cover"
     };
+    const opts = {
+      height: '390',
+      width: '640',
+      playerVars: { // https://developers.google.com/youtube/player_parameters
+        autoplay: 1
+      }
+    };
+    
     return (
       <div id="speaker-profile-wrapper">
         <MetaTags>
@@ -50,28 +60,18 @@ class SpeakerProfile extends Component {
           </h3>
           <div className="left-border more-padding">
             <p>{this.props.person.info}</p>
-            {this.props.person.podcastId && (
+            {this.props.person.vidId && (
               <div>
                 <p>
-                  In preparation for our event, our host Lou Diamond interviewed
+                  Here is a video of 
                   &nbsp;
-                  {this.props.person.name}. Listen to the interview here for a
-                  preview of this speaker's thoughts and ideas as they prepare
-                  for April 28th.
+                  {this.props.person.name} speaking at TEDxCornell!
                 </p>
                 <div className="podcast-div">
-                  <iframe
-                    src={`//html5-player.libsyn.com/embed/episode/id/${
-                      this.props.person.podcastId
-                    }/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/e62b1e/`}
-                    height="90"
-                    width="100%"
-                    scrolling="no"
-                    allowFullScreen=""
-                    webkitallowfullscreen=""
-                    mozallowfullscreen=""
-                    oallowfullscreen=""
-                    msallowfullscreen=""
+                    <YouTube
+                    videoId= {this.props.person.vidId}
+                    opts={opts}
+                    onReady={this._onReady}
                   />
                 </div>
               </div>
@@ -80,6 +80,11 @@ class SpeakerProfile extends Component {
         </div>
       </div>
     );
+  }
+
+  _onReady(event) {
+    // access to player in all event handlers via event.target
+    event.target.pauseVideo();
   }
 }
 

@@ -28,6 +28,7 @@ class Apply extends Component {
       key: "1",
       question: "Can anyone apply to be a speaker?",
       answer:
+        "NOTE: Applications for the 2020 event are now closed. Check back next fall for the 2021 event." +
         "Yes! We're looking for individuals who believe that they have a story, idea, or passion worth sharing."
     },
     {
@@ -61,18 +62,18 @@ class Apply extends Component {
             <Col md={8}>
               <h3>Speaker Applications</h3>
               <p className="left-border">
-                <b>Apply to be a speaker for our 2020 event!</b>
+                <b>Speaker applications are closed for our 2020 event.</b>
                 <br />
-                We look for presenters who will inform, inspire, and entertain
-                while spreading ideas that they are truly passionate about. If
-                you are interested, or know someone who might be, please fill out
-                the application below! Applications close at 11:59PM on December 2,
-                2019. 
+                Check back next fall for our 2021 event. We look for presenters 
+                who will inform, inspire, and entertain while spreading ideas that 
+                they are truly passionate about. If you are interested, or know someone 
+                who might be, please check back in fall 2021 for applications. 
               <div className = "padding-top">
-                <CustomButton 
+                {/*<CustomButton 
                   text="Apply Now" 
                   color="#e62b1e"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSdbprNl5FgBHC-sHxWkMor8JGqnkL6jK8TGRS0vS4CI0GJwIQ/viewform?usp=sf_link" />
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdbprNl5FgBHC-sHxWkMor8JGqnkL6jK8TGRS0vS4CI0GJwIQ/viewform?usp=sf_link" 
+                /> */}
               </div>
               </p>
             </Col>

@@ -44,10 +44,10 @@ class Home extends Component {
                 <h1>TEDxCornell</h1>
               </strong>
               <p className="lead font-weight-normal">
-                Speaker applications for our 2020 event are now open!
+                Our 2020 event is almost here! Learn more about past events below. 
               </p>
               <div>
-                <CustomButton text="Apply Now" color="#e62b1e" href="/apply" />
+                <CustomButton text="Learn More" color="#e62b1e" href="/events" />
               </div>
             </div>
             {/* <div className="home-event-details">

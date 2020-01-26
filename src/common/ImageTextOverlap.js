@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./ImageTextOverlap.css";
 import { Image } from "react-bootstrap";
-import CustomButton from "./CustomButton";
+import CustomButton from "./buttons/CustomButton";
 import ScrollMove from "./ScrollMove";
 
 class ImageTextOverlap extends Component {

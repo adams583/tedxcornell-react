@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./BottomPanel.css";
-import CustomButton from "./CustomButton";
+import CustomButton from "../buttons/CustomButton";
 
 class BottomPanel extends Component {
   constructor(props) {

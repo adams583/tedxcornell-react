@@ -118,7 +118,7 @@ const team2019 = [
   emily,
   yeon,
   akshu,
-  tianyi/*,
+  tianyi,/*
   mike,
   lawrence,
   alina*/

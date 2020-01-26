@@ -27,9 +27,6 @@ class RightNav extends Component {
               <a href="/events">Events</a>
             </div>
             <div>
-              <a href="/sponsors">Sponsors</a>
-            </div>
-            <div>
               <a href="/apply">Apply</a>
             </div>
             <div>

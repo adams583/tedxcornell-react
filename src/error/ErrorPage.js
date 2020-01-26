@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./ErrorPage.css";
-import CustomButton from "../common/CustomButton";
+import CustomButton from "../common/buttons/CustomButton";
 
 class ErrorPage extends Component {
   constructor(props) {

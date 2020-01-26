@@ -6,7 +6,6 @@ import Home from "./home/Home";
 import Events from "./events/Events";
 import About from "./about/About";
 import Apply from "./apply/Apply";
-import Speakers from "./speakers/Speakers";
 import AOS from "aos";
 import ErrorPage from "./error/ErrorPage";
 import "aos/dist/aos.css";
@@ -29,11 +28,11 @@ class App extends Component {
       <div className="App">
         <Router>
           <div>
-            {/* <Header /> */}
 
             <a className="logo" href="/">
               <Image src={logoImg} responsive />
             </a>
+
 
             <RightNav />
             <Switch>
@@ -42,7 +41,6 @@ class App extends Component {
               <Route path="/about" component={About} />
               <Route path="/apply" component={Apply} />
               <Route path="/sponsors" component={Sponsors} />
-              <Route exact path="/speakers" component={Speakers} />
               <Route exact path="/faq" component={FAQ} />
               {Object.keys(speakers_2019).map(key => (
                 <Route

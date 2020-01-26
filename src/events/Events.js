@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import "./Events.css";
 import Profile from "../common/profile/Profile";
-import SplitPanel from "../common/SplitPanel";
+import SplitPanel from "../common/panels/SplitPanel";
 import eventsbg2 from "../img/events_bg1.jpg";
 import eventsbg1 from "../img/jessenitai2.jpg";
 import { speakers_2019 } from "../speakers/speaker-profiles";
 import { Col } from "react-bootstrap";
-import BottomPanel from "../common/BottomPanel";
-import TwoImgPanel from "../common/TwoImgPanel";
-import CustomButton from "../common/CustomButton";
+import BottomPanel from "../common/panels/BottomPanel";
+import TwoImgPanel from "../common/panels/TwoImgPanel";
+import CustomButton from "../common/buttons/CustomButton";
 import bottomPanelImg from "../img/tickets_stock.jpg";
 import tipImg1 from "../img/itai3.jpg";
 import tipImg2 from "../img/booklet.jpg";

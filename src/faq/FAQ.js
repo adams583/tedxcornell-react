@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./FAQ.css";
 import { PanelGroup } from "react-bootstrap";
-import Collapsible from "../common/Collapsible.js";
+import Collapsible from "../common/collapsible/Collapsible.js";
 import CardSelector from "./CardSelector";
 
 class FAQ extends Component {

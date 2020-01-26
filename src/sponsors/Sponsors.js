@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Sponsors.css";
-import BottomPanel from "../common/BottomPanel";
+import BottomPanel from "../common/panels/BottomPanel";
 import { Image, Col } from "react-bootstrap";
 import bpImg from "../img/partnership.jpg";
 import cals from "../img/cornellCals.png";

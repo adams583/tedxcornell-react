@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./Apply.css";
 import { Grid, Row, Col, PanelGroup } from "react-bootstrap";
-import Collapsible from "../common/Collapsible";
-import CustomButton from "../common/CustomButton";
+import Collapsible from "../common/collapsible/Collapsible";
+import CustomButton from "../common/buttons/CustomButton";
 
 class Apply extends Component {
   constructor(props) {
@@ -22,6 +22,24 @@ class Apply extends Component {
       })
       .catch(error => console.error("Error!", error.message));
   }
+
+  applyCards = [
+    {
+      title: "Speaker Applications", 
+      subtitle: "Speaker applications are closed for our 2020 event.", 
+      text: "Check back next fall for our 2021 event. We look for presenters who will inform, inspire, and entertain while spreading ideas that they are truly passionate about. If you are interested, or know someone who might be, please check back in fall 2021 for applications."
+    },
+    {
+      title: "Team Applications", 
+      subtitle: "We are not recruiting this semester. Check back in the Fall.", 
+      text: "Applications will open next semester to all Cornell students. We're a close-knit team of students who are passionate about TED and determined to organize great events. You can also catch us at clubfest!"
+    },
+    {
+      title: "Volunteering Opportunitie", 
+      subtitle: "Join our mailing list to hear about volunteering opportunities", 
+      text: "From tabling at our event to making sure everyone is where they are supposed to be, volunteers are an essential part of running a great event. Volunteering can also be a good way to get a sense for whether you'd be interested in joining the team."
+    }
+  ]
 
   faq = [
     {
@@ -55,38 +73,19 @@ class Apply extends Component {
     return (
       <div className="apply-div">
         <Grid>
-          <Row>
-            <h2>Interested in getting involved?</h2>
-          </Row>
-          <Row>
-            <Col md={8}>
-              <h3>Speaker Applications</h3>
-              <p className="left-border">
-                <b>Speaker applications are closed for our 2020 event.</b>
-                <br />
-                Check back next fall for our 2021 event. We look for presenters 
-                who will inform, inspire, and entertain while spreading ideas that 
-                they are truly passionate about. If you are interested, or know someone 
-                who might be, please check back in fall 2021 for applications. 
-              <div className = "padding-top">
-                {/*<CustomButton 
-                  text="Apply Now" 
-                  color="#e62b1e"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSdbprNl5FgBHC-sHxWkMor8JGqnkL6jK8TGRS0vS4CI0GJwIQ/viewform?usp=sf_link" 
-                /> */}
-              </div>
-              </p>
-            </Col>
-          </Row>
+        <Row>
+          <h2>Interested in getting involved?</h2>
+        </Row>
+
+        {this.applyCards.map((card, index) => (
           <Row>
             <Col md={8}>
-              <h3>Team Applications</h3>
+
+              <h3>{card.title}</h3>
               <p className="left-border">
-                <b>We are not recruiting this semester.</b>
-                <br />
-                Check back next semester if you're interested in joining our organizing team!
-                We're a close-knit team of students who are passionate about TED
-                and determined to organize great events.
+                <b>{card.subtitle}</b>
+                <br/>
+                {card.text}
                 <div className="padding-top">
                   {/*<CustomButton
                     text="Apply Now"
@@ -96,22 +95,9 @@ class Apply extends Component {
                 </div>
               </p>
             </Col>
-          </Row>
-          <Row>
-            <Col md={8}>
-              <h3>Volunteering Opportunities</h3>
-              <p className="left-border">
-                <b>
-                  Join our mailing list to hear about volunteer opportunities.
-                </b>
-                <br />
-                From tabling at our event to making sure everyone is where they
-                are supposed to be, volunteers are an essential part of running
-                a great event. Volunteering can also be a good way to get a
-                sense for whether you'd be interested in joining the team.
-              </p>
-            </Col>
-          </Row>
+          </Row> 
+          ))}
+
           <Row>
             <Col md={4}>
               <div>

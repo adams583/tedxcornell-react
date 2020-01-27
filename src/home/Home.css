@@ -1,8 +1,8 @@
 .main-panel-home-background {
-  background-image: url("../img/cornellpic2.jpg");
+  background-image: url("../img/Rocket-2.png");
   height: 90vh;
   width: 100%;
-  background-size: cover; 
+  background-size: cover;
   background-position: center;
   display: flex;
   margin: auto;
@@ -145,7 +145,7 @@ h1 {
     width: 100%;
   }
   .main-panel-home-background {
-    background-image: url("../img/cornellpic2.jpg");
+    background-image: url("../img/Rocket-2.png");
     height: 100vh;
     width: 100%;
     background-size: cover;

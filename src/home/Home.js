@@ -18,10 +18,10 @@ class Home extends Component {
       title: "Get Involved",
       text:
         "Interested in getting involved on the speaking or" +
-        "organizing side? Speaker applications a now open! Anyone" + 
-        "with a great idea for a talk can apply to be a speaker. If" + 
+        "organizing side? Speaker applications a now open! Anyone" +
+        "with a great idea for a talk can apply to be a speaker. If" +
         "you're looking to become a part of our organizing team," +
-        "check back next semester for details.", 
+        "check back next semester for details.",
       buttonText: "Apply Now",
       link: "/apply"
     },
@@ -44,10 +44,15 @@ class Home extends Component {
                 <h1>TEDxCornell</h1>
               </strong>
               <p className="lead font-weight-normal">
-                Our 2020 event is almost here! Learn more about past events below. 
+                Our 2020 event is coming soon! Learn more about past events
+                below.
               </p>
               <div>
-                <CustomButton text="Learn More" color="#e62b1e" href="/events" />
+                <CustomButton
+                  text="Learn More"
+                  color="#e62b1e"
+                  href="/events"
+                />
               </div>
             </div>
           </div>
@@ -67,9 +72,9 @@ class Home extends Component {
             before.
           </p>
           <p>
-            At TEDxCornell 2019, Reframe, we thank all who joined us
-            in thinking more deeply about ourselves, our communities, and the
-            future that lies ahead of us.
+            At TEDxCornell 2019, Reframe, we thank all who joined us in thinking
+            more deeply about ourselves, our communities, and the future that
+            lies ahead of us.
           </p>
         </div>
 
@@ -89,13 +94,11 @@ class Home extends Component {
               <div key={index}>
                 <Row>
                   {index % 2 != 0 && <Col md={7} />}
-                  <Col md={5} >
+                  <Col md={5}>
                     <div>
                       <div data-aos="fade-left" className="paper-div">
                         <h3>{card.title}</h3>
-                        <p>
-                          {card.text}
-                        </p>
+                        <p>{card.text}</p>
                         <CustomButton
                           text={card.buttonText}
                           color="#e62b1e"

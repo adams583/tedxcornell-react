@@ -67,6 +67,7 @@ class About extends Component {
                 img={member.img}
                 name={member.name}
                 title={member.title}
+                linked = {member.linked}
               />
             ))}
           </div>

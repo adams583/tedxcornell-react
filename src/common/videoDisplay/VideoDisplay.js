@@ -7,13 +7,30 @@ class VideoDisplay extends Component {
     super(props);
   }
 
+  selectedStyles = {
+    transform: "scale(1.05)",
+    boxShadow: "0 0 10px rgba(0, 0, 0, 0.8)",
+    borderBottom: "solid  #e62b1e"
+  };
+
+  unselectedStyles = {
+    boxShadow: "0 0 10px rgba(0, 0, 0, 0.4)"
+  };
+
+
   render() {
     return (
-     <div className="video-display">
-        <Image className="video-thumbnail" src={this.props.src} responsive onClick={() => this.props.onClick()}/>
+     <div className="video-display"
+       style={
+          this.props.toggled ? this.selectedStyles : this.unselectedStyles
+        }
+
+        onClick={() => this.props.onClick()}
+        >
+        <Image className="video-thumbnail" src={this.props.src} responsive/>
         <div className="video-description">
-            <h3>{this.props.title}</h3>
-            <h4>by {this.props.speaker}</h4>
+            <h4><strong>{this.props.title}</strong></h4>
+            <h5>by {this.props.speaker}</h5>
             <h5>{this.props.date}</h5>
             <p>{this.props.desc}</p>
         </div>

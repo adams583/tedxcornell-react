@@ -9,7 +9,7 @@ const campbell = {
     src: "https://i.ytimg.com/vi/tmWoWOM16uE/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLD7qN4qh74dvuRMQvqvFeEu-uaFlQ",
 };
 
-const campbell1 = {
+const susanfleming = {
     title: "Why is the Science of Nutrition ignored in Medicine?",
     speaker: "T. Colin Campbell",
     date: "April, 2018",
@@ -20,7 +20,7 @@ const campbell1 = {
     src: "https://i.ytimg.com/vi/tmWoWOM16uE/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLD7qN4qh74dvuRMQvqvFeEu-uaFlQ",
 };
 
-const campbell2 = {
+const masonpeck = {
     title: "Why is the Science of Nutrition ignored in Medicine?",
     speaker: "T. Colin Campbell",
     date: "April, 2018",
@@ -33,8 +33,8 @@ const campbell2 = {
 
 const videos = [
     campbell,
-    campbell1,
-    campbell2,
+    susanfleming,
+    masonpeck,
 ];
 
 export {videos}; 

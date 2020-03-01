@@ -3,6 +3,7 @@ import "./VideoContainer.css";
 import {videos} from "./videoInfo.js"
 import YouTube from 'react-youtube';
 import VideoDisplay from "./VideoDisplay.js"
+import zenscroll from "zenscroll";
 
 class VideoContainer extends Component {
   constructor(props) {
@@ -33,12 +34,14 @@ class VideoContainer extends Component {
     }
 
     const shouldDisplay = this.state.toggled.slice();
+    const displayedVideo = document.getElementById("videoDisplayed");
     if (shouldDisplay[i]){
       return (
         <YouTube
         videoId= {videos[i].videoId}
         opts={opts}
         onReady={this._onReady}
+        onPlay = {setTimeout( () => zenscroll.to(displayedVideo), 300)}
         />
       );
     }
@@ -54,6 +57,7 @@ class VideoContainer extends Component {
       date = {video.data}
       desc = {video.desc}
       onClick={() => this.handleClick(i)}
+      toggled = {this.state.toggled[i]}
     />
     );
   }
@@ -68,7 +72,7 @@ class VideoContainer extends Component {
           {this.renderVideo(1)}
           {this.renderVideo(2)}
        </div>
-       <div class="displayBlock">
+       <div class="displayBlock" id="videoDisplayed">
           {this.isDisplayed(0)}
           {this.isDisplayed(1)}
           {this.isDisplayed(2)}

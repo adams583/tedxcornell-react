@@ -1,11 +1,14 @@
 .video-display{
-    padding: 20px;
+    margin: 40px;
+    transition: transform .2s;
+    cursor: pointer;
 }
 
 .video-description{
-    padding-top: 20px;
+    padding: 20px;
 }
 
-.video-thumbnail{
-    cursor: pointer;
+
+.video-display:hover{
+    transform: scale(1.05);
 }

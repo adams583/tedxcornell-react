@@ -11,6 +11,7 @@ import tipImg1 from "../img/jessencolin.jpg";
 import TwoImgPanel from "../common/panels/TwoImgPanel";
 import SplitPanel from "../common/panels/SplitPanel";
 import CustomButton from "../common/buttons/CustomButton";
+import VideoContainer from "../common/videoDisplay/VideoContainer";
 
 class Home extends Component {
   cards = [
@@ -77,6 +78,13 @@ class Home extends Component {
             lies ahead of us.
           </p>
         </div>
+
+        <div class="videos-title"> 
+          <h3>Check out some of our popular videos!</h3> 
+        </div>
+        <div class ="ribbon"> </div>
+
+        <VideoContainer />
 
         <TwoImgPanel imgLeft={tipImg1} imgRight={tipImg2} />
 

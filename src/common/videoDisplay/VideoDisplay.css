@@ -1,0 +1,11 @@
+.video-display{
+    padding: 20px;
+}
+
+.video-description{
+    padding-top: 20px;
+}
+
+.video-thumbnail{
+    cursor: pointer;
+}

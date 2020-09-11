@@ -25,20 +25,27 @@ class Apply extends Component {
 
   applyCards = [
     {
-      title: "Speaker Applications", 
-      subtitle: "Speaker applications are closed for our 2020 event.", 
-      text: "Check back next fall for our 2021 event. We look for presenters who will inform, inspire, and entertain while spreading ideas that they are truly passionate about. If you are interested, or know someone who might be, please check back in fall 2021 for applications."
-    },
-    {
       title: "Team Applications", 
-      subtitle: "We are not recruiting this semester. Check back in the Fall.", 
-      text: "Applications will open next semester to all Cornell students. We're a close-knit team of students who are passionate about TED and determined to organize great events. You can also catch us at clubfest!"
+      subtitle: "We are looking for new members!", 
+      text: "Applications are open for all positions! Attend one of our info sessions to learn more, or click the button below to fill out our interest form. We're a close-knit team of students who are passionate about TED and determined to organize great events. You can also catch us at clubfest!"
     },
     {
-      title: "Volunteering Opportunitie", 
+      title: "Information Sessions",
+      subtitle: "We are having information sessions on 9/17 and 9/21.",
+      text: "Our information sessions are Thursday, 9/17 and  Monday 9/21. Refer below for Zoom links.",
+      link1: "https://us02web.zoom.us/j/87996752238?pwd=bXBQY2ZWK2ppV1h5S3NaU2pVd28zZz09",
+      link2: "Check back next week for this link."
+    },
+    {
+      title: "Volunteering Opportunities", 
       subtitle: "Join our mailing list to hear about volunteering opportunities", 
       text: "From tabling at our event to making sure everyone is where they are supposed to be, volunteers are an essential part of running a great event. Volunteering can also be a good way to get a sense for whether you'd be interested in joining the team."
-    }
+    },
+    {
+    title: "Speaker Applications", 
+    subtitle: "Speaker applications are current closed.", 
+    text: "Check back later this fall for more details on speaker applications. We look for presenters who will inform, inspire, and entertain while spreading ideas that they are truly passionate about. If you are interested, or know someone who might be, please check back in fall 2021 for applications."
+    },
   ]
 
   faq = [
@@ -53,8 +60,7 @@ class Apply extends Component {
       key: "2",
       question: "What roles are available on the organizing team?",
       answer:
-        "Our organizers work on speaker curation, finance and sponsorship, design and marketing, website design, and more. " + 
-        "Check back next semester to see what positions we're looking for."
+        "Our organizers work on speaker curation, finance and sponsorship, design and marketing, website design, and more. " 
     },
     {
       key: "3",
@@ -86,12 +92,21 @@ class Apply extends Component {
                 <b>{card.subtitle}</b>
                 <br/>
                 {card.text}
+                {card.title == "Information Sessions" && 
+                <p>9/17 Information Session: {card.link1}
+                  <br/>
+                  9/21 Information Session: {card.link2}
+                </p>
+                }
+                
+
                 <div className="padding-top">
-                  {/*<CustomButton
-                    text="Apply Now"
+                  {card.title == "Team Applications" && 
+                    <CustomButton
+                    text="Stay Connected" 
                     color="#e62b1e"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSfdvefoTzOe37qstAXd1I_ECZ6zEBG9NKAaA1QeD5_rsIzD7g/viewform?usp=sf_link"
-                  />*/}
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdP084WxqeC-m5bOeZ7jtq6ibmx0J0ikSUCXDehjYoemQt87g/viewform?usp=sf_link"
+                  />}
                 </div>
               </p>
             </Col>

@@ -18,11 +18,10 @@ class Home extends Component {
     {
       title: "Get Involved",
       text:
-        "Interested in getting involved on the speaking or" +
-        "organizing side? Speaker applications a now open! Anyone" +
-        "with a great idea for a talk can apply to be a speaker. If" +
-        "you're looking to become a part of our organizing team," +
-        "check back next semester for details.",
+        "If you are passionate about TED or helping unique speakers  share their ideas" +
+        "consider applying for  TEDxCornell!" + 
+        "We are looking for new team members in all areas, specifically" +
+        "marketing, finance, design, web development, and speaker coordination.",
       buttonText: "Apply Now",
       link: "/apply"
     },
@@ -45,14 +44,13 @@ class Home extends Component {
                 <h1>TEDxCornell</h1>
               </strong>
               <p className="lead font-weight-normal">
-                Our 2020 event is coming soon! Learn more about past events
-                below.
+                We are looking for new team members! Learn more about information sessions and applications below. 
               </p>
               <div>
                 <CustomButton
-                  text="Learn More"
+                  text="Apply"
                   color="#e62b1e"
-                  href="/events"
+                  href="/apply"
                 />
               </div>
             </div>

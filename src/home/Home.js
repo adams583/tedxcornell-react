@@ -11,7 +11,6 @@ import tipImg1 from "../img/jessencolin.jpg";
 import TwoImgPanel from "../common/panels/TwoImgPanel";
 import SplitPanel from "../common/panels/SplitPanel";
 import CustomButton from "../common/buttons/CustomButton";
-import VideoContainer from "../common/videoDisplay/VideoContainer";
 
 class Home extends Component {
   cards = [

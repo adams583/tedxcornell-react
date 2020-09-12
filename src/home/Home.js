@@ -76,12 +76,7 @@ class Home extends Component {
           </p>
         </div>
 
-        <div class="videos-title"> 
-          <h3>Check out some of our popular videos!</h3> 
-        </div>
-        <div class ="ribbon"> </div>
-
-        <VideoContainer />
+    
 
         <TwoImgPanel imgLeft={tipImg1} imgRight={tipImg2} />
 

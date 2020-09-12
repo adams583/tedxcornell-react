@@ -1,0 +1,14 @@
+.video-display{
+    margin: 40px;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.video-description{
+    padding: 20px;
+}
+
+
+.video-display:hover{
+    transform: scale(1.05);
+}

@@ -82,6 +82,13 @@ class Apply extends Component {
         <Row>
           <h2>Interested in getting involved?</h2>
         </Row>
+        <Row>
+        <CustomButton
+                    text="Apply Now" 
+                    color="#e62b1e"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSd-3n15yTVCaKhpGejy9KKXmLAtiI1NA4RekuKiquq4gNKf6g/viewform?usp=sf_link"
+                  />
+        </Row>
 
         {this.applyCards.map((card, index) => (
           <Row>
@@ -93,7 +100,7 @@ class Apply extends Component {
                 <br/>
                 {card.text}
                 {card.title == "Information Sessions" && 
-                <p>9/17 Information Session: {card.link1}
+                <p>9/17 Information Session: <a>{card.link1}</a>
                   <br/>
                   9/21 Information Session: {card.link2}
                 </p>

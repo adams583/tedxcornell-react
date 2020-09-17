@@ -32,9 +32,9 @@ class Apply extends Component {
     {
       title: "Information Sessions",
       subtitle: "We are having information sessions on 9/17 and 9/21.",
-      text: "Our information sessions are Thursday, 9/17 and  Monday 9/21. Refer below for Zoom links.",
+      text: "Our information sessions are Thursday, 9/17, at 6:00 PM and  Monday 9/21, at 5:30 PM. Refer below for Zoom links.",
       link1: "https://us0gitpu2web.zoom.us/j/87996752238?pwd=bXBQY2ZWK2ppV1h5S3NaU2pVd28zZz09",
-      link2: "Check back next week for this link."
+      link2: "Check back soon for this link."
     },
     {
       title: "Volunteering Opportunities", 

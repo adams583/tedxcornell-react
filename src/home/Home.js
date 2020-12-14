@@ -17,10 +17,8 @@ class Home extends Component {
     {
       title: "Get Involved",
       text:
-        "If you are passionate about TED or helping unique speakers  share their ideas" +
-        "consider applying for  TEDxCornell!" + 
-        "We are looking for new team members in all areas, specifically" +
-        "marketing, finance, design, web development, and speaker coordination.",
+        "If you are passionate about TED or helping unique speakers share their ideas" +
+        "consider getting invovled with TEDxCornell!",
       buttonText: "Apply Now",
       link: "/apply"
     },
@@ -43,7 +41,7 @@ class Home extends Component {
                 <h1>TEDxCornell</h1>
               </strong>
               <p className="lead font-weight-normal">
-                We are looking for new team members! Learn more about information sessions and applications below. 
+                If you think you have an idea worth sharing, please click below and apply to be a speaker at TEDxCornell! Anyone can be a speaker, even students. 
               </p>
               <div>
                 <CustomButton

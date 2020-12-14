@@ -26,15 +26,8 @@ class Apply extends Component {
   applyCards = [
     {
       title: "Team Applications", 
-      subtitle: "We are looking for new members!", 
-      text: "Applications are open for all positions! Attend one of our info sessions to learn more, or click the button below to fill out our interest form. We're a close-knit team of students who are passionate about TED and determined to organize great events. You can also catch us at clubfest!"
-    },
-    {
-      title: "Information Sessions",
-      subtitle: "We are having information sessions on 9/17 and 9/21.",
-      text: "Our information sessions are Thursday, 9/17, at 6:00 PM and  Monday 9/21, at 5:30 PM. Refer below for Zoom links.",
-      link1: "https://us02web.zoom.us/j/87996752238?pwd=bXBQY2ZWK2ppV1h5S3NaU2pVd28zZz09",
-      link2: "https://us02web.zoom.us/j/83491829801?pwd=ZHZ6ekQ4SGtDTGovOFFYSGRNMG9NQT09"
+      subtitle: "Team Applications are now closed.", 
+      text: "Check back next semester for more information on team applications. "
     },
     {
       title: "Volunteering Opportunities", 
@@ -43,8 +36,8 @@ class Apply extends Component {
     },
     {
     title: "Speaker Applications", 
-    subtitle: "Speaker applications are current closed.", 
-    text: "Check back later this fall for more details on speaker applications. We look for presenters who will inform, inspire, and entertain while spreading ideas that they are truly passionate about. If you are interested, or know someone who might be, please check back in fall 2021 for applications."
+    subtitle: "Speaker applications are open until January 22nd", 
+    text: "We look for presenters who will inform, inspire, and entertain while spreading ideas that they are truly passionate about. If you are interested, or know someone who might be, please apply by clicking the button above!"
     },
   ]
 
@@ -53,7 +46,6 @@ class Apply extends Component {
       key: "1",
       question: "Can anyone apply to be a speaker?",
       answer:
-        "NOTE: Applications for the 2020 event are now closed. Check back next fall for the 2021 event." +
         "Yes! We're looking for individuals who believe that they have a story, idea, or passion worth sharing."
     },
     {
@@ -80,13 +72,13 @@ class Apply extends Component {
       <div className="apply-div">
         <Grid>
         <Row>
-          <h2>Interested in getting involved?</h2>
+          <h2>Interested in becoming a speaker?</h2>
         </Row>
         <Row>
         <CustomButton
                     text="Apply Now" 
                     color="#e62b1e"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSd-3n15yTVCaKhpGejy9KKXmLAtiI1NA4RekuKiquq4gNKf6g/viewform?usp=sf_link"
+                    href="https://forms.gle/RN9xcy8JnUjNJwxz8"
                   />
         </Row>
 
@@ -108,12 +100,7 @@ class Apply extends Component {
                 
 
                 <div className="padding-top">
-                  {card.title == "Team Applications" && 
-                    <CustomButton
-                    text="Stay Connected" 
-                    color="#e62b1e"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSdP084WxqeC-m5bOeZ7jtq6ibmx0J0ikSUCXDehjYoemQt87g/viewform?usp=sf_link"
-                  />}
+                  {card.title == "Speaker Applications"}
                 </div>
               </p>
             </Col>

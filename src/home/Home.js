@@ -41,13 +41,13 @@ class Home extends Component {
                 <h1>TEDxCornell</h1>
               </strong>
               <p className="lead font-weight-normal">
-                If you think you have an idea worth sharing, please click below and apply to be a speaker at TEDxCornell! Anyone can be a speaker, even students. 
+                Join us on March 7th at 1pm EST for our first salon event! Click below for details and to register.
               </p>
               <div>
                 <CustomButton
-                  text="Apply"
+                  text="Register"
                   color="#e62b1e"
-                  href="/apply"
+                  href="https://forms.gle/xUrUkuHH8sw4tpSWA"
                 />
               </div>
             </div>

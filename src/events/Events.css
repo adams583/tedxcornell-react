@@ -1,6 +1,5 @@
 .main-panel-events {
   /* background-image: url("../img/backgroundImg.png"); */
-  color: whitesmoke;
   /* background-size: cover; */
 }
 
@@ -15,14 +14,6 @@
 
 .speaker-div > p {
   font-size: 1.5em;
-}
-
-.plain-a {
-  color: white;
-}
-
-.plain-a:hover {
-  color: white;
 }
 
 .speakers-container {
@@ -45,12 +36,27 @@
   align-items: center;
 }
 
+.sp-content a {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.sp-content a:hover {
+  color: var(--second-accent);
+}
+
+.a-container {
+  border-top: solid var(--accent) thin;
+  padding-top: 10px;
+  width: 20%;
+}
+
 .sp-content {
   align-items: center;
   flex-direction: column;
-  margin: 50px;
-  padding: 10px 20px;
-  border-left: solid red;
+  margin: 0% 10%;
+  padding: 50px 40px;
+  border-left: solid var(--ted-red);
 }
 
 #about-event-panel {
@@ -59,8 +65,9 @@
   align-items: center;
   justify-content: center;
   padding: 100px 10%;
-  /* background-color: #8a8a8a; */
-  background-color: #e62b1e;
+  background-color: #313131;
+  color: var(--light-text);
+  /* background-color: var(--accent); */
 }
 
 #about-event-panel > p {
@@ -76,7 +83,8 @@
   justify-content: center;
   padding: 100px 12%;
   /* background-color: #8a8a8a; */
-  background-color: #8a8a8a;
+  background-color: var(--accent);
+  color: var(--light-text);
 }
 
 #event-second-panel > p {
@@ -90,7 +98,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 100px 10% 0px 10%;
+  padding: 100px 10% 5% 10%;
 }
 
 .speakers-title-div > p {

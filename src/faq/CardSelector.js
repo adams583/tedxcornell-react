@@ -9,7 +9,7 @@ class CardSelector extends Component {
   selectedStyles = {
     transform: "scale(1.05)",
     boxShadow: "0 0 10px rgba(0, 0, 0, 0.8)",
-    borderLeft: "solid  #e62b1e"
+    borderLeft: "solid  #08B2E3"
   };
 
   unselectedStyles = {

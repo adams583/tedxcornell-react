@@ -36,8 +36,8 @@ class Apply extends Component {
     },
     {
     title: "Speaker Applications", 
-    subtitle: "Speaker applications are open until January 22nd", 
-    text: "We look for presenters who will inform, inspire, and entertain while spreading ideas that they are truly passionate about. If you are interested, or know someone who might be, please apply by clicking the button above!"
+    subtitle: "Speaker applications for this year are closed", 
+    text: "We look for presenters who will inform, inspire, and entertain while spreading ideas that they are truly passionate about. If you are interested, or know someone who might be, please let them know to check back next fall!"
     },
   ]
 
@@ -58,7 +58,7 @@ class Apply extends Component {
       key: "3",
       question: "Are there other ways to get involved?",
       answer:
-        "We will be looking for volunteers willing to help with tasks leading up to the event and on the day of the event. If you'd like to meet the team and get a sense of what it's like being on the organizing side of the event, keep an eye out for our volunteering opportunities."
+        "In the past we have looked for volunteers willing to help with tasks leading up to the event and on the day of the event. If you'd like to meet the team and get a sense of what it's like being on the organizing side of the event, this is a great option."
     },
     {
       key: "4",
@@ -75,11 +75,7 @@ class Apply extends Component {
           <h2>Interested in becoming a speaker?</h2>
         </Row>
         <Row>
-        <CustomButton
-                    text="Apply Now" 
-                    color="#e62b1e"
-                    href="https://forms.gle/RN9xcy8JnUjNJwxz8"
-                  />
+          <h4>Our applications for this year are closed. Our next cycle will begin in Fall 2021</h4>
         </Row>
 
         {this.applyCards.map((card, index) => (
@@ -122,12 +118,14 @@ class Apply extends Component {
                     type="email"
                     placeholder="Enter your email"
                     required
+                    style={{borderBottom: "2px solid gray"}}
+
                   />
                   <input
                     className="apply-page-form-button"
                     type="submit"
                     value="Sign up"
-                    style={{ backgroundColor: "#e62b1e" }}
+                    style={{ backgroundColor: "#08B2E3", color: "whitesmoke" }}
                   />
                 </form>
                 <br />
@@ -155,15 +153,18 @@ class Apply extends Component {
                 or find us on social media!
               </p>
               <br />
-              <a href="https://www.facebook.com/TEDxCornellUniversity/">
-                <i className="fab fa-facebook fa-icon" />
-              </a>
-              <a href="https://www.instagram.com/tedxcornelluniversity/">
-                <i className="fab fa-instagram fa-icon" />
-              </a>
-              <a href="https://www.linkedin.com/company/tedxcornell/about/">
-                <i className="fab fa-linkedin fa-icon" />
-              </a>
+              <div className="social-links-container">
+                <a href="https://www.facebook.com/TEDxCornellUniversity/">
+                  <i className="fab fa-facebook fa-icon" />
+                </a>
+                <a href="https://www.instagram.com/tedxcornelluniversity/">
+                  <i className="fab fa-instagram fa-icon" />
+                </a>
+                <a href="https://www.linkedin.com/company/tedxcornell/about/">
+                  <i className="fab fa-linkedin fa-icon" />
+                </a>
+              </div>
+             
             </Col>
           </Row>
         </Grid>

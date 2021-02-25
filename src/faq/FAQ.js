@@ -23,7 +23,7 @@ class FAQ extends Component {
       key: "2",
       question: "When is the event?",
       answer:
-        "TEDxCornell 2020 will be held on Saturday April 25th, 2020 in Statler Auditorium."
+        "Our virtual series will take place over three months. Our salons on March 7th and April 11th and our main event on May 2nd."
     },
     {
       key: "3",
@@ -41,7 +41,7 @@ class FAQ extends Component {
       key: "5",
       question: "Can anyone come to the event?",
       answer:
-        "Yes! If you're going to be in town on April 25th, you're welcome at our event."
+        "Yes! This year\'s events are all virtual, so even if you're not in Ithaca, you're welcome at our event."
     },
     {
       key: "6",
@@ -53,7 +53,7 @@ class FAQ extends Component {
       key: "7",
       question: "Do your events have themes?",
       answer:
-        'Our 2019 event\'s theme was "Reframe". While some of our previous events were not themed, we plan on having themes from here on out.'
+        'Our 2021 series is themed "Uproot". While some of our previous events were not themed, we plan on having themes from here on out.'
     }
   ];
 
@@ -87,7 +87,7 @@ class FAQ extends Component {
       question:
         "How many TEDxCornell conferences have been held so far?",
       answer:
-        "Our 2019 event was our fourth event. At Cornell in the past, TEDx events have not been a big part of the culture, but we're trying our best to change that!"
+        "Our 2021 event will be our fifth event. At Cornell in the past, TEDx events have not been a big part of the culture, but we're trying our best to change that!"
     },
     {
       key: "6",
@@ -115,7 +115,7 @@ class FAQ extends Component {
       key: "3",
       question: "Are there other ways to get involved?",
       answer:
-        "We will be looking for volunteers willing to help with tasks leading up to the event and on the day of the event. If you'd like to meet the team and get a sense of what it's like being on the organizing side of the event, keep an eye out for our volunteering opportunities."
+      "In the past we have looked for volunteers willing to help with tasks leading up to the event and on the day of the event. If you'd like to meet the team and get a sense of what it's like being on the organizing side of the event, this is a great option."
     },
     {
       key: "4",
@@ -181,7 +181,7 @@ class FAQ extends Component {
               <h5>Anything else?</h5>
               <p>
                 Feel free to email us anytime with any other questions at &nbsp;
-                <span className="text-red">tedx@cornell.edu</span>
+                <span className="text-accent">tedx@cornell.edu</span>
               </p>
             </div>
           </div>

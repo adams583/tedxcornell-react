@@ -1,5 +1,5 @@
 import kirkland_pic from "../img/kirk_photo.jpg";
-import sofiya_pic from "../img/Sofiya_Tsenter.png";
+import sofiya_pic from "../img/sofiya_pic.jpg";
 import adam_pic from "../img/adamWebsite.jpg";
 import eri_pic from "../img/eri_photo.jpeg";
 import emily_pic from "../img/emily_photo.jpg";
@@ -12,6 +12,12 @@ import uzair_pic from "../img/uzair.jpg";
 import mike_pic from "../img/mike_pic.jpg";
 import lawrence_pic from "../img/lawrence_pic.jpg";
 import alina_pic from "../img/alina_pic.jpg";
+import kim_pic from "../img/kim.jpg";
+import milena_pic from "../img/milena.png";
+import paulina_pic from "../img/paulina_pic.jpg";
+import caroline_pic from "../img/caroline.jpg";
+import sam_pic from "../img/sam.jpg";
+import jessi_pic from"../img/jessi.jpg";
 
 const emily = {
   name: "Emily Chen",
@@ -28,7 +34,7 @@ const adam = {
     "Adam is a sophomore from Arizona, a computer science major, and the director if IT for TEDxCornellUniversity. His favorite part of being a part of TEDxCornell is working with all his great teammates to spread ideas that matter! Besides TEDx, he's interested in web design, data science, and pretty much anything else tech related. In his free time, you can find him on a tennis court, exploring campus, or just kicking back and relaxing with friends.",
   img: adam_pic,
   netid: "ams792",
-  title: "Website and IT",
+  title: "Speaker Curation",
   linked: "https://www.linkedin.com/in/adamskrocki"
 };
 const sofiya = {
@@ -119,6 +125,59 @@ const alina = {
   title: "Marketing and Finance",
   linked: "https://www.linkedin.com/in/alina-pereyra-710321168/"
 };
+
+const caroline = {
+  name: "Caroline Ryu",
+  info: "Info about Caroline",
+  img: caroline_pic,
+  title: "Finance",
+  linked: "https://www.linkedin.com/in/alina-pereyra-710321168/"
+};
+
+const sam = {
+  name: "Samantha Ivey",
+  info: "Info about Sam",
+  img: sam_pic,
+  title: "Design and Marketing",
+  linked: "https://www.linkedin.com/in/alina-pereyra-710321168/"
+};
+
+const milena = {
+  name: "Milena Marchan",
+  info: "Info about Milena",
+  img: milena_pic,
+  title: "Design and Marketing",
+  linked: "https://www.linkedin.com/in/alina-pereyra-710321168/"
+};
+
+const jessi = {
+  name: "Jessi Schlewitt",
+  info: "Info about Jessi",
+  img: jessi_pic,
+  title: "Speaker Curation",
+  linked: "https://www.linkedin.com/in/alina-pereyra-710321168/"
+};
+
+const kim = {
+  name: "Kimberly Garcia",
+  info: "Info about Kim",
+  img: kim_pic,
+  title: "Marketing and Speaker Curation",
+  linked: "https://www.linkedin.com/in/alina-pereyra-710321168/"
+};
+
+const paulina = {
+  name: "Paulina Klubok",
+  info: "Info about Paulina",
+  img: paulina_pic,
+  title: "Speaker Curation",
+  linked: "https://www.linkedin.com/in/alina-pereyra-710321168/"
+};
+
+const team2021 = [
+  alina, tianyi, adam, sofiya, kirkland, paulina, mike, sam, milena, kim, jessi, caroline
+]
+
 const team2019 = [
   uzair,
   kirkland,
@@ -135,4 +194,4 @@ const team2019 = [
 ];
 const team2018 = [liz, hebani, adam, eri, kirkland, emily, uzair];
 
-export { team2019, team2018 };
+export { team2019, team2018, team2021 };

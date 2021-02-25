@@ -6,21 +6,21 @@ import ImageTextOverlap from "../common/ImageTextOverlap";
 import itoImg from "../img/itai1.jpg";
 import BottomPanel from "../common/panels/BottomPanel";
 import faqimg from "../img/yamatai.jpg";
-import tipImg2 from "../img/jessenitai2.jpg";
-import tipImg1 from "../img/jessencolin.jpg";
+import tipImg2 from "../img/team2.png";
+import tipImg1 from "../img/team.jpg";
 import TwoImgPanel from "../common/panels/TwoImgPanel";
 import SplitPanel from "../common/panels/SplitPanel";
 import CustomButton from "../common/buttons/CustomButton";
+import ProfilePanel from "../common/info/ProfilePanel";
+import teampng from "../img/team.png"
 
 class Home extends Component {
   cards = [
     {
-      title: "Get Involved",
-      text:
-        "If you are passionate about TED or helping unique speakers share their ideas" +
-        "consider getting invovled with TEDxCornell!",
-      buttonText: "Apply Now",
-      link: "/apply"
+      title: "What is TEDxCornell?", 
+      text: "We're a student-run club dedicated to bringing great independently-organized TED events and amazing people to Cornell. This year we're hosting two salon events and one main event. Be sure to follow us on social media and check our website for updates.",
+      buttonText: "About Us", 
+      link: "/about"
     },
     {
       title: "Our Conference",
@@ -28,65 +28,64 @@ class Home extends Component {
         "TEDxCornell presents to you our 2019 conference as we hope to continue bringing “Ideas Worth Spreading” to Cornell’s campus. Six speakers from our local community and across the country shared the stage, each bringing light to a unique topic. Listen, learn, and be inspired. Experience TEDxCornell.",
       buttonText: "About the Event",
       link: "/events"
-    }
+    },
+    // {
+    //   title: "Get Involved",
+    //   text:
+    //     "If you are passionate about TED or helping unique speakers share their ideas" +
+    //     "consider getting invovled with TEDxCornell!",
+    //   buttonText: "Apply Now",
+    //   link: "/apply"
+    // }
   ];
 
   render() {
     return (
       <div>
         <div className="main-panel-home-background ">
-          <div className="main-panel-home-content text-center">
+          {/* <div className="main-panel-home-content text-center">
             <div className="home-title">
-              <strong>
-                <h1>TEDxCornell</h1>
-              </strong>
-              <p className="lead font-weight-normal">
-                Join us on March 7th at 1pm EST for our first salon event! Click below for details and to register.
-              </p>
               <div>
                 <CustomButton
-                  text="Register"
+                  text="Register Now"
                   color="#e62b1e"
                   href="https://forms.gle/xUrUkuHH8sw4tpSWA"
                 />
               </div>
             </div>
+          </div> */}
+          <div className="bottom-aligned-button-container">
+            <div>
+            <CustomButton
+              lightText
+              text="Register Now"
+              color="#08b2e3"
+              href="https://forms.gle/xUrUkuHH8sw4tpSWA"  
+                />
+            </div>
           </div>
         </div>
         <div id="about-home-panel">
-          <h2>
-            <em>
-              “We are all trapped inside our own heads. And our beliefs and
-              understandings about the world are limited by that perspective.”
-            </em>{" "}
-            &nbsp;- Derren Brown
-          </h2>
-          <p>
-            Change is now faster than ever. In order to adapt to and understand
-            the world we live in, we're having to look at problems in new ways,
-            shift our perspectives, and search for answers where we never have
-            before.
-          </p>
-          <p>
-            At TEDxCornell 2019, Reframe, we thank all who joined us in thinking
-            more deeply about ourselves, our communities, and the future that
-            lies ahead of us.
-          </p>
+          <div className="about-home-panel-title">
+              Uproot: A Virtual Series
+          </div>
+          <div className="about-home-panel-desc">
+            This year we are hosting a three-part virtual series with the theme Uproot. Join us for two salon events and one main event in which we bring speakers from around the country as well as our local community to share their most pressing ideas.
+            What does the theme Uproot mean to you? To us it's challenging the beliefs we've been rooted in our whole lives, starting fresh, exploring change. To uplift, shake off the dirt, and rebuild. 
+          </div>
+
         </div>
-
-    
-
         <TwoImgPanel imgLeft={tipImg1} imgRight={tipImg2} />
 
         <div className="home-content">
-          <ImageTextOverlap
+          {/* <ImageTextOverlap
             onImgLoad={() => {}}
-            src={itoImg}
+            src={teampng}
             title="What is TEDxCornell?"
             content="We're a student-run club dedicated to bringing great independently-organized TED events and amazing people to Cornell."
             button="Learn More"
             buttonHref="/about"
-          />
+          /> */}
           <Grid className="grid">
             {this.cards.map((card, index) => (
               <div key={index}>
@@ -99,7 +98,8 @@ class Home extends Component {
                         <p>{card.text}</p>
                         <CustomButton
                           text={card.buttonText}
-                          color="#e62b1e"
+                          color="#08b2e3"
+                          lightText
                           href={card.link}
                         />
                       </div>

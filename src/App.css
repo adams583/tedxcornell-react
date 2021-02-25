@@ -1,3 +1,23 @@
+/* Dark theme */
+/* :root {
+  --ted-red: #e62b1e;
+  --primary: rgb(34, 34, 34);
+  --secondary: #f4f4f4;
+  --accent: #e62b1e;
+  --second-accent: #08b2e3;
+} */
+
+/* Light theme */
+:root {
+  --ted-red: #e62b1e;
+  --primary: #f4f4f4;
+  --accent: #08b2e3;
+  --secondary: #1f1f1f;
+  --light-text: #f4f4f4;
+  --dark-text: #1f1f1f;
+  --second-accent: #4dc100;
+}
+
 .logo {
   width: 200px;
   height: 60px;
@@ -9,9 +29,25 @@
   cursor: pointer;
 }
 
+.text-primary {
+  color: var(--primary);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.text-second-accent {
+  color: var(--second-accent);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
 .App {
-  background-color: rgb(34, 34, 34);
-  color: whitesmoke;
+  background-color: var(--primary);
+  color: var(--dark-text);
 }
 
 .logoLink {
@@ -22,4 +58,20 @@
 
 .pointer:hover {
   cursor: pointer;
+}
+
+.accent-right-border {
+  border-right: solid var(--accent);
+}
+
+.accent-left-border {
+  border-left: solid var(--accent);
+}
+
+.second-accent-right-border {
+  border-right: solid var(--second-accent);
+}
+
+.second-accent-left-border {
+  border-left: solid var(--second-accent);
 }

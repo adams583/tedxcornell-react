@@ -34,7 +34,6 @@
   position: fixed;
   top: 5%;
   right: 5%;
-  color: white;
   z-index: 2;
   font-size: 2em;
 }
@@ -48,14 +47,12 @@
 }
 
 a:hover {
-  color: rgba(245, 245, 245, 0.616);
   text-decoration: none;
 }
 
 a {
   transition: all 0.1s ease;
   text-decoration: none;
-  color: rgba(245, 245, 245, 0.829);
 }
 
 /* sm --- Small devices (landscape phones, 576px and up) */

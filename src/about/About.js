@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./About.css";
-import { team2019 } from "./members.js";
+import { team2021 } from "./members.js";
 import ImageTextOverlap from "../common/ImageTextOverlap";
-import audience1 from "../img/audience1.jpg";
+import workingteam from "../img/workingteam.jpg";
 import BottomPanel from "../common/panels/BottomPanel";
 import bottomPanelImg from "../img/team2019.jpg";
 import TeamProfile from "../common/gallery/TeamProfile";
@@ -25,7 +25,7 @@ class About extends Component {
                 <em>What is TEDxCornell?</em>
               </p>
               <p className="lead font-weight-normal">
-                Each year we organize a TEDx event operated under an official
+                Each year we organize TEDx events and salons operated under an official
                 license from TED. Our goal is to bring a intellectual platform
                 to Cornell unlike any other.
               </p>
@@ -37,10 +37,10 @@ class About extends Component {
             <em>"Spreading Ideas that Matter" </em>
           </h2>
           <p>
-            Our annual TEDx conference brings together a diverse array of
+            Our TEDx conferences bring together a diverse array of
             speakers, performers, and audience members all hoping to learn and
             share knowledge. TEDxCornell is completely student-run,
-            with team members hard at work all year planning for the conference.
+            with team members hard at work all year planning for the conferences.
             We hope to create an environment in which students and community
             members can discuss ideas and connect with great speakers and
             performers
@@ -52,7 +52,7 @@ class About extends Component {
           content="We strive to provide a unique platform at Cornell through which top speakers and performers can teach, inspire, and entertain the Cornell community."
           button="See our Events"
           buttonHref="/events"
-          src={audience1}
+          src={workingteam}
         />
         <div className="team-content-panel">
           <div className="container team-title">
@@ -61,7 +61,7 @@ class About extends Component {
           </div>
 
           <div className="team-gallery ">
-            {team2019.map(member => (
+            {team2021.map(member => (
               <TeamProfile
                 key={member.name}
                 img={member.img}

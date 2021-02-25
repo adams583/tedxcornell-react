@@ -20,9 +20,10 @@ class BottomPanel extends Component {
         <p className="bp-text">{this.props.txt}</p>
         <div>
           <CustomButton
-            color="#e62b1e"
+            color="#08b2e3"
             text={this.props.button}
             href={this.props.buttonHref}
+            lightText
           />
         </div>
       </div>

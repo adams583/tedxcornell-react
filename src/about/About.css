@@ -1,5 +1,5 @@
 #team-container {
-  color: whitesmoke;
+  color: var(--dark-text);
   display: flex;
   width: 100%;
 }
@@ -80,4 +80,8 @@
   max-width: 100%;
   flex-wrap: wrap;
   margin: 100px 20%;
+}
+
+.sp-content {
+  color: var(--light-text);
 }

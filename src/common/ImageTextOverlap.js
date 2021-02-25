@@ -33,7 +33,8 @@ class ImageTextOverlap extends Component {
               <p>{this.props.content}</p>
               <CustomButton
                 text={this.props.button}
-                color="#e62b1e"
+                color="#08B2E3"
+                lightText
                 href={this.props.buttonHref}
               />
             </div>

@@ -27,7 +27,7 @@ class Footer extends Component {
         <div className="footer-content-container">
           <div className="footer-left flex-vertical">
             <div className="logo-container">
-              <h1>TEDxCornell</h1>
+              <h1><strong className="text-red">TEDx</strong>Cornell</h1>
             </div>
             <div className="links-container ">
               <Col xs={6} sm={6} md={4} lg={4} xl={4}>
@@ -69,7 +69,7 @@ class Footer extends Component {
                   placeholder="Enter your email"
                   required
                 />
-                <input type="submit" value="Sign Up" />
+                <input type="submit" value="Sign Up"/>
               </form>
             </div>
           </div>

@@ -10,6 +10,7 @@ import AOS from "aos";
 import ErrorPage from "./error/ErrorPage";
 import "aos/dist/aos.css";
 import RightNav from "./common/RightNav";
+import TopNav from "./common/topnav/TopNav"
 import SpeakerProfile from "./speakers/SpeakerProfile";
 import {
   speakers_2019,
@@ -29,12 +30,12 @@ class App extends Component {
         <Router>
           <div>
 
-            <a className="logo" href="/">
+            {/* <a className="logo" href="/">
               <Image src={logoImg} responsive />
-            </a>
+            </a> */}
 
 
-            <RightNav />
+            <TopNav />
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/events" component={Events} />

@@ -4,6 +4,10 @@
   max-height: 100vh;
 }
 
+.split-panel * {
+  color: var(--secondary);
+}
+
 .sp-left {
   display: flex;
   flex-direction: column;

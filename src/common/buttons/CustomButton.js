@@ -1,31 +1,27 @@
-import React, { Component } from "react";
+import React from "react";
 import "./CustomButton.css";
 
-class CustomButton extends Component {
-  constructor(props) {
-    super(props);
-  }
+function CustomButton(props){
 
-  styles = {
-    backgroundColor: this.props.color,
-    borderColor: this.props.color
+  const styles = {
+    backgroundColor: props.color,
+    borderColor: props.color,
+    color: props.lightText ? "#f4f4f4" : "#1f1f1f"
   };
 
-  handleClick() {
-    window.location.href = this.props.href;
+  function handleClick() {
+    window.location.href = props.href;
   }
 
-  render() {
-    return (
-      <button
-        className="custom-button"
-        style={this.styles}
-        onClick={this.handleClick.bind(this)}
-      >
-        {this.props.text}
-      </button>
-    );
-  }
+  return (
+    <button
+      className="custom-button"
+      style={styles}
+      onClick={handleClick}
+    >
+      {props.text}
+    </button>
+  );
 }
 
 export default CustomButton;

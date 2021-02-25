@@ -1,5 +1,5 @@
 .apply-div {
-  background-image: url("../img/logo1.png");
+  background-image: url("../img/logo2.png");
   background-size: cover;
   background-attachment: fixed;
   padding: 150px 0px 150px 0px;
@@ -14,6 +14,10 @@
   padding-top: 10px;
 }
 
+.social-links-container a {
+  color: gray;
+}
+
 .apply-page-form-button {
   text-transform: uppercase;
   padding: 10px 20px;
@@ -23,7 +27,7 @@
 }
 
 .left-border {
-  border-left: solid #e62b1e;
+  border-left: solid var(--ted-red);
   padding-left: 10px;
   margin-left: 10px;
 }

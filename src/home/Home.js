@@ -58,9 +58,9 @@ class Home extends Component {
             <div>
             <CustomButton
               lightText
-              text="Register Now"
+              text="Join Us On Zoom!"
               color="#08b2e3"
-              href="https://forms.gle/xUrUkuHH8sw4tpSWA"  
+              href="https://cornell.zoom.us/j/95086487188?pwd=N0VFZDBnWmhIZDRmdkMvSGVlQjRKZz09"  
                 />
             </div>
           </div>

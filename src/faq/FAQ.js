@@ -145,7 +145,7 @@ class FAQ extends Component {
             >
               <CardSelector
                 title="Team and event inquiries"
-                text="Our 2020 event is coming soon! Learn more about how the team operates and what our events are all about"
+                text="Our 2021 event is coming soon! Learn more about how the team operates and what our events are all about"
                 data-faq="general"
                 selected={this.state.category === "general"}
               />

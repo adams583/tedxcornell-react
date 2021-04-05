@@ -25,7 +25,7 @@ class Home extends Component {
     {
       title: "Our Conference",
       text:
-        "TEDxCornell presents to you our 2019 conference as we hope to continue bringing “Ideas Worth Spreading” to Cornell’s campus. Six speakers from our local community and across the country shared the stage, each bringing light to a unique topic. Listen, learn, and be inspired. Experience TEDxCornell.",
+        "TEDxCornell presents to you our 2021 salons and conferences as we hope to continue bringing “Ideas Worth Spreading” to Cornell’s campus. Speakers from our local community and across the country will share the virtual stage, each bringing light to a unique topic. Listen, learn, and be inspired. Experience TEDxCornell.",
       buttonText: "About the Event",
       link: "/events"
     },
@@ -58,9 +58,9 @@ class Home extends Component {
             <div>
             <CustomButton
               lightText
-              text="Join Us On Zoom!"
+              text="Register Now"
               color="#08b2e3"
-              href="https://cornell.zoom.us/j/95086487188?pwd=N0VFZDBnWmhIZDRmdkMvSGVlQjRKZz09"  
+              href="https://forms.gle/JjkzKxr5FYMYqMVx5"  
                 />
             </div>
           </div>

@@ -55,7 +55,8 @@ class Home extends Component {
             </div>
           </div> */}
           <div className="bottom-aligned-button-container">
-            <div>
+            <div style={{display: 'flex', flexDirection: 'row'}}>
+              <h1 style={{marginRight: "20px"}}>April 11th, 1pm EST &nbsp;| </h1>
             <CustomButton
               lightText
               text="Register Now"

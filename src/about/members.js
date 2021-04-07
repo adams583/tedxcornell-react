@@ -42,7 +42,7 @@ const sofiya = {
   info: "Info about Sofiya",
   img: sofiya_pic,
   netid: "st848",
-  title: "Speaker Curation and Marketing",
+  title: "Speaker Curation",
   linked: "https://www.linkedin.com/in/sofiya-t-bba789b8/"
 };
 const eri = {
@@ -162,7 +162,7 @@ const kim = {
   name: "Kimberly Garcia",
   info: "Info about Kim",
   img: kim_pic,
-  title: "Marketing and Speaker Curation",
+  title: "Marketing and Speakers",
   linked: "https://www.linkedin.com/in/alina-pereyra-710321168/"
 };
 
@@ -175,7 +175,7 @@ const paulina = {
 };
 
 const team2021 = [
-  alina, tianyi, adam, sofiya, kirkland, paulina, mike, sam, milena, kim, jessi, caroline
+  sam, tianyi, adam, sofiya, kirkland, paulina, mike, alina, milena, kim, jessi, caroline
 ]
 
 const team2019 = [

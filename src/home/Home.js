@@ -61,7 +61,7 @@ class Home extends Component {
               lightText
               text="Join Zoom"
               color="#08b2e3"
-              href="https://cornell.zoom.us/s/92511830500"  
+              href="https://cornell.zoom.us/j/92511830500?pwd=d1RuZllFYVorMmpxODkydEVGMURBdz09#success"  
                 />
             </div>
           </div>

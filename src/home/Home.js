@@ -59,9 +59,9 @@ class Home extends Component {
               <h1 style={{marginRight: "20px"}}>April 11th, 1pm EST &nbsp;| </h1>
             <CustomButton
               lightText
-              text="Register Now"
+              text="Join Zoom"
               color="#08b2e3"
-              href="https://forms.gle/JjkzKxr5FYMYqMVx5"  
+              href="https://cornell.zoom.us/s/92511830500"  
                 />
             </div>
           </div>

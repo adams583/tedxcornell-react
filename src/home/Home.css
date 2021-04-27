@@ -1,12 +1,14 @@
 .main-panel-home-background {
-  background-image: url("../img/s2websitedes.jpg");
+  background-image: url("../img/website-background.png");
   height: 90vh;
   width: 100%;
+  opacity: 80;
   background-size: contain;
   background-position: center top;
   background-repeat: no-repeat;
   display: flex;
   margin: auto;
+  background-color: white;
 }
 
 .home-event-details {
@@ -160,12 +162,13 @@ h1 {
     width: 100%;
   }
   .main-panel-home-background {
-    background-image: url("../img/s2websitedes.jpg");
+    background-image: url("../img/website-background.png");
     width: 100%;
     background-size: cover;
     background-position: top;
     display: flex;
     margin: auto;
+    background-color: white;
   }
 }
 

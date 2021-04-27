@@ -56,13 +56,13 @@ class Home extends Component {
           </div> */}
           <div className="bottom-aligned-button-container">
             <div style={{display: 'flex', flexDirection: 'row'}}>
-              <h1 style={{marginRight: "20px"}}>April 11th, 1pm EST &nbsp;| </h1>
-            <CustomButton
-              lightText
-              text="Join Zoom"
-              color="#08b2e3"
-              href="https://cornell.zoom.us/j/92511830500?pwd=d1RuZllFYVorMmpxODkydEVGMURBdz09#success"  
-                />
+              <h1 style={{marginRight: "20px"}}>May 2nd, 1pm EST &nbsp;| </h1>
+              <CustomButton
+                lightText
+                text="Register"
+                color="#08b2e3"
+                href="https://forms.gle/wYb8qxGobbudYhQ48"  
+                  />
             </div>
           </div>
         </div>

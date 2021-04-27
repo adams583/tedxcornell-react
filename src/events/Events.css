@@ -67,6 +67,7 @@
   padding: 100px 10%;
   background-color: #313131;
   color: var(--light-text);
+  text-align: center;
   /* background-color: var(--accent); */
 }
 

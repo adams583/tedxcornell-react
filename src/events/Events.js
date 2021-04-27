@@ -10,6 +10,7 @@ import tipImg2 from "../img/performers1.jpg";
 import tipImg3 from "../img/loutip.jpg";
 import tipImg1 from "../img/mason3.jpg";
 import tipImg4 from "../img/chandler2.jpg";
+import marcela_pic from "../img/marcela.jpg";
 import bruce_pic from "../img/bruce.jpg"
 import jonathan_pic from "../img/jonathan.jpg"
 // import cat_pic from "../img/cat_hoke.jpg";
@@ -47,33 +48,41 @@ class Events extends Component {
     //   blurb: "John has co-authored nine books that provide holistic rehabilitation and healing for people in jails and prisons nationally. His curriculum is also used to tackle gang violence in America’s most dangerous prisons. ",
     //   moreInfo: "John was once labeled by correctional officials as being “the worst of the worst.” After being entrenched in gang culture and serving 18 years in prison, John realized that continuing to build his criminal resume would only lead him to life—and death—in prison. John made the dangerous decision to step away from gang and criminal activity while incarcerated. This led him to change his values, allegiances, and behavior. Because John made his choices honorably, he maintained his credibility with gang leaders and now works with them to stop the generational cycle of gang violence in prisons across the country. He uses his story of courage and transformation to create hope for a better future for those who have been labeled, written off, and forgotten by society."
     // }
+    // {
+    //   img: jonathan_pic,
+    //   name: "Jonathan Javier", 
+    //   title: "CEO/Founder of Wonsulting", 
+    //   link: "https://www.forbes.com/sites/danabrownlee/2021/02/07/how-this-millennial-skipped-applications-landed-his-dream-tech-job-using-social-media/?ss=careers&sh=77c8c66a2f6b",
+    //   blurb: "Jonathan Javier is the CEO and founder of Wonsulting, with the mission to \“turn underdogs into winners.\"",
+    //   moreInfo:"When Jonathan realized that getting your dream job doesn't require coming from a target school and having \"traditional\" background, he started a company to prove it. He works on many initiatives, providing advice and words of wisdom on LinkedIn and through speaking engagements. He has led 210+ workshops in 9 different countries; been featured on Forbes as one of the youngest top jobs search experts; and amassed over half a million followers on social media. Jonathan's talk will share with us secrets to level up your professional career and meet your aspirations, no matter your background."
+    // },
+    // {
+    //   img: bruce_pic,
+    //   name: "Bruce Monger", 
+    //   title: "Cornell Professor, Climate Activist", 
+    //   link: "https://www.engineering.cornell.edu/faculty-directory/bruce-monger",
+    //   blurb: "Bruce Monger received his B.A. degree from University of Washington and a Ph.D. from University of Hawaii and now teaches Oceanography, Cornell's most popular course.",
+    //   moreInfo:"When Dr. Monger was just starting out his career, he made the life-changing decision to take a motorcycle trip up the country, where he had several revelations that led him to his life's purpose. Now he uses his course and the rest of his life’s work to emphasize climate change impacts and the need for citizen activism to force leaders to enact policies that will decarbonize the global energy system by midcentury. His talk will highlight the importance of bottom-up activism and inspire you to take a step back and reflect on the freedom, purpose, and responsibility that comes with a life well-lived."
+    // },
     {
-      img: jonathan_pic,
-      name: "Jonathan Javier", 
-      title: "CEO/Founder of Wonsulting", 
-      link: "https://www.forbes.com/sites/danabrownlee/2021/02/07/how-this-millennial-skipped-applications-landed-his-dream-tech-job-using-social-media/?ss=careers&sh=77c8c66a2f6b",
-      blurb: "Jonathan Javier is the CEO and founder of Wonsulting, with the mission to \“turn underdogs into winners.\"",
-      moreInfo:"When Jonathan realized that getting your dream job doesn't require coming from a target school and having \"traditional\" background, he started a company to prove it. He works on many initiatives, providing advice and words of wisdom on LinkedIn and through speaking engagements. He has led 210+ workshops in 9 different countries; been featured on Forbes as one of the youngest top jobs search experts; and amassed over half a million followers on social media. Jonathan's talk will share with us secrets to level up your professional career and meet your aspirations, no matter your background."
-    },
-    {
-      img: bruce_pic,
-      name: "Bruce Monger", 
-      title: "Cornell Professor, Climate Activist", 
-      link: "https://www.engineering.cornell.edu/faculty-directory/bruce-monger",
-      blurb: "Bruce Monger received his B.A. degree from University of Washington and a Ph.D. from University of Hawaii and now teaches Oceanography, Cornell's most popular course.",
-      moreInfo:"When Dr. Monger was just starting out his career, he made the life-changing decision to take a motorcycle trip up the country, where he had several revelations that led him to his life's purpose. Now he uses his course and the rest of his life’s work to emphasize climate change impacts and the need for citizen activism to force leaders to enact policies that will decarbonize the global energy system by midcentury. His talk will highlight the importance of bottom-up activism and inspire you to take a step back and reflect on the freedom, purpose, and responsibility that comes with a life well-lived."
+      img: marcela_pic,
+      name: "Marcela Ot'Alora", 
+      title: "Psychotherapist, Artist", 
+      link: "https://tim.blog/2019/11/22/marcela-otalora/",
+      blurb: "Marcela was born and raised in Colombia and currently lives in Boulder, Colorado. She is an artist and a psychotherapist who practices and conducts research on MDMA-assisted therapy",
+      moreInfo:"In her private practice she works in partnership with clients to nourish awareness and connection to innate essence. For over 30 years her interest and focus on trauma has led her to understand the healing process as an intimate re-connection to self, others, and the world, through compassion, acceptance, and honoring of each other’s human spirit. In addition to working with trauma and PTSD, she has dedicated her professional life to teaching, and research. With clients she uses art as a vehicle for deepening and processing experiences through non-verbal autobiographical storytelling. For the Multidisciplinary Association for Psychedelic Studies (MAPS), Marcela has worked as therapist and Principal Investigator for various studies weaving psychotherapy and MDMA for the treatment of PTSD. Additionally, she is a trainer and supervisor for MAPS’ MDMA-assisted psychotherapy training program."
     }
   ]
 
   experiences = {
-    "An live experience":
-      "Despite being online, Jonathan and Bruce will be giving their TEDx talks in real time.",
-    "A short and sweet event":
-      "Our April 11th salon will last around 1 hour, leaving us time afterwards for...",
-    "Q&A with our speakers":
-      "We are grateful to Jonathan and Bruce for an amazing opportunity to join them for a Q&A session after their talks.",
-    "Skills you can take home":
-      "Bruce and Jonathan will share with us TEDx talks that will educate and inspire us in ways that we can apply immediately after their talks."
+    "Six speakers":
+      "Our six speakers this year will come together to share their stories, insight, and life's work in the spirit of ideas worth spreading.",
+    "A virtual main event":
+      "COVID-19 has caused us to rethink how we can continue to bring great ideas to the Cornell community and beyond. This year our event will be livestreamed on May 2nd.",
+    "Student and alumnus speakers":
+      "Each year we like to feature speakers who are related in some way to Cornell. In this event, we will hear from a current student and a recent graduate of Cornell.",
+    "Exclusive content":
+      "Some of our speakers are bringing very new ideas and research to us on May 2nd. Join us as some of the first to hear what they plan on sharing."
   };
 
   render() {
@@ -83,10 +92,10 @@ class Events extends Component {
           <SplitPanel img={catjohnedit} reverse={true} profile={false}>
             <div className="sp-content-container">
               <div className="sp-content">
-                <h1>TEDxCornellSalon</h1>
+                <h1>TEDxCornell</h1>
 
                 <p className="lead font-weight-normal">
-                  <em>Uproot: A Virtual Series | No. 2 | 4.11.2021</em>
+                  <em>Uproot: A Virtual Series | Main Event | 5.2.2021</em>
                   <br />
                 </p>
                 
@@ -99,10 +108,10 @@ class Events extends Component {
                 </p> */}
                 
                 <p className="lead font-weight-normal">
-                At our April 11th salon at 1pm EST, we will be hosting Bruce Monger and Jonathan Javier as they share their TEDx talks and open up for a live QA session afterwards. Join us in discussing the urgency of the climate crisis, revolutionizing your approach to networking, and discovering your personal role in changing our future.
+                At our May 2nd 2021 main event at 1pm EST, we will be hosting six speakers from our Cornell community and beyond to share ideas that will educate, entertain, and inspire. Our speakers will be discussing topics ranging from today's most important social issues to using psychedelic-assisted therapy to treat PTSD. We would love for you to join our live stream this Sunday!  
                 </p>
                 <div className="a-container">
-                <a href="https://forms.gle/xUrUkuHH8sw4tpSWA">
+                <a href="https://forms.gle/wYb8qxGobbudYhQ48">
                   Register Now
                 </a>
                 </div>
@@ -113,22 +122,22 @@ class Events extends Component {
 
         <div id="about-event-panel">
           <h2>
-            Have you ever done something spontaneous that changed your life? Have you ever felt like an underdog but came out on top anyways?
+            In the midst of the pandemic, we've been forced to introspect and reevaluate ourselves, our communities, and the world around us.
           </h2>
           <p>
-            At our second salon event, we explore our speakers' answers to these questions as they give TEDx talks on their thoughts and passions. Jonathan will guide us through techniques that can change your perspective on landing that reach job, and Bruce will share with us the power of bottom-up activism and his path to a life dedicated to fighting climate change.
+            With the challenges that we face come great opportunities for growth and change. Our speakers will be addressing our most pressing social issues, sharing groundbreaking and hope-inspiring research, digging deep to share their personal stories, and inspiring you to reflect on what opportunities lie where you least expect them. 
           </p>
           <p>
-            Join our TEDxCornell team as we host Jonathan Javier and Bruce Monger for a virtual event you won't forget. As the second of three parts of our Uproot series this year, this salon will educate us about climate change and professional networking and inspire us to take action in our lives when it matters.
+            Join our TEDxCornell team as we host our six speakers for a virtual event you won't forget. As the last of three parts of our Uproot series this year, we can't think of a better way to wrap up our 2021 spring semester.
           </p>
         </div>
 
         <TwoImgPanel imgLeft={tipImg3} imgRight={tipImg2} />
 
         <div id="event-second-panel">
-          <h1>Our first ever salon event</h1>
+          <h1>Our first ever virtual main event</h1>
           <p>
-            Besides our main conference, our TEDx license allows us to hold smaller, more focused and interactive events called salons. Here's what to expect:
+            This year for our main conference, we're livestreaming our event to you on May 2nd at 1pm EST. Here's what to expect:
           </p>
           <div className="experience-div">
             {Object.keys(this.experiences).map((key, index) => (
@@ -149,7 +158,8 @@ class Events extends Component {
         <TwoImgPanel imgLeft={tipImg1} imgRight={tipImg4} />
         <div className="events-content">
           <div className="speakers-title-div">
-            <h1>Our Speakers</h1>
+            <h1 style={{fontWeight: "normal"}}>Our Speakers</h1>
+            <h2 style={{fontWeight: "lighter"}}>Stay tuned this week as we continue to reveal our lineup.</h2>
           </div>
               
           {this.profiles.map((profile, idx) => (
@@ -200,9 +210,9 @@ class Events extends Component {
         <BottomPanel
           img={bottomPanelImg}
           title="Reserve Your Spot"
-          txt="Reserve your virtual seat for our salon on April 11th, 2021 at 1pm EST to experience our event. We hope to see you there!"
+          txt="Reserve your virtual seat for our main event on May 2nd, 2021 at 1pm EST to experience our event. We hope to see you there!"
           button="Register Now"
-          buttonHref="https://forms.gle/xUrUkuHH8sw4tpSWA"
+          buttonHref="https://forms.gle/wYb8qxGobbudYhQ48"
         />
       </div>
     );

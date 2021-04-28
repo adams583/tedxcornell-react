@@ -11,6 +11,8 @@ import tipImg3 from "../img/loutip.jpg";
 import tipImg1 from "../img/mason3.jpg";
 import tipImg4 from "../img/chandler2.jpg";
 import marcela_pic from "../img/marcela.jpg";
+import daniel_pic from "../img/daniel_pic.jpg";
+import larry_pic from "../img/larry_pic.jpg";
 import bruce_pic from "../img/bruce.jpg"
 import jonathan_pic from "../img/jonathan.jpg"
 // import cat_pic from "../img/cat_hoke.jpg";
@@ -69,8 +71,24 @@ class Events extends Component {
       name: "Marcela Ot'Alora", 
       title: "Psychotherapist, Artist", 
       link: "https://tim.blog/2019/11/22/marcela-otalora/",
-      blurb: "Marcela was born and raised in Colombia and currently lives in Boulder, Colorado. She is an artist and a psychotherapist who practices and conducts research on MDMA-assisted therapy",
+      blurb: "Marcela was born and raised in Colombia and currently lives in Boulder, Colorado. She is an artist and a psychotherapist who practices and conducts research on MDMA-assisted therapy.",
       moreInfo:"In her private practice she works in partnership with clients to nourish awareness and connection to innate essence. For over 30 years her interest and focus on trauma has led her to understand the healing process as an intimate re-connection to self, others, and the world, through compassion, acceptance, and honoring of each other’s human spirit. In addition to working with trauma and PTSD, she has dedicated her professional life to teaching, and research. With clients she uses art as a vehicle for deepening and processing experiences through non-verbal autobiographical storytelling. For the Multidisciplinary Association for Psychedelic Studies (MAPS), Marcela has worked as therapist and Principal Investigator for various studies weaving psychotherapy and MDMA for the treatment of PTSD. Additionally, she is a trainer and supervisor for MAPS’ MDMA-assisted psychotherapy training program."
+    },
+    {
+      img: daniel_pic,
+      name: "Daniel James II", 
+      title: "Podcast & Radio Host, Student Leader", 
+      link: "https://www.wvbr.com/blackvoices",
+      blurb: "Daniel James II uses his platform as an African American, a Southerner, and a Zoomer baby to empower, celebrate, and uplift the voices too often neglected, and too often forgotten.",
+      moreInfo:"Born in Marion, South Carolina, a rural working class town, Daniel James II gained his place as a junior at Cornell University, carrying with him to the Ivy League a desire to better the lives of people. As the creator and host of Black Voices on the Hill, a podcast & radio show, he aims to amplify the voices of black students, alumni, and city leaders. Inspired by the deaths of George Floyd, Ahmaud Arbery, and Breonna Taylor, he has been able to reach thousands in upstate New York, talking weekly about racism, sexism, and activism, with guests ranging from TikTok sensations, investment fund creators, to the city mayor himself. As a mentor at a local carceral facility and president of the Labor School student body, Daniel has skillfully used his voice over the airwaves to serve the public and reach the masses. This spring, he is an Emerging Leader intern for the Congressional Black Caucus."
+    },
+    {
+      img: larry_pic,
+      name: "Larry Williams Jr.", 
+      title: "Union Leader, Entrepreneur", 
+      link: "https://unionbase.org/",
+      blurb: "In college, Larry Williams Jr. landed a job at a union and has never looked back. Since then, he's worked his way up and created his own means for impacting all workers in the U.S.",
+      moreInfo:"Larry is founder of UnionBase.org and co-founder of Progressive Workers Union (PWU). UnionBase is the first secure social networking and education platform for unions and union workers, and is regarded by Forbes and Fast Company as the leading digital platform for a new generation of workers. PWU is a growing and powerful national union for non-profit employees that was started at Sierra Club, America's largest environmental organization. Larry will be leading us through his journey and sharing insight on how we need to view this time as a call for change in the future of employment."
     }
   ]
 

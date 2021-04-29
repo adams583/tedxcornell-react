@@ -16,8 +16,8 @@ import larry_pic from "../img/larry_pic.jpg";
 import ishan_pic from "../img/ishan.jpg";
 import bruce_pic from "../img/bruce.jpg"
 import jonathan_pic from "../img/jonathan.jpg"
-import cat_pic from "../img/cat_hoke.jpg";
-import john_pic from "../img/john_jackson.jpg";
+import cat_pic from "../img/cat.jpg";
+import john_pic from "../img/john.jpg";
 import ProfilePanel from "../common/info/ProfilePanel";
 
 class Events extends Component {

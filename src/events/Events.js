@@ -13,10 +13,11 @@ import tipImg4 from "../img/chandler2.jpg";
 import marcela_pic from "../img/marcela.jpg";
 import daniel_pic from "../img/daniel_pic.jpg";
 import larry_pic from "../img/larry_pic.jpg";
+import ishan_pic from "../img/ishan.jpg";
 import bruce_pic from "../img/bruce.jpg"
 import jonathan_pic from "../img/jonathan.jpg"
-// import cat_pic from "../img/cat_hoke.jpg";
-// import john_pic from "../img/john_jackson.jpg";
+import cat_pic from "../img/cat_hoke.jpg";
+import john_pic from "../img/john_jackson.jpg";
 import ProfilePanel from "../common/info/ProfilePanel";
 
 class Events extends Component {
@@ -34,22 +35,6 @@ class Events extends Component {
   };
 
   profiles = [
-    // {
-    //   img: cat_pic,
-    //   name: "Cat Hoke", 
-    //   title: "Co-Founder, Hustle 2.0", 
-    //   link: "https://www.cathoke.com/",
-    //   blurb: "Over 17 years, Cat's efforts have led 7,000 executives, entrepreneurs, and investors to volunteer as mentors and employers for 8,500 formerly incarcerated program graduates. Her programs reduce violence and have produced leading recidivism rates of under 8%.",
-    //   moreInfo: "As the only girl on the high school wrestling team and as a Brazilian jiu-jitsu fighter, Cat mastered the art of “breakfall”: how to prevent injury when you get taken down. Breakfall proved to be a transferable skill in her career as a three-time entrepreneur, disrupting the American prison industry. Cat works with gang leaders in the most notorious prisons, leading gang intervention programs. She has survived career-ending threats and devastating takedowns. Seth Godin published her best-selling book, A Second Chance: For You, For Me, and for the Rest of Us. Fast Company named Cat one of the 100 Most Creative People in Business, Forbes named her on 40 Women to Watch Over 40, and she has received the MDC Partners Humanitarian Award. "
-    // },
-    // {
-    //   img: john_pic,
-    //   name: "John Jackson", 
-    //   title: "Director of Correctional Partnerships, Hustle 2.0", 
-    //   link: "https://www.hustle20.com/team/",
-    //   blurb: "John has co-authored nine books that provide holistic rehabilitation and healing for people in jails and prisons nationally. His curriculum is also used to tackle gang violence in America’s most dangerous prisons. ",
-    //   moreInfo: "John was once labeled by correctional officials as being “the worst of the worst.” After being entrenched in gang culture and serving 18 years in prison, John realized that continuing to build his criminal resume would only lead him to life—and death—in prison. John made the dangerous decision to step away from gang and criminal activity while incarcerated. This led him to change his values, allegiances, and behavior. Because John made his choices honorably, he maintained his credibility with gang leaders and now works with them to stop the generational cycle of gang violence in prisons across the country. He uses his story of courage and transformation to create hope for a better future for those who have been labeled, written off, and forgotten by society."
-    // }
     // {
     //   img: jonathan_pic,
     //   name: "Jonathan Javier", 
@@ -89,6 +74,30 @@ class Events extends Component {
       link: "https://unionbase.org/",
       blurb: "In college, Larry Williams Jr. landed a job at a union and has never looked back. Since then, he's worked his way up and created his own means for impacting all workers in the U.S.",
       moreInfo:"Larry is founder of UnionBase.org and co-founder of Progressive Workers Union (PWU). UnionBase is the first secure social networking and education platform for unions and union workers, and is regarded by Forbes and Fast Company as the leading digital platform for a new generation of workers. PWU is a growing and powerful national union for non-profit employees that was started at Sierra Club, America's largest environmental organization. Larry will be leading us through his journey and sharing insight on how we need to view this time as a call for change in the future of employment."
+    },
+    {
+      img: ishan_pic,
+      name: "Ishan Sharma", 
+      title: "Herbert Scoville Jr. Peace Fellow of Emerging Tech at FAS", 
+      link: "https://fas.org/expert/ishan-sharma/",
+      blurb: "Ishan graduated from Cornell in 2020 and now spearheads an initiative of the Federation of American Scientists aimed at countering 21st century digital authoritarianism, the focus of his TEDx talk.",
+      moreInfo:"He’s spoken with over 40 surveillance industry experts, activists, leading scholars, government officials, and police chiefs to reduce the violence emerging surveillance technologies bring to minority communities, at home and abroad. Ishan is also an Advisor for the Day One Project, which has curated 100+ action-oriented science & technology proposals and informed policy decisions at some of the highest levels of government. He holds a Bachelor of Science in Industrial and Labor Relations from Cornell University and has studied jurisprudence and international human rights law at the University of Oxford. Ishan is a board member of two nonprofits that aim to empower youth through mentorship and media literacy, and he is one of 24 Senior John Lewis Fellows around the world investigating the future of democracy, oppression, and human rights in the 21st century."
+    },
+    {
+      img: cat_pic,
+      name: "Cat Hoke", 
+      title: "Co-Founder, Hustle 2.0", 
+      link: "https://www.cathoke.com/",
+      blurb: "Over 17 years, Cat's efforts have led 7,000 executives, entrepreneurs, and investors to volunteer as mentors and employers for 8,500 formerly incarcerated program graduates. Her programs reduce violence and have produced leading recidivism rates of under 8%.",
+      moreInfo: "As the only girl on the high school wrestling team and as a Brazilian jiu-jitsu fighter, Cat mastered the art of “breakfall”: how to prevent injury when you get taken down. Breakfall proved to be a transferable skill in her career as a three-time entrepreneur, disrupting the American prison industry. Cat works with gang leaders in the most notorious prisons, leading gang intervention programs. She has survived career-ending threats and devastating takedowns. Seth Godin published her best-selling book, A Second Chance: For You, For Me, and for the Rest of Us. Fast Company named Cat one of the 100 Most Creative People in Business, Forbes named her on 40 Women to Watch Over 40, and she has received the MDC Partners Humanitarian Award. "
+    },
+    {
+      img: john_pic,
+      name: "John Jackson", 
+      title: "Director of Correctional Partnerships, Hustle 2.0", 
+      link: "https://www.hustle20.com/team/",
+      blurb: "John has co-authored nine books that provide holistic rehabilitation and healing for people in jails and prisons nationally. His curriculum is also used to tackle gang violence in America’s most dangerous prisons. ",
+      moreInfo: "John was once labeled by correctional officials as being “the worst of the worst.” After being entrenched in gang culture and serving 18 years in prison, John realized that continuing to build his criminal resume would only lead him to life—and death—in prison. John made the dangerous decision to step away from gang and criminal activity while incarcerated. This led him to change his values, allegiances, and behavior. Because John made his choices honorably, he maintained his credibility with gang leaders and now works with them to stop the generational cycle of gang violence in prisons across the country. He uses his story of courage and transformation to create hope for a better future for those who have been labeled, written off, and forgotten by society."
     }
   ]
 
@@ -177,7 +186,6 @@ class Events extends Component {
         <div className="events-content">
           <div className="speakers-title-div">
             <h1 style={{fontWeight: "normal"}}>Our Speakers</h1>
-            <h2 style={{fontWeight: "lighter"}}>Stay tuned this week as we continue to reveal our lineup.</h2>
           </div>
               
           {this.profiles.map((profile, idx) => (

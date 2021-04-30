@@ -56,6 +56,7 @@ class Events extends Component {
       name: "Marcela Ot'Alora", 
       title: "Psychotherapist, Artist", 
       link: "https://tim.blog/2019/11/22/marcela-otalora/",
+      talk: "The Healing Power of MDMA through Reconnection",
       blurb: "Marcela was born and raised in Colombia and currently lives in Boulder, Colorado. She is an artist and a psychotherapist who practices and conducts research on MDMA-assisted therapy.",
       moreInfo:"In her private practice she works in partnership with clients to nourish awareness and connection to innate essence. For over 30 years her interest and focus on trauma has led her to understand the healing process as an intimate re-connection to self, others, and the world, through compassion, acceptance, and honoring of each other’s human spirit. In addition to working with trauma and PTSD, she has dedicated her professional life to teaching, and research. With clients she uses art as a vehicle for deepening and processing experiences through non-verbal autobiographical storytelling. For the Multidisciplinary Association for Psychedelic Studies (MAPS), Marcela has worked as therapist and Principal Investigator for various studies weaving psychotherapy and MDMA for the treatment of PTSD. Additionally, she is a trainer and supervisor for MAPS’ MDMA-assisted psychotherapy training program."
     },
@@ -63,6 +64,7 @@ class Events extends Component {
       img: daniel_pic,
       name: "Daniel James II", 
       title: "Podcast & Radio Host, Student Leader", 
+      talk: "Why You Should Never Tell a Black Child They Act White",
       link: "https://www.wvbr.com/blackvoices",
       blurb: "Daniel James II uses his platform as an African American, a Southerner, and a Zoomer baby to empower, celebrate, and uplift the voices too often neglected, and too often forgotten.",
       moreInfo:"Born in Marion, South Carolina, a rural working class town, Daniel James II gained his place as a junior at Cornell University, carrying with him to the Ivy League a desire to better the lives of people. As the creator and host of Black Voices on the Hill, a podcast & radio show, he aims to amplify the voices of black students, alumni, and city leaders. Inspired by the deaths of George Floyd, Ahmaud Arbery, and Breonna Taylor, he has been able to reach thousands in upstate New York, talking weekly about racism, sexism, and activism, with guests ranging from TikTok sensations, investment fund creators, to the city mayor himself. As a mentor at a local carceral facility and president of the Labor School student body, Daniel has skillfully used his voice over the airwaves to serve the public and reach the masses. This spring, he is an Emerging Leader intern for the Congressional Black Caucus."
@@ -72,6 +74,7 @@ class Events extends Component {
       name: "Larry Williams Jr.", 
       title: "Union Leader, Entrepreneur", 
       link: "https://unionbase.org/",
+      talk: "The American Dream is a Nightmare for Workers",
       blurb: "In college, Larry Williams Jr. landed a job at a union and has never looked back. Since then, he's worked his way up and created his own means for impacting all workers in the U.S.",
       moreInfo:"Larry is founder of UnionBase.org and co-founder of Progressive Workers Union (PWU). UnionBase is the first secure social networking and education platform for unions and union workers, and is regarded by Forbes and Fast Company as the leading digital platform for a new generation of workers. PWU is a growing and powerful national union for non-profit employees that was started at Sierra Club, America's largest environmental organization. Larry will be leading us through his journey and sharing insight on how we need to view this time as a call for change in the future of employment."
     },
@@ -80,6 +83,7 @@ class Events extends Component {
       name: "Ishan Sharma", 
       title: "Herbert Scoville Jr. Peace Fellow of Emerging Tech at FAS", 
       link: "https://fas.org/expert/ishan-sharma/",
+      talk: "When 2021 Becomes 1984: The Future of Surveillance Technology and Democracy",
       blurb: "Ishan graduated from Cornell in 2020 and now spearheads an initiative of the Federation of American Scientists aimed at countering 21st century digital authoritarianism, the focus of his TEDx talk.",
       moreInfo:"He’s spoken with over 40 surveillance industry experts, activists, leading scholars, government officials, and police chiefs to reduce the violence emerging surveillance technologies bring to minority communities, at home and abroad. Ishan is also an Advisor for the Day One Project, which has curated 100+ action-oriented science & technology proposals and informed policy decisions at some of the highest levels of government. He holds a Bachelor of Science in Industrial and Labor Relations from Cornell University and has studied jurisprudence and international human rights law at the University of Oxford. Ishan is a board member of two nonprofits that aim to empower youth through mentorship and media literacy, and he is one of 24 Senior John Lewis Fellows around the world investigating the future of democracy, oppression, and human rights in the 21st century."
     },
@@ -88,6 +92,7 @@ class Events extends Component {
       name: "Cat Hoke", 
       title: "Co-Founder, Hustle 2.0", 
       link: "https://www.cathoke.com/",
+      talk: "Stop Cancelling Yourself",
       blurb: "Over 17 years, Cat's efforts have led 7,000 executives, entrepreneurs, and investors to volunteer as mentors and employers for 8,500 formerly incarcerated program graduates. Her programs reduce violence and have produced leading recidivism rates of under 8%.",
       moreInfo: "As the only girl on the high school wrestling team and as a Brazilian jiu-jitsu fighter, Cat mastered the art of “breakfall”: how to prevent injury when you get taken down. Breakfall proved to be a transferable skill in her career as a three-time entrepreneur, disrupting the American prison industry. Cat works with gang leaders in the most notorious prisons, leading gang intervention programs. She has survived career-ending threats and devastating takedowns. Seth Godin published her best-selling book, A Second Chance: For You, For Me, and for the Rest of Us. Fast Company named Cat one of the 100 Most Creative People in Business, Forbes named her on 40 Women to Watch Over 40, and she has received the MDC Partners Humanitarian Award. "
     },
@@ -96,8 +101,9 @@ class Events extends Component {
       name: "John Jackson", 
       title: "Director of Correctional Partnerships, Hustle 2.0", 
       link: "https://www.hustle20.com/team/",
-      blurb: "John has co-authored nine books that provide holistic rehabilitation and healing for people in jails and prisons nationally. His curriculum is also used to tackle gang violence in America’s most dangerous prisons. ",
-      moreInfo: "John was once labeled by correctional officials as being “the worst of the worst.” After being entrenched in gang culture and serving 18 years in prison, John realized that continuing to build his criminal resume would only lead him to life—and death—in prison. John made the dangerous decision to step away from gang and criminal activity while incarcerated. This led him to change his values, allegiances, and behavior. Because John made his choices honorably, he maintained his credibility with gang leaders and now works with them to stop the generational cycle of gang violence in prisons across the country. He uses his story of courage and transformation to create hope for a better future for those who have been labeled, written off, and forgotten by society."
+      talk: "How I Got Out of a Prison Gang",
+      blurb: 'Prison gang members live by a code, “\’Til the casket drops.” What if there was a way to make it out alive?',
+      moreInfo: "At 17, John was introduced to a life of crime by the person who promised to protect him. He spent his next 18 years in prison, heavily entrenched in gang culture. Prison officials labeled him as “the worst of the worst” and locked him in a notorious supermax prison, Pelican Bay. John transformed his life and now works with gang leaders to stop the generational cycle of gang violence nationally. Together, they’ve authored the first-ever retirement plan for gang members, called Squaring Up. With Hustle 2.0, John has co-authored 10 books that provide rehabilitation and healing for people in jails and prisons nationally."
     }
   ]
 

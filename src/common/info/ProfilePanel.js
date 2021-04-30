@@ -4,6 +4,7 @@ import "./ProfilePanel.css"
 
 function ProfilePanel(props) {
     const infoStyles = {textAlign: props.reversed ? "right" : "left"}
+    const borderStyles = props.reversed ? {borderRight: "solid thick var(--accent)"} : {borderLeft: "solid thick var(--accent)"}
 
     return (
         <div className="profile-container" style={{flexDirection: props.reversed ? "row-reverse" : "row"}}>
@@ -18,6 +19,7 @@ function ProfilePanel(props) {
             </div>
 
             <div className="profile-info" style={infoStyles}>
+                <div className="profile-talk" style={borderStyles}>{props.profile.talk}</div>
                 <div className="profile-blurb">{props.profile.blurb}</div>
                 <div className="profile-more-info"><p>{props.profile.moreInfo}</p></div>
                 <div className="profile-link"><a href={props.profile.link}>Read more</a></div>

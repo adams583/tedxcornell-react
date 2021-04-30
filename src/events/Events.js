@@ -83,7 +83,7 @@ class Events extends Component {
       name: "Ishan Sharma", 
       title: "Herbert Scoville Jr. Peace Fellow of Emerging Tech at FAS", 
       link: "https://fas.org/expert/ishan-sharma/",
-      talk: "When 2021 Becomes 1984: The Future of Surveillance Technology and Democracy",
+      talk: "Democracy & Emerging Surveillance Technology: How We Stop 2030 From Becoming 1984.",
       blurb: "Ishan graduated from Cornell in 2020 and now spearheads an initiative of the Federation of American Scientists aimed at countering 21st century digital authoritarianism, the focus of his TEDx talk.",
       moreInfo:"He’s spoken with over 40 surveillance industry experts, activists, leading scholars, government officials, and police chiefs to reduce the violence emerging surveillance technologies bring to minority communities, at home and abroad. Ishan is also an Advisor for the Day One Project, which has curated 100+ action-oriented science & technology proposals and informed policy decisions at some of the highest levels of government. He holds a Bachelor of Science in Industrial and Labor Relations from Cornell University and has studied jurisprudence and international human rights law at the University of Oxford. Ishan is a board member of two nonprofits that aim to empower youth through mentorship and media literacy, and he is one of 24 Senior John Lewis Fellows around the world investigating the future of democracy, oppression, and human rights in the 21st century."
     },

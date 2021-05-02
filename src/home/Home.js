@@ -59,9 +59,9 @@ class Home extends Component {
               <h1 style={{marginRight: "20px"}}>Sunday, May 2nd, 1pm EST &nbsp;| </h1>
               <CustomButton
                 lightText
-                text="Register"
+                text="Join Our Livestream"
                 color="#08b2e3"
-                href="https://forms.gle/wYb8qxGobbudYhQ48"  
+                href="https://www.facebook.com/TEDxCornellUniversity/live/"  
                   />
             </div>
           </div>

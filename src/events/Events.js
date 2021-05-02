@@ -144,8 +144,8 @@ class Events extends Component {
                 At our May 2nd 2021 main event at 1pm EST, we will be hosting six speakers from our Cornell community and beyond to share ideas that will educate, entertain, and inspire. Our speakers will be discussing topics ranging from today's most important social issues to using psychedelic-assisted therapy to treat PTSD. We would love for you to join our live stream this Sunday!  
                 </p>
                 <div className="a-container">
-                <a href="https://forms.gle/wYb8qxGobbudYhQ48">
-                  Register Now
+                <a href="https://www.facebook.com/TEDxCornellUniversity/live/">
+                  Stream Live
                 </a>
                 </div>
               </div>

@@ -29,32 +29,31 @@ class Home extends Component {
       buttonText: "About the Event",
       link: "/events"
     },
-    // {
-    //   title: "Get Involved",
-    //   text:
-    //     "If you are passionate about TED or helping unique speakers share their ideas" +
-    //     "consider getting invovled with TEDxCornell!",
-    //   buttonText: "Apply Now",
-    //   link: "/apply"
-    // }
+    {
+      title: "Get Involved",
+      text:
+        "If you are passionate about TED or helping unique speakers share their ideas" +
+        "consider getting invovled with TEDxCornell!",
+      buttonText: "Apply Now",
+      link: "/apply"
+    }
   ];
 
   render() {
     return (
       <div>
         <div className="main-panel-home-background ">
-          {/* <div className="main-panel-home-content text-center">
+          <div className="main-panel-home-content text-center">
             <div className="home-title">
-              <div>
                 <CustomButton
-                  text="Register Now"
-                  color="#e62b1e"
-                  href="https://forms.gle/xUrUkuHH8sw4tpSWA"
+                  lightText
+                  text="Apply For Our Organizing Team"
+                  color="#08b2e3"
+                  href="https://forms.gle/sjUFzXd5GwxC6WDGA"
                 />
-              </div>
             </div>
-          </div> */}
-          <div className="bottom-aligned-button-container">
+          </div>
+          {/* <div className="bottom-aligned-button-container">
             <div style={{display: 'flex', flexDirection: 'row'}}>
               <h1 style={{marginRight: "20px"}}>Sunday, May 2nd, 1pm EST &nbsp;| </h1>
               <CustomButton
@@ -64,7 +63,7 @@ class Home extends Component {
                 href="https://www.facebook.com/TEDxCornellUniversity/live/"  
                   />
             </div>
-          </div>
+          </div> */}
         </div>
         <div id="about-home-panel">
           <div className="about-home-panel-title">

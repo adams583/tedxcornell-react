@@ -26,8 +26,9 @@ class Apply extends Component {
   applyCards = [
     {
       title: "Team Applications", 
-      subtitle: "Team Applications are now closed.", 
-      text: "Check back next semester for more information on team applications. "
+      subtitle: "Team Applications are open!", 
+      text: "Check our instagram page @tedxcornell for more information or apply now.",
+      button: true 
     },
     {
       title: "Volunteering Opportunities", 
@@ -72,10 +73,10 @@ class Apply extends Component {
       <div className="apply-div">
         <Grid>
         <Row>
-          <h2>Interested in becoming a speaker?</h2>
+          <h2>Interested in being part of the organizing team?</h2>
         </Row>
         <Row>
-          <h4>Our applications for this year are closed. Our next cycle will begin in Fall 2021</h4>
+          <h4>Our applications for this year have opened. This recruiting cycle is for our Spring 2022 event. We'd love to hear from you!</h4>
         </Row>
 
         {this.applyCards.map((card, index) => (
@@ -99,6 +100,7 @@ class Apply extends Component {
                   {card.title == "Speaker Applications"}
                 </div>
               </p>
+              {card.button && <CustomButton color="#08b2e3" text="Apply Now" lightText href="https://forms.gle/sjUFzXd5GwxC6WDGA"/>}
             </Col>
           </Row> 
           ))}

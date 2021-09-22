@@ -16,13 +16,16 @@
   font-weight: bold;
 }
 
+.home-title {
+  height: 90%;
+  justify-content: flex-end;
+}
+
 .main-panel-home-content {
-  margin: auto;
+  display:flex;
   height: 100%;
-  display: flex;
+  width: 100%;
   flex-direction: column;
-  /* justify-content: flex-end; */
-  /* align-items: center; */
 }
 
 .main-panel-home-content > * {

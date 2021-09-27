@@ -1,47 +1,18 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Home.css";
 import { Row, Col, Grid } from "react-bootstrap";
-
-import ImageTextOverlap from "../common/ImageTextOverlap";
-import itoImg from "../img/itai1.jpg";
 import BottomPanel from "../common/panels/BottomPanel";
 import faqimg from "../img/yamatai.jpg";
 import tipImg2 from "../img/team2.png";
 import tipImg1 from "../img/team.jpg";
 import TwoImgPanel from "../common/panels/TwoImgPanel";
-import SplitPanel from "../common/panels/SplitPanel";
 import CustomButton from "../common/buttons/CustomButton";
-import ProfilePanel from "../common/info/ProfilePanel";
-import teampng from "../img/team.png"
+import { cards } from "./infoCards";
 
-class Home extends Component {
-  cards = [
-    {
-      title: "What is TEDxCornell?", 
-      text: "We're a student-run club dedicated to bringing great independently-organized TED events and amazing people to Cornell. This year we're hosting two salon events and one main event. Be sure to follow us on social media and check our website for updates.",
-      buttonText: "About Us", 
-      link: "/about"
-    },
-    {
-      title: "Our Conference",
-      text:
-        "TEDxCornell presents to you our 2021 salons and conferences as we hope to continue bringing “Ideas Worth Spreading” to Cornell’s campus. Speakers from our local community and across the country will share the virtual stage, each bringing light to a unique topic. Listen, learn, and be inspired. Experience TEDxCornell.",
-      buttonText: "About the Event",
-      link: "/events"
-    },
-    {
-      title: "Get Involved",
-      text:
-        "If you are passionate about TED or helping unique speakers share their ideas" +
-        "consider getting invovled with TEDxCornell!",
-      buttonText: "Apply Now",
-      link: "/apply"
-    }
-  ];
+export default function Home() {
 
-  render() {
     return (
-      <div>
+      <React.Fragment>
         <div className="main-panel-home-background ">
           <div className="main-panel-home-content text-center">
             <div className="home-title">
@@ -53,18 +24,8 @@ class Home extends Component {
                 />
             </div>
           </div>
-          {/* <div className="bottom-aligned-button-container">
-            <div style={{display: 'flex', flexDirection: 'row'}}>
-              <h1 style={{marginRight: "20px"}}>Sunday, May 2nd, 1pm EST &nbsp;| </h1>
-              <CustomButton
-                lightText
-                text="Join Our Livestream"
-                color="#08b2e3"
-                href="https://www.facebook.com/TEDxCornellUniversity/live/"  
-                  />
-            </div>
-          </div> */}
         </div>
+
         <div id="about-home-panel">
           <div className="about-home-panel-title">
               Uproot: A Virtual Series
@@ -73,26 +34,17 @@ class Home extends Component {
             This year we are hosting a three-part virtual series with the theme Uproot. Join us for two salon events and one main event in which we bring speakers from around the country as well as our local community to share their most pressing ideas.
             What does the theme Uproot mean to you? To us it's challenging the beliefs we've been rooted in our whole lives, starting fresh, exploring change. To uplift, shake off the dirt, and rebuild. 
           </div>
-
         </div>
+
         <TwoImgPanel imgLeft={tipImg1} imgRight={tipImg2} />
 
         <div className="home-content">
-          {/* <ImageTextOverlap
-            onImgLoad={() => {}}
-            src={teampng}
-            title="What is TEDxCornell?"
-            content="We're a student-run club dedicated to bringing great independently-organized TED events and amazing people to Cornell."
-            button="Learn More"
-            buttonHref="/about"
-          /> */}
           <Grid className="grid">
-            {this.cards.map((card, index) => (
-              <div key={index}>
+            {cards.map((card, index) => (
+              <React.Fragment key={index}>
                 <Row>
-                  {index % 2 != 0 && <Col md={7} />}
+                  {index % 2 !== 0 && <Col md={7} />}
                   <Col md={5}>
-                    <div>
                       <div data-aos="fade-left" className="paper-div">
                         <h3>{card.title}</h3>
                         <p>{card.text}</p>
@@ -103,12 +55,11 @@ class Home extends Component {
                           href={card.link}
                         />
                       </div>
-                    </div>
                   </Col>
-                  {index % 2 == 0 && <Col md={7} />}
+                  {index % 2 === 0 && <Col md={7} />}
                 </Row>
                 <div className="row-spacer" />
-              </div>
+              </React.Fragment>
             ))}
           </Grid>
 
@@ -120,9 +71,6 @@ class Home extends Component {
             buttonHref="/faq"
           />
         </div>
-      </div>
+      </React.Fragment>
     );
   }
-}
-
-export default Home;

@@ -1,48 +1,35 @@
-import React, { Component } from "react";
+import React from "react";
 import "./ImageTextOverlap.css";
 import { Image } from "react-bootstrap";
 import CustomButton from "./buttons/CustomButton";
 import ScrollMove from "./ScrollMove";
 
-class ImageTextOverlap extends Component {
-  constructor(props) {
-    super(props);
-    this.handleImageLoad = this.handleImageLoad.bind(this);
-  }
-
-  handleImageLoad() {
-    this.props.onImgLoad();
-  }
-
-  render() {
+export const ImageTextOverlap = React.memo(function ImageTextOverlapFn({src, title, content, button, buttonHref}) {
     return (
       <div className="image-text-overlap">
         <div className="ito-img">
           <Image
-            src={this.props.src}
+            src={src}
             alt="Image not rendering"
             responsive
-            onLoad={this.handleImageLoad}
           />
         </div>
 
         <div className="ito-txt">
           <ScrollMove>
             <div className="long-left-border">
-              <h3>{this.props.title}</h3>
-              <p>{this.props.content}</p>
+              <h3>{title}</h3>
+              <p>{content}</p>
               <CustomButton
-                text={this.props.button}
+                text={button}
                 color="#08B2E3"
                 lightText
-                href={this.props.buttonHref}
+                href={buttonHref}
               />
             </div>
           </ScrollMove>
         </div>
       </div>
-    );
-  }
-}
+    )
+})
 
-export default ImageTextOverlap;

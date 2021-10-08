@@ -22,7 +22,7 @@
 }
 
 .main-panel-home-content {
-  display:flex;
+  display: flex;
   height: 100%;
   width: 100%;
   flex-direction: column;
@@ -109,19 +109,6 @@ h1 {
 .row-spacer {
   height: 120px;
   background-color: inherit;
-}
-
-.standard-button {
-  border: none;
-  font-weight: bold;
-  font-size: 0.8em;
-  text-transform: uppercase;
-  padding: 5px 10px;
-  background-image: url("../img/painted-x.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: inherit;
-  box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.452);
 }
 
 .profile-panel-container {

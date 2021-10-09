@@ -88,7 +88,7 @@ class Apply extends Component {
                 <b>{card.subtitle}</b>
                 <br/>
                 {card.text}
-                {card.title == "Information Sessions" && 
+                {card.title === "Information Sessions" && 
                 <p>9/17 Information Session: <a>{card.link1}</a>
                   <br/>
                   9/21 Information Session: <a>{card.link2}</a>
@@ -97,7 +97,7 @@ class Apply extends Component {
                 
 
                 <div className="padding-top">
-                  {card.title == "Speaker Applications"}
+                  {card.title === "Speaker Applications"}
                 </div>
               </p>
               {card.button && <CustomButton color="#08b2e3" text="Apply Now" lightText href="https://forms.gle/sjUFzXd5GwxC6WDGA"/>}

@@ -41,7 +41,7 @@ class FAQ extends Component {
       key: "5",
       question: "Can anyone come to the event?",
       answer:
-        "Yes! This year\'s events are all virtual, so even if you're not in Ithaca, you're welcome at our event."
+        "Yes! This year's events are all virtual, so even if you're not in Ithaca, you're welcome at our event."
     },
     {
       key: "6",

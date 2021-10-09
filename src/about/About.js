@@ -5,7 +5,7 @@ import {ImageTextOverlap} from "../common/ImageTextOverlap";
 import workingteam from "../img/workingteam.jpg";
 import BottomPanel from "../common/panels/BottomPanel";
 import bottomPanelImg from "../img/team2019.jpg";
-import TeamProfile from "../common/gallery/TeamProfile";
+import { TeamProfile } from "../common/gallery/TeamProfile.tsx";
 
 
 export const About = React.memo(function AboutFn() {

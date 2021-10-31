@@ -8,7 +8,8 @@
 .card-selector {
   transition: all 0.2s;
   padding: 10px 20px;
-  margin: 20px 10px;
+  margin: 0 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4)
 }
 
 .other-card {
@@ -22,9 +23,9 @@
 
 .faq-selector-container {
   display: flex;
-  flex-direction: row;
   flex: 1;
-  margin: 20px;
+  margin: 30px;
+  gap: 30px;
 }
 
 .faq-content {
@@ -39,6 +40,12 @@
 
 .large-screen-only {
   display: none;
+}
+
+.card-selected {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-left: solid #08B2E3
 }
 
 /* lg --- Large devices (desktops, 992px and up) */

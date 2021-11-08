@@ -53,44 +53,44 @@ class Events extends Component {
     // },
     {
       img: marcela_pic,
-      name: "Marcela Ot'Alora", 
-      title: "Psychotherapist, Artist", 
+      name: "Marcela Ot'Alora",
+      title: "Psychotherapist, Artist",
       link: "https://tim.blog/2019/11/22/marcela-otalora/",
       talk: "The Healing Power of MDMA through Reconnection",
       blurb: "Marcela was born and raised in Colombia and currently lives in Boulder, Colorado. She is an artist and a psychotherapist who practices and conducts research on MDMA-assisted therapy.",
-      moreInfo:"In her private practice she works in partnership with clients to nourish awareness and connection to innate essence. For over 30 years her interest and focus on trauma has led her to understand the healing process as an intimate re-connection to self, others, and the world, through compassion, acceptance, and honoring of each other’s human spirit. In addition to working with trauma and PTSD, she has dedicated her professional life to teaching, and research. With clients she uses art as a vehicle for deepening and processing experiences through non-verbal autobiographical storytelling. For the Multidisciplinary Association for Psychedelic Studies (MAPS), Marcela has worked as therapist and Principal Investigator for various studies weaving psychotherapy and MDMA for the treatment of PTSD. Additionally, she is a trainer and supervisor for MAPS’ MDMA-assisted psychotherapy training program."
+      moreInfo: "In her private practice she works in partnership with clients to nourish awareness and connection to innate essence. For over 30 years her interest and focus on trauma has led her to understand the healing process as an intimate re-connection to self, others, and the world, through compassion, acceptance, and honoring of each other’s human spirit. In addition to working with trauma and PTSD, she has dedicated her professional life to teaching, and research. With clients she uses art as a vehicle for deepening and processing experiences through non-verbal autobiographical storytelling. For the Multidisciplinary Association for Psychedelic Studies (MAPS), Marcela has worked as therapist and Principal Investigator for various studies weaving psychotherapy and MDMA for the treatment of PTSD. Additionally, she is a trainer and supervisor for MAPS’ MDMA-assisted psychotherapy training program."
     },
     {
       img: daniel_pic,
-      name: "Daniel James II", 
-      title: "Podcast & Radio Host, Student Leader", 
+      name: "Daniel James II",
+      title: "Podcast & Radio Host, Student Leader",
       talk: "Why You Should Never Tell a Black Child They Act White",
       link: "https://www.wvbr.com/blackvoices",
       blurb: "Daniel James II uses his platform as an African American, a Southerner, and a Zoomer baby to empower, celebrate, and uplift the voices too often neglected, and too often forgotten.",
-      moreInfo:"Born in Marion, South Carolina, a rural working class town, Daniel James II gained his place as a junior at Cornell University, carrying with him to the Ivy League a desire to better the lives of people. As the creator and host of Black Voices on the Hill, a podcast & radio show, he aims to amplify the voices of black students, alumni, and city leaders. Inspired by the deaths of George Floyd, Ahmaud Arbery, and Breonna Taylor, he has been able to reach thousands in upstate New York, talking weekly about racism, sexism, and activism, with guests ranging from TikTok sensations, investment fund creators, to the city mayor himself. As a mentor at a local carceral facility and president of the Labor School student body, Daniel has skillfully used his voice over the airwaves to serve the public and reach the masses. This spring, he is an Emerging Leader intern for the Congressional Black Caucus."
+      moreInfo: "Born in Marion, South Carolina, a rural working class town, Daniel James II gained his place as a junior at Cornell University, carrying with him to the Ivy League a desire to better the lives of people. As the creator and host of Black Voices on the Hill, a podcast & radio show, he aims to amplify the voices of black students, alumni, and city leaders. Inspired by the deaths of George Floyd, Ahmaud Arbery, and Breonna Taylor, he has been able to reach thousands in upstate New York, talking weekly about racism, sexism, and activism, with guests ranging from TikTok sensations, investment fund creators, to the city mayor himself. As a mentor at a local carceral facility and president of the Labor School student body, Daniel has skillfully used his voice over the airwaves to serve the public and reach the masses. This spring, he is an Emerging Leader intern for the Congressional Black Caucus."
     },
     {
       img: larry_pic,
-      name: "Larry Williams Jr.", 
-      title: "Union Leader, Entrepreneur", 
+      name: "Larry Williams Jr.",
+      title: "Union Leader, Entrepreneur",
       link: "https://unionbase.org/",
       talk: "The American Dream is a Nightmare for Workers",
       blurb: "In college, Larry Williams Jr. landed a job at a union and has never looked back. Since then, he's worked his way up and created his own means for impacting all workers in the U.S.",
-      moreInfo:"Larry is founder of UnionBase.org and co-founder of Progressive Workers Union (PWU). UnionBase is the first secure social networking and education platform for unions and union workers, and is regarded by Forbes and Fast Company as the leading digital platform for a new generation of workers. PWU is a growing and powerful national union for non-profit employees that was started at Sierra Club, America's largest environmental organization. Larry will be leading us through his journey and sharing insight on how we need to view this time as a call for change in the future of employment."
+      moreInfo: "Larry is founder of UnionBase.org and co-founder of Progressive Workers Union (PWU). UnionBase is the first secure social networking and education platform for unions and union workers, and is regarded by Forbes and Fast Company as the leading digital platform for a new generation of workers. PWU is a growing and powerful national union for non-profit employees that was started at Sierra Club, America's largest environmental organization. Larry will be leading us through his journey and sharing insight on how we need to view this time as a call for change in the future of employment."
     },
     {
       img: ishan_pic,
-      name: "Ishan Sharma", 
-      title: "Herbert Scoville Jr. Peace Fellow of Emerging Tech at FAS", 
+      name: "Ishan Sharma",
+      title: "Herbert Scoville Jr. Peace Fellow of Emerging Tech at FAS",
       link: "https://fas.org/expert/ishan-sharma/",
       talk: "Democracy & Emerging Surveillance Technology: How We Stop 2030 From Becoming 1984.",
       blurb: "Ishan graduated from Cornell in 2020 and now spearheads an initiative of the Federation of American Scientists aimed at countering 21st century digital authoritarianism, the focus of his TEDx talk.",
-      moreInfo:"He’s spoken with over 40 surveillance industry experts, activists, leading scholars, government officials, and police chiefs to reduce the violence emerging surveillance technologies bring to minority communities, at home and abroad. Ishan is also an Advisor for the Day One Project, which has curated 100+ action-oriented science & technology proposals and informed policy decisions at some of the highest levels of government. He holds a Bachelor of Science in Industrial and Labor Relations from Cornell University and has studied jurisprudence and international human rights law at the University of Oxford. Ishan is a board member of two nonprofits that aim to empower youth through mentorship and media literacy, and he is one of 24 Senior John Lewis Fellows around the world investigating the future of democracy, oppression, and human rights in the 21st century."
+      moreInfo: "He’s spoken with over 40 surveillance industry experts, activists, leading scholars, government officials, and police chiefs to reduce the violence emerging surveillance technologies bring to minority communities, at home and abroad. Ishan is also an Advisor for the Day One Project, which has curated 100+ action-oriented science & technology proposals and informed policy decisions at some of the highest levels of government. He holds a Bachelor of Science in Industrial and Labor Relations from Cornell University and has studied jurisprudence and international human rights law at the University of Oxford. Ishan is a board member of two nonprofits that aim to empower youth through mentorship and media literacy, and he is one of 24 Senior John Lewis Fellows around the world investigating the future of democracy, oppression, and human rights in the 21st century."
     },
     {
       img: cat_pic,
-      name: "Cat Hoke", 
-      title: "Co-Founder, Hustle 2.0", 
+      name: "Cat Hoke",
+      title: "Co-Founder, Hustle 2.0",
       link: "https://www.cathoke.com/",
       talk: "Stop Cancelling Yourself",
       blurb: "Over 17 years, Cat's efforts have led 7,000 executives, entrepreneurs, and investors to volunteer as mentors and employers for 8,500 formerly incarcerated program graduates. Her programs reduce violence and have produced leading recidivism rates of under 8%.",
@@ -98,8 +98,8 @@ class Events extends Component {
     },
     {
       img: john_pic,
-      name: "John Jackson", 
-      title: "Director of Correctional Partnerships, Hustle 2.0", 
+      name: "John Jackson",
+      title: "Director of Correctional Partnerships, Hustle 2.0",
       link: "https://www.hustle20.com/team/",
       talk: "How I Got Out of a Prison Gang",
       blurb: 'Prison gang members live by a code, “\’Til the casket drops.” What if there was a way to make it out alive?',
@@ -109,13 +109,14 @@ class Events extends Component {
 
   experiences = {
     "Six speakers":
-      "Our six speakers this year will come together to share their stories, insight, and life's work in the spirit of ideas worth spreading.",
+      "Our six speakers in 2020 came together to share their stories, insight, and life's work in the spirit of ideas worth spreading.",
     "A virtual main event":
-      "COVID-19 has caused us to rethink how we can continue to bring great ideas to the Cornell community and beyond. This year our event will be livestreamed on May 2nd.",
+      "COVID-19 had caused us to rethink how we can continue to bring great ideas to the Cornell community and beyond. In 2020, our event was livestreamed for anyone and everyone to watch.",
     "Student and alumnus speakers":
-      "Each year we like to feature speakers who are related in some way to Cornell. In this event, we will hear from a current student and a recent graduate of Cornell.",
+      "Each year we like to feature speakers who are related in some way to Cornell. In this event, we heard from a current student and a recent graduate of Cornell.",
     "Exclusive content":
-      "Some of our speakers are bringing very new ideas and research to us on May 2nd. Join us as some of the first to hear what they plan on sharing."
+      `Some of our speakers brought very new ideas and research to us.
+       We had the opportunity to be some of the first to hear what they planed on sharing.`
   };
 
   render() {
@@ -131,7 +132,7 @@ class Events extends Component {
                   <em>Uproot: A Virtual Series | Main Event | 5.2.2021</em>
                   <br />
                 </p>
-                
+
                 {/* <p className="lead font-weight-normal">
                   In our most ambitious conference to date, we brought speakers
                   from across the country and from our own Cornell community in
@@ -139,14 +140,14 @@ class Events extends Component {
                   entertained, inspired, informed, and moved our audience. Thank
                   you to everyone who supported this year's event!
                 </p> */}
-                
+
                 <p className="lead font-weight-normal">
-                At our May 2nd 2021 main event at 1pm EST, we will be hosting six speakers from our Cornell community and beyond to share ideas that will educate, entertain, and inspire. Our speakers will be discussing topics ranging from today's most important social issues to using psychedelic-assisted therapy to treat PTSD. We would love for you to join our live stream this Sunday!  
+                  At our May 2nd 2021 main event at 1pm EST, we will be hosting six speakers from our Cornell community and beyond to share ideas that will educate, entertain, and inspire. Our speakers will be discussing topics ranging from today's most important social issues to using psychedelic-assisted therapy to treat PTSD. We would love for you to join our live stream this Sunday!
                 </p>
                 <div className="a-container">
-                <a href="https://www.facebook.com/TEDxCornellUniversity/live/">
-                  Stream Live
-                </a>
+                  <a href="https://www.facebook.com/TEDxCornellUniversity/live/">
+                    Stream Live
+                  </a>
                 </div>
               </div>
             </div>
@@ -155,22 +156,26 @@ class Events extends Component {
 
         <div id="about-event-panel">
           <h2>
-            In the midst of the pandemic, we've been forced to introspect and reevaluate ourselves, our communities, and the world around us.
+            In the midst of the pandemic, we were forced to introspect and
+            reevaluate ourselves, our communities, and the world around us.
           </h2>
           <p>
-            With the challenges that we face come great opportunities for growth and change. Our speakers will be addressing our most pressing social issues, sharing groundbreaking and hope-inspiring research, digging deep to share their personal stories, and inspiring you to reflect on what opportunities lie where you least expect them. 
-          </p>
-          <p>
-            Join our TEDxCornell team as we host our six speakers for a virtual event you won't forget. As the last of three parts of our Uproot series this year, we can't think of a better way to wrap up our 2021 spring semester.
+            With the challenges that we face come great opportunities for growth and change.
+            Our 2020 speakers addressed our most pressing social issues,
+            shared groundbreaking and hope-inspiring research,
+            dug deep to share their personal stories,
+            and inspired us to reflect on what opportunities
+            lie where we least expect them.
           </p>
         </div>
 
         <TwoImgPanel imgLeft={tipImg3} imgRight={tipImg2} />
 
         <div id="event-second-panel">
+          <h1 style={{ paddingBottom: "0.3em" }} ><u>2020 Uproot</u></h1>
           <h1>Our first ever virtual main event</h1>
           <p>
-            This year for our main conference, we're livestreaming our event to you on May 2nd at 1pm EST. Here's what to expect:
+            For our main conference, we livestreamed our event to you on May 2nd at 1pm EST. Here's what we held:
           </p>
           <div className="experience-div">
             {Object.keys(this.experiences).map((key, index) => (
@@ -191,11 +196,11 @@ class Events extends Component {
         <TwoImgPanel imgLeft={tipImg1} imgRight={tipImg4} />
         <div className="events-content">
           <div className="speakers-title-div">
-            <h1 style={{fontWeight: "normal"}}>Our Speakers</h1>
+            <h1 style={{ fontWeight: "normal" }}>Our Speakers</h1>
           </div>
-              
+
           {this.profiles.map((profile, idx) => (
-            <div key={idx} className="profile-panel-container">            
+            <div key={idx} className="profile-panel-container">
               <ProfilePanel profile={profile} reversed={idx % 2}></ProfilePanel>
             </div>
           ))}

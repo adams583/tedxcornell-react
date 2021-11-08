@@ -16,7 +16,7 @@ class Apply extends Component {
     const form = document.forms["apply-submit-to-google-sheet"];
 
     fetch(scriptURL, { method: "POST", body: new FormData(form) })
-      .then(function(response) {
+      .then(function (response) {
         form.reset();
         console.log("Success!", response);
       })
@@ -25,20 +25,24 @@ class Apply extends Component {
 
   applyCards = [
     {
-      title: "Team Applications", 
-      subtitle: "Team Applications are open!", 
-      text: "Check our instagram page @tedxcornell for more information or apply now.",
-      button: true 
+      title: "Team Applications",
+      subtitle: "Team Applications are currently closed",
+      text: `Applications to join our team will be open again next Fall!
+       Follow our instagram page @tedxcornell and join our mailing list
+      to be informed when applications open!`,
+      button: false
     },
     {
-      title: "Volunteering Opportunities", 
-      subtitle: "Join our mailing list to hear about volunteering opportunities", 
+      title: "Volunteering Opportunities",
+      subtitle: "Join our mailing list to hear about volunteering opportunities",
       text: "From tabling at our event to making sure everyone is where they are supposed to be, volunteers are an essential part of running a great event. Volunteering can also be a good way to get a sense for whether you'd be interested in joining the team."
     },
     {
-    title: "Speaker Applications", 
-    subtitle: "Speaker applications for this year are closed", 
-    text: "We look for presenters who will inform, inspire, and entertain while spreading ideas that they are truly passionate about. If you are interested, or know someone who might be, please let them know to check back next fall!"
+      title: "Speaker Applications",
+      subtitle: "Speaker applications for our Spring 2022 Event are open!",
+      text: "We look for presenters who will inform, inspire, and entertain while spreading ideas that they are truly passionate about. If you are interested, or know someone who might be, please let them know to apply now!",
+      button: true,
+      application: "https://forms.gle/EgPknDZjN1JfL4M48"
     },
   ]
 
@@ -53,7 +57,7 @@ class Apply extends Component {
       key: "2",
       question: "What roles are available on the organizing team?",
       answer:
-        "Our organizers work on speaker curation, finance and sponsorship, design and marketing, website design, and more. " 
+        "Our organizers work on speaker curation, finance and sponsorship, design and marketing, website design, and more. "
     },
     {
       key: "3",
@@ -72,37 +76,37 @@ class Apply extends Component {
     return (
       <div className="apply-div">
         <Grid>
-        <Row>
-          <h2>Interested in being part of the organizing team?</h2>
-        </Row>
-        <Row>
-          <h4>Our applications for this year have opened. This recruiting cycle is for our Spring 2022 event. We'd love to hear from you!</h4>
-        </Row>
-
-        {this.applyCards.map((card, index) => (
           <Row>
-            <Col md={8}>
+            <h2>Interested in being part of the organizing team?</h2>
+          </Row>
+          <Row>
+            <h4>Our applications for this year are closed. The next recruiting cycle will be in Fall 2022. We'd love to hear from you!</h4>
+          </Row>
 
-              <h3>{card.title}</h3>
-              <p className="left-border">
-                <b>{card.subtitle}</b>
-                <br/>
-                {card.text}
-                {card.title == "Information Sessions" && 
-                <p>9/17 Information Session: <a>{card.link1}</a>
-                  <br/>
-                  9/21 Information Session: <a>{card.link2}</a>
+          {this.applyCards.map((card, index) => (
+            <Row>
+              <Col md={9}>
+
+                <h3>{card.title}</h3>
+                <p className="left-border">
+                  <b>{card.subtitle}</b>
+                  <br />
+                  {card.text}
+                  {card.title == "Information Sessions" &&
+                    <p>9/17 Information Session: <a>{card.link1}</a>
+                      <br />
+                      9/21 Information Session: <a>{card.link2}</a>
+                    </p>
+                  }
+
+
+                  <div className="padding-top">
+                    {card.title == "Speaker Applications"}
+                  </div>
                 </p>
-                }
-                
-
-                <div className="padding-top">
-                  {card.title == "Speaker Applications"}
-                </div>
-              </p>
-              {card.button && <CustomButton color="#08b2e3" text="Apply Now" lightText href="https://forms.gle/sjUFzXd5GwxC6WDGA"/>}
-            </Col>
-          </Row> 
+                {card.button && <CustomButton color="#08b2e3" text="Apply Now" lightText href={card.application} />}
+              </Col>
+            </Row>
           ))}
 
           <Row>
@@ -120,7 +124,7 @@ class Apply extends Component {
                     type="email"
                     placeholder="Enter your email"
                     required
-                    style={{borderBottom: "2px solid gray"}}
+                    style={{ borderBottom: "2px solid gray" }}
 
                   />
                   <input
@@ -166,7 +170,7 @@ class Apply extends Component {
                   <i className="fab fa-linkedin fa-icon" />
                 </a>
               </div>
-             
+
             </Col>
           </Row>
         </Grid>

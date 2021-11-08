@@ -17,7 +17,9 @@ import milena_pic from "../img/milena.png";
 import paulina_pic from "../img/paulina_pic.jpg";
 import caroline_pic from "../img/caroline.jpg";
 import sam_pic from "../img/sam.jpg";
-import jessi_pic from"../img/jessi.jpg";
+import jessi_pic from "../img/jessi.jpg";
+import arnav_pic from "../img/Arnav.jpg";
+import aidan_pic from "../img/Aidan.jpg";
 
 const emily = {
   name: "Emily Chen",
@@ -131,7 +133,7 @@ const caroline = {
   info: "Info about Caroline",
   img: caroline_pic,
   title: "Finance",
-  linked: "https://www.linkedin.com/in/alina-pereyra-710321168/"
+  linked: "https://www.linkedin.com/in/caroline-ryu-74647a163/"
 };
 
 const sam = {
@@ -139,7 +141,7 @@ const sam = {
   info: "Info about Sam",
   img: sam_pic,
   title: "Design and Marketing",
-  linked: "https://www.linkedin.com/in/alina-pereyra-710321168/"
+  linked: "https://www.linkedin.com/in/samantha-ivey-8b71031a9/"
 };
 
 const milena = {
@@ -155,7 +157,7 @@ const jessi = {
   info: "Info about Jessi",
   img: jessi_pic,
   title: "Speaker Curation",
-  linked: "https://www.linkedin.com/in/alina-pereyra-710321168/"
+  linked: "https://www.linkedin.com/in/jessica-schlewitt/"
 };
 
 const kim = {
@@ -163,7 +165,7 @@ const kim = {
   info: "Info about Kim",
   img: kim_pic,
   title: "Marketing and Speakers",
-  linked: "https://www.linkedin.com/in/alina-pereyra-710321168/"
+  linked: "https://www.linkedin.com/in/kimberly-garcia-2491341ab/"
 };
 
 const paulina = {
@@ -171,8 +173,28 @@ const paulina = {
   info: "Info about Paulina",
   img: paulina_pic,
   title: "Speaker Curation",
-  linked: "https://www.linkedin.com/in/alina-pereyra-710321168/"
+  linked: "https://www.linkedin.com/in/paulinaklubok/"
 };
+
+const arnav = {
+  name: "Arnav Parashar",
+  info: "Info about Arnav",
+  img: arnav_pic,
+  title: "Web Development",
+  linked: "https://www.linkedin.com/in/arnav-parashar-3a6932206/"
+}
+
+const aidan = {
+  name: "Aidan Helfant",
+  info: "Info about Aidan",
+  img: aidan_pic,
+  title: "Design and Marketing",
+  linked: "https://www.linkedin.com/in/aidanhelfant/"
+}
+
+const team2022 = [
+  aidan, alina, arnav, caroline, jessi, kim, paulina, sam
+]
 
 const team2021 = [
   sam, tianyi, adam, sofiya, kirkland, paulina, mike, alina, milena, kim, jessi, caroline
@@ -194,4 +216,4 @@ const team2019 = [
 ];
 const team2018 = [liz, hebani, adam, eri, kirkland, emily, uzair];
 
-export { team2019, team2018, team2021 };
+export { team2019, team2018, team2021, team2022 };

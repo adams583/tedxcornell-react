@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import { team2021 } from "./members.js";
+import { team2022 } from "./members.js";
 import {ImageTextOverlap} from "../common/ImageTextOverlap";
 import workingteam from "../img/workingteam.jpg";
 import BottomPanel from "../common/panels/BottomPanel";
@@ -55,7 +55,7 @@ export const About = React.memo(function AboutFn() {
         </div>
 
         <div className="team-gallery ">
-          {team2021.map(member => (
+          {team2022.map(member => (
             <TeamProfile
               key={member.name}
               img={member.img}

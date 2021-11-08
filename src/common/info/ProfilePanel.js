@@ -1,9 +1,10 @@
 import React from "react"
-import {Image} from "react-bootstrap"
+import {Image, Button} from "react-bootstrap"
+
 import "./ProfilePanel.css"
 
 function ProfilePanel(props) {
-    const infoStyles = {textAlign: props.reversed ? "right" : "left"}
+    const infoStyles = {textAlign: props.reversed ? "left" : "left"}
     const borderStyles = props.reversed ? {borderRight: "solid thick var(--accent)"} : {borderLeft: "solid thick var(--accent)"}
 
     return (
@@ -22,7 +23,7 @@ function ProfilePanel(props) {
                 <div className="profile-talk" style={borderStyles}>{props.profile.talk}</div>
                 <div className="profile-blurb">{props.profile.blurb}</div>
                 <div className="profile-more-info"><p>{props.profile.moreInfo}</p></div>
-                <div className="profile-link"><a href={props.profile.link}>Read more</a></div>
+                <div className="profile-link"><Button variant="success" className="btn-success"><a href = {props.profile.link}>Read more</a></Button></div>
             </div>
         </div>
     )

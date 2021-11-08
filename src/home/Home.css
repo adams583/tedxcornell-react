@@ -1,5 +1,9 @@
+:root {
+  --background: url("../img/TEDCBlackLogo.png");
+}
+
 .main-panel-home-background {
-  background-image: url("../img/website-background.png");
+  background-image: var(--background);
   height: 90vh;
   width: 100%;
   opacity: 80;
@@ -147,13 +151,19 @@ h1 {
     width: 100%;
   }
   .main-panel-home-background {
-    background-image: url("../img/website-background.png");
-    width: 100%;
+    background-image: var(--background);
+    
+    width: 40%;
     background-size: cover;
     background-position: top;
     display: flex;
     margin: auto;
-    background-color: white;
+    background-color: transparent;
+    opacity: 1;
+
+  }
+  .home-title {
+    padding-bottom: 0em;
   }
 }
 

@@ -20,6 +20,7 @@ import sam_pic from "../img/sam.jpg";
 import jessi_pic from "../img/jessi.jpg";
 import arnav_pic from "../img/Arnav.jpg";
 import aidan_pic from "../img/Aidan.jpg";
+import laila_pic from "../img/laila.jpg";
 
 const emily = {
   name: "Emily Chen",
@@ -192,8 +193,16 @@ const aidan = {
   linked: "https://www.linkedin.com/in/aidanhelfant/"
 }
 
+const laila = {
+  name: "Laila Rahbari",
+  info: "Info about Laila",
+  img: laila_pic,
+  title: "Speaker Curation",
+  linked: "https://www.linkedin.com/in/laila-rahbari/"
+}
+
 const team2022 = [
-  aidan, alina, arnav, caroline, jessi, kim, paulina, sam
+  aidan, alina, arnav, caroline, jessi, kim, laila, paulina, sam
 ]
 
 const team2021 = [

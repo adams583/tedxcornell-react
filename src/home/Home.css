@@ -152,14 +152,14 @@ h1 {
   }
   .main-panel-home-background {
     background-image: var(--background);
-    
-    width: 40%;
-    background-size: cover;
-    background-position: top;
+    width: auto;
+    height: 50em;
+    /* background-size: cover;
+    background-position: top; */
     display: flex;
-    margin: auto;
+    /* margin: auto;
     background-color: transparent;
-    opacity: 1;
+    opacity: 1; */
 
   }
   .home-title {

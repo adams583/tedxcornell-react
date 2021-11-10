@@ -1,6 +1,9 @@
 import React from "react";
+import Navbar from 'react-bootstrap/Navbar'
+import Container from 'react-bootstrap/Container'
+import Nav from "react-bootstrap/Nav"
 import NavItem from "./ NavItem";
-import "./TopNav.css"
+// import "./TopNav.css"
 import CustomButton from "../buttons/CustomButton";
 
 
@@ -13,13 +16,16 @@ function TopNav(props) {
         { title: "FAQ", href: "/faq" }
     ]
 
-    return <div id="topnav">
-        <div className="nav-links-container">
-            {navItems.map((navItem) =>
-                <NavItem item={navItem}></NavItem>
-            )}
-        </div>
-    </div>;
+    return <Navbar bg="dark" variant="dark" >
+        <Container>
+            <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+            <Nav className="me-auto">
+                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="#features">Features</Nav.Link>
+                <Nav.Link href="#pricing">Pricing</Nav.Link>
+            </Nav>
+        </Container>
+    </Navbar>
 }
 
 export default TopNav;

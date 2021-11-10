@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Apply.css";
-import { Grid, Row, Col, PanelGroup } from "react-bootstrap";
+import { Container, Row, Col, Accordion } from "react-bootstrap";
 import Collapsible from "../common/collapsible/Collapsible";
 import CustomButton from "../common/buttons/CustomButton";
 
@@ -75,7 +75,7 @@ class Apply extends Component {
   render() {
     return (
       <div className="apply-div">
-        <Grid>
+        <Container>
           <Row>
             <h2>Interested in being part of the organizing team?</h2>
           </Row>
@@ -141,13 +141,13 @@ class Apply extends Component {
           <Row>
             <Col md={6}>
               <h3>More Information</h3>
-              <PanelGroup accordion id="panelGroup">
+              <Accordion accordion id="panelGroup">
                 {this.faq.map((qa, index) => (
                   <Collapsible key={index} title={qa.question}>
                     <div>{qa.answer}</div>
                   </Collapsible>
                 ))}
-              </PanelGroup>
+              </Accordion>
             </Col>
           </Row>
           <Row>
@@ -173,7 +173,7 @@ class Apply extends Component {
 
             </Col>
           </Row>
-        </Grid>
+        </Container>
       </div>
     );
   }

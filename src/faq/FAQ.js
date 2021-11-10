@@ -12,7 +12,7 @@ const FAQ = React.memo(function FAQFn() {
 
   return (
     <div className="faq">
-      <div>
+      <div className="pb-3">
         <h4>Learn more about us and our event</h4>
         <h1>Frequently Asked Questions</h1>
       </div>
@@ -37,16 +37,14 @@ const FAQ = React.memo(function FAQFn() {
             </p>
           </div>
         </div>
-        <Accordion
-          accordion
-          className="faq-questions-container"
-          id="faq-panel-group"
-        >
+        <Accordion accordion className="faq-questions-container" id="faq-panel-group">
           {FAQ_INFO[category].faq.map(({ question, answer }, idx) => (
             // Idx not a unique key by itself since we potentially render 3 lists.
+            <div className ="py-3">
             <Collapsible key={`${category}-${idx}`} title={question}>
               <div>{answer}</div>
             </Collapsible>
+            </div>
           ))}
         </Accordion>
       </div>

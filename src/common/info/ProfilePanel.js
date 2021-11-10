@@ -11,7 +11,7 @@ function ProfilePanel(props) {
         <div className="profile-container" style={{ flexDirection: props.reversed ? "row-reverse" : "row" }}>
             <div className="profile-visual">
                 <div>
-                    <Image style={{ height: 'auto', width: '100%' }} src={props.profile.img} responsive />
+                    <Image style={{ height: 'auto', width: '100%' }} src={props.profile.img} fluid />
                 </div>
                 <div className="info-profile-desc">
                     <div className="profile-name">{props.profile.name}</div>

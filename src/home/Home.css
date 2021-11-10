@@ -1,5 +1,5 @@
 :root {
-  --background: url("../img/TEDCWhiteLogo.png");
+  --background: url("../img/TEDCBlackLogo.png");
 }
 
 .main-panel-home-background {
@@ -155,7 +155,7 @@ h1 {
   .main-panel-home-background {
     background-image: var(--background);
     width: auto;
-    height: 50em;
+    height: 42em;
     background-color: transparent;
     /* background-size: cover;
     background-position: top; */

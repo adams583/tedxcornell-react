@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./FAQ.css";
-import { PanelGroup } from "react-bootstrap";
+import { Accordion } from "react-bootstrap";
 import Collapsible from "../common/collapsible/Collapsible.js";
 import CardSelector from "./CardSelector";
 import { FAQ_INFO } from "./faqInfo";
@@ -37,7 +37,7 @@ const FAQ = React.memo(function FAQFn() {
             </p>
           </div>
         </div>
-        <PanelGroup
+        <Accordion
           accordion
           className="faq-questions-container"
           id="faq-panel-group"
@@ -48,7 +48,7 @@ const FAQ = React.memo(function FAQFn() {
               <div>{answer}</div>
             </Collapsible>
           ))}
-        </PanelGroup>
+        </Accordion>
       </div>
     </div>
   );

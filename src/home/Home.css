@@ -1,5 +1,5 @@
 :root {
-  --background: url("../img/TEDCBlackLogo.png");
+  --background: url("../img/TEDCWhiteLogo.png");
 }
 
 .main-panel-home-background {
@@ -20,10 +20,7 @@
   font-weight: bold;
 }
 
-.home-title {
-  height: 90%;
-  justify-content: flex-end;
-}
+
 
 .main-panel-home-content {
   display: flex;
@@ -141,7 +138,12 @@ h1 {
 }
 
 /* sm --- Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+@media (max-width: 576px) {
+  .home-title {
+  height: 50%;
+  justify-content: flex-end;
+  /* border: 3px solid black */
+}
 }
 
 /* md --- Medium devices (tablets, 768px and up) */
@@ -154,6 +156,7 @@ h1 {
     background-image: var(--background);
     width: auto;
     height: 50em;
+    background-color: transparent;
     /* background-size: cover;
     background-position: top; */
     display: flex;
@@ -162,8 +165,9 @@ h1 {
     opacity: 1; */
 
   }
+
   .home-title {
-    padding-bottom: 0em;
+    margin-bottom: 7em;
   }
 }
 

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import { Row, Col, Grid } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import BottomPanel from "../common/panels/BottomPanel";
 import faqimg from "../img/yamatai.jpg";
 import tipImg2 from "../img/team2.png";
@@ -39,7 +39,7 @@ export default function Home() {
       <TwoImgPanel imgLeft={tipImg1} imgRight={tipImg2} />
 
       <div className="home-content">
-        <Grid className="grid">
+        <Container className="grid">
           {cards.map((card, index) => (
             <React.Fragment key={index}>
               <Row>
@@ -61,7 +61,7 @@ export default function Home() {
               <div className="row-spacer" />
             </React.Fragment>
           ))}
-        </Grid>
+        </Container>
 
         <BottomPanel
           img={faqimg}

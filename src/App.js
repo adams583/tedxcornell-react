@@ -28,7 +28,7 @@ export default function App() {
         <React.Fragment>
           <TopNav />
           
-          <Switch>
+          {/* <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/events" component={Events} />
             <Route path="/about" component={About} />
@@ -64,8 +64,8 @@ export default function App() {
             ))}
             <Route component={ErrorPage} />
           </Switch>
-
-          <Footer />
+*/}
+          <Footer /> 
 
         </React.Fragment>
       </Router>

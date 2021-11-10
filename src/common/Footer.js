@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./Footer.css";
-import { Col } from "react-bootstrap";
+import Container from "react-bootstrap/Container"
+import Row from "react-bootstrap/Row"
+import  Col  from "react-bootstrap/Col";
 
 class Footer extends Component {
   constructor(props) {
@@ -14,11 +16,23 @@ class Footer extends Component {
     const form = document.forms["footer-submit-to-google-sheet"];
 
     fetch(scriptURL, { method: "POST", body: new FormData(form) })
-      .then(function(response) {
+      .then(function (response) {
         form.reset();
         console.log("Success!", response);
       })
       .catch(error => console.error("Error!", error.message));
+  }
+
+  test() {
+    return (
+      <footer>
+        <Container>
+        <Row>
+
+        </Row>
+        </Container>
+      </footer>
+    )
   }
 
   render() {
@@ -69,7 +83,7 @@ class Footer extends Component {
                   placeholder="Enter your email"
                   required
                 />
-                <input type="submit" value="Sign Up"/>
+                <input type="submit" value="Sign Up" />
               </form>
             </div>
           </div>

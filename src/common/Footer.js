@@ -11,9 +11,6 @@ import logo from "../img/HomeLogo.png"
 
 
 class Footer extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   handleSubmit(e) {
     const scriptURL =
@@ -35,11 +32,11 @@ class Footer extends Component {
       <div id="footer">
         <Container className="bg-dark text-white border-top" fluid style={{ }}>
           <Row className="justify-content-around" style={{ height: '18em' }}>
-            <div className="col-4 d-flex align-items-center">
+            <div className="col-sm-4 d-flex align-items-center">
 
               <Image style={{ width: '80%' }} src={logo} alt="Image not rendering" fluid></Image>
             </div>
-            <div className="col-5">
+            <div className="col-sm-5">
               <Container style={{ height: "100%" }}>
                 <Row className="justify-content-around" style={{ height: "100%" }}>
                   <div className="col-4 d-flex align-items-center" >

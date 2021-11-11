@@ -1,4 +1,4 @@
-.faq {
+/* .faq {
   padding: 150px 5%;
   background-image: url("../img/logo2.png");
   background-size: cover;
@@ -49,7 +49,7 @@
 }
 
 /* lg --- Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .faq-selector-container {
     display: flex;
     flex-direction: column;
@@ -66,23 +66,42 @@
 }
 
 /* sm --- Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-}
+/* @media (min-width: 576px) {
+} */
 
 /* md --- Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .faq {
     padding: 150px 15%;
     background-image: url("../img/logo2.png");
     background-size: cover;
     background-attachment: fixed;
   }
-}
+} */
 
 /* lg --- Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-}
+/* @media (min-width: 992px) {
+} */
 
 /* xl --- Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
+}  */
+
+.info-card h1 {
+  color:  #F24E1E;
+  font-size: 72px;
 }
+
+.info-card hr {
+  color: darkred;
+  /* height: 10px; */
+}
+
+.question-answer {
+  font-size: 25px;
+}
+.question-answer h4 {
+  
+  font-weight:  bold;
+}
+

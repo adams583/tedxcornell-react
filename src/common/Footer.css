@@ -1,4 +1,4 @@
-.footer-panel {
+/* .footer-panel {
   padding: 7%;
   background-color: var(--secondary);
   color: var(--primary);
@@ -16,12 +16,12 @@
 .flex-horizontal {
   display: flex;
   flex-direction: row;
-}
+} */
 
 /* * {
   border: solid thin yellow;
 } */
-
+/* 
 .logo-container {
   flex: 1;
 }
@@ -102,8 +102,15 @@ input:focus {
 }
 
 /* lg --- Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .footer-content-container {
     flex-direction: row;
   }
+} */ 
+
+#footer {
+  /* position: absolute;
+  bottom: 0;
+  width:100%; */
+         /* Footer height */
 }

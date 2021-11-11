@@ -19,6 +19,13 @@ import jonathan_pic from "../img/jonathan.jpg"
 import cat_pic from "../img/cat.jpg";
 import john_pic from "../img/john.jpg";
 import ProfilePanel from "../common/info/ProfilePanel";
+import ImageTextOverlay from "../common/ImageTextOverlay";
+import page_img from "../img/team2019.jpg"
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image";
+import Stack from "react-bootstrap/Stack";
 
 class Events extends Component {
   constructor(props) {
@@ -119,138 +126,49 @@ class Events extends Component {
        We had the opportunity to be some of the first to hear what they planed on sharing.`
   };
 
+
+
+
   render() {
+    const imageStyle = {
+      height: '30em'
+    }
+    const textStyle = {
+      position: 'absolute',
+      color: 'white',
+      top: '25%',
+      left: '10%',
+    }
     return (
       <div>
-        <div className="main-panel-events ">
-          <SplitPanel img={catjohnedit} reverse={true} profile={false}>
-            <div className="sp-content-container">
-              <div className="sp-content">
-                <h1>TEDxCornell</h1>
-
-                <p className="lead font-weight-normal">
-                  <em>Uproot: A Virtual Series | Main Event | 5.2.2021</em>
-                  <br />
-                </p>
-
-                {/* <p className="lead font-weight-normal">
-                  In our most ambitious conference to date, we brought speakers
-                  from across the country and from our own Cornell community in
-                  a one-of-a-kind event featuring talks and performances that
-                  entertained, inspired, informed, and moved our audience. Thank
-                  you to everyone who supported this year's event!
-                </p> */}
-
-                <p className="lead font-weight-normal">
-                  At our May 2nd 2021 main event at 1pm EST, we will be hosting six speakers from our Cornell community and beyond to share ideas that will educate, entertain, and inspire. Our speakers will be discussing topics ranging from today's most important social issues to using psychedelic-assisted therapy to treat PTSD. We would love for you to join our live stream this Sunday!
-                </p>
-                <div className="a-container">
-                  <a href="https://www.facebook.com/TEDxCornellUniversity/live/">
-                    Stream Live
-                  </a>
-                </div>
-              </div>
+        <ImageTextOverlay
+          title="Meet Our Speakers"
+          body="Each of our events highlights the contributions, experiences,
+           and ideas of our amazing speakers. Learn more about the speakers for our upcoming event!"
+          img={page_img}
+          imageStyle={imageStyle}
+          textStyle={textStyle}
+        >
+        </ImageTextOverlay>
+        <Container fluid >
+          <Row style={{ backgroundColor: '#f25757' }} className="justify-content-between">
+            <div className="col">
+              <Image src={daniel_pic} style={{marginLeft: "-1em"}} fluid></Image>
             </div>
-          </SplitPanel>
-        </div>
-
-        <div id="about-event-panel">
-          <h2>
-            In the midst of the pandemic, we were forced to introspect and
-            reevaluate ourselves, our communities, and the world around us.
-          </h2>
-          <p>
-            With the challenges that we face come great opportunities for growth and change.
-            Our 2020 speakers addressed our most pressing social issues,
-            shared groundbreaking and hope-inspiring research,
-            dug deep to share their personal stories,
-            and inspired us to reflect on what opportunities
-            lie where we least expect them.
-          </p>
-        </div>
-
-        <TwoImgPanel imgLeft={tipImg3} imgRight={tipImg2} />
-
-        <div id="event-second-panel">
-          <h1 style={{ paddingBottom: "0.3em" }} ><u>2020 Uproot</u></h1>
-          <h1>Our first ever virtual main event</h1>
-          <p>
-            For our main conference, we livestreamed our event to you on May 2nd at 1pm EST. Here's what we held:
-          </p>
-          <div className="experience-div">
-            {Object.keys(this.experiences).map((key, index) => (
-              <div key={index}>
-                <div className="lined-item">
-                  <div className="lined-item-title">
-                    <i className="fa fa-check" aria-hidden="true" /> &emsp;{" "}
-                    {key}
-                  </div>
-                  <div className="lined-item-content md-screen-only">
-                    {this.experiences[key]}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-        <TwoImgPanel imgLeft={tipImg1} imgRight={tipImg4} />
-        <div className="events-content">
-          <div className="speakers-title-div">
-            <h1 style={{ fontWeight: "normal" }}>Our Speakers</h1>
-          </div>
-
-          {this.profiles.map((profile, idx) => (
-            <div key={idx} className="profile-panel-container">
-              <ProfilePanel profile={profile} reversed={idx % 2}></ProfilePanel>
-            </div>
-          ))}
-
-
-          {/* Speakers Rendering */}
-          {/* <div className="container speakers-container">
-            <Col xs={12} sm={6} md={4} lg={4} xl={4} className="speaker-div">
-              <h2>Our Lineup</h2>
-              <p>
-                On April 28, 2019 we heard from an incredible lineup of speakers
-                and performers from a wide range of disciplines.
-              </p>
+            <Col className="col d-flex align-items-center text-light">
+              <Container>
+                <Stack gap={1} className="my-auto">
+                  <h2>Person X</h2>
+                  <hr></hr>
+                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                    odit aut fugit, sed quia consequuntur magni dolores eos qui
+                    ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                    qui dolorem.</p>
+                </Stack>
+              </Container>
             </Col>
-            {Object.keys(speakers_2019).map((key, index) => (
-              <a
-                key={index}
-                href={`/speakers/${speakers_2019[key].url}`}
-                className="plain-a"
-              >
-                <Col
-                  xs={12}
-                  sm={6}
-                  md={4}
-                  lg={4}
-                  xl={4}
-                  key={key.index}
-                  data-name={speakers_2019[key].name}
-                  onClick={this.toggleActiveSpeaker}
-                >
-                  <div>
-                    <Profile
-                      src={speakers_2019[key].img}
-                      title={speakers_2019[key].title}
-                      name={speakers_2019[key].name}
-                      url={`/speakers/${speakers_2019[key].url}`}
-                    />
-                  </div>
-                </Col>
-              </a>
-            ))}
-          </div> */}
-        </div>
-        <BottomPanel
-          img={bottomPanelImg}
-          title="Reserve Your Spot"
-          txt="Reserve your virtual seat for our main event on May 2nd, 2021 at 1pm EST to experience our event. We hope to see you there!"
-          button="Register Now"
-          buttonHref="https://forms.gle/wYb8qxGobbudYhQ48"
-        />
+          </Row>
+        </Container>
       </div>
     );
   }

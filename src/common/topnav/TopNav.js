@@ -13,7 +13,7 @@ import "./TopNav.css";
 function TopNav(props) {
     const navItems = [
         { title: "Home", href: "/" },
-        { title: "Speakers", href: "/about" },
+        { title: "Speakers", href: "/events" },
         { title: "Events", href: "/events" },
         { title: "Apply", href: "/apply" },
         { title: "FAQ", href: "/faq" }
@@ -21,7 +21,7 @@ function TopNav(props) {
 
     return <Navbar bg="dark" variant="dark" expand="lg">
         <Container >
-            <Navbar.Brand href="#home" style={{ width: "80%" }} className="">
+            <Navbar.Brand href="/" style={{ width: "80%" }} className="">
                 <Image className="pt-1" id="logo" src={logo} alt="Image not rendering" fluid></Image>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -6,17 +6,6 @@ import InfoSection from "../faq/InfoSection"
 import facts from "../faq/faq.json"
 
 const FAQ = React.memo(function FAQFn() {
-  const imageStyle = {
-    height: '30em'
-  }
-  var textStyle = {
-    position: 'absolute',
-    top: '35%',
-    left: '10%',
-    color: 'black',
-    textShadow: '3px 2px white'
-  };
-
 
   return (
     <div>
@@ -24,8 +13,6 @@ const FAQ = React.memo(function FAQFn() {
         title="Frequently Asked Questions"
         body="Learn More About Our Events"
         img={speaker_img}
-        imageStyle={imageStyle}
-        textStyle={textStyle}
       >
       </ImageTextOverlay>
       {facts.map(fact =>

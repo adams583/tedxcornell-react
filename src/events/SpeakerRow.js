@@ -16,7 +16,7 @@ function Speaker(props) {
 
 function Info(props) {
   return (
-    <Col className="col d-flex align-items-center text-light">
+    <Col className="col d-flex align-items-center text-light pt-4 pb-3">
       <Container>
         <Stack gap={1} className="my-auto">
           <h2>{props.speaker}</h2>

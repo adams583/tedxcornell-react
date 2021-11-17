@@ -30,7 +30,7 @@ class Footer extends Component {
   render() {
     return (
       <div id="footer">
-        <Container className="bg-dark text-white border-top" fluid style={{ }}>
+        <Container className="bg-dark text-white" fluid>
           <Row className="justify-content-around" style={{ height: '18em' }}>
             <div className="col-sm-4 d-flex align-items-center">
 

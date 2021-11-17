@@ -11,10 +11,12 @@ import john_pic from "../img/john.jpg";
 import ImageTextOverlay from "../common/ImageTextOverlay";
 import page_img from "../img/team2019.jpg"
 import Container from "react-bootstrap/Container";
+import Button from "react-bootstrap/Button";
+
 import SpeakerRow from "./SpeakerRow";
 import speaker_info from "../events/speaker_info.json";
 
-const pictures = [daniel_pic, marcela_pic]
+const pictures = [daniel_pic, marcela_pic, larry_pic, ishan_pic]
 pictures.forEach((pic, i) => {
   speaker_info[i]["img"] = pic
 }
@@ -47,6 +49,18 @@ class Events extends Component {
             )
           }
         </Container>
+        <div className="text-white" style={{ backgroundColor: "red", height: "100%" }}>
+          <div className="container">
+            <div className="row py-3">
+              <div className="col-md-10 d-flex align-items-center">
+                <h3 className="">Do you want to be a speaker for a future event? Apply here:</h3>
+              </div>
+              <div className="col d-flex align-items-center">
+                <Button size='lg' variant="secondary" style={{width:'100%'}}>Apply</Button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

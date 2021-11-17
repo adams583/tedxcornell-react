@@ -21,6 +21,8 @@ import jessi_pic from "../img/jessi.jpg";
 import arnav_pic from "../img/Arnav.jpg";
 import aidan_pic from "../img/Aidan.jpg";
 import laila_pic from "../img/laila.jpg";
+import sam_s_pic from "../img/Sam_S.jpg";
+import julia_pic from "../img/Julia.jpg";
 
 const emily = {
   name: "Emily Chen",
@@ -201,8 +203,24 @@ const laila = {
   linked: "https://www.linkedin.com/in/laila-rahbari/"
 }
 
+const sam_s = {
+  name : "Sam Straus",
+  info: "Info about Sam", 
+  img: sam_s_pic, 
+  title: "Speaker Curation and Fiance", 
+  linked: "https://www.linkedin.com/in/sam-straus/"
+}
+
+const julia = {
+  name : "Julia Thomson", 
+  info : "Info about Julia", 
+  img: julia_pic, 
+  title : "Finance", 
+  linked : "https://www.linkedin.com/in/julia-g-thomson/"
+}
+
 const team2022 = [
-  aidan, alina, arnav, caroline, jessi, kim, laila, paulina, sam
+  aidan, alina, arnav, caroline, jessi, julia,  kim, laila, paulina, sam, sam_s
 ]
 
 const team2021 = [

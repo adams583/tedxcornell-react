@@ -20,28 +20,21 @@ import FAQ from "./faq/FAQ";
 import Sponsors from "./sponsors/Sponsors";
 import ReactGA from 'react-ga';
 import { withRouter } from 'react-router-dom';
+import RouteChangeTracker from './routeChangeTracker'
 
 
 const TRACKING_ID = "G-EJKGPZQESW"; 
 ReactGA.initialize(TRACKING_ID);
 
-const RouteChangeTracker = ({ history }) => {
-
-  history.listen((location, action) => {
-    ReactGA.set({ page: location.pathname });
-    ReactGA.pageview(location.pathname);
-  });
-
-  return <div></div>;
-};
 
 export default function App() {
   // Initialize AOS: https://michalsnik.github.io/aos/
   AOS.init();
   return (
     <div className="App">
-      <RouteChangeTracker />
       <Router>
+        <RouteChangeTracker />
+
         <React.Fragment>
           <TopNav />
 

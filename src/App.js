@@ -19,12 +19,11 @@ import {
 import FAQ from "./faq/FAQ";
 import Sponsors from "./sponsors/Sponsors";
 import ReactGA from 'react-ga';
-import { withRouter } from 'react-router-dom';
-import RouteChangeTracker from './routeChangeTracker'
+// import RouteChangeTracker from './routeChangeTracker'
 
 
-const TRACKING_ID = "G-EJKGPZQESW"; 
-ReactGA.initialize(TRACKING_ID);
+// const TRACKING_ID = "G-EJKGPZQESW"; 
+// ReactGA.initialize(TRACKING_ID);
 
 
 export default function App() {
@@ -33,7 +32,7 @@ export default function App() {
   return (
     <div className="App">
       <Router>
-        <RouteChangeTracker />
+        {/* <RouteChangeTracker /> */}
 
         <React.Fragment>
           <TopNav />

@@ -127,7 +127,7 @@ const alina = {
   name: "Alina Pereyra",
   info: "Info about Alina",
   img: alina_pic,
-  title: "Marketing and Finance",
+  title: "Logistics & Speaker Curation",
   linked: "https://www.linkedin.com/in/alina-pereyra-710321168/"
 };
 
@@ -143,7 +143,7 @@ const sam = {
   name: "Samantha Ivey",
   info: "Info about Sam",
   img: sam_pic,
-  title: "Design and Marketing",
+  title: "Design & Marketing",
   linked: "https://www.linkedin.com/in/samantha-ivey-8b71031a9/"
 };
 
@@ -167,7 +167,7 @@ const kim = {
   name: "Kimberly Garcia",
   info: "Info about Kim",
   img: kim_pic,
-  title: "Marketing and Speakers",
+  title: "Marketing & Speakers",
   linked: "https://www.linkedin.com/in/kimberly-garcia-2491341ab/"
 };
 
@@ -191,7 +191,7 @@ const aidan = {
   name: "Aidan Helfant",
   info: "Info about Aidan",
   img: aidan_pic,
-  title: "Design and Marketing",
+  title: "Design & Marketing",
   linked: "https://www.linkedin.com/in/aidanhelfant/"
 }
 
@@ -207,7 +207,7 @@ const sam_s = {
   name : "Sam Straus",
   info: "Info about Sam", 
   img: sam_s_pic, 
-  title: "Speaker Curation and Fiance", 
+  title: "Speaker Curation & Finance", 
   linked: "https://www.linkedin.com/in/sam-straus/"
 }
 

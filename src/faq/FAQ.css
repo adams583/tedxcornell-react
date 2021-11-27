@@ -87,9 +87,15 @@
 /* @media (min-width: 1200px) {
 }  */
 
-.info-card h1 {
-  color:  #F24E1E;
-  font-size: 72px;
+.info-header {
+   color:  #F24E1E !important;
+  font-size: 3em !important;
+  width: fit-content!important;
+  padding-bottom: 0 !important;
+}
+
+.info-header p { 
+  padding-right: 1em;
 }
 
 .info-card hr {
@@ -98,7 +104,7 @@
 }
 
 .question-answer {
-  font-size: 25px;
+  font-size: 18px;
 }
 .question-answer h4 {
   

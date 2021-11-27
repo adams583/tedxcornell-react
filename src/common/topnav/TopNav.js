@@ -15,19 +15,20 @@ function TopNav(props) {
         { title: "Home", href: "/" },
         { title: "Speakers", href: "/events" },
         { title: "Events", href: "/events" },
+        { title: "Our Story", href: "/team" },
         { title: "Apply", href: "/apply" },
         { title: "FAQ", href: "/faq" }
     ]
 
     return <Navbar bg="dark" variant="dark" expand="lg">
         <Container >
-            <Navbar.Brand href="/" style={{ width: "80%" }} className="">
+            <Navbar.Brand href="/" style={{ width: "40%" }} className="">
                 <Image className="pt-1" id="logo" src={logo} alt="Image not rendering" fluid></Image>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
-            <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-                <Nav className="pr-3">
+            <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end ">
+                <Nav className="pr-3 ">
                     {navItems.map(navItem =>
                         <Nav.Link className="px-3 text-white" href={navItem.href}>{navItem.title}</Nav.Link>
                     )}

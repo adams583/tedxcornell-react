@@ -1,83 +1,186 @@
 import React from "react";
 import "./About.css";
-import { team2022 } from "./members.js";
-import {ImageTextOverlap} from "../common/ImageTextOverlap";
-import workingteam from "../img/workingteam.jpg";
-import BottomPanel from "../common/panels/BottomPanel";
-import bottomPanelImg from "../img/team2019.jpg";
-import TeamProfile from "../common/gallery/TeamProfile";
+import ImageTextOverlay from "../common/ImageTextOverlay";
+import about_header from "../img/About-img.png";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
+import { team2022 } from "./members";
+import Carousel from "react-bootstrap/Carousel";
+import { CarouselItem } from "react-bootstrap";
 
-
-export const About = React.memo(function AboutFn() {
+function AboutSection(props) {
   return (
-    <div id="team-container ">
-      <div className="team-image-panel">
-        <div className="sp-content-container half-width">
-          <div className="sp-content">
-            <h1>About</h1>
-
-            <p className="lead font-weight-normal">
-              <em>What is TEDxCornell?</em>
-            </p>
-            <p className="lead font-weight-normal">
-              Each year we organize TEDx events and salons operated under an official
-              license from TED. Our goal is to bring a intellectual platform
-              to Cornell unlike any other.
+    <div>
+      <div>
+        <h1>{props.title.opening}: <span style={{ color: 'red' }}><b> {props.title.bold}</b></span></h1>
+      </div>
+      <div>
+        {props.info.map(info =>
+          <div className="py-3">
+            <h2><b>{info.title}</b></h2>
+            <p className="info-body pt-3">
+              {info.body}
             </p>
           </div>
-        </div>
+        )}
       </div>
-      <div id="about-first-panel">
-        <h2>
-          <em>"Spreading Ideas that Matter" </em>
-        </h2>
-        <p>
-          Our TEDx conferences bring together a diverse array of
-          speakers, performers, and audience members all hoping to learn and
-          share knowledge. TEDxCornell is completely student-run,
-          with team members hard at work all year planning for the conferences.
-          We hope to create an environment in which students and community
-          members can discuss ideas and connect with great speakers and
-          performers
-        </p>
-      </div>
-      <ImageTextOverlap
-        title="Our Mission"
-        content="We strive to provide a unique platform at Cornell through which top speakers and performers can teach, inspire, and entertain the Cornell community."
-        button="See our Events"
-        buttonHref="/events"
-        src={workingteam}
-      />
-      <div className="team-content-panel">
-        <div className="container team-title">
-          <h4 className="left-border">Meet our members</h4>
-          <h1>Our Organizing Team</h1>
-        </div>
-
-        <div className="team-gallery ">
-          {team2022.map(member => (
-            <TeamProfile
-              key={member.name}
-              img={member.img}
-              name={member.name}
-              title={member.title}
-              linked={member.linked}
-            />
-          ))}
-        </div>
-      </div>
-
-      <BottomPanel
-        img={bottomPanelImg}
-        title="Want to get involved?"
-        txt="There are many ways to get involved in making our event happen - as a speaker, team member, volunteer, or sponsor. Visit our applications page to learn more."
-        button="Get Involved"
-        buttonHref="/apply"
-      />
     </div>);
+}
+
+const section1 = {
+  title: {
+    opening: "TEDxCornell",
+    bold: "Our Story"
+  },
+  info: [
+    {
+      title: 'Part 1',
+      body: `(how uzair started)Nemo enim ipsam voluptatem quia voluptas
+                  sit aspernatur aut odit aut fugit, sed quia consequuntur
+                  magni dolores eos qui ratione voluptatem sequi nesciunt.
+                  Neque porro quisquam est.`
+    },
+    {
+      title: 'Part 2',
+      body: `(Adam and Kirk reviving the organization)Consequuntur 
+      magni dolores eos qui ratione voluptatem sequi nesciunt. 
+      Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+       consectetur, adipisci velit, sed quia non numquam.
+`
     }
+  ]
+}
+
+const section2 = {
+  title: {
+    opening: "TED Talks",
+    bold: "TED Story"
+  },
+  info: [
+    {
+      title: 'Lorem ipsum dolor',
+      body: `Amet, consectetur adipiscing elit, sed do eiusmod tempor
+       incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+       veniam, quis nostrud exercitation ullamco laboris nisi. Eos qui
+        ratione voluptatem sequi nesciunt. Neque porro quisquam est, 
+        qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+         sed quia non numquam eius modi tempora.`
+    },
+  ]
+}
+
+function TeamCarousel(props) {
+  let items = [];
+  let groupingLength = 3;
+  for (var i = 0; i < props.team.length; i += groupingLength) {
+    var group = props.team.slice(i, i + 3);
+    var item = (
+      <CarouselItem>
+        <Container>
+          <Row className="justify-content-around py-5">
+            {group.map(member =>
+              <div className="col-md-4 py-3">
+                <Card bg='dark' text='light'>
+                  <Card.Img variant="top" style={{ height: '15em' }} src={member.img} />
+                  <Card.Body>
+                    <Card.Title>{member.name}</Card.Title>
+                    <Card.Text>
+                      {member.info}
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </div>
+            )}
+          </Row>
+        </Container>
+      </CarouselItem>
+    )
+    items.push(item);
+  }
+
+  return (
+    <Carousel>
+      {items}
+    </Carousel>
   )
+}
 
+function Team(props) {
+  return (
+    <div>
+      <Row className="pb-3">
+        <div style={{ backgroundColor: "black", color: 'white' }}
+          className="col-md-5 col-6 py-3 d-flex align-items-center text-center">
+          <h1>{props.teamName}</h1>
+        </div>
+        <div className="col arrow-right">
+        </div>
+      </Row>
+      <TeamCarousel team={props.team}>
+      </TeamCarousel>
+    </div>
+  );
+}
 
+export default function About() {
+  return (
+    <div>
+      <ImageTextOverlay
+        img={about_header}
+      >
+      </ImageTextOverlay>
+      <div>
+        <Container fluid className="py-5 ">
+          <Row className="justify-content-around">
+            <Col className="col-md-5">
+              <AboutSection
+                {...section1}>
+              </AboutSection>
+            </Col>
+            <Col className="col-md-5">
+              <AboutSection
+                {...section2}>
+              </AboutSection>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <div style={{ backgroundColor: 'lightgray' }}>
+        <Team
+          teamName="Design Team"
+          team={team2022}
+        >
 
-export default About;
+        </Team>
+        <Team
+          teamName="Finance Team"
+          team={team2022}
+        >
+
+        </Team>
+        <Team
+          teamName="Marketing Team"
+          team={team2022}
+        >
+
+        </Team>
+        <Team
+          teamName="Speaker Curation Team"
+          team={team2022}
+        >
+
+        </Team>
+        <Team
+          teamName="Web Dev Team"
+          team={team2022}
+        >
+
+        </Team>
+      </div>
+
+    </div>
+  )
+}
+

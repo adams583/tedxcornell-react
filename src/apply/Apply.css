@@ -1,1 +1,19 @@
+.info-body {
+  line-height: 1.9em;
+}
 
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  
+  border-left: 50px solid black;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  border: 3px solid red !important;
+  outline: red !important;
+  background-color: red;
+
+}

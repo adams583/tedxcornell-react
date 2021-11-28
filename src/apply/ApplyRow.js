@@ -34,4 +34,4 @@ function ApplyRow(props) {
   );
 }
 
-export default ApplyRow
+export default React.memo(ApplyRow)

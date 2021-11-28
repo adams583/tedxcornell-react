@@ -31,7 +31,7 @@ export default function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/events" component={Events} />
-            <Route path="/about" component={About} />
+            <Route path="/team" component={About} />
             <Route path="/apply" component={Apply} />
             <Route path="/sponsors" component={Sponsors} />
             <Route exact path="/faq" component={FAQ} />

@@ -8,10 +8,6 @@ import Col from "react-bootstrap/Col"
 import ApplyRow from "../apply/ApplyRow"
 
 class Apply extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   handleSubmit(e) {
     const scriptURL =
       "https://script.google.com/macros/s/AKfycbwcZNKses-XNAzdA9U6LwSr4MTsD4CvuoBZrNfESnam5rMuk38m/exec";

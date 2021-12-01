@@ -125,7 +125,8 @@ const alina = {
   info: "Info about Alina",
   img: alina_pic,
   title: "Marketing and Finance",
-  linked: "https://www.linkedin.com/in/alina-pereyra-710321168/"
+  linked: "https://www.linkedin.com/in/alina-pereyra-710321168/",
+  sub_teams: ["Finance", "Marketing"]
 };
 
 const caroline = {
@@ -133,7 +134,8 @@ const caroline = {
   info: "Info about Caroline",
   img: caroline_pic,
   title: "Finance",
-  linked: "https://www.linkedin.com/in/caroline-ryu-74647a163/"
+  linked: "https://www.linkedin.com/in/caroline-ryu-74647a163/",
+  sub_teams: ["Finance"]
 };
 
 const sam = {
@@ -141,7 +143,8 @@ const sam = {
   info: "Info about Sam",
   img: sam_pic,
   title: "Design and Marketing",
-  linked: "https://www.linkedin.com/in/samantha-ivey-8b71031a9/"
+  linked: "https://www.linkedin.com/in/samantha-ivey-8b71031a9/",
+  sub_teams: ["Design", "Marketing"]
 };
 
 const milena = {
@@ -157,7 +160,8 @@ const jessi = {
   info: "Info about Jessi",
   img: jessi_pic,
   title: "Speaker Curation",
-  linked: "https://www.linkedin.com/in/jessica-schlewitt/"
+  linked: "https://www.linkedin.com/in/jessica-schlewitt/",
+  sub_teams: ["Speaker Curation"]
 };
 
 const kim = {
@@ -165,7 +169,8 @@ const kim = {
   info: "Info about Kim",
   img: kim_pic,
   title: "Marketing and Speakers",
-  linked: "https://www.linkedin.com/in/kimberly-garcia-2491341ab/"
+  linked: "https://www.linkedin.com/in/kimberly-garcia-2491341ab/",
+  sub_teams: ["Speaker Curation", "Finance"]
 };
 
 const paulina = {
@@ -173,7 +178,8 @@ const paulina = {
   info: "Info about Paulina",
   img: paulina_pic,
   title: "Speaker Curation",
-  linked: "https://www.linkedin.com/in/paulinaklubok/"
+  linked: "https://www.linkedin.com/in/paulinaklubok/",
+  sub_teams: ["Speaker Curation"]
 };
 
 const arnav = {
@@ -181,7 +187,8 @@ const arnav = {
   info: "Info about Arnav",
   img: arnav_pic,
   title: "Web Development",
-  linked: "https://www.linkedin.com/in/arnav-parashar-3a6932206/"
+  linked: "https://www.linkedin.com/in/arnav-parashar-3a6932206/",
+  sub_teams: ["Web Dev"]
 }
 
 const aidan = {
@@ -189,7 +196,8 @@ const aidan = {
   info: "Info about Aidan",
   img: aidan_pic,
   title: "Design and Marketing",
-  linked: "https://www.linkedin.com/in/aidanhelfant/"
+  linked: "https://www.linkedin.com/in/aidanhelfant/",
+  sub_teams: ["Design", "Marketing"]
 }
 
 const team2022 = [

@@ -10,6 +10,9 @@ import { team2022 } from "./members";
 import Carousel from "react-bootstrap/Carousel";
 import { CarouselItem } from "react-bootstrap";
 
+const sub_teams = ["Design", "Finance", "Marketing",
+  "Speaker Curation", "Web Dev"];
+
 function AboutSection(props) {
   return (
     <div>
@@ -76,24 +79,30 @@ function TeamCarousel(props) {
   let groupingLength = 3;
   for (var i = 0; i < props.team.length; i += groupingLength) {
     var group = props.team.slice(i, i + 3);
+    var row = (<Row className="justify-content-around py-5">
+      {group.map(member =>
+        <div className="col-md-4 py-3">
+          <Card bg='dark' text='light'>
+            <Card.Img variant="top" style={{ height: '15em' }} src={member.img} />
+            <Card.Body>
+              <Card.Title>{member.name}</Card.Title>
+              <Card.Text>
+                {member.info}
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </div>
+      )}
+    </Row>);
+
+    // If less members than grouping length, we don't want a carousel 
+    if (props.team.length <= groupingLength)
+      return <Container>{row}</Container>;
+
     var item = (
       <CarouselItem>
         <Container>
-          <Row className="justify-content-around py-5">
-            {group.map(member =>
-              <div className="col-md-4 py-3">
-                <Card bg='dark' text='light'>
-                  <Card.Img variant="top" style={{ height: '15em' }} src={member.img} />
-                  <Card.Body>
-                    <Card.Title>{member.name}</Card.Title>
-                    <Card.Text>
-                      {member.info}
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </div>
-            )}
-          </Row>
+          {row}
         </Container>
       </CarouselItem>
     )
@@ -148,36 +157,15 @@ export default function About() {
         </Container>
       </div>
       <div style={{ backgroundColor: 'lightgray' }}>
-        <Team
-          teamName="Design Team"
-          team={team2022}
-        >
-
-        </Team>
-        <Team
-          teamName="Finance Team"
-          team={team2022}
-        >
-
-        </Team>
-        <Team
-          teamName="Marketing Team"
-          team={team2022}
-        >
-
-        </Team>
-        <Team
-          teamName="Speaker Curation Team"
-          team={team2022}
-        >
-
-        </Team>
-        <Team
-          teamName="Web Dev Team"
-          team={team2022}
-        >
-
-        </Team>
+        {sub_teams.map(sub_team =>
+          <Team
+            teamName={sub_team}
+            team={team2022.filter(member => {
+              return member.sub_teams.includes(sub_team)
+            })}
+          >
+          </Team>
+        )}
       </div>
 
     </div>

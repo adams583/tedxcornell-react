@@ -1,6 +1,12 @@
 import React from "react";
 import "./Home.css";
-import { Row, Col, Container } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
+import Image from "react-bootstrap/Image";
+import Stack from "react-bootstrap/Stack";
+import side_img from "../img/Home-img.png";
 import BottomPanel from "../common/panels/BottomPanel";
 import faqimg from "../img/yamatai.jpg";
 import tipImg2 from "../img/team2.png";
@@ -12,65 +18,42 @@ import { cards } from "./infoCards";
 export default function Home() {
 
   return (
-    <React.Fragment>
-      <div className="main-panel-home-background ">
-        <div className="main-panel-home-content text-center">
-          <div className="home-title">
-            <CustomButton
-              lightText
-              text="Apply to be a Speaker"
-              color="#08b2e3"
-              href="https://forms.gle/EgPknDZjN1JfL4M48"
-            />
-          </div>
+    <div>
+      <Container fluid>
+        <div style={{}} className="embed-responsive embed-responsive-16by9">
+          <iframe style={{}}
+            className="embed-responsive-item"
+            src="https://www.youtube.com/embed/LOB4eCzoOJ8"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         </div>
-      </div>
-
-      {/* <div id="about-home-panel">
-          <div className="about-home-panel-title">
-              Uproot: A Virtual Series
-          </div>
-          <div className="about-home-panel-desc">
-            This year we are hosting a three-part virtual series with the theme Uproot. Join us for two salon events and one main event in which we bring speakers from around the country as well as our local community to share their most pressing ideas.
-            What does the theme Uproot mean to you? To us it's challenging the beliefs we've been rooted in our whole lives, starting fresh, exploring change. To uplift, shake off the dirt, and rebuild. 
-          </div>
-        </div> */}
-
-      <TwoImgPanel imgLeft={tipImg1} imgRight={tipImg2} />
-
-      <div className="home-content">
-        <Container className="grid">
-          {cards.map((card, index) => (
-            <React.Fragment key={index}>
-              <Row>
-                {index % 2 !== 0 && <Col md={7} />}
-                <Col md={5}>
-                  <div data-aos="fade-left" className="paper-div">
-                    <h3>{card.title}</h3>
-                    <p>{card.text}</p>
-                    <CustomButton
-                      text={card.buttonText}
-                      color="#08b2e3"
-                      lightText
-                      href={card.link}
-                    />
-                  </div>
-                </Col>
-                {index % 2 === 0 && <Col md={7} />}
+      </Container>
+      <div id="new-info-slide">
+        <Container >
+          <Row >
+            <Col className="col-md-7" >
+              <Row className="py-5">
+                <h1>Introducing: </h1>
+                <h1><span>TEDx</span>Cornell Virtual Salon Series</h1>
               </Row>
-              <div className="row-spacer" />
-            </React.Fragment>
-          ))}
+              <Row className="py-5">
+                <Stack gap={3}>
+                  <h3><b>How COVID-19 impacted our events</b></h3>
+                  <h3>Amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi.</h3>
+                  <Button style={{ width: '8em' }} variant="outline-danger" size="lg">Learn More</Button>
+                </Stack>
+              </Row>
+            </Col>
+            <Col md>
+              <Image fluid src={side_img}>
+              </Image>
+            </Col>
+          </Row>
         </Container>
-
-        <BottomPanel
-          img={faqimg}
-          title="Any Questions?"
-          txt="Have any questions? Visit our FAQs page or get in touch with us to ask about anything. We'd love to hear from you"
-          button="See FAQs"
-          buttonHref="/faq"
-        />
       </div>
-    </React.Fragment>
+    </div>
   );
 }

@@ -14,7 +14,6 @@ function TopNav(props) {
     const navItems = [
         { title: "Home", href: "/" },
         { title: "Speakers", href: "/events" },
-        { title: "Events", href: "/events" },
         { title: "Our Story", href: "/team" },
         { title: "Apply", href: "/apply" },
         { title: "FAQ", href: "/faq" }

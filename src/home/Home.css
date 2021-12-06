@@ -15,3 +15,18 @@
   font-size: 24px;
   line-height: 1.5em;
 }
+
+#speakers-slide {
+  background-color: white;
+}
+
+#speakers-slide h1 { 
+  padding-top: 3em;
+}
+
+#join-us-slide h1{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: normal;
+  font-size: 36px;
+}

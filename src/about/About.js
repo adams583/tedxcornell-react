@@ -77,9 +77,10 @@ const section2 = {
 function TeamCarousel(props) {
   let items = [];
   let groupingLength = 3;
+  let width = '70%';
   for (var i = 0; i < props.team.length; i += groupingLength) {
     var group = props.team.slice(i, i + 3);
-    var row = (<Row className="justify-content-around py-5">
+    var row = (<Row className="justify-content-evenly py-5">
       {group.map(member =>
         <div className="col-md-4 py-3">
           <Card bg='dark' text='light'>
@@ -97,11 +98,11 @@ function TeamCarousel(props) {
 
     // If less members than grouping length, we don't want a carousel 
     if (props.team.length <= groupingLength)
-      return <Container>{row}</Container>;
+      return <Container style={{ width: width }}>{row}</Container>;
 
     var item = (
       <CarouselItem>
-        <Container>
+        <Container style={{ width: width }}>
           {row}
         </Container>
       </CarouselItem>
@@ -119,14 +120,16 @@ function TeamCarousel(props) {
 function Team(props) {
   return (
     <div>
-      <Row className="pb-3">
-        <div style={{ backgroundColor: "black", color: 'white' }}
-          className="col-md-5 col-6 py-3 d-flex align-items-center text-center">
-          <h1>{props.teamName}</h1>
-        </div>
-        <div className="col arrow-right">
-        </div>
-      </Row>
+      <Container fluid>
+        <Row className="">
+          <div style={{ backgroundColor: "black", color: 'white' }}
+            className="col-md-5 col-6 py-3 d-flex align-items-center text-center">
+            <h1 className="px-3">{props.teamName}</h1>
+          </div>
+          <div className="col arrow-right">
+          </div>
+        </Row>
+      </Container>
       <TeamCarousel team={props.team}>
       </TeamCarousel>
     </div>

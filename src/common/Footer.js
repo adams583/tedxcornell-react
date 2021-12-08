@@ -7,8 +7,11 @@ import Image from "react-bootstrap/Image"
 import Stack from "react-bootstrap/Stack"
 import Button from "react-bootstrap/Button"
 import logo from "../img/HomeLogo.png"
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faTwitter, faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
+library.add(faTwitter, faFacebook, faInstagram);
 
 class Footer extends Component {
 
@@ -40,7 +43,7 @@ class Footer extends Component {
               <Container style={{ height: "100%" }}>
                 <Row className="justify-content-around" style={{ height: "100%" }}>
                   <div className="col-4 d-flex align-items-center" >
-                    <Stack gap={2} className = " my-auto">
+                    <Stack gap={2} className=" my-auto">
                       <p><b>About Us</b></p>
                       <Stack gap={1} className=" my-auto">
                         <div>Our Story</div>
@@ -70,14 +73,19 @@ class Footer extends Component {
               </Container>
             </div>
           </Row>
-          <Row className="justify-content-around bg-dark" style={{ height: '5em' }}>
-            <div className="col-4 d-flex border-top align-items-center text-danger">
-              <p>Ideas worth spreading</p>
-            </div>
-            <div className="col-4 border-top">
-              Follow Us
-            </div>
-          </Row>
+          <Container style={{ width: '95%' }}>
+            <Row className="justify-content-between bg-dark border-top py-4" >
+              <div className="col-4 py-1 d-flex align-items-center  text-danger">
+                <p className="pt-2">Ideas worth spreading</p>
+              </div>
+              <div id="socials" className="col-4  d-flex align-items-center justify-content-around">
+                <span>Follow Us:</span>
+                <a href="/"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
+                <a href="/" ><FontAwesomeIcon icon={['fab', 'facebook']} /></a>
+                <a href="/" ><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
+              </div>
+            </Row>
+          </Container>
         </Container>
       </div>
     )

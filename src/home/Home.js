@@ -36,21 +36,19 @@ export default function Home() {
 
   return (
     <div>
-      <Container fluid>
         <div style={{}} className="embed-responsive embed-responsive-16by9">
-          <iframe style={{}}
+          <iframe style={{width: '100%', height:'46rem'}}
             className="embed-responsive-item"
             src="https://www.youtube.com/embed/LOB4eCzoOJ8"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
-      </Container>
       <div id="new-info-slide">
         <Container >
-          <Row >
+          <Row className="py-5">
             <Col className="col-md-7" >
-              <Row className="py-5">
+              <Row >
                 <h1>Introducing: </h1>
                 <h1><span>TEDx</span>Cornell Virtual Salon Series</h1>
               </Row>

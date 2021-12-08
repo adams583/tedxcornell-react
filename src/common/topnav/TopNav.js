@@ -4,6 +4,11 @@ import Container from 'react-bootstrap/Container'
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Nav from "react-bootstrap/Nav"
+import NavDropdown from "react-bootstrap/NavDropdown";
+import NavItem from "react-bootstrap/NavItem"
+import NavLink from "react-bootstrap/NavLink"
+
+import Dropdown from "react-bootstrap/Dropdown";
 import Image from "react-bootstrap/Image"
 import Button from "react-bootstrap/Button"
 import logo from "../../img/HomeLogo.png"
@@ -13,7 +18,7 @@ import "./TopNav.css";
 function TopNav(props) {
     const navItems = [
         { title: "Home", href: "/" },
-        { title: "Speakers", href: "/events" },
+        { title: "Speakers", href: "/events", dropdown: ['2021', '2020'] },
         { title: "Our Story", href: "/team" },
         { title: "Apply", href: "/apply" },
         { title: "FAQ", href: "/faq" }
@@ -29,7 +34,18 @@ function TopNav(props) {
             <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end ">
                 <Nav className="pr-3 ">
                     {navItems.map(navItem =>
-                        <Nav.Link className="px-3 text-white" href={navItem.href}>{navItem.title}</Nav.Link>
+                        navItem.dropdown ?
+                            <Dropdown as={NavItem} className="px-3 text-white">
+                                <Dropdown.Toggle className="text-white" as={NavLink}>Events</Dropdown.Toggle>
+                                <Dropdown.Menu variant="dark">
+                                    {
+                                        navItem.dropdown.map(year =>
+                                            <Dropdown.Item href={`/events/${year}`} className='text-center text-white'>{year}</Dropdown.Item>
+                                        )
+                                    }
+                                </Dropdown.Menu>
+                            </Dropdown> :
+                            <Nav.Link className="px-3 text-white" href={navItem.href}>{navItem.title}</Nav.Link>
                     )}
                 </Nav>
             </Navbar.Collapse>

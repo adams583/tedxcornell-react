@@ -82,8 +82,8 @@ function TeamCarousel(props) {
     var group = props.team.slice(i, i + 3);
     var row = (<Row className="justify-content-evenly py-5">
       {group.map(member =>
-        <div className="col-md-4 py-3">
-          <Card bg='dark' text='light'>
+        <div className="col-md-4 py-3 d-flex justify-content-center">
+          <Card bg='dark' text='light' >
             <Card.Img variant="top" style={{ height: '15em' }} src={member.img} />
             <Card.Body>
               <Card.Title>{member.name}</Card.Title>

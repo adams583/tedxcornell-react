@@ -3,6 +3,33 @@
   /* background-size: cover; */
 }
 
+.speech-info {
+  font-size: 14px;
+}
+
+#year {
+  font-size: 60px;
+  /* background-color: #ff2a05;
+  border-radius: 20%; */
+}
+
+.countdown {
+}
+.countdown h1 {
+  font-size: 60px;
+}
+.countdown h4 {
+  font-size: 30px;
+}
+
+.event-info {
+  background-color: linen;
+}
+
+.event-info h1 {
+  font-size: 40px;
+}
+
 
 
 .events-panel {

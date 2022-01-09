@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": false,
   "dependencies": {
+    "@fontsource/monoton": "^4.5.0",
+    "@fontsource/staatliches": "^4.5.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
     "@fortawesome/free-regular-svg-icons": "^5.15.2",
@@ -28,7 +30,8 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^2.1.8",
-    "react-youtube": "^7.13.1"
+    "react-youtube": "^7.13.1",
+    "scrollreveal": "^4.0.9"
   },
   "scripts": {
     "start": "react-scripts start",

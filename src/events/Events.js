@@ -10,7 +10,7 @@ import cat_pic from "../img/cat.jpg";
 import john_pic from "../img/john.jpg";
 import ImageTextOverlay from "../common/ImageTextOverlay";
 import uproot from "../img/website-background.png"
-import page_img from "../img/team2019.jpg"
+import page_img from "../img/Tedx-Stage.jpg"
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -19,9 +19,16 @@ import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image"
 import Stack from "react-bootstrap/Stack"
 import Collapse from 'react-bootstrap/Collapse'
-
+import "@fontsource/staatliches"
+import "@fontsource/monoton"
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faMapMarkerAlt, faMicrophoneAlt, faUserFriends, faCalendarDay } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SpeakerRow from "./SpeakerRow";
 import speaker_info from "./speakerInfo";
+
+library.add(faMapMarkerAlt, faMicrophoneAlt, faUserFriends, faCalendarDay);
+
 
 // const pictures = [daniel_pic, marcela_pic, larry_pic, ishan_pic]
 // pictures.forEach((pic, i) => {
@@ -93,6 +100,8 @@ function Countdown() {
   return (
     <div className="text-center countdown">
       <Stack>
+        <h4><u>Our 2022 Event</u></h4>
+        <h1 style={{ fontFamily:'Monoton'}}>Unmuted</h1>
         <h1>
           {days} : {hours} : {minutes} : {seconds}
         </h1>
@@ -152,6 +161,33 @@ function SpeakerCard(props) {
 
 }
 
+const infoBars = [
+  {
+    info: 'Kennedy Hall',
+    subInfo: 'Cornell University',
+    fa: 'map-marker-alt',
+    colSize: '2'
+  },
+  {
+    info: '8 Speakers',
+    subInfo: 'Variety of Topics',
+    fa: 'microphone-alt',
+    colSize: '2'
+  },
+  {
+    info: 'April 16th',
+    subInfo: 'Save the Date',
+    fa: 'calendar-day',
+    colSize: '2'
+  },
+  {
+    info: '700+ Seating',
+    subInfo: 'Register Now!',
+    fa: 'user-friends',
+    colSize: '3'
+  }
+]
+
 
 class Events extends Component {
 
@@ -176,22 +212,47 @@ class Events extends Component {
             </div>
           </Container>
         </div>
-        <Container className="py-3">
-          <div className="text-center py-4">
-            <span className="p-3" id="year"><u>2020 Speakers</u></span>
-          </div>
-        </Container>
-        <Container fluid className="event-info">
+
+        <div className="event-info" >
           <Row className="justify-content-center">
-            <Col md={5} className="py-4 pr-4 border">
-              <Stack>
-                <h1>2022: <span id="event-name"><u>UnMuted</u></span></h1>
-                <h4><span style={{ color: 'red' }}><b>TEDx</b></span>Cornell</h4>
+            <Col md={5} className="pt-4 px-5 d-flex align-items-center py-3">
+              <Stack gap={2} className=" d-flex align-items-center text-center">
+                <h1> <span id="event-name">UnMuted</span></h1>
+                <h4>2022 <span style={{ color: 'red', fontSize: '20px' }}><b>TEDx</b></span>Cornell</h4>
+                <p>Come join us for our 2022 Event on April 16th at Kennedy Hall.
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugit, sed quia consequuntur magni dolores eos
+                  qui ratione voluptatem sequi nesciunt.
+                  Neque porro quisquam est.Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut
+                  odit aut fugit, sed quia consequuntur magni dolores eos
+                  qui ratione voluptatem sequi nesciunt.
+                  Neque porro quisquam est.
+                </p>
+                <Button variant='outline-danger'>Register Now!</Button>
               </Stack>
             </Col>
-            <Col className="border" md={6}>
+            <Col >
               <Image fluid src={uproot}></Image>
             </Col>
+          </Row>
+
+        </div>
+        <Container style={{ backgroundColor: 'ghostwhite' }} id="overlay">
+          <Row className="px-3 py-3 justify-content-around">
+            {
+              infoBars.map(bar =>
+                <Col className={"py-1 col-" + bar.colSize}>
+                  <div className="d-flex align-items-center">
+                    <FontAwesomeIcon className="" style={{ fontSize: '45px', color: 'red' }} icon={['fas', bar.fa]}></FontAwesomeIcon>
+                    <Stack gap={0} className="text-center ">
+                      <h4>{bar.info}</h4>
+                      <h6>{bar.subInfo}</h6>
+                    </Stack>
+                  </div>
+                </Col>
+              )
+            }
           </Row>
         </Container>
         <Container className="py-3">

@@ -26,6 +26,10 @@ import { faMapMarkerAlt, faMicrophoneAlt, faUserFriends, faCalendarDay } from "@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SpeakerRow from "./SpeakerRow";
 import speaker_info from "./speakerInfo";
+import Fade from 'react-reveal/Fade';
+import Swing from 'react-reveal/Swing';
+
+
 
 library.add(faMapMarkerAlt, faMicrophoneAlt, faUserFriends, faCalendarDay);
 
@@ -101,10 +105,12 @@ function Countdown() {
     <div className="text-center countdown">
       <Stack>
         <h4><u>Our 2022 Event</u></h4>
-        <h1 style={{ fontFamily:'Monoton'}}>Unmuted</h1>
-        <h1>
-          {days} : {hours} : {minutes} : {seconds}
-        </h1>
+        <h1 style={{ fontFamily: 'Monoton' }}>UnMuted</h1>
+        <Swing delay={1500}>
+          <h1>
+            {days} : {hours} : {minutes} : {seconds}
+          </h1>
+        </Swing>
         <h4>Days : Hours : Min : Sec</h4>
       </Stack>
     </div>
@@ -194,13 +200,6 @@ class Events extends Component {
   render() {
     return (
       <div>
-        {/* <ImageTextOverlay
-          title="Meet Our Speakers"
-          body="Each of our events highlights the contributions, experiences,
-           and ideas of our amazing speakers. Learn more about the speakers for our upcoming event!"
-          img={page_img}
-        >
-        </ImageTextOverlay> */}
         <div style={{
           height: '30em', backgroundImage: `url(${page_img})`, backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -214,7 +213,7 @@ class Events extends Component {
         </div>
 
         <div className="event-info" >
-          <Row className="justify-content-center">
+          <Row className="justify-content-around" style={{ width: '100%' }}>
             <Col md={5} className="pt-4 px-5 d-flex align-items-center py-3">
               <Stack gap={2} className=" d-flex align-items-center text-center">
                 <h1> <span id="event-name">UnMuted</span></h1>
@@ -241,15 +240,18 @@ class Events extends Component {
         <Container style={{ backgroundColor: 'ghostwhite' }} id="overlay">
           <Row className="px-3 py-3 justify-content-around">
             {
-              infoBars.map(bar =>
-                <Col className={"py-1 col-" + bar.colSize}>
-                  <div className="d-flex align-items-center">
-                    <FontAwesomeIcon className="" style={{ fontSize: '45px', color: 'red' }} icon={['fas', bar.fa]}></FontAwesomeIcon>
-                    <Stack gap={0} className="text-center ">
-                      <h4>{bar.info}</h4>
-                      <h6>{bar.subInfo}</h6>
-                    </Stack>
-                  </div>
+              infoBars.map((bar, i) =>
+
+                <Col className={"py-1 col-md-" + bar.colSize}>
+                  <Fade top delay={500 + i * 500}>
+                    <div className="d-flex align-items-center">
+                      <FontAwesomeIcon className="" style={{ fontSize: '45px', color: 'red' }} icon={['fas', bar.fa]}></FontAwesomeIcon>
+                      <Stack gap={0} className="text-center ">
+                        <h4>{bar.info}</h4>
+                        <h6>{bar.subInfo}</h6>
+                      </Stack>
+                    </div>
+                  </Fade>
                 </Col>
               )
             }
@@ -257,7 +259,10 @@ class Events extends Component {
         </Container>
         <Container className="py-3">
           {speaker_info.map((speaker, i) =>
-            <SpeakerCard {...speaker} onRight={i % 2 != 0}></SpeakerCard>
+            <Fade top delay={i == 0 ? 1000 : 0}>
+              <SpeakerCard {...speaker} onRight={i % 2 != 0}></SpeakerCard>
+            </Fade>
+
           )}
         </Container>
         <div className="text-white" style={{ backgroundColor: "red", height: "100%" }}>

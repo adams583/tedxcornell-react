@@ -173,7 +173,7 @@ const kim = {
   img: kim_pic,
   title: "Marketing and Speakers",
   linked: "https://www.linkedin.com/in/kimberly-garcia-2491341ab/",
-  sub_teams: ["Speaker Curation", "Finance"]
+  sub_teams: ["Speaker Curation", "Marketing"]
 };
 
 const paulina = {
@@ -200,7 +200,7 @@ const aidan = {
   img: aidan_pic,
   title: "Design and Marketing",
   linked: "https://www.linkedin.com/in/aidanhelfant/",
-  sub_teams: ["Design", "Marketing"]
+  sub_teams: ["Marketing"]
 }
 const laila = {
   name: "Laila Rahbari",

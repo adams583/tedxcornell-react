@@ -17,3 +17,12 @@
   background-color: red;
 
 }
+
+.apply-card {
+  border-radius: 15% !important;
+}
+
+.apply-card p {
+  font-size: 18px; 
+  line-height: 1.4em;
+}

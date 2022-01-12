@@ -245,7 +245,7 @@ class Events extends Component {
                 <Col className={"py-1 col-md-" + bar.colSize}>
                   <Fade top delay={500 + i * 500}>
                     <div className="d-flex align-items-center">
-                      <FontAwesomeIcon className="" style={{ fontSize: '45px', color: 'red' }} icon={['fas', bar.fa]}></FontAwesomeIcon>
+                      <FontAwesomeIcon style={{ fontSize: '45px', color: 'red' }} icon={['fas', bar.fa]}></FontAwesomeIcon>
                       <Stack gap={0} className="text-center ">
                         <h4>{bar.info}</h4>
                         <h6>{bar.subInfo}</h6>
@@ -265,6 +265,23 @@ class Events extends Component {
 
           )}
         </Container>
+        <div id="past-section" className="py-5">
+          <Container className="py-3">
+            <h1>Past Events</h1>
+            <Row className="pt-4">
+              <Col md={4}>
+                <Card>
+                  <Card.Header as="p" className="event-date">May 7th 2021</Card.Header>
+                  <Card.Img src={uproot}></Card.Img>
+                  <Card.Body>
+                    <Card.Title as="h4"><b>Uproot</b></Card.Title>
+                    <Card.Text as="p">2021 <span style={{ color: 'red' }}><b>TEDx</b></span>Cornell</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </Container>
+        </div>
         <div className="text-white" style={{ backgroundColor: "red", height: "100%" }}>
           <div className="container">
             <div className="row py-3">

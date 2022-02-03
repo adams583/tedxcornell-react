@@ -18,7 +18,8 @@ let info = [
      mentor at a local carceral facility and president of the Labor School
      student body, Daniel has skillfully used his voice over the airwaves
     to serve the public and reach the masses. This spring, he is an Emerging 
-    Leader intern for the Congressional Black Caucus.`
+    Leader intern for the Congressional Black Caucus.`,
+    "socials": ["twitter", "facebook"]
   },
   {
     "name": "Marcela OT'Alora",
@@ -37,7 +38,9 @@ let info = [
   Association for Psychedelic Studies (MAPS), Marcela has worked as therapist 
   and Principal Investigator for various studies weaving psychotherapy and MDMA 
   for the treatment of PTSD. Additionally, she is a trainer and supervisor 
-  for MAPS’ MDMA-assisted psychotherapy training program.`
+  for MAPS’ MDMA-assisted psychotherapy training program.`,
+    "socials": ["twitter", "instagram", "facebook"]
+
   },
   {
     "name": "Person Z",

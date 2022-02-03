@@ -8,7 +8,7 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import { team2022 } from "./members";
 import Carousel from "react-bootstrap/Carousel";
-import { CarouselItem } from "react-bootstrap";
+import CarouselItem from "react-bootstrap/CarouselItem";
 
 const sub_teams = ["Design", "Finance", "Marketing",
   "Speaker Curation", "Web Dev"];

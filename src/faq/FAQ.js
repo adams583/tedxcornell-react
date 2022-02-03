@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./FAQ.css";
-import speaker_img from "../img/chandler2.jpg"
+import page_img from "../img/cornellfall2.png"
 import ImageTextOverlay from "../common/ImageTextOverlay";
 import InfoSection from "../faq/InfoSection"
 import facts from "../faq/faq.json"
@@ -12,7 +12,7 @@ const FAQ = React.memo(function FAQFn() {
       <ImageTextOverlay
         title="Frequently Asked Questions"
         body="Learn More About Our Events"
-        img={speaker_img}
+        img={page_img}
       >
       </ImageTextOverlay>
       {facts.map(fact =>

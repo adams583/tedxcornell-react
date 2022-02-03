@@ -17,6 +17,8 @@ import tipImg1 from "../img/team.jpg";
 import TwoImgPanel from "../common/panels/TwoImgPanel";
 import CustomButton from "../common/buttons/CustomButton";
 import { cards } from "./infoCards";
+import Carousel from "react-bootstrap/Carousel";
+import CarouselItem from "react-bootstrap/CarouselItem";
 
 function SpeakerInfo(props) {
   return (<Col md className="py-3">
@@ -36,14 +38,14 @@ export default function Home() {
 
   return (
     <div>
-        <div style={{}} className="embed-responsive embed-responsive-16by9">
-          <iframe style={{width: '100%', height:'46rem'}}
-            className="embed-responsive-item"
-            src="https://www.youtube.com/embed/LOB4eCzoOJ8"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
+      <div style={{}} className="embed-responsive embed-responsive-16by9">
+        <iframe style={{ width: '100%', height: '46rem' }}
+          className="embed-responsive-item"
+          src="https://www.youtube.com/embed/N-l1xtCMnpw"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
       <div id="new-info-slide">
         <Container >
           <Row className="py-5">
@@ -72,31 +74,65 @@ export default function Home() {
       <div id="speakers-slide">
         <Container>
           <h1>Meet The Speakers</h1>
-          <Row className="py-5">
-            <SpeakerInfo
-              speaker="Speaker 1"
-              info="Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
-              aut odit aut fugit, sed quia consequuntur magni dolores eos 
-              qui ratione voluptatem sequi nesciunt. Neque porro quisquam est."
-              img={side_img}
-            ></SpeakerInfo>
-            <SpeakerInfo
-              speaker="Speaker 2"
-              info="Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
-              aut odit aut fugit, sed quia consequuntur magni dolores eos 
-              qui ratione voluptatem sequi nesciunt. Neque porro quisquam est."
-              img={side_img}
-            ></SpeakerInfo>
-            <SpeakerInfo
-              speaker="Speaker 3"
-              info="Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
-              aut odit aut fugit, sed quia consequuntur magni dolores eos 
-              qui ratione voluptatem sequi nesciunt. Neque porro quisquam est."
-              img={side_img}
-            ></SpeakerInfo>
-
-          </Row>
         </Container>
+        <Row >
+          <Carousel>
+            <CarouselItem>
+              <Container style={{ width: '80%' }}>
+                <Row className="py-5">
+                  <SpeakerInfo
+                    speaker="Speaker 1"
+                    info="Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+              aut odit aut fugit, sed quia consequuntur magni dolores eos 
+              qui ratione voluptatem sequi nesciunt. Neque porro quisquam est."
+                    img={side_img}
+                  ></SpeakerInfo>
+                  <SpeakerInfo
+                    speaker="Speaker 2"
+                    info="Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+              aut odit aut fugit, sed quia consequuntur magni dolores eos 
+              qui ratione voluptatem sequi nesciunt. Neque porro quisquam est."
+                    img={side_img}
+                  ></SpeakerInfo>
+                  <SpeakerInfo
+                    speaker="Speaker 3"
+                    info="Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+              aut odit aut fugit, sed quia consequuntur magni dolores eos 
+              qui ratione voluptatem sequi nesciunt. Neque porro quisquam est."
+                    img={side_img}
+                  ></SpeakerInfo>
+                </Row>
+              </Container>
+            </CarouselItem>
+            <CarouselItem>
+              <Container style={{ width: '80%' }}>
+                <Row className="py-5">
+                  <SpeakerInfo
+                    speaker="Speaker 1"
+                    info="Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+              aut odit aut fugit, sed quia consequuntur magni dolores eos 
+              qui ratione voluptatem sequi nesciunt. Neque porro quisquam est."
+                    img={side_img}
+                  ></SpeakerInfo>
+                  <SpeakerInfo
+                    speaker="Speaker 2"
+                    info="Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+              aut odit aut fugit, sed quia consequuntur magni dolores eos 
+              qui ratione voluptatem sequi nesciunt. Neque porro quisquam est."
+                    img={side_img}
+                  ></SpeakerInfo>
+                  <SpeakerInfo
+                    speaker="Speaker 3"
+                    info="Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+              aut odit aut fugit, sed quia consequuntur magni dolores eos 
+              qui ratione voluptatem sequi nesciunt. Neque porro quisquam est."
+                    img={side_img}
+                  ></SpeakerInfo>
+                </Row>
+              </Container>
+            </CarouselItem>
+          </Carousel>
+        </Row>
       </div>
       <div>
         <div style={{

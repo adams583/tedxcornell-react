@@ -23,15 +23,14 @@ import "@fontsource/staatliches"
 import "@fontsource/monoton"
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faMapMarkerAlt, faMicrophoneAlt, faUserFriends, faCalendarDay } from "@fortawesome/free-solid-svg-icons";
+import { faTwitter, faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SpeakerRow from "./SpeakerRow";
 import speaker_info from "./speakerInfo";
 import Fade from 'react-reveal/Fade';
 import Swing from 'react-reveal/Swing';
 
-
-
-library.add(faMapMarkerAlt, faMicrophoneAlt, faUserFriends, faCalendarDay);
+library.add(faMapMarkerAlt, faMicrophoneAlt, faUserFriends, faCalendarDay, faTwitter, faFacebook, faInstagram);
 
 
 // const pictures = [daniel_pic, marcela_pic, larry_pic, ishan_pic]
@@ -112,6 +111,7 @@ function Countdown() {
           </h1>
         </Swing>
         <h4>Days : Hours : Min : Sec</h4>
+        <Button variant="danger" className="align-self-center" >Register!</Button>
       </Stack>
     </div>
   );
@@ -121,6 +121,14 @@ function Countdown() {
 
 function SpeakerCard(props) {
   const [open, setOpen] = useState(false);
+  const [cardState, setCardState] = useState({ padding: '', social: { display: '' }, info: { display: 'none' } })
+
+  function handleClick() {
+    console.log(cardState);
+
+    setCardState({ padding: (cardState.padding == '' ? 'p-0' : ''), social: cardState.info, info: cardState.social })
+    console.log(cardState);
+  }
 
   return (
     <Row className={"py-4 " + (props.onRight ? "flex-row-reverse" : '')}>
@@ -146,19 +154,43 @@ function SpeakerCard(props) {
             </Row>
           </Col>
 
-          <Col md className={'p-0 ' + (props.onRight ? "d-flex align-items-end  flex-column" : 'd-flex align-items-begin flex-column')}>
-            <Collapse style={{ height: '100%' }} in={open} dimension="width">
-              <div id="card-collapse-text " style={{ height: '100%' }}>
-                <Card body className="text-center" style={{ width: '35em', height: '100%' }}>
+          <Col md className='p-0 '>
+
+            <div className=" h-100" style={cardState.social} id="social-card">
+              <div className="h-100 w-100  d-flex align-items-center justify-content-center">
+                <Card className="px-3 py-3 text-center w-75 ">
                   <Card.Title as="h4">
-                    <u>{props.speech}</u>
+                    Follow This Speaker
                   </Card.Title>
-                  <Card.Text as="p" className="speech-info">
-                    {props.speechInfo}
-                  </Card.Text>
+                  <Card.Body>
+                    {
+                      props.socials ? props.socials.map(social =>
+                        <a className="px-4" href="/"><FontAwesomeIcon style={{ fontSize: '45px', color: 'red' }} icon={['fab', social]} /></a>
+                      ) : <></>
+                    }
+                  </Card.Body>
                 </Card>
               </div>
-            </Collapse>
+            </div>
+
+
+            <div style={cardState.info} id="info-card">
+              <div className={'h-100 ' + (props.onRight ? "d-flex align-items-end  flex-column" : 'd-flex align-items-begin flex-column')}>
+                <Collapse onEnter={() => handleClick()} onExited={() => handleClick()}
+                  style={{ height: '100%' }} in={open} dimension="width">
+                  <div id="card-collapse-text" style={{ height: '100%' }}>
+                    <Card body className="text-center" style={{ width: '35em', height: '100%' }}>
+                      <Card.Title as="h4">
+                        <u>{props.speech}</u>
+                      </Card.Title>
+                      <Card.Text as="p" className="speech-info">
+                        {props.speechInfo}
+                      </Card.Text>
+                    </Card>
+                  </div>
+                </Collapse>
+              </div>
+            </div>
           </Col>
         </Row>
       </Col>
@@ -213,8 +245,8 @@ class Events extends Component {
         </div>
 
         <div className="event-info" >
-          <Row className="justify-content-around" style={{ width: '100%' }}>
-            <Col md={5} className="pt-4 px-5 d-flex align-items-center py-3">
+          <Row className="justify-content-around pb-5" style={{ width: '100%' }}>
+            <Col md={6} className="pt-4 px-5 d-flex align-items-center py-3">
               <Stack gap={2} className=" d-flex align-items-center text-center">
                 <h1> <span id="event-name">UnMuted</span></h1>
                 <h4>2022 <span style={{ color: 'red', fontSize: '20px' }}><b>TEDx</b></span>Cornell</h4>

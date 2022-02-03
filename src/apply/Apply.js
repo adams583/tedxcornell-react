@@ -17,25 +17,27 @@ const applyCards = [
   {
     fa: 'microphone-alt',
     header: 'Apply To Be Speaker',
-    info:  `Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
-              aut odit aut fugit, sed quia consequuntur magni dolores eos 
-              qui ratione voluptatem sequi nesciunt.Neque porro quisquam est.`,
+    info: `Do you have an idea worth spreading? The TEDxCornell stage is the 
+    perfect place to share it! Apply today to potentially get selected as a 
+    speaker for our next event!`,
     button: 'Apply Now!'
   },
   {
     fa: 'vote-yea',
     header: 'Nominate A Speaker',
-    info: `Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
-              aut odit aut fugit, sed quia consequuntur magni dolores eos 
-              qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.`,
-    button: 'Learn More!'
+    info: `Is there someone you think would make a fantastic speaker at an event?
+    Nominate them! `,
+    button: 'Contact Us'
+
   },
   {
     fa: 'envelope',
     header: 'Join Our Mailing List',
-    info: `Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
-              aut odit aut fugit, sed quia consequuntur magni dolores eos 
-              qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.`,
+    info: `Join our mailing list to keep up to date with all the latest 
+    TEDxCornell news, such as the speaker line up, our next event date, 
+    and all of the other exciting things we do throughout the year! `,
+    button: 'Join Now!'
+
   }
 ]
 
@@ -83,7 +85,7 @@ class Apply extends Component {
               {
                 applyCards.map(card =>
                   <Col md={5} className="py-3">
-                    <Card className="apply-card text-center py-3 px-4">
+                    <Card className="apply-card text-center py-3 px-4 h-100">
                       <Card.Body>
                         <FontAwesomeIcon style={{ fontSize: '45px', color: 'red' }} icon={['fas', card.fa]}></FontAwesomeIcon>
                         <div className="pt-4">

@@ -1,14 +1,5 @@
 import React, { Component, useState } from "react";
 import "./Events.css";
-import marcela_pic from "../img/marcela.jpg";
-import daniel_pic from "../img/daniel_pic.jpg";
-import larry_pic from "../img/larry_pic.jpg";
-import ishan_pic from "../img/ishan.jpg";
-import bruce_pic from "../img/bruce.jpg"
-import jonathan_pic from "../img/jonathan.jpg"
-import cat_pic from "../img/cat.jpg";
-import john_pic from "../img/john.jpg";
-import ImageTextOverlay from "../common/ImageTextOverlay";
 import uproot from "../img/website-background.png"
 import page_img from "../img/Tedx-Stage.jpg"
 import Container from "react-bootstrap/Container";

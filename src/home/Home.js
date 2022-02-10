@@ -19,6 +19,8 @@ import CustomButton from "../common/buttons/CustomButton";
 import { cards } from "./infoCards";
 import Carousel from "react-bootstrap/Carousel";
 import CarouselItem from "react-bootstrap/CarouselItem";
+import speaker_info from "../events/speakerInfo";
+
 
 function SpeakerInfo(props) {
   return (<Col md className="py-3">

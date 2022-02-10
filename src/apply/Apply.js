@@ -39,9 +39,9 @@ class Apply extends Component {
     },
     {
       title: "Speaker Applications",
-      subtitle: "Speaker applications for our Spring 2022 Event are open!",
-      text: "We look for presenters who will inform, inspire, and entertain while spreading ideas that they are truly passionate about. If you are interested, or know someone who might be, please let them know to apply now!",
-      button: true,
+      subtitle: "Speaker applications for our Spring 2022 Event are now closed",
+      text: "We are no longer accepting speaker applications for Spring 2022. If you would like to be a speaker, please come back and apply in the fall!",
+      button: false,
       application: "https://forms.gle/EgPknDZjN1JfL4M48"
     },
   ]

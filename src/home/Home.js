@@ -16,25 +16,9 @@ export default function Home() {
       <div className="main-panel-home-background ">
         <div className="main-panel-home-content text-center">
           <div className="home-title">
-            <CustomButton
-              lightText
-              text="Apply to be a Speaker"
-              color="#08b2e3"
-              href="https://forms.gle/EgPknDZjN1JfL4M48"
-            />
           </div>
         </div>
       </div>
-
-      {/* <div id="about-home-panel">
-          <div className="about-home-panel-title">
-              Uproot: A Virtual Series
-          </div>
-          <div className="about-home-panel-desc">
-            This year we are hosting a three-part virtual series with the theme Uproot. Join us for two salon events and one main event in which we bring speakers from around the country as well as our local community to share their most pressing ideas.
-            What does the theme Uproot mean to you? To us it's challenging the beliefs we've been rooted in our whole lives, starting fresh, exploring change. To uplift, shake off the dirt, and rebuild. 
-          </div>
-        </div> */}
 
       <TwoImgPanel imgLeft={tipImg1} imgRight={tipImg2} />
 

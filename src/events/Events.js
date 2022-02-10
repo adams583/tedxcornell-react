@@ -144,10 +144,17 @@ function SpeakerCard(props) {
                   <Stack gap={3}>
                     <h1>{props.name}</h1>
                     <p>{props.info}</p>
-                    <Button onClick={() => setOpen(!open)}
-                      aria-controls="card-collapse-text"
-                      aria-expanded={open}
-                      variant="danger" >Learn More</Button>
+                    <div className="text-center py-3 rounded" style={{ backgroundColor:"DimGray"}}>
+
+                      <h5><u>Follow This Speaker</u></h5>
+                      <div className="d-flex justify-content-center pt-3">
+                        {
+                          props.socials ? props.socials.map(social =>
+                            <a className="px-3" href="/"><FontAwesomeIcon style={{ fontSize: '30px', color: 'red' }} icon={['fab', social]} /></a>
+                          ) : <></>
+                        }
+                      </div>
+                    </div>
                   </Stack>
                 </div>
               </Col>
@@ -156,7 +163,7 @@ function SpeakerCard(props) {
 
           <Col md className='p-0 '>
 
-            <div className=" h-100" style={cardState.social} id="social-card">
+            {/* <div className=" h-100" style={cardState.social} id="social-card">
               <div className="h-100 w-100  d-flex align-items-center justify-content-center">
                 <Card className="px-3 py-3 text-center w-75 ">
                   <Card.Title as="h4">
@@ -171,24 +178,19 @@ function SpeakerCard(props) {
                   </Card.Body>
                 </Card>
               </div>
-            </div>
+            </div> */}
 
 
-            <div style={cardState.info} id="info-card">
-              <div className={'h-100 ' + (props.onRight ? "d-flex align-items-end  flex-column" : 'd-flex align-items-begin flex-column')}>
-                <Collapse onEnter={() => handleClick()} onExited={() => handleClick()}
-                  style={{ height: '100%' }} in={open} dimension="width">
-                  <div id="card-collapse-text" style={{ height: '100%' }}>
-                    <Card body className="text-center" style={{ width: '35em', height: '100%' }}>
-                      <Card.Title as="h4">
-                        <u>{props.speech}</u>
-                      </Card.Title>
-                      <Card.Text as="p" className="speech-info">
-                        {props.speechInfo}
-                      </Card.Text>
-                    </Card>
-                  </div>
-                </Collapse>
+            <div className={'h-100 ' + (props.onRight ? "d-flex align-items-end  flex-column" : 'd-flex align-items-begin flex-column')}>
+              <div style={{ height: '100%' }}>
+                <Card body className="text-center" style={{ width: '35em', height: '100%' }}>
+                  <Card.Title as="h4">
+                    <u>{props.speech}</u>
+                  </Card.Title>
+                  <Card.Text as="p" className="speech-info">
+                    {props.speechInfo}
+                  </Card.Text>
+                </Card>
               </div>
             </div>
           </Col>
@@ -302,6 +304,7 @@ class Events extends Component {
             <h1>Past Events</h1>
             <Row className="pt-4">
               <Col md={4}>
+                <a href= "/2021" style={{ textDecoration: 'none', color:'white'}}>
                 <Card>
                   <Card.Header as="p" className="event-date">May 7th 2021</Card.Header>
                   <Card.Img src={uproot}></Card.Img>
@@ -310,6 +313,7 @@ class Events extends Component {
                     <Card.Text as="p">2021 <span style={{ color: 'red' }}><b>TEDx</b></span>Cornell</Card.Text>
                   </Card.Body>
                 </Card>
+                </a>
               </Col>
             </Row>
           </Container>

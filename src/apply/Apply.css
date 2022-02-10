@@ -20,6 +20,9 @@
 
 .apply-card {
   border-radius: 15% !important;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
 }
 
 .apply-card p {

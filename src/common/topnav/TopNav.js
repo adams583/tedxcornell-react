@@ -22,7 +22,7 @@ function TopNav(props) {
         { title: "Our Story", href: "/team" },
         { title: "Apply", href: "/apply" },
         { title: "FAQ", href: "/faq" },
-        { title: "Register!", href: "/faq", button: "a" }
+        // { title: "Register!", href: "/faq", button: "a" }
     ]
 
     return <Navbar bg="dark" variant="dark" expand="lg">

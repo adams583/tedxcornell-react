@@ -39,20 +39,18 @@ const section1 = {
   },
   info: [
     {
-      title: 'Part 1',
-      body: `(how uzair started)Nemo enim ipsam voluptatem quia voluptas
-                  sit aspernatur aut odit aut fugit, sed quia consequuntur
-                  magni dolores eos qui ratione voluptatem sequi nesciunt.
-                  Neque porro quisquam est.`
+      title: 'Our Founders',
+      body: `In 2017, our group's fouder Kirkland Sugrim and Adam Skrocki
+      wanted to bring something special to Cornell. There words to each other one
+      day: 
+      “Dude we have to do something incredible in our time here. 
+      What if we organized TED talks here at Cornell for the students body?”
+      That single moment defined four years of time for Adam and Kirk.
+      Through the help of Eri Kato, Emily Chen, and Uzair Butt, 
+      they worked hard to bring speakers from around the world to share 
+      their ideas to inspire novel conversations and actions within 
+      and beyond our Cornell community.`
     },
-    {
-      title: 'Part 2',
-      body: `(Adam and Kirk reviving the organization)Consequuntur 
-      magni dolores eos qui ratione voluptatem sequi nesciunt. 
-      Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-       consectetur, adipisci velit, sed quia non numquam.
-`
-    }
   ]
 }
 
@@ -63,23 +61,32 @@ const section2 = {
   },
   info: [
     {
-      title: 'Lorem ipsum dolor',
-      body: `Amet, consectetur adipiscing elit, sed do eiusmod tempor
-       incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-       veniam, quis nostrud exercitation ullamco laboris nisi. Eos qui
-        ratione voluptatem sequi nesciunt. Neque porro quisquam est, 
-        qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-         sed quia non numquam eius modi tempora.`
+      title: 'History of TED',
+      body: `TED was born in 1984 out of Richard Saul Wurman's observation of 
+      a powerful convergence among three fields: technology, entertainment 
+      and design. The first TED, which he co-founded with Harry Marks, 
+      included a demo of the compact disc, the e-book and cutting-edge 
+      3D graphics from Lucasfilm, while mathematician Benoit Mandelbrot 
+      demonstrated how to map coastlines using his developing theory of 
+      fractal geometry.
+
+    But despite a stellar lineup, the event lost money, and it was six years
+     before Wurman and Marks tried again. This time, in 1990, the world was ready.
+      The TED Conference became an annual event in Monterey, California,
+       attracting a growing and influential audience from many different 
+       disciplines united by their curiosity and open-mindedness -- and 
+       also by their shared discovery of an exciting secret.`
     },
   ]
 }
 
 function TeamCarousel(props) {
   let items = [];
-  let groupingLength = 3;
+  let maxGroupingLength = 3;
+  let groupingLength = props.team.length === 4 ? 2 : maxGroupingLength
   let width = '70%';
   for (var i = 0; i < props.team.length; i += groupingLength) {
-    var group = props.team.slice(i, i + 3);
+    var group = props.team.slice(i, i + groupingLength);
     var row = (<Row className="justify-content-evenly py-5">
       {group.map(member =>
         <div className="col-md-4 py-3 d-flex justify-content-center">
@@ -97,7 +104,7 @@ function TeamCarousel(props) {
     </Row>);
 
     // If less members than grouping length, we don't want a carousel 
-    if (props.team.length <= groupingLength)
+    if (props.team.length <= maxGroupingLength)
       return <Container style={{ width: width }}>{row}</Container>;
 
     var item = (

@@ -21,6 +21,44 @@ import Carousel from "react-bootstrap/Carousel";
 import CarouselItem from "react-bootstrap/CarouselItem";
 import speaker_info from "../events/speakerInfo";
 
+var test = [
+  {
+    name: "speaker 1", 
+    summary: `Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+              aut odit aut fugit, sed quia consequuntur magni dolores eos 
+              qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.`,
+    img: side_img
+  },
+  {
+    name: "speaker 2",
+    summary: `Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+              aut odit aut fugit, sed quia consequuntur magni dolores eos 
+              qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.`,
+    img: side_img
+  },
+  {
+    name: "speaker 3",
+    summary: `Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+              aut odit aut fugit, sed quia consequuntur magni dolores eos 
+              qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.`,
+    img: side_img
+  },
+  {
+    name: "speaker 4",
+    summary: `Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+              aut odit aut fugit, sed quia consequuntur magni dolores eos 
+              qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.`,
+    img: side_img
+  },
+  {
+    name: "speaker 5",
+    summary: `Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+              aut odit aut fugit, sed quia consequuntur magni dolores eos 
+              qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.`,
+    img: side_img
+  },
+
+]
 
 function SpeakerInfo(props) {
   return (<Col md className="py-3">
@@ -35,6 +73,29 @@ function SpeakerInfo(props) {
   </Col>)
 }
 
+function SpeakerCarousel(props) {
+
+  var items = []
+  for (var i = 0; i < props.speaker_info.length; i += 3) {
+    var group = props.speaker_info.slice(i, i + 3);
+    var item = (
+      <CarouselItem>
+        <Container style={{ width: '80%' }}>
+          <Row>
+            {group.map(speaker =>
+              <SpeakerInfo speaker={speaker.name} info={speaker.summary} img={speaker.img}>
+              </SpeakerInfo>
+            )}
+          </Row>
+        </Container>
+      </CarouselItem>);
+    items.push(item)
+  }
+
+  return (<Carousel className = "py-3">
+    {items}
+  </Carousel>)
+}
 
 export default function Home() {
 
@@ -59,10 +120,16 @@ export default function Home() {
               <Row className="py-5">
                 <Stack gap={3}>
                   <h3><b>How COVID-19 impacted our events</b></h3>
-                  <h3>Amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi.</h3>
-                  <Button style={{ width: '8em' }} variant="outline-danger" size="lg">Learn More</Button>
+                  <h3>During the '20-'21 school year, the TEDxCornell team 
+                    shifted to a series of virtual events instead of our 
+                    usual singular main event. The virtual series included
+                    two Salon events which were smaller but more interactive,
+                    discussion-based events 
+                    The virtual format allowed for participants to ask
+                    our speakers questions and engage with their talks 
+                    through different activities. The series was concluded 
+                    by a virtual main event.</h3>
+                  {/* <Button style={{ width: '8em' }} variant="outline-danger" size="lg">Learn More</Button> */}
                 </Stack>
               </Row>
             </Col>
@@ -73,69 +140,15 @@ export default function Home() {
           </Row>
         </Container>
       </div>
-      <div id="speakers-slide">
+      {/* <div id="speakers-slide">
         <Container>
           <h1>Meet The Speakers</h1>
         </Container>
         <Row >
-          <Carousel>
-            <CarouselItem>
-              <Container style={{ width: '80%' }}>
-                <Row className="py-5">
-                  <SpeakerInfo
-                    speaker="Speaker 1"
-                    info="Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
-              aut odit aut fugit, sed quia consequuntur magni dolores eos 
-              qui ratione voluptatem sequi nesciunt. Neque porro quisquam est."
-                    img={side_img}
-                  ></SpeakerInfo>
-                  <SpeakerInfo
-                    speaker="Speaker 2"
-                    info="Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
-              aut odit aut fugit, sed quia consequuntur magni dolores eos 
-              qui ratione voluptatem sequi nesciunt. Neque porro quisquam est."
-                    img={side_img}
-                  ></SpeakerInfo>
-                  <SpeakerInfo
-                    speaker="Speaker 3"
-                    info="Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
-              aut odit aut fugit, sed quia consequuntur magni dolores eos 
-              qui ratione voluptatem sequi nesciunt. Neque porro quisquam est."
-                    img={side_img}
-                  ></SpeakerInfo>
-                </Row>
-              </Container>
-            </CarouselItem>
-            <CarouselItem>
-              <Container style={{ width: '80%' }}>
-                <Row className="py-5">
-                  <SpeakerInfo
-                    speaker="Speaker 1"
-                    info="Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
-              aut odit aut fugit, sed quia consequuntur magni dolores eos 
-              qui ratione voluptatem sequi nesciunt. Neque porro quisquam est."
-                    img={side_img}
-                  ></SpeakerInfo>
-                  <SpeakerInfo
-                    speaker="Speaker 2"
-                    info="Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
-              aut odit aut fugit, sed quia consequuntur magni dolores eos 
-              qui ratione voluptatem sequi nesciunt. Neque porro quisquam est."
-                    img={side_img}
-                  ></SpeakerInfo>
-                  <SpeakerInfo
-                    speaker="Speaker 3"
-                    info="Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
-              aut odit aut fugit, sed quia consequuntur magni dolores eos 
-              qui ratione voluptatem sequi nesciunt. Neque porro quisquam est."
-                    img={side_img}
-                  ></SpeakerInfo>
-                </Row>
-              </Container>
-            </CarouselItem>
-          </Carousel>
+          <SpeakerCarousel speaker_info={speaker_info}>
+          </SpeakerCarousel>
         </Row>
-      </div>
+      </div> */}
       <div>
         <div style={{
           height: '30em', backgroundImage: `url(${about_img})`, backgroundPosition: 'center',
@@ -149,12 +162,12 @@ export default function Home() {
                   <Card.Body>
                     <Card.Title>About Us</Card.Title>
                     <Card.Text>
-                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                      aut odit aut fugit, sed quia consequuntur magni dolores
-                      eos qui ratione voluptatem sequi nesciunt. Neque porro
-                      quisquam est, qui dolorem.
+                      TEDxCornell is organized by a small group of dedicated students. 
+                      We handle all logistics of the event from speaker curation to 
+                      publicity. View our "Our Story" page to learn about our origins
+                      and our current student team. 
                     </Card.Text>
-                    <Button variant="danger">Go somewhere</Button>
+                    <Button variant="danger">Our Story</Button>
                   </Card.Body>
                 </Card>
               </div>

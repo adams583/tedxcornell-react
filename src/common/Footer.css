@@ -3,3 +3,48 @@
   font-size: 20px;
 
 }
+
+div a {
+  text-decoration: none;
+  color: white;
+}
+
+form {
+  display: flex;
+}
+
+.large-text {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+form > input[type="text"] {
+  flex: 3;
+}
+
+.join-message-container {
+  align-items: initial;
+  justify-content: right;
+}
+
+form > input[type="submit"] {
+  text-transform: uppercase;
+  background-color: red;
+  outline: 0;
+  border: 0;
+  padding: 15px 20px;
+  border-radius: 3px;
+  margin-left: 10px;
+  flex: 1;
+}
+
+input[type="email"] {
+  background-color: inherit;
+  border: none;
+  border-bottom: 2px solid white;
+  flex: 3;
+}
+
+input:focus {
+  outline: none;
+}

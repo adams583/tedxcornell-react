@@ -79,7 +79,7 @@ export default function Home() {
                     shifted to a series of virtual events instead of our
                     usual singular main event. The virtual series included
                     two Salon events which were smaller but more interactive,
-                    discussion-based events
+                    discussion-based events.
                     The virtual format allowed for participants to ask
                     our speakers questions and engage with their talks
                     through different activities. The series was concluded

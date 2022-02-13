@@ -79,6 +79,10 @@
   font-size: 36px;
 }
 
+#header-img {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
 
 
 /* sm --- Small devices (landscape phones, 576px and up) */

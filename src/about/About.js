@@ -40,11 +40,11 @@ const section1 = {
   info: [
     {
       title: 'Our Founders',
-      body: `In 2017, our group's fouder Kirkland Sugrim and Adam Skrocki
-      wanted to bring something special to Cornell. There words to each other one
+      body: `In 2017, our group's founders Kirkland Sugrim and Adam Skrocki
+      wanted to bring something special to Cornell. Their words to each other one
       day: 
-      “Dude we have to do something incredible in our time here. 
-      What if we organized TED talks here at Cornell for the students body?”
+      “We have to do something incredible in our time here. 
+      What if we organized TED talks here at Cornell for the student body?”
       That single moment defined four years of time for Adam and Kirk.
       Through the help of Eri Kato, Emily Chen, and Uzair Butt, 
       they worked hard to bring speakers from around the world to share 
@@ -74,8 +74,7 @@ const section2 = {
      before Wurman and Marks tried again. This time, in 1990, the world was ready.
       The TED Conference became an annual event in Monterey, California,
        attracting a growing and influential audience from many different 
-       disciplines united by their curiosity and open-mindedness -- and 
-       also by their shared discovery of an exciting secret.`
+       disciplines united by their curiosity and open-mindedness.`
     },
   ]
 }

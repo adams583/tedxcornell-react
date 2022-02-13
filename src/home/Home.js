@@ -46,7 +46,7 @@ function MailingList() {
 
   return (<div>
     <div className="py-2">
-      <Form 
+      <Form
         name="home-submit-to-google-sheet">
         <Form.Control className="p" name="email"
           type="text" placeholder="Enter Email" required />
@@ -240,10 +240,10 @@ class Events extends Component {
     return (
       <div>
         <div style={{
-          height: '30em', backgroundImage: `url(${page_img})`, backgroundPosition: 'center',
+          backgroundImage: `url(${page_img})`, backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover'
-        }} className="d-flex align-items-center">
+          backgroundSize: 'cover',
+        }} className="d-flex align-items-center" id="header-img">
           <Container className="d-flex align-items-center text-white">
             <div className="mx-auto">
               <Countdown ></Countdown>
@@ -347,8 +347,8 @@ class Events extends Component {
               <Col className="py-3">
                 <h1>Want to learn more about TEDxCornell?</h1>
                 <p className="py-3">Want to be up to date on current TEDxCornell
-                  news? Sign up here and we’ll send you exciting updates
-                  on the world of TEDxCornell. .</p>
+                  news? Sign up here and we'll send you exciting updates
+                  on the world of TEDxCornell. </p>
                 <p><b>Subscribe to get the latest TEDx news!</b></p>
                 <MailingList></MailingList>
               </Col>

@@ -82,8 +82,8 @@ class Footer extends Component {
                     <Stack gap={2} className="my-auto">
                       <p><b>Our Events</b></p>
                       <Stack gap={1} className="my-auto">
-                        <div><a href="/events">Main Event</a></div>
-                        <div><a href="/">TEDx Salons</a></div>
+                        <div><a href="/">Main Event</a></div>
+                        <div><a href="/past_events">TEDx Salons</a></div>
                         <div><a href="faq">FAQ</a></div>
                       </Stack>
                     </Stack>

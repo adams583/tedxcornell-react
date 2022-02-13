@@ -5,11 +5,11 @@
     "info": [
       {
         "question": "Can I help organize the event?",
-        "answer": "Our team is fully staffed this semester, but check back next semester! Look out for volunteer opportunities as another way to get involved"
+        "answer": "Our team is fully staffed this semester, but check back next semester! Look out for volunteer opportunities as another way to get involved."
       },
       {
-        "question": "When is the event?",
-        "answer": "There is no confirmed date at this moment, but when this information is available it will be posted on our home page."
+        "question": "When/Where is the event?",
+        "answer": "Our event is April 16th at Kennedy Hall, more information will be posted on our home page soon!"
       },
       {
         "question": "Who sponsors your event?",
@@ -21,7 +21,7 @@
       },
       {
         "question": "Can anyone come to the event?",
-        "answer": "Yes! Our events will most likely be online this year so if you’re free you are welcome to come to any event!"
+        "answer": "Yes! Stay tuned for more information on ticket sales for our April 16th conference."
       },
       {
         "question": "How can I register for the event?",
@@ -29,7 +29,7 @@
       },
       {
         "question": "Do the events have themes?",
-        "answer": "Our 2019 event’s theme was “Reframe”. While some of our previous events were not themed, we plan on having themes from here on out."
+        "answer": "Yes! This year’s event theme is “Unmuted”. Past themes include “Reframe” and “Uproot”."
       }
     ]
   },
@@ -39,7 +39,7 @@
     "info": [
       {
         "question": "What is TED?",
-        "answer": "TED is a nonprofit devoted to spreadong ideas, usually in the form of short, powerful talks. TED began in 1984 as a conference where Technology, Entertainment, and Design converbed, and today covers almost all topics -- from science to business to global issues."
+        "answer": "TED is a nonprofit devoted to spreading ideas, usually in the form of short, powerful talks. TED began in 1984 as a conference where Technology, Entertainment, and Design converged, and today covers almost all topics -- from science to business to global issues."
       },
       {
         "question": "What is TEDx?",
@@ -47,7 +47,7 @@
       },
       {
         "question": "Who runs TEDxCornell?",
-        "answer": "Operating under an official license from TED, a group of student volunteers organize and host each TEDxCornelll event. For more information about the team, check out our meet the team page!"
+        "answer": "Operating under an official license from TED, a group of student volunteers organize and host each TEDxCornelll event. For more information about the team, check out our Our Story page!"
       },
       {
         "question": "What can I expect at a TEDx event?",
@@ -55,7 +55,7 @@
       },
       {
         "question": "How many TEDxCornell conferences have been held so far?",
-        "answer": "While our 2020 event was cancelled this year, we have held 4 total conferences. To learn more about the history of TEDxCornell, check out the Our Story page!"
+        "answer": "We have held 5 total conferences. To learn more about the history of TEDxCornell, check out the Our Story page!"
       },
       {
         "question": "How are TEDx events sponsored?",

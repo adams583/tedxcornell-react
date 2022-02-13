@@ -231,30 +231,6 @@ const julia = {
   sub_teams: ["Finance"]
 }
 
-const laila = {
-  name: "Laila Rahbari",
-  info: "Info about Laila",
-  img: laila_pic,
-  title: "Speaker Curation",
-  linked: "https://www.linkedin.com/in/laila-rahbari/"
-}
-
-const sam_s = {
-  name : "Sam Straus",
-  info: "Info about Sam", 
-  img: sam_s_pic, 
-  title: "Speaker Curation & Finance", 
-  linked: "https://www.linkedin.com/in/sam-straus/"
-}
-
-const julia = {
-  name : "Julia Thomson", 
-  info : "Info about Julia", 
-  img: julia_pic, 
-  title : "Finance", 
-  linked : "https://www.linkedin.com/in/julia-g-thomson/"
-}
-
 const team2022 = [
   aidan, alina, arnav, caroline, jessi, julia, kim, laila, paulina, sam, sam_s
 ]

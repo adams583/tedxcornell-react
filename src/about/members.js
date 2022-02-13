@@ -11,7 +11,7 @@ import hebani_pic from "../img/hebani.jpeg";
 import uzair_pic from "../img/uzair.jpg";
 import mike_pic from "../img/mike_pic.jpg";
 import lawrence_pic from "../img/lawrence_pic.jpg";
-import alina_pic from "../img/alina.png";
+import alina_pic from "../img/alina_pic.jpg";
 import kim_pic from "../img/kim.jpg";
 import milena_pic from "../img/milena.png";
 import paulina_pic from "../img/paulina_pic.jpg";

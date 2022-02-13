@@ -91,17 +91,20 @@ function TeamCarousel(props) {
       {group.map(member =>
         <div className="col-md-4 py-3 d-flex justify-content-center">
           <Card bg='dark' text='light' >
-            <Card.Img variant="top" style={{ height: '15em' }} src={member.img} />
+            <a target="_blank" href={member.linked}>
+              <Card.Img variant="top" style={{ height: '15em' }} src={member.img} />
+            </a>
             <Card.Body>
               <Card.Title>{member.name}</Card.Title>
-              <Card.Text>
+              <Card.Text style={{ fontSize: member.textSize ? member.textSize : '16px' }} >
                 {member.info}
               </Card.Text>
             </Card.Body>
           </Card>
         </div>
-      )}
-    </Row>);
+      )
+      }
+    </Row >);
 
     // If less members than grouping length, we don't want a carousel 
     if (props.team.length <= maxGroupingLength)

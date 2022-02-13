@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import "./Footer.css";
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
@@ -13,21 +13,49 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 library.add(faLinkedin, faFacebook, faInstagram);
 
-class Footer extends Component {
+function MailingList() {
+  const [inMailList, setInMailList] = useState(false)
 
-   handleSubmit(e) {
+  function handleSubmit() {
     const scriptURL =
       "https://script.google.com/macros/s/AKfycbwcZNKses-XNAzdA9U6LwSr4MTsD4CvuoBZrNfESnam5rMuk38m/exec";
-    e.preventDefault();
     const form = document.forms["footer-submit-to-google-sheet"];
 
     fetch(scriptURL, { method: "POST", body: new FormData(form) })
       .then(function (response) {
         form.reset();
         console.log("Success!", response);
+        setInMailList(true)
       })
       .catch(error => console.error("Error!", error.message));
   }
+
+  return (<Stack className="my-auto">
+    <h3>Join Our Mailing List</h3>
+    <div className="sign-up-container">
+      <form
+        name="footer-submit-to-google-sheet"
+      >
+        <input
+          name="email"
+          type="email"
+          placeholder="Enter your email"
+          required
+        />
+        {
+        inMailList ?
+        <div style={{ backgroundColor: 'green' }} className="text-white  w-25 rounded text-center">
+          <h4 className="py-2">Joined!</h4>
+        </div> :
+        <Button variant="danger" onClick={handleSubmit}>Sign Up</Button>
+        }
+      </form>
+    </div>
+  </Stack>)
+}
+
+class Footer extends Component {
+
 
 
   render() {
@@ -61,29 +89,13 @@ class Footer extends Component {
                     </Stack>
                   </div>
                   <div className="col-md-6 d-flex align-items-center">
-                    <Stack className="my-auto">
-                      <h3>Join Our Mailing List</h3>
-                      <div className="sign-up-container">
-                        <form
-                          onSubmit={this.handleSubmit}
-                          name="footer-submit-to-google-sheet"
-                        >
-                          <input
-                            name="email"
-                            type="email"
-                            placeholder="Enter your email"
-                            required
-                          />
-                          <Button variant="danger" onClick={this.handleSubmit}>Sign Up</Button>
-                        </form>
-                      </div>
-                    </Stack>
+                    <MailingList></MailingList>
                   </div>
                 </Row>
               </Container>
             </div>
           </Row>
-          <Container className="py-3"style={{ width: '95%' }}>
+          <Container className="py-3" style={{ width: '95%' }}>
             <Row className="justify-content-between bg-dark border-top py-4" >
               <div className="col-4 py-1 d-flex align-items-center  text-danger">
                 <p className="pt-2">Ideas worth spreading</p>

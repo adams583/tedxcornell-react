@@ -1,47 +1,29 @@
-#body {
-  display: none;
+#new-info-slide {
+  background-color: whitesmoke;
 }
 
-.speech-info {
-  font-size: 14px;
+#new-info-slide h1 {
+  font-size: 48px;
 }
 
-#year {
-  font-size: 60px;
-  /* background-color: #ff2a05;
-  border-radius: 20%; */
+#new-info-slide span {
+  color: red;
+  font-weight: bold;
 }
 
-.info {
-  display: none !important;
-  color: blue;
+#new-info-slide h3 {
+  font-size: 24px;
+  line-height: 1.5em;
 }
 
-.countdown {
-  color: seashell
-}
-.countdown h1 {
-  font-size: 60px;
-}
-.countdown h4 {
-  font-size: 30px;
-}
-.countdown .btn {
-  border: 1px solid maroon;
-  width: 10em;
+#speakers-slide {
+  background-color: white;
 }
 
-.event-info {
-  background-color: linen;
+#speakers-slide h1 { 
+  padding-top: 3em;
 }
 
-.event-info h1 {
-  font-size: 50px;
-}
-
-#event-name {
-  font-family: "Monoton";
-}
 
 #past-section {
   background-color: #353839;
@@ -68,34 +50,9 @@
 
 }
 
-.event-date {
-  font-size: 14px;
-}
-
-
-
-
-/* sm --- Small devices (landscape phones, 576px and up) */
-@media (max-width: 900px) {
-  #overlay {
-    transform: 0;
+@media (max-width: 1200px) {
+  .container {
+    width: 80%;
   }
-}
 
-@media (min-width: 900px) {
-  #overlay {
-  transform: translateY(-50%);
-}
-}
-
-/* md --- Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-}
-
-/* lg --- Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-}
-
-/* xl --- Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
 }

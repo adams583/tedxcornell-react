@@ -18,7 +18,7 @@ import "./TopNav.css";
 function TopNav(props) {
     const navItems = [
         { title: "Home", href: "/" },
-        { title: "Event", href: "/events" },
+        { title: "Past Events", href: "/past_events" },
         { title: "Our Story", href: "/team" },
         { title: "Apply", href: "/apply" },
         { title: "FAQ", href: "/faq" },

@@ -125,7 +125,7 @@ const lawrence = {
 
 const alina = {
   name: "Alina Pereyra",
-  info: "Info about Alina",
+  info: "ILR '23",
   img: alina_pic,
   title: "Marketing and Finance",
   linked: "https://www.linkedin.com/in/alina-pereyra-710321168/",
@@ -134,7 +134,7 @@ const alina = {
 
 const caroline = {
   name: "Caroline Ryu",
-  info: "Info about Caroline",
+  info: "ORIE '24",
   img: caroline_pic,
   title: "Finance",
   linked: "https://www.linkedin.com/in/caroline-ryu-74647a163/",
@@ -143,7 +143,7 @@ const caroline = {
 
 const sam = {
   name: "Samantha Ivey",
-  info: "Info about Sam",
+  info: "ILR '24",
   img: sam_pic,
   title: "Design and Marketing",
   linked: "https://www.linkedin.com/in/samantha-ivey-8b71031a9/",
@@ -160,7 +160,8 @@ const milena = {
 
 const jessi = {
   name: "Jessi Schlewitt",
-  info: "Info about Jessi",
+  info: "Human Biology, Health, & Society '24",
+  textSize:'12px',
   img: jessi_pic,
   title: "Speaker Curation",
   linked: "https://www.linkedin.com/in/jessica-schlewitt/",
@@ -169,7 +170,8 @@ const jessi = {
 
 const kim = {
   name: "Kimberly Garcia",
-  info: "Info about Kim",
+  info: "Environment & Sustainability '22",
+  textSize: '14px',
   img: kim_pic,
   title: "Marketing and Speakers",
   linked: "https://www.linkedin.com/in/kimberly-garcia-2491341ab/",
@@ -178,7 +180,7 @@ const kim = {
 
 const paulina = {
   name: "Paulina Klubok",
-  info: "Info about Paulina",
+  info: "ILR '23",
   img: paulina_pic,
   title: "Speaker Curation",
   linked: "https://www.linkedin.com/in/paulinaklubok/",
@@ -187,7 +189,7 @@ const paulina = {
 
 const arnav = {
   name: "Arnav Parashar",
-  info: "Info about Arnav",
+  info: "Computer Science '24",
   img: arnav_pic,
   title: "Web Development",
   linked: "https://www.linkedin.com/in/arnav-parashar-3a6932206/",
@@ -196,7 +198,7 @@ const arnav = {
 
 const aidan = {
   name: "Aidan Helfant",
-  info: "Info about Aidan",
+  info: "Human Development '25",
   img: aidan_pic,
   title: "Design and Marketing",
   linked: "https://www.linkedin.com/in/aidanhelfant/",
@@ -204,7 +206,7 @@ const aidan = {
 }
 const laila = {
   name: "Laila Rahbari",
-  info: "Info about Laila",
+  info: "ILR '25",
   img: laila_pic,
   title: "Speaker Curation",
   linked: "https://www.linkedin.com/in/laila-rahbari/",
@@ -213,7 +215,7 @@ const laila = {
 
 const sam_s = {
   name: "Sam Straus",
-  info: "Info about Sam",
+  info: "AEM '24",
   img: sam_s_pic,
   title: "Speaker Curation & Finance",
   linked: "https://www.linkedin.com/in/sam-straus/",
@@ -222,7 +224,7 @@ const sam_s = {
 
 const julia = {
   name: "Julia Thomson",
-  info: "Info about Julia",
+  info: "AEM '23",
   img: julia_pic,
   title: "Finance",
   linked: "https://www.linkedin.com/in/julia-g-thomson/",

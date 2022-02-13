@@ -19,6 +19,13 @@ import {
 } from "./speakers/speaker-profiles";
 import FAQ from "./faq/FAQ";
 import Sponsors from "./sponsors/Sponsors";
+// import ReactGA from 'react-ga';
+// import RouteChangeTracker from './routeChangeTracker'
+
+
+// const TRACKING_ID = "G-EJKGPZQESW"; 
+// ReactGA.initialize(TRACKING_ID);
+
 
 export default function App() {
   // Initialize AOS: https://michalsnik.github.io/aos/
@@ -26,9 +33,11 @@ export default function App() {
   return (
     <div className="App">
       <Router>
+        {/* <RouteChangeTracker /> */}
+
         <React.Fragment>
           <TopNav />
-          
+
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/past_events" component={Events} />

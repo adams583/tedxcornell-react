@@ -2,6 +2,10 @@
   "name": "first-react-attempt",
   "version": "0.1.0",
   "private": false,
+  "engines": {
+    "node": "14.17.x",
+    "npm": "6.14.x"
+  },
   "dependencies": {
     "@fontsource/monoton": "^4.5.0",
     "@fontsource/staatliches": "^4.5.0",
@@ -24,6 +28,7 @@
     "react": "^16.14.0",
     "react-bootstrap": "^2.0.2",
     "react-dom": "^16.14.0",
+    "react-ga": "^3.3.0",
     "react-helmet": "^5.2.1",
     "react-meta-tags": "^0.7.4",
     "react-photo-gallery": "^6.3.4",

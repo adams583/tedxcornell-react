@@ -8,7 +8,6 @@ function ProfilePanel(props) {
     const borderStyles = props.reversed ? { borderRight: "solid thick var(--accent)" } : { borderLeft: "solid thick var(--accent)" }
 
     return (
-        
         <div className="profile-container" style={{ flexDirection: props.reversed ? "row-reverse" : "row" }}>
             <div className="profile-visual">
                 <div>

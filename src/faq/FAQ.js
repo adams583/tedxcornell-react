@@ -1,53 +1,28 @@
 import React, { useState } from "react";
 import "./FAQ.css";
-import { Accordion } from "react-bootstrap";
-import Collapsible from "../common/collapsible/Collapsible.js";
-import CardSelector from "./CardSelector";
-import { FAQ_INFO } from "./faqInfo";
-import classNames from "classnames";
+import page_img from "../img/cornellfall2.png"
+import ImageTextOverlay from "../common/ImageTextOverlay";
+import InfoSection from "../faq/InfoSection"
+import facts from "../faq/faq.json"
 
 const FAQ = React.memo(function FAQFn() {
-  const faqCategoryIds = Object.keys(FAQ_INFO);
-  const [category, setCategory] = useState(faqCategoryIds[0]);
 
   return (
-    <div className="faq">
-      <div className="pb-3">
-        <h4>Learn more about us and our event</h4>
-        <h1>Frequently Asked Questions</h1>
-      </div>
-      <div className="faq-content">
-        <div className="faq-selector-container">
-          {faqCategoryIds.map((categoryId) => {
-            const { title, text } = FAQ_INFO[categoryId].selectorInfo;
-            return (
-              <CardSelector
-                onClick={() => setCategory(categoryId)}
-                title={title}
-                text={text}
-                selected={category === categoryId}
-              />
-            );
-          })}
-          <div className={classNames("other-card", "large-screen-only")}>
-            <h5>Anything else?</h5>
-            <p>
-              Feel free to email us anytime with any other questions at &nbsp;
-              <span className="text-accent">tedx@cornell.edu</span>
-            </p>
-          </div>
-        </div>
-        <Accordion accordion className="faq-questions-container" id="faq-panel-group">
-          {FAQ_INFO[category].faq.map(({ question, answer }, idx) => (
-            // Idx not a unique key by itself since we potentially render 3 lists.
-            <div className ="py-3">
-            <Collapsible key={`${category}-${idx}`} title={question}>
-              <div>{answer}</div>
-            </Collapsible>
-            </div>
-          ))}
-        </Accordion>
-      </div>
+    <div>
+      <ImageTextOverlay
+        title="Frequently Asked Questions"
+        body="Learn More About Our Events"
+        img={page_img}
+      >
+      </ImageTextOverlay>
+      {facts.map(fact =>
+        <InfoSection
+          color={fact.color}
+          title={fact.title}
+          info={fact.info}
+        >
+        </InfoSection>
+      )}
     </div>
   );
 });

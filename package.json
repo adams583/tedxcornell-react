@@ -7,11 +7,13 @@
     "npm": "6.14.x"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fontsource/monoton": "^4.5.0",
+    "@fontsource/staatliches": "^4.5.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
     "@fortawesome/free-regular-svg-icons": "^5.15.2",
-    "@fortawesome/free-solid-svg-icons": "^5.15.2",
-    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
     "@material-ui/core": "^3.9.4",
     "ajv": "^6.12.6",
     "animejs": "^2.2.0",
@@ -30,10 +32,12 @@
     "react-helmet": "^5.2.1",
     "react-meta-tags": "^0.7.4",
     "react-photo-gallery": "^6.3.4",
+    "react-reveal": "^1.2.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^2.1.8",
-    "react-youtube": "^7.13.1"
+    "react-youtube": "^7.13.1",
+    "scrollreveal": "^4.0.9"
   },
   "scripts": {
     "start": "react-scripts start",

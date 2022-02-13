@@ -1,180 +1,152 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import "./Apply.css";
-import { Container, Row, Col, Accordion } from "react-bootstrap";
-import Collapsible from "../common/collapsible/Collapsible";
-import CustomButton from "../common/buttons/CustomButton";
+import ImageTextOverlay from "../common/ImageTextOverlay";
+import header_img from "../img/cornellpic2.jpg"
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
+import Card from "react-bootstrap/Card"
+import Button from "react-bootstrap/Button"
+import Stack from "react-bootstrap/Stack"
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faMicrophoneAlt, faVoteYea, faEnvelope, faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-class Apply extends Component {
-  constructor(props) {
-    super(props);
+library.add(faMicrophoneAlt, faVoteYea, faEnvelope, faBriefcase)
+
+const applyCards = [
+  {
+    fa: 'microphone-alt',
+    header: 'Apply To Be Speaker',
+    info: `Do you have an idea worth spreading? The TEDxCornell stage is the 
+    perfect place to share it! Apply today to potentially get selected as a 
+    speaker for our next event!`,
+    //   button: 'Apply Now!',
+    message: 'Applications are Closed'
+  },
+  {
+    fa: 'vote-yea',
+    header: 'Nominate A Speaker',
+    info: `Is there someone you think would make a fantastic speaker at an event?
+    Nominate them! `,
+    message: 'Email: tedx@cornell.edu'
+  },
+  {
+    fa: 'envelope',
+    header: 'Join Our Mailing List',
+    info: `Join our mailing list to keep up to date with all the latest 
+    TEDxCornell news, such as the speaker line up, our next event date, 
+    and all of the other exciting things we do throughout the year! `,
+    // button: 'Join Now!',
+    mailList: true
+  },
+  {
+    fa: 'briefcase',
+    faType: 'fa-solid',
+    header: 'Join the TEDxCornell Team',
+    info: `We are currently looking for students to join our team to help organize
+    and market the event. If you have an interest in marketing, a passion for design, 
+    or experience in videography`,
+    button: 'Apply Now!',
+    href:'https://forms.gle/op1FhgQCt9kZdioy6'
   }
+]
 
-  handleSubmit(e) {
+
+function MailingList() {
+  const [inMailList, setInMailList] = useState(false)
+
+  function handleSubmit() {
     const scriptURL =
       "https://script.google.com/macros/s/AKfycbwcZNKses-XNAzdA9U6LwSr4MTsD4CvuoBZrNfESnam5rMuk38m/exec";
-    e.preventDefault();
     const form = document.forms["apply-submit-to-google-sheet"];
 
     fetch(scriptURL, { method: "POST", body: new FormData(form) })
       .then(function (response) {
         form.reset();
         console.log("Success!", response);
+        setInMailList(true)
       })
       .catch(error => console.error("Error!", error.message));
   }
 
-  applyCards = [
-    {
-      title: "Team Applications",
-      subtitle: "Team Applications are currently closed",
-      text: `Applications to join our team will be open again next Fall!
-       Follow our instagram page @tedxcornell and join our mailing list
-      to be informed when applications open!`,
-      button: false
-    },
-    {
-      title: "Volunteering Opportunities",
-      subtitle: "Join our mailing list to hear about volunteering opportunities",
-      text: "From tabling at our event to making sure everyone is where they are supposed to be, volunteers are an essential part of running a great event. Volunteering can also be a good way to get a sense for whether you'd be interested in joining the team."
-    },
-    {
-      title: "Speaker Applications",
-      subtitle: "Speaker applications for our Spring 2022 Event are now closed",
-      text: "We are no longer accepting speaker applications for Spring 2022. If you would like to be a speaker, please come back and apply in the fall!",
-      button: false,
-      application: "https://forms.gle/EgPknDZjN1JfL4M48"
-    },
-  ]
+  return (
+      <form
+        name="apply-submit-to-google-sheet"
+        style={{ backgroundColor: 'LightGray' }}
+        className="rounded"
+      >
+        <input
+          name="email"
+          type="email"
+          placeholder="Enter your email"
+          className="rounded "
+          required
+        />
+        {
+          inMailList ?
+            <div style={{ backgroundColor: 'green' }} className="text-white  w-25 rounded text-center">
+              <h4 className="py-2">Joined!</h4>
+            </div> :
+            <Button variant="danger" onClick={handleSubmit}>Sign Up</Button>
+        }
+      </form>
+  )
+}
 
-  faq = [
-    {
-      key: "1",
-      question: "Can anyone apply to be a speaker?",
-      answer:
-        "Yes! We're looking for individuals who believe that they have a story, idea, or passion worth sharing."
-    },
-    {
-      key: "2",
-      question: "What roles are available on the organizing team?",
-      answer:
-        "Our organizers work on speaker curation, finance and sponsorship, design and marketing, website design, and more. "
-    },
-    {
-      key: "3",
-      question: "Are there other ways to get involved?",
-      answer:
-        "In the past we have looked for volunteers willing to help with tasks leading up to the event and on the day of the event. If you'd like to meet the team and get a sense of what it's like being on the organizing side of the event, this is a great option."
-    },
-    {
-      key: "4",
-      question: "Do you compensate speakers?",
-      answer: "TEDx events are not allowed to pay speakers; however, we can cover travel and lodging for speakers outside of Ithaca. We do our best to provide all the support we can to our speakers."
-    }
-  ];
+class Apply extends Component {
+
+
 
   render() {
     return (
-      <div className="apply-div">
-        <Container>
-          <Row>
-            <h2>Interested in being part of the organizing team?</h2>
+      <div>
+        <ImageTextOverlay
+          title="Apply"
+          body="Interested in working with TEDxCornell?"
+          img={header_img}
+        >
+        </ImageTextOverlay>
+        <Container className="my-3" style={{ fontFamily: "Montserrat", fontSize: "24px", lineHeight: '36px' }}>
+          <Row className="pt-4 px-3">
+            <Col className="col-md-8">
+              We're always looking for new voices and new ideas to add
+              to the TED community. Through our TEDxCornell main event
+              and newly introduced salon series, we take those great ideas
+              and help them grow — but they start with your suggestions.
+            </Col>
           </Row>
-          <Row>
-            <h4>Our applications for this year are closed. The next recruiting cycle will be in Fall 2022. We'd love to hear from you!</h4>
+          <Row className="mt-3 px-3" style={{ color: "red" }}>
+            <b>See all the ways to get involved and let us know about
+              the most exciting, talented people in your network.</b>
           </Row>
-
-          {this.applyCards.map((card, index) => (
-            <Row>
-              <Col md={9}>
-
-                <h3>{card.title}</h3>
-                <p className="left-border">
-                  <b>{card.subtitle}</b>
-                  <br />
-                  {card.text}
-                  {card.title == "Information Sessions" &&
-                    <p>9/17 Information Session: <a>{card.link1}</a>
-                      <br />
-                      9/21 Information Session: <a>{card.link2}</a>
-                    </p>
-                  }
-
-
-                  <div className="padding-top">
-                    {card.title == "Speaker Applications"}
-                  </div>
-                </p>
-                {card.button && <CustomButton color="#08b2e3" text="Apply Now" lightText href={card.application} />}
-              </Col>
+          <Container className="py-3">
+            <Row className="justify-content-evenly">
+              {
+                applyCards.map(card =>
+                  <Col md={5} className="py-3">
+                    <Card className="apply-card text-center py-3 px-4 h-100">
+                      <Card.Body>
+                        { card.faType ? 
+                          <FontAwesomeIcon style={{ fontSize: '45px', color: 'red' }} icon={card.fa}></FontAwesomeIcon> :
+                          <FontAwesomeIcon style={{ fontSize: '45px', color: 'red' }} icon={['fas', card.fa]}></FontAwesomeIcon>
+                          }
+                        <div className="pt-4">
+                          <h4><b>{card.header}</b></h4>
+                          <p className="py-3">{card.info}</p>
+                          {card.button && <a href={card.href} target="_blank"><Button variant="outline-danger">{card.button}</Button></a>}
+                          {!card.button && card.message && <div className="text-danger"><p>{card.message}</p></div>}
+                          {card.mailList && <MailingList></MailingList>}
+                        </div>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                )
+              }
             </Row>
-          ))}
-
-          <Row>
-            <Col md={4}>
-              <div>
-                <h3>Join our mailing list</h3>
-
-                <form
-                  onSubmit={this.handleSubmit}
-                  name="apply-submit-to-google-sheet"
-                  className="apply-page-form"
-                >
-                  <input
-                    name="email"
-                    type="email"
-                    placeholder="Enter your email"
-                    required
-                    style={{ borderBottom: "2px solid gray" }}
-
-                  />
-                  <input
-                    className="apply-page-form-button"
-                    type="submit"
-                    value="Sign up"
-                    style={{ backgroundColor: "#08B2E3", color: "whitesmoke" }}
-                  />
-                </form>
-                <br />
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col md={6}>
-              <h3>More Information</h3>
-              <Accordion accordion id="panelGroup">
-                {this.faq.map((qa, index) => (
-                  <Collapsible key={index} title={qa.question}>
-                    <div>{qa.answer}</div>
-                  </Collapsible>
-                ))}
-              </Accordion>
-            </Col>
-          </Row>
-          <Row>
-            <Col md={6}>
-              <h3>Get in touch</h3>
-              <p>
-                Feel free to send us an email at
-                <strong> tedx@cornell.edu </strong>
-                or find us on social media!
-              </p>
-              <br />
-              <div className="social-links-container">
-                <a href="https://www.facebook.com/TEDxCornellUniversity/">
-                  <i className="fab fa-facebook fa-icon" />
-                </a>
-                <a href="https://www.instagram.com/tedxcornelluniversity/">
-                  <i className="fab fa-instagram fa-icon" />
-                </a>
-                <a href="https://www.linkedin.com/company/tedxcornell/about/">
-                  <i className="fab fa-linkedin fa-icon" />
-                </a>
-              </div>
-
-            </Col>
-          </Row>
+          </Container>
         </Container>
-      </div>
+      </div >
     );
   }
 }

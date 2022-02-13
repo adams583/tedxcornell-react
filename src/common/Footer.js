@@ -1,94 +1,116 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import "./Footer.css";
-import { Col } from "react-bootstrap";
+import Container from "react-bootstrap/Container"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image"
+import Stack from "react-bootstrap/Stack"
+import Button from "react-bootstrap/Button"
+import logo from "../img/HomeLogo.png"
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faFacebook, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-class Footer extends Component {
-  constructor(props) {
-    super(props);
-  }
+library.add(faLinkedin, faFacebook, faInstagram);
 
-  handleSubmit(e) {
+function MailingList() {
+  const [inMailList, setInMailList] = useState(false)
+
+  function handleSubmit() {
     const scriptURL =
       "https://script.google.com/macros/s/AKfycbwcZNKses-XNAzdA9U6LwSr4MTsD4CvuoBZrNfESnam5rMuk38m/exec";
-    e.preventDefault();
     const form = document.forms["footer-submit-to-google-sheet"];
 
     fetch(scriptURL, { method: "POST", body: new FormData(form) })
-      .then(function(response) {
+      .then(function (response) {
         form.reset();
         console.log("Success!", response);
+        setInMailList(true)
       })
       .catch(error => console.error("Error!", error.message));
   }
 
-  render() {
-    return (
-      <div className="footer-panel flex-vertical">
-        <div className="footer-content-container">
-          <div className="footer-left flex-vertical">
-            <div className="logo-container">
-              <h1><strong className="text-red">TEDx</strong>Cornell</h1>
-            </div>
-            <div className="links-container ">
-              <Col xs={6} sm={6} md={4} lg={4} xl={4}>
-                <a href="/">Home</a>
-              </Col>
-              <Col xs={6} sm={6} md={4} lg={4} xl={4}>
-                <a href="/about">About</a>
-              </Col>
-              <Col xs={6} sm={6} md={4} lg={4} xl={4}>
-                <a href="/events">Events</a>
-              </Col>
-              <Col xs={6} sm={6} md={4} lg={4} xl={4}>
-                <a href="/apply">Apply</a>
-              </Col>
-              <Col xs={6} sm={6} md={4} lg={4} xl={4}>
-                <a href="/faq">FAQ</a>
-              </Col>
-              <Col xs={6} sm={6} md={4} lg={4} xl={4}>
-                <a href="/sponsors">Sponsors</a>
-              </Col>
-            </div>
-          </div>
-          <div className="footer-right flex-vertical">
-            <div className="large-text">Join Our Mailing List</div>
-            <div>
-              <p>
-                Sign up for event details and opportunities to volunteer, join
-                the team, or speak at our event.
-              </p>
-            </div>
-            <div className="sign-up-container">
-              <form
-                onSubmit={this.handleSubmit}
-                name="footer-submit-to-google-sheet"
-              >
-                <input
-                  name="email"
-                  type="email"
-                  placeholder="Enter your email"
-                  required
-                />
-                <input type="submit" value="Sign Up"/>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div className="icons-container">
-          <a href="https://www.facebook.com/TEDxCornellUniversity/">
-            <i className="fab fa-facebook fa-icon" />
-          </a>
-          <a href="https://www.instagram.com/tedxcornelluniversity/">
-            <i className="fab fa-instagram fa-icon" />
-          </a>
-          <a href="https://www.linkedin.com/company/tedxcornell/about/">
-            <i className="fab fa-linkedin fa-icon" />
-          </a>
-        </div>
-        <div className="hr-div" />
-      </div>
-    );
-  }
+  return (<Stack className="my-auto">
+    <h3>Join Our Mailing List</h3>
+    <div className="sign-up-container">
+      <form
+        name="footer-submit-to-google-sheet"
+      >
+        <input
+          name="email"
+          type="email"
+          placeholder="Enter your email"
+          required
+        />
+        {
+        inMailList ?
+        <div style={{ backgroundColor: 'green' }} className="text-white  w-25 rounded text-center">
+          <h4 className="py-2">Joined!</h4>
+        </div> :
+        <Button variant="danger" onClick={handleSubmit}>Sign Up</Button>
+        }
+      </form>
+    </div>
+  </Stack>)
 }
 
+class Footer extends Component {
+
+
+
+  render() {
+    return (
+      <div id="footer">
+        <Container className="bg-dark text-white" fluid>
+          <Row className="justify-content-around py-5" >
+            <div className="col-sm-4 d-flex align-items-center">
+
+              <Image style={{ width: '80%' }} src={logo} alt="Image not rendering" fluid></Image>
+            </div>
+            <div className="col-sm-7">
+              <Container style={{ height: "100%" }}>
+                <Row className="justify-content-around" style={{ height: "100%" }}>
+                  <div className="col-md-3 d-flex align-items-center" >
+                    <Stack gap={2} className=" my-auto">
+                      <p><b>About Us</b></p>
+                      <Stack gap={1} className=" my-auto">
+                        <div><a href="/team">Our Story</a></div>
+                      </Stack>
+                    </Stack>
+                  </div>
+                  <div className="col-md-3 d-flex align-items-center">
+                    <Stack gap={2} className="my-auto">
+                      <p><b>Our Events</b></p>
+                      <Stack gap={1} className="my-auto">
+                        <div><a href="/events">Main Event</a></div>
+                        <div><a href="/">TEDx Salons</a></div>
+                        <div><a href="faq">FAQ</a></div>
+                      </Stack>
+                    </Stack>
+                  </div>
+                  <div className="col-md-6 d-flex align-items-center">
+                    <MailingList></MailingList>
+                  </div>
+                </Row>
+              </Container>
+            </div>
+          </Row>
+          <Container className="py-3" style={{ width: '95%' }}>
+            <Row className="justify-content-between bg-dark border-top py-4" >
+              <div className="col-4 py-1 d-flex align-items-center  text-danger">
+                <p className="pt-2">Ideas worth spreading</p>
+              </div>
+              <div id="socials" className="col-4  d-flex align-items-center justify-content-around">
+                <span>Follow Us:</span>
+                <a target="_blank" href="https://www.linkedin.com/company/tedxcornell/about/"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a>
+                <a target="_blank" href="https://www.facebook.com/TEDxCornellUniversity/" ><FontAwesomeIcon icon={['fab', 'facebook']} /></a>
+                <a target="_blank" href="https://www.instagram.com/tedxcornell/" ><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
+              </div>
+            </Row>
+          </Container>
+        </Container>
+      </div>
+    )
+  }
+}
 export default Footer;

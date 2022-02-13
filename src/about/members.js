@@ -125,26 +125,29 @@ const lawrence = {
 
 const alina = {
   name: "Alina Pereyra",
-  info: "Info about Alina",
+  info: "ILR '23",
   img: alina_pic,
-  title: "Logistics & Speaker Curation",
-  linked: "https://www.linkedin.com/in/alina-pereyra-710321168/"
+  title: "Marketing and Finance",
+  linked: "https://www.linkedin.com/in/alina-pereyra-710321168/",
+  sub_teams: ["Finance", "Marketing"]
 };
 
 const caroline = {
   name: "Caroline Ryu",
-  info: "Info about Caroline",
+  info: "ORIE '24",
   img: caroline_pic,
   title: "Finance",
-  linked: "https://www.linkedin.com/in/caroline-ryu-74647a163/"
+  linked: "https://www.linkedin.com/in/caroline-ryu-74647a163/",
+  sub_teams: ["Finance"]
 };
 
 const sam = {
   name: "Samantha Ivey",
-  info: "Info about Sam",
+  info: "ILR '24",
   img: sam_pic,
-  title: "Design & Marketing",
-  linked: "https://www.linkedin.com/in/samantha-ivey-8b71031a9/"
+  title: "Design and Marketing",
+  linked: "https://www.linkedin.com/in/samantha-ivey-8b71031a9/",
+  sub_teams: ["Design", "Marketing"]
 };
 
 const milena = {
@@ -157,42 +160,75 @@ const milena = {
 
 const jessi = {
   name: "Jessi Schlewitt",
-  info: "Info about Jessi",
+  info: "Human Biology, Health, & Society '24",
+  textSize:'12px',
   img: jessi_pic,
   title: "Speaker Curation",
-  linked: "https://www.linkedin.com/in/jessica-schlewitt/"
+  linked: "https://www.linkedin.com/in/jessica-schlewitt/",
+  sub_teams: ["Speaker Curation"]
 };
 
 const kim = {
   name: "Kimberly Garcia",
-  info: "Info about Kim",
+  info: "Environment & Sustainability '22",
+  textSize: '14px',
   img: kim_pic,
-  title: "Marketing & Speakers",
-  linked: "https://www.linkedin.com/in/kimberly-garcia-2491341ab/"
+  title: "Marketing and Speakers",
+  linked: "https://www.linkedin.com/in/kimberly-garcia-2491341ab/",
+  sub_teams: ["Speaker Curation", "Marketing"]
 };
 
 const paulina = {
   name: "Paulina Klubok",
-  info: "Info about Paulina",
+  info: "ILR '23",
   img: paulina_pic,
   title: "Speaker Curation",
-  linked: "https://www.linkedin.com/in/paulinaklubok/"
+  linked: "https://www.linkedin.com/in/paulinaklubok/",
+  sub_teams: ["Speaker Curation"]
 };
 
 const arnav = {
   name: "Arnav Parashar",
-  info: "Info about Arnav",
+  info: "Computer Science '24",
   img: arnav_pic,
   title: "Web Development",
-  linked: "https://www.linkedin.com/in/arnav-parashar-3a6932206/"
+  linked: "https://www.linkedin.com/in/arnav-parashar-3a6932206/",
+  sub_teams: ["Web Dev"]
 }
 
 const aidan = {
   name: "Aidan Helfant",
-  info: "Info about Aidan",
+  info: "Human Development '25",
   img: aidan_pic,
-  title: "Design & Marketing",
-  linked: "https://www.linkedin.com/in/aidanhelfant/"
+  title: "Design and Marketing",
+  linked: "https://www.linkedin.com/in/aidanhelfant/",
+  sub_teams: ["Marketing"]
+}
+const laila = {
+  name: "Laila Rahbari",
+  info: "ILR '25",
+  img: laila_pic,
+  title: "Speaker Curation",
+  linked: "https://www.linkedin.com/in/laila-rahbari/",
+  sub_teams: ["Speaker Curation"]
+}
+
+const sam_s = {
+  name: "Sam Straus",
+  info: "AEM '24",
+  img: sam_s_pic,
+  title: "Speaker Curation & Finance",
+  linked: "https://www.linkedin.com/in/sam-straus/",
+  sub_teams: ["Speaker Curation", "Finance"]
+}
+
+const julia = {
+  name: "Julia Thomson",
+  info: "AEM '23",
+  img: julia_pic,
+  title: "Finance",
+  linked: "https://www.linkedin.com/in/julia-g-thomson/",
+  sub_teams: ["Finance"]
 }
 
 const laila = {
@@ -220,7 +256,7 @@ const julia = {
 }
 
 const team2022 = [
-  aidan, alina, arnav, caroline, jessi, julia,  kim, laila, paulina, sam, sam_s
+  aidan, alina, arnav, caroline, jessi, julia, kim, laila, paulina, sam, sam_s
 ]
 
 const team2021 = [

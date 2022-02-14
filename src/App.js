@@ -28,7 +28,7 @@ const TRACKING_ID = "G-EJKGPZQESW";
 export default function App() {
   // Initialize AOS: https://michalsnik.github.io/aos/
   useEffect(() => {
-    ReactGA.initialize(TRACKING_ID);
+    ReactGA.initialize(TRACKING_ID, { standardImplementation: true });
   })
   AOS.init();
   return (

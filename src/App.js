@@ -19,12 +19,12 @@ import {
 } from "./speakers/speaker-profiles";
 import FAQ from "./faq/FAQ";
 import Sponsors from "./sponsors/Sponsors";
-// import ReactGA from 'react-ga';
-// import RouteChangeTracker from './routeChangeTracker'
+import ReactGA from 'react-ga';
+import RouteChangeTracker from './routeChangeTracker'
 
 
-// const TRACKING_ID = "G-EJKGPZQESW"; 
-// ReactGA.initialize(TRACKING_ID);
+const TRACKING_ID = "G-EJKGPZQESW";
+ReactGA.initialize(TRACKING_ID);
 
 
 export default function App() {
@@ -33,7 +33,7 @@ export default function App() {
   return (
     <div className="App">
       <Router>
-        {/* <RouteChangeTracker /> */}
+        <RouteChangeTracker />
 
         <React.Fragment>
           <TopNav />
@@ -76,7 +76,7 @@ export default function App() {
             <Route component={ErrorPage} />
           </Switch>
 
-          <Footer /> 
+          <Footer />
 
         </React.Fragment>
       </Router>

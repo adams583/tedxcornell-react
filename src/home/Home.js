@@ -324,7 +324,7 @@ class Events extends Component {
                         publicity. View our "Our Story" page to learn about our origins
                         and our current student team.
                       </Card.Text>
-                      <Button variant="danger">Our Story</Button>
+                      <a href="/team"> <Button variant="danger">Our Story</Button></a>
                     </Card.Body>
                   </Card>
                 </div>

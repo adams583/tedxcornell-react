@@ -19,12 +19,8 @@ import {
 } from "./speakers/speaker-profiles";
 import FAQ from "./faq/FAQ";
 import Sponsors from "./sponsors/Sponsors";
-import ReactGA from 'react-ga';
 import RouteChangeTracker from './routeChangeTracker'
 
-
-const TRACKING_ID = "G-EJKGPZQESW";
-ReactGA.initialize(TRACKING_ID);
 
 
 export default function App() {

@@ -23,11 +23,13 @@ import RouteChangeTracker from './routeChangeTracker'
 import ReactGA from 'react-ga';
 
 const TRACKING_ID = "G-EJKGPZQESW";
-ReactGA.initialize(TRACKING_ID);
+
 
 export default function App() {
   // Initialize AOS: https://michalsnik.github.io/aos/
-
+  useEffect(() => {
+    ReactGA.initialize(TRACKING_ID);
+  })
   AOS.init();
   return (
     <div className="App">

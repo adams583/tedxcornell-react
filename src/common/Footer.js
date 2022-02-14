@@ -30,8 +30,8 @@ function MailingList() {
       .catch(error => console.error("Error!", error.message));
   }
 
-  return (<Stack className="my-auto">
-    <h3>Join Our Mailing List</h3>
+  return (<Stack className="my-auto" gap={2}>
+    <h3 >Join Our Mailing List</h3>
     <div className="sign-up-container">
       <form
         name="footer-submit-to-google-sheet"
@@ -42,15 +42,15 @@ function MailingList() {
           placeholder="Enter your email"
           required
         />
-        {
-        inMailList ?
+      </form>
+    </div>
+    {
+      inMailList ?
         <div style={{ backgroundColor: 'green' }} className="text-white  w-25 rounded text-center">
           <h4 className="py-2">Joined!</h4>
         </div> :
         <Button variant="danger" onClick={handleSubmit}>Sign Up</Button>
-        }
-      </form>
-    </div>
+    }
   </Stack>)
 }
 
@@ -63,14 +63,14 @@ class Footer extends Component {
       <div id="footer">
         <Container className="bg-dark text-white" fluid>
           <Row className="justify-content-around py-5" >
-            <div className="col-sm-4 d-flex align-items-center">
+            <div className="col-md-4 d-flex align-items-center">
 
               <Image style={{ width: '80%' }} src={logo} alt="Image not rendering" fluid></Image>
             </div>
-            <div className="col-sm-7">
-              <Container style={{ height: "100%" }}>
+            <div className="col-md-7">
+              <Container className="py-3" style={{ height: "100%" }}>
                 <Row className="justify-content-around" style={{ height: "100%" }}>
-                  <div className="col-md-3 d-flex align-items-center" >
+                  <div className="col-md-3 col-4 d-flex align-items-center py-3" >
                     <Stack gap={2} className=" my-auto">
                       <p><b>About Us</b></p>
                       <Stack gap={1} className=" my-auto">
@@ -78,7 +78,7 @@ class Footer extends Component {
                       </Stack>
                     </Stack>
                   </div>
-                  <div className="col-md-3 d-flex align-items-center">
+                  <div className="col-md-3 col-4 d-flex align-items-center py-3">
                     <Stack gap={2} className="my-auto">
                       <p><b>Our Events</b></p>
                       <Stack gap={1} className="my-auto">
@@ -88,7 +88,8 @@ class Footer extends Component {
                       </Stack>
                     </Stack>
                   </div>
-                  <div className="col-md-6 d-flex align-items-center">
+                  <div className="col-md-6 d-flex align-items-center py-3">
+
                     <MailingList></MailingList>
                   </div>
                 </Row>

@@ -25,6 +25,7 @@ import about_img from "../img/loutip.jpg"
 
 library.add(faMapMarkerAlt, faMicrophoneAlt, faUserFriends, faCalendarDay, faTwitter, faFacebook, faInstagram);
 
+const ticketingLink = "https://cornelltickets.universitytickets.com/w/event.aspx?id=1666&r=285705d5abc44148baf091acafd03cd8"
 
 
 
@@ -138,14 +139,13 @@ function Countdown() {
         </Swing>
         <h4>Days : Hours : Min : Sec</h4>
         <div className="py-2 px-3 rounded" style={{ backgroundColor: 'rgb(80, 80, 80, 0.6)' }} >
-          <Stack>
-            <h4>Event Date: April 16th, 2022</h4>
-            <h4   >Speaker Line-Up and Ticket Registration Coming Soon!</h4>
-
+          <Stack gap={3}>
+            <Button variant="danger" size="lg" style={{ border: "1px solid gold" }} className="align-self-center" href={ticketingLink} target="_blank">Get Tickets Now!</Button>
+            <h4>Event Date: Saturday April 16th, 2022</h4>
+            {/* <h4>Speaker Line-Up to be Revealed Soon!</h4> */}
           </Stack>
 
         </div>
-        {/* <Button variant="danger" className="align-self-center" >Register!</Button> */}
       </Stack>
     </div>
   );

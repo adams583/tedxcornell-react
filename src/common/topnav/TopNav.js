@@ -22,7 +22,7 @@ function TopNav(props) {
         { title: "Our Story", href: "/team" },
         { title: "Apply", href: "/apply" },
         { title: "FAQ", href: "/faq" },
-        // { title: "Register!", href: "/faq", button: "a" }
+        { title: "Register!", href: "https://cornelltickets.universitytickets.com/w/event.aspx?id=1666&r=285705d5abc44148baf091acafd03cd8", button: "a" }
     ]
 
     return <Navbar bg="dark" variant="dark" expand="lg">
@@ -46,7 +46,7 @@ function TopNav(props) {
                                     }
                                 </Dropdown.Menu>
                             </Dropdown> :
-                            navItem.button ? <div className="px-3"><Button variant="danger">{navItem.title}</Button></div>
+                            navItem.button ? <div className="px-3"><Button variant="danger" href={navItem.href} target="_blank" >{navItem.title}</Button></div>
                                 :
                                 <Nav.Link className="px-3 text-white" href={navItem.href}>{navItem.title}</Nav.Link>
                     )}

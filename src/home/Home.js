@@ -1,6 +1,6 @@
 import React, { Component, useState } from "react";
 import "./Home.css";
-import uproot from "../img/website-background.png"
+import unmuted from "../img/Unmuted_Logo.png"
 import page_img from "../img/Tedx-Stage.jpg"
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -138,10 +138,11 @@ function Countdown() {
           </h1>
         </Swing>
         <h4>Days : Hours : Min : Sec</h4>
-        <div className="py-2 px-3 rounded" style={{ backgroundColor: 'rgb(80, 80, 80, 0.6)' }} >
+        <div className="py-2 px-3 rounded" >
+          {/*  style={{ backgroundColor: 'rgb(80, 80, 80, 0.6)' }} */}
           <Stack gap={3}>
             <Button variant="danger" size="lg" style={{ border: "1px solid gold" }} className="align-self-center" href={ticketingLink} target="_blank">Get Tickets Now!</Button>
-            <h4>Event Date: Saturday April 16th, 2022</h4>
+            {/* <h4>Event Date: Saturday April 16th, 2022</h4> */}
             {/* <h4>Speaker Line-Up to be Revealed Soon!</h4> */}
           </Stack>
 
@@ -214,19 +215,19 @@ const infoBars = [
     colSize: '2'
   },
   {
-    info: '8 Speakers',
+    info: '7 Speakers',
     subInfo: 'Variety of Topics',
     fa: 'microphone-alt',
     colSize: '2'
   },
   {
     info: 'April 16th',
-    subInfo: 'Save the Date',
+    subInfo: '3pm - 5pm',
     fa: 'calendar-day',
     colSize: '2'
   },
   {
-    info: '700+ Seating',
+    info: '500+ Seating',
     subInfo: 'Register Now!',
     fa: 'user-friends',
     colSize: '3'
@@ -257,21 +258,23 @@ class Events extends Component {
                 <Stack gap={2} className=" d-flex align-items-center text-center">
                   <h1> <span id="event-name">UnMuted</span></h1>
                   <h4>2022 <span style={{ color: 'red', fontSize: '20px' }}><b>TEDx</b></span>Cornell</h4>
-                  <p>Come join us for our 2022 Event on April 16th at Kennedy Hall.
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit, sed quia consequuntur magni dolores eos
-                    qui ratione voluptatem sequi nesciunt.
-                    Neque porro quisquam est.Nemo enim ipsam voluptatem
-                    quia voluptas sit aspernatur aut
-                    odit aut fugit, sed quia consequuntur magni dolores eos
-                    qui ratione voluptatem sequi nesciunt.
-                    Neque porro quisquam est.
+                  <p>
+                    For the past two years, we have all had to sit behind our screens,
+                    attending meeting after meeting, unable to properly express our ideas
+                    and our stories. Join us and our speakers as we are at long last,
+                    finally able to become <u>Unmuted</u>.
+                    Our event takes place on Saturday, April 16th from 3pm to 5pm.
+                    We will be featuring seven fantastic speakers each with unique
+                    talks and "ideas worth spreading". We will also be having a raffle
+                    with prizes from the Cornell Store and popular local Ithaca
+                    restaurants! Buy your admission tickets and raffle tickets from
+                    the link below!
                   </p>
-                  <Button variant='outline-danger'>Register Now!</Button>
+                  <Button variant='danger'>Register Now!</Button>
                 </Stack>
               </Col>
               <Col >
-                <Image fluid src={uproot}></Image>
+                <Image style={{ height: '100%', width: '100%' }} fluid src={unmuted}></Image>
               </Col>
             </Row>
 
@@ -296,7 +299,7 @@ class Events extends Component {
               }
             </Row>
           </Container>
-          <Container className="py-3">
+          <Container className="py-3" style={{ display: 'none' }}>
             {speaker_info.map((speaker, i) =>
               <Fade top delay={i == 0 ? 1000 : 0}>
                 <SpeakerCard {...speaker} onRight={i % 2 != 0}></SpeakerCard>

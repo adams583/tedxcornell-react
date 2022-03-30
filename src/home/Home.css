@@ -1,5 +1,6 @@
 #body {
-  display: none;
+  /* display: none; */
+  background-color: DimGray;
 }
 
 .speech-info {
@@ -32,11 +33,16 @@
 }
 
 .event-info {
-  background-color: linen;
+  background-color: #303030;
+  color:white
 }
 
 .event-info h1 {
   font-size: 50px;
+}
+.event-info p {
+  font-size: 18px;
+  line-height: 2em;
 }
 
 #event-name {

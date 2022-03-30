@@ -270,7 +270,7 @@ class Events extends Component {
                     restaurants! Buy your admission tickets and raffle tickets from
                     the link below!
                   </p>
-                  <Button variant='danger'>Register Now!</Button>
+                  <Button variant='danger' href={ticketingLink} target="_blank">Register Now!</Button>
                 </Stack>
               </Col>
               <Col >

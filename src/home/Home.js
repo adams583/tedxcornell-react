@@ -168,8 +168,8 @@ function SpeakerCard(props) {
                 <div className="py-5">
                   <Stack gap={3}>
                     <h1>{props.name}</h1>
-                    <p>{props.info}</p>
-                    <div className="text-center py-3 rounded" style={{ backgroundColor: "DimGray" }}>
+                    <h5>{props.info}</h5>
+                    {/* <div className="text-center py-3 rounded" style={{ backgroundColor: "DimGray" }}>
 
                       <h5><u>Follow This Speaker</u></h5>
                       <div className="d-flex justify-content-center pt-3">
@@ -179,7 +179,7 @@ function SpeakerCard(props) {
                           ) : <></>
                         }
                       </div>
-                    </div>
+                    </div> */}
                   </Stack>
                 </div>
               </Col>
@@ -189,11 +189,11 @@ function SpeakerCard(props) {
           <Col md className='p-0 '>
             <div className={'h-100 ' + (props.onRight ? "d-flex align-items-end  flex-column" : 'd-flex align-items-begin flex-column')}>
               <div style={{ height: '100%' }}>
-                <Card body className="text-center" style={{ width: '35em', height: '100%' }}>
+                <Card body className="text-center" style={{ width: '100%', height: '100%' }}>
                   <Card.Title as="h4">
                     <u>{props.speech}</u>
                   </Card.Title>
-                  <Card.Text as="p" className="speech-info">
+                  <Card.Text className="speech-info" style={props.fontSize ? { fontSize: props.fontSize, lineHeight: props.lineHeight } : {}}>
                     {props.speechInfo}
                   </Card.Text>
                 </Card>
@@ -299,7 +299,7 @@ class Events extends Component {
               }
             </Row>
           </Container>
-          <Container className="py-3" style={{ display: 'none' }}>
+          <Container className="py-3" >
             {speaker_info.map((speaker, i) =>
               <Fade top delay={i == 0 ? 1000 : 0}>
                 <SpeakerCard {...speaker} onRight={i % 2 != 0}></SpeakerCard>

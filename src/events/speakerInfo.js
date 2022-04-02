@@ -1,57 +1,56 @@
 
 let info = [
   {
-    "name": "Daniel James II",
-    "info": "Podcast & Radio Host, Student Leader",
-    "img": require("../img/daniel_pic.jpg"),
-    "speech": "Why You Should Never Tell a Black Child They Act White",
-    "speechInfo": `Born in Marion, South Carolina, a rural working class town,
-     Daniel James II gained his place as a junior at Cornell University,
-      carrying with him to the Ivy League a desire to better the lives of
-      people. As the creator and host of Black Voices on the Hill, 
-      a podcast & radio show, he aims to amplify the voices of black
-      students, alumni, and city leaders. Inspired by the deaths of
-      George Floyd, Ahmaud Arbery, and Breonna Taylor, he has been 
-      able to reach thousands in upstate New York, talking weekly 
-      about racism, sexism, and activism, with guests ranging from TikTok 
-    sensations, investment fund creators, to the city mayor himself. As a
-     mentor at a local carceral facility and president of the Labor School
-     student body, Daniel has skillfully used his voice over the airwaves
-    to serve the public and reach the masses. This spring, he is an Emerging 
-    Leader intern for the Congressional Black Caucus.`,
+    "name": "Nathan Laurenz",
+    "info": "Cornell Student, Entomophagy Major",
+    "img": require("../img/Nathan_Laurenz.jpg"),
+    "speech": "Save the World: Eat a Bug",
+    "speechInfo": `Nathan is a senior at Cornell concentrating in entomophagy,
+     the practice of edible insects. He has worked for insect production companies 
+     in Europe and Asia and held a lifelong passion for insects. His TEDxCornell
+      talk titled “Save the world: Eat a Bug” will focus on his journey through 
+      entomophagy and why he believes insects are the future of food.
+`,
     "socials": ["twitter", "facebook"]
   },
   {
-    "name": "Marcela OT'Alora",
-    "info": "Psychotherapist, Artist",
-    "img": require("../img/marcela.jpg"),
-    "speech": "The Healing Power of MDMA through Reconnection",
-    "speechInfo": `In her private practice she works in partnership 
-    with clients to nourish awareness and connection to innate essence.
-  For over 30 years her interest and focus on trauma has led her
-  to understand the healing process as an intimate re-connection to self, 
-  others, and the world, through compassion, acceptance, and honoring of 
-  each other’s human spirit. In addition to working with trauma and PTSD, 
-  she has dedicated her professional life to teaching, and research. With 
-  clients she uses art as a vehicle for deepening and processing experiences 
-  through non-verbal autobiographical storytelling. For the Multidisciplinary 
-  Association for Psychedelic Studies (MAPS), Marcela has worked as therapist 
-  and Principal Investigator for various studies weaving psychotherapy and MDMA 
-  for the treatment of PTSD. Additionally, she is a trainer and supervisor 
-  for MAPS’ MDMA-assisted psychotherapy training program.`,
-    "socials": ["twitter", "instagram", "facebook"]
-
+    "name": "David Shmoys",
+    "info": "Cornell Professor, Operations Research and Computer Science",
+    "img": require("../img/David_Shmoys.jpg"),
+    "speech": "Fairness Through Algorithmic Thinking: Designing Better Congressional Districts and Elections",
+    "speechInfo": `David Shmoys is a professor of operations research 
+    and computer science at Cornell, who is passionate about teaching
+     the fundamentals of optimization modeling and algorithms to his
+      students. In his research, he uses optimization models to help
+    the world run better, in settings that range from improving the
+    operations of Citibike, to long-term forestry planning to protect
+    the red-cockaded woodpecker, an endangered species. In his TEDxCornell
+    talk “Fairness Through Algorithmic Thinking: Designing Better
+    Congressional Districts and Elections,” he will discuss 
+    optimization tools to create fairer congressional districts, as well
+     as designing rules for this that are more resilient to partisan manipulation.
+`,
+    "fontSize": '15px',
+    "lineHeight": '1.9em',
+    "socials": ["twitter", "facebook"]
   },
   {
-    "name": "Person Z",
-    "info": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.",
-    "color": "#f39595"
+    "name": "Raj Suchak",
+    "info": "Author and Entrepeneur",
+    "img": require("../img/Raj_Suchak.jpg"),
+    "speech": "You Are More Than Your Resume",
+    "speechInfo": `Raj Suchak is an author and entrepreneur who started 
+    2 companies with zero funding and sold his first startup to a large 
+    publicly-traded consulting company. For his start-ups, Raj has hired 
+    people based on grit from companies like Wegmans, Subway, and others,
+    and mentored them to become technical experts. In his TEDxCornell talk 
+    titled "You are more than your resume," Raj hopes to inspire those looking 
+    for job opportunities to show their grit rather than just relying on resumes 
+    and cover letters.
+`,
+    "socials": ["twitter", "facebook"]
   },
-  {
-    "name": "Person A",
-    "info": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.",
-    "color": "#f1b4b4"
-  }
 ]
+
 
 export default info;

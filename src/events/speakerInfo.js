@@ -50,6 +50,22 @@ let info = [
 `,
     "socials": ["twitter", "facebook"]
   },
+  {
+    "name": "Carson Taylor",
+    "info": "Student Advocate",
+    "img": require("../img/Carson_Taylor.jpg"),
+    "speech": "How I Learned to Accept My Autism Diagnosis",
+    "speechInfo": `Carson transferred to Cornell as a sophomore after 
+    a year at a military college, and was diagnosed with autism
+    shortly after. Since then, he has been an advocate for
+    neurodiversity on campus, serving as Co-President of the 
+    Disability Awareness Union, Cornell’s undergraduate association 
+    for students with disabilities and their allies. His TEDxCornell 
+    talk “How I Learned to Accept My Autism Diagnosis” focuses on the 
+    journey to accepting neurodiversity as a part of our identities.
+`,
+    "socials": ["twitter", "facebook"]
+  },
 ]
 
 

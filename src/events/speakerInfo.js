@@ -66,6 +66,22 @@ let info = [
 `,
     "socials": ["twitter", "facebook"]
   },
+  {
+    "name": "Dydine Umunyana Anderson",
+    "info": "Author, Non-Profit Co-Founder, Rwandan Genocide Survivor",
+    "img": require("../img/Dydine_Anderson.jpg"),
+    "speech": "The Power of Cultural Storytelling",
+    "speechInfo": `Dydine Umunyana Anderson is the author of Embracing Survival
+    and survivor of the Rwanda genocide against the Tutsis. Dydine co-founded
+    Umuco Love, a non-profit that provides educational programs to raise 
+    awareness and understanding of the connections between all people through 
+    cultural storytelling. Her TEDxCornell talk “The Power of Cultural 
+    Storytelling” will explore how cultural storytelling facilitates trauma 
+    healing, both for the storyteller and the listener. 
+
+`,
+    "socials": ["twitter", "facebook"]
+  },
 ]
 
 

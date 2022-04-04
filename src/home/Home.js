@@ -161,10 +161,10 @@ function SpeakerCard(props) {
         <Row className={props.onRight ? "flex-row-reverse" : ''}>
           <Col>
             <Row className=" text-white justify-content-center " >
-              <Col md className="p-0">
+              <Col className="p-0">
                 <Image fluid style={{ height: '100%' }} src={props.img}></Image>
               </Col>
-              <Col md={5} className="px-4 text-white justify-content-center" style={{ backgroundColor: 'black' }}>
+              <Col xs={5} className="px-4 text-white justify-content-center" style={{ backgroundColor: 'black' }}>
                 <div className="py-5">
                   <Stack gap={3}>
                     <h1>{props.name}</h1>

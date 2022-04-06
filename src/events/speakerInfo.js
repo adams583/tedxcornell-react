@@ -82,6 +82,24 @@ let info = [
 `,
     "socials": ["twitter", "facebook"]
   },
+  {
+    "name": "Matthew Dicks",
+    "info": "Best-Selling Author, Elementary School Teacher",
+    "img": require("../img/Matthew_Dicks.JPG"),
+    "speech": "The Power of Cultural Storytelling",
+    "speechInfo": `Matthew Dicks is an elementary school teacher and the 
+    internationally bestselling author of several books including Memoirs 
+    of an Imaginary Friend and Storyworthy: Engage Teach, Persuade, and 
+    Change Your Life Through the Power of Storytelling. He’s the founder 
+    and artistic director of Speak Up, a Hartford-based storytelling 
+    organization that produces shows and a weekly podcast, and teaches 
+    storytelling to corporations, nonprofits, universities, and more. 
+    He loves eating ice cream cake, playing golf poorly, tickling his 
+    children, staring at his wife, and not sleeping. Matthew’s TEDxCornell 
+    talk will talk about the hidden powers of storytelling. 
+`,
+    "socials": ["twitter", "facebook"]
+  },
 ]
 
 

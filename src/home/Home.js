@@ -156,20 +156,17 @@ function Countdown() {
 
 function SpeakerCard(props) {
   return (
-    <Row className={"py-4 " + (props.onRight ? "flex-row-reverse" : '')}>
-      <Col md={11} >
-        <Row className={props.onRight ? "flex-row-reverse" : ''}>
-          <Col>
-            <Row className=" text-white justify-content-center " >
-              <Col md className="p-0">
-                <Image fluid style={{ height: '100%' }} src={props.img}></Image>
-              </Col>
-              <Col md={5} className="px-4 text-white justify-content-center" style={{ backgroundColor: 'black' }}>
-                <div className="py-5">
-                  <Stack gap={3}>
-                    <h1>{props.name}</h1>
-                    <h5>{props.info}</h5>
-                    {/* <div className="text-center py-3 rounded" style={{ backgroundColor: "DimGray" }}>
+    <div className={"d-flex " + (props.onRight ? "flex-row-reverse" : "")} >
+    <Row style={{ width: '90%' }} className={" justify-content-center py-4 " + (props.onRight ? "flex-row-reverse" : '')}>
+      <Col md className="p-0">
+        <Image fluid style={{ height: '100%' }} src={props.img}></Image>
+      </Col>
+      <Col md={3} className="px-4 text-white justify-content-center" style={{ backgroundColor: 'black' }}>
+        <div className="py-5">
+          <Stack gap={3}>
+            <h1>{props.name}</h1>
+            <h5>{props.info}</h5>
+            {/* <div className="text-center py-3 rounded" style={{ backgroundColor: "DimGray" }}>
 
                       <h5><u>Follow This Speaker</u></h5>
                       <div className="d-flex justify-content-center pt-3">
@@ -180,29 +177,26 @@ function SpeakerCard(props) {
                         }
                       </div>
                     </div> */}
-                  </Stack>
-                </div>
-              </Col>
-            </Row>
-          </Col>
-
-          <Col md className='p-0 '>
-            <div className={'h-100 ' + (props.onRight ? "d-flex align-items-end  flex-column" : 'd-flex align-items-begin flex-column')}>
-              <div style={{ height: '100%' }}>
-                <Card body className="text-center" style={{ width: '100%', height: '100%' }}>
-                  <Card.Title as="h4">
-                    <u>{props.speech}</u>
-                  </Card.Title>
-                  <Card.Text className="speech-info" style={props.fontSize ? { fontSize: props.fontSize, lineHeight: props.lineHeight } : {}}>
-                    {props.speechInfo}
-                  </Card.Text>
-                </Card>
-              </div>
-            </div>
-          </Col>
-        </Row>
+          </Stack>
+        </div>
       </Col>
+      <Col md className='p-0 '>
+        <div className={'h-100 ' + (props.onRight ? "d-flex align-items-end  flex-column" : 'd-flex align-items-begin flex-column')}>
+          <div style={{ height: '100%' }}>
+            <Card body className="text-center" style={{ width: '100%', height: '100%' }}>
+              <Card.Title as="h4">
+                <u>{props.speech}</u>
+              </Card.Title>
+              <Card.Text className="speech-info" style={props.fontSize ? { fontSize: props.fontSize, lineHeight: props.lineHeight } : {}}>
+                {props.speechInfo}
+              </Card.Text>
+            </Card>
+          </div>
+        </div>
+      </Col>
+
     </Row>
+    </div >
   );
 
 }

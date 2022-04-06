@@ -273,9 +273,6 @@ class Events extends Component {
                 </Col>
               </Row>
             </Container>
-            {/* <Row className="justify-content-around border pb-5  " >
-
-            </Row> */}
           </div>
           <Container style={{ backgroundColor: 'ghostwhite' }} id="overlay">
             <Row className="px-3 py-3 justify-content-around">

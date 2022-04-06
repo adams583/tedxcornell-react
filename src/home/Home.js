@@ -157,16 +157,16 @@ function Countdown() {
 function SpeakerCard(props) {
   return (
     <div className={"d-flex " + (props.onRight ? "flex-row-reverse" : "")} >
-    <Row style={{ width: '90%' }} className={" justify-content-center py-4 " + (props.onRight ? "flex-row-reverse" : '')}>
-      <Col md className="p-0">
-        <Image fluid style={{ height: '100%' }} src={props.img}></Image>
-      </Col>
-      <Col md={3} className="px-4 text-white justify-content-center" style={{ backgroundColor: 'black' }}>
-        <div className="py-5">
-          <Stack gap={3}>
-            <h1>{props.name}</h1>
-            <h5>{props.info}</h5>
-            {/* <div className="text-center py-3 rounded" style={{ backgroundColor: "DimGray" }}>
+      <Row className={"speaker-card justify-content-center py-4 " + (props.onRight ? "flex-row-reverse" : '')}>
+        <Col md className="p-0">
+          <Image className="speaker-img" fluid src={props.img}></Image>
+        </Col>
+        <Col md={3} className="px-4 text-white justify-content-center" style={{ backgroundColor: 'black' }}>
+          <div className="py-5">
+            <Stack gap={3}>
+              <h1>{props.name}</h1>
+              <h5>{props.info}</h5>
+              {/* <div className="text-center py-3 rounded" style={{ backgroundColor: "DimGray" }}>
 
                       <h5><u>Follow This Speaker</u></h5>
                       <div className="d-flex justify-content-center pt-3">
@@ -177,25 +177,25 @@ function SpeakerCard(props) {
                         }
                       </div>
                     </div> */}
-          </Stack>
-        </div>
-      </Col>
-      <Col md className='p-0 '>
-        <div className={'h-100 ' + (props.onRight ? "d-flex align-items-end  flex-column" : 'd-flex align-items-begin flex-column')}>
-          <div style={{ height: '100%' }}>
-            <Card body className="text-center" style={{ width: '100%', height: '100%' }}>
-              <Card.Title as="h4">
-                <u>{props.speech}</u>
-              </Card.Title>
-              <Card.Text className="speech-info" style={props.fontSize ? { fontSize: props.fontSize, lineHeight: props.lineHeight } : {}}>
-                {props.speechInfo}
-              </Card.Text>
-            </Card>
+            </Stack>
           </div>
-        </div>
-      </Col>
+        </Col>
+        <Col md className='p-0 '>
+          <div className={'h-100 ' + (props.onRight ? "d-flex align-items-end  flex-column" : 'd-flex align-items-begin flex-column')}>
+            <div style={{ height: '100%' }}>
+              <Card body className="text-center" style={{ width: '100%', height: '100%' }}>
+                <Card.Title as="h4">
+                  <u>{props.speech}</u>
+                </Card.Title>
+                <Card.Text className="speech-info" style={props.fontSize ? { fontSize: props.fontSize, lineHeight: props.lineHeight } : {}}>
+                  {props.speechInfo}
+                </Card.Text>
+              </Card>
+            </div>
+          </div>
+        </Col>
 
-    </Row>
+      </Row>
     </div >
   );
 
@@ -245,33 +245,37 @@ class Events extends Component {
             </div>
           </Container>
         </div>
-        <div id="body">
-          <div className="event-info" >
-            <Row className="justify-content-around pb-5" style={{ width: '100%' }}>
-              <Col md={6} className="pt-4 px-5 d-flex align-items-center py-3">
-                <Stack gap={2} className=" d-flex align-items-center text-center">
-                  <h1> <span id="event-name">UnMuted</span></h1>
-                  <h4>2022 <span style={{ color: 'red', fontSize: '20px' }}><b>TEDx</b></span>Cornell</h4>
-                  <p>
-                    For the past two years, we have all had to sit behind our screens,
-                    attending meeting after meeting, unable to properly express our ideas
-                    and our stories. Join us and our speakers as we are at long last,
-                    finally able to become <u>Unmuted</u>.
-                    Our event takes place on Saturday, April 16th from 3pm to 5pm.
-                    We will be featuring seven fantastic speakers each with unique
-                    talks and "ideas worth spreading". We will also be having a raffle
-                    with prizes from the Cornell Store and popular local Ithaca
-                    restaurants! Buy your admission tickets and raffle tickets from
-                    the link below!
-                  </p>
-                  <Button variant='danger' href={ticketingLink} target="_blank">Register Now!</Button>
-                </Stack>
-              </Col>
-              <Col >
-                <Image style={{ height: '100%', width: '100%' }} fluid src={unmuted}></Image>
-              </Col>
-            </Row>
+        <div id="body" >
+          <div className="event-info " >
+            <Container fluid>
+              <Row className="py-3 justify-content-around ">
+                <Col md={6} className="pt-5 px-5 pb-4 ">
+                  <Stack gap={2} className=" d-flex align-items-center text-center">
+                    <h1> <span id="event-name">UnMuted</span></h1>
+                    <h4>2022 <span style={{ color: 'red', fontSize: '20px' }}><b>TEDx</b></span>Cornell</h4>
+                    <p>
+                      For the past two years, we have all had to sit behind our screens,
+                      attending meeting after meeting, unable to properly express our ideas
+                      and our stories. Join us and our speakers as we are at long last,
+                      finally able to become <u>Unmuted</u>.
+                      Our event takes place on Saturday, April 16th from 3pm to 5pm.
+                      We will be featuring seven fantastic speakers each with unique
+                      talks and "ideas worth spreading". We will also be having a raffle
+                      with prizes from the Cornell Store and popular local Ithaca
+                      restaurants! Buy your admission tickets and raffle tickets from
+                      the link below!
+                    </p>
+                    <Button variant='danger' href={ticketingLink} target="_blank">Register Now!</Button>
+                  </Stack>
+                </Col>
+                <Col >
+                  <Image fluid src={unmuted}></Image>
+                </Col>
+              </Row>
+            </Container>
+            {/* <Row className="justify-content-around border pb-5  " >
 
+            </Row> */}
           </div>
           <Container style={{ backgroundColor: 'ghostwhite' }} id="overlay">
             <Row className="px-3 py-3 justify-content-around">

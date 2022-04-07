@@ -14,25 +14,47 @@ let info = [
     "socials": ["twitter", "facebook"]
   },
   {
-    "name": "David Shmoys",
-    "info": "Cornell Professor, Operations Research and Computer Science",
-    "img": require("../img/David_Shmoys.jpg"),
-    "speech": "Fairness Through Algorithmic Thinking: Designing Better Congressional Districts and Elections",
-    "speechInfo": `David Shmoys is a professor of operations research 
-    and computer science at Cornell, who is passionate about teaching
-     the fundamentals of optimization modeling and algorithms to his
-      students. In his research, he uses optimization models to help
-    the world run better, in settings that range from improving the
-    operations of Citibike, to long-term forestry planning to protect
-    the red-cockaded woodpecker, an endangered species. In his TEDxCornell
-    talk “Fairness Through Algorithmic Thinking: Designing Better
-    Congressional Districts and Elections,” he will discuss 
-    optimization tools to create fairer congressional districts, as well
-     as designing rules for this that are more resilient to partisan manipulation.
+    "name": "Matthew Dicks",
+    "info": "Best-Selling Author, Elementary School Teacher",
+    "img": require("../img/Matthew_Dicks.JPG"),
+    "speech": "The Power of Cultural Storytelling",
+    "speechInfo": `Matthew Dicks is an elementary school teacher and the 
+    internationally bestselling author of several books including Memoirs 
+    of an Imaginary Friend and Storyworthy: Engage Teach, Persuade, and 
+    Change Your Life Through the Power of Storytelling. He’s the founder 
+    and artistic director of Speak Up, a Hartford-based storytelling 
+    organization that produces shows and a weekly podcast, and teaches 
+    storytelling to corporations, nonprofits, universities, and more. 
+    He loves eating ice cream cake, playing golf poorly, tickling his 
+    children, staring at his wife, and not sleeping. Matthew’s TEDxCornell 
+    talk will talk about the hidden powers of storytelling. 
 `,
+    "socials": ["twitter", "facebook"]
+  },
+
+  {
+    "name": "Karin Sternberg",
+    "info": "Researcher, Entrepenuer, Cornell Professor",
+    "img": require("../img/Karin_Sternberg.jpg"),
+    "speech": "Your Love Stories: The Secret to Happiness in Romantic Relationships",
+    "speechInfo": `Dr. Karin Sternberg is a researcher and 
+    entrepreneur based in Ithaca, NY. She has a Ph.D. in 
+    psychology from the University of Heidelberg, Germany, as well 
+    as an MBA from the University of Cooperative Education in Karlsruhe, 
+    Germany. She completed some of her doctoral research at Yale University 
+    and her postdoctoral work at the University of Connecticut. 
+    Afterward, she worked as a research associate at Harvard University’s 
+    Kennedy School of Government and School of Public Health. She 
+    has held a grant from the National Institutes of Health for the 
+    development of a cognitive training program for seniors. 
+    Dr. Sternberg’s interest focuses on the application of 
+    psychological/behavioral research with the purpose of improving 
+    people’s lives.
+
+`,
+    "socials": ["twitter", "facebook"],
     "fontSize": '15px',
     "lineHeight": '1.9em',
-    "socials": ["twitter", "facebook"]
   },
   {
     "name": "Raj Suchak",
@@ -83,23 +105,27 @@ let info = [
     "socials": ["twitter", "facebook"]
   },
   {
-    "name": "Matthew Dicks",
-    "info": "Best-Selling Author, Elementary School Teacher",
-    "img": require("../img/Matthew_Dicks.JPG"),
-    "speech": "The Power of Cultural Storytelling",
-    "speechInfo": `Matthew Dicks is an elementary school teacher and the 
-    internationally bestselling author of several books including Memoirs 
-    of an Imaginary Friend and Storyworthy: Engage Teach, Persuade, and 
-    Change Your Life Through the Power of Storytelling. He’s the founder 
-    and artistic director of Speak Up, a Hartford-based storytelling 
-    organization that produces shows and a weekly podcast, and teaches 
-    storytelling to corporations, nonprofits, universities, and more. 
-    He loves eating ice cream cake, playing golf poorly, tickling his 
-    children, staring at his wife, and not sleeping. Matthew’s TEDxCornell 
-    talk will talk about the hidden powers of storytelling. 
+    "name": "David Shmoys",
+    "info": "Cornell Professor, Operations Research and Computer Science",
+    "img": require("../img/David_Shmoys.jpg"),
+    "speech": "Fairness Through Algorithmic Thinking: Designing Better Congressional Districts and Elections",
+    "speechInfo": `David Shmoys is a professor of operations research 
+    and computer science at Cornell, who is passionate about teaching
+     the fundamentals of optimization modeling and algorithms to his
+      students. In his research, he uses optimization models to help
+    the world run better, in settings that range from improving the
+    operations of Citibike, to long-term forestry planning to protect
+    the red-cockaded woodpecker, an endangered species. In his TEDxCornell
+    talk “Fairness Through Algorithmic Thinking: Designing Better
+    Congressional Districts and Elections,” he will discuss 
+    optimization tools to create fairer congressional districts, as well
+     as designing rules for this that are more resilient to partisan manipulation.
 `,
+    "fontSize": '15px',
+    "lineHeight": '1.9em',
     "socials": ["twitter", "facebook"]
   },
+
 ]
 
 

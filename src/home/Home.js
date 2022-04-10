@@ -158,10 +158,10 @@ function SpeakerCard(props) {
   return (
     <div className={"d-flex " + (props.onRight ? "flex-row-reverse" : "")} >
       <Row className={"speaker-card justify-content-center py-4 " + (props.onRight ? "flex-row-reverse" : '')}>
-        <Col md className="p-0">
+        <Col lg className="p-0">
           <Image className="speaker-img" fluid src={props.img}></Image>
         </Col>
-        <Col md={3} className="px-4 text-white justify-content-center" style={{ backgroundColor: 'black' }}>
+        <Col lg={3} className="px-4 text-white justify-content-center" style={{ backgroundColor: 'black' }}>
           <div className="py-5">
             <Stack gap={3}>
               <h1>{props.name}</h1>
@@ -180,7 +180,7 @@ function SpeakerCard(props) {
             </Stack>
           </div>
         </Col>
-        <Col md className='p-0 '>
+        <Col lg className='p-0 '>
           <div className={'h-100 ' + (props.onRight ? "d-flex align-items-end  flex-column" : 'd-flex align-items-begin flex-column')}>
             <div style={{ height: '100%' }}>
               <Card body className="text-center" style={{ width: '100%', height: '100%' }}>

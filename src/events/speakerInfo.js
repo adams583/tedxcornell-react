@@ -17,7 +17,7 @@ let info = [
     "name": "Matthew Dicks",
     "info": "Best-Selling Author, Elementary School Teacher",
     "img": require("../img/Matthew_Dicks.JPG"),
-    "speech": "The Power of Cultural Storytelling",
+    "speech": "You Are Your Best Audience",
     "speechInfo": `Matthew Dicks is an elementary school teacher and the 
     internationally bestselling author of several books including Memoirs 
     of an Imaginary Friend and Storyworthy: Engage Teach, Persuade, and 

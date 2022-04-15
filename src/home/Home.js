@@ -20,6 +20,7 @@ import Fade from 'react-reveal/Fade';
 import Swing from 'react-reveal/Swing';
 import Form from "react-bootstrap/Form";
 import about_img from "../img/loutip.jpg"
+import pamphlet from "../pdfs/Unmuted_Pamphlet.pdf";
 
 
 
@@ -142,8 +143,7 @@ function Countdown() {
           {/*  style={{ backgroundColor: 'rgb(80, 80, 80, 0.6)' }} */}
           <Stack gap={3}>
             <Button variant="danger" size="lg" style={{ border: "1px solid gold" }} className="align-self-center" href={ticketingLink} target="_blank">Get Tickets Now!</Button>
-            {/* <h4>Event Date: Saturday April 16th, 2022</h4> */}
-            {/* <h4>Speaker Line-Up to be Revealed Soon!</h4> */}
+            <Button variant="success" size="lg" style={{ border: "1px solid gold" }} className="align-self-center" href={pamphlet} target="_blank">Event Pamphlet</Button>
           </Stack>
 
         </div>

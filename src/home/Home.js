@@ -142,7 +142,6 @@ function Countdown() {
         <div className="py-2 px-3 rounded" >
           {/*  style={{ backgroundColor: 'rgb(80, 80, 80, 0.6)' }} */}
           <Stack gap={3}>
-            <Button variant="danger" size="lg" style={{ border: "1px solid gold" }} className="align-self-center" href={ticketingLink} target="_blank">Get Tickets Now!</Button>
             <Button variant="success" size="lg" style={{ border: "1px solid gold" }} className="align-self-center" href={pamphlet} target="_blank">Event Pamphlet</Button>
           </Stack>
 

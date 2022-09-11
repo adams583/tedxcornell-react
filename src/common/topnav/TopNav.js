@@ -22,7 +22,6 @@ function TopNav(props) {
         { title: "Our Story", href: "/team" },
         { title: "Apply", href: "/apply" },
         { title: "FAQ", href: "/faq" },
-        { title: "Register!", href: "https://cornelltickets.universitytickets.com/w/event.aspx?id=1666&r=285705d5abc44148baf091acafd03cd8", button: "a" }
     ]
 
     return <Navbar bg="dark" variant="dark" expand="lg">

@@ -16,6 +16,15 @@ library.add(faMicrophoneAlt, faVoteYea, faEnvelope, faBriefcase)
 
 const applyCards = [
   {
+    fa: 'briefcase',
+    faType: 'fa-solid',
+    header: 'Join the TEDxCornell Team',
+    info: `We are currently looking for students to join our team to work with speakers, 
+    manage finances, or help market the event.`,
+    button: 'Apply Now!',
+    href: 'https://docs.google.com/forms/d/e/1FAIpQLSfijvdIv0EqYa4poFXA6KH0Elb2-vEeYQUbfAHDkXvsE9Rm9w/viewform'
+  },
+  {
     fa: 'microphone-alt',
     header: 'Apply To Be Speaker',
     info: `Do you have an idea worth spreading? The TEDxCornell stage is the 
@@ -39,16 +48,6 @@ const applyCards = [
     and all of the other exciting things we do throughout the year! `,
     // button: 'Join Now!',
     mailList: true
-  },
-  {
-    fa: 'briefcase',
-    faType: 'fa-solid',
-    header: 'Join the TEDxCornell Team',
-    info: `We are currently looking for students to join our team to help organize
-    and market the event. If you have an interest in marketing, a passion for design, 
-    or experience in videography`,
-    button: 'Apply Now!',
-    href:'https://forms.gle/op1FhgQCt9kZdioy6'
   }
 ]
 

@@ -26,3 +26,7 @@ workflows:
           filters:
             branches:
               only: master
+          pre-deploy:
+            command: |
+              heroku login
+            

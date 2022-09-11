@@ -27,6 +27,6 @@ workflows:
             branches:
               only: master
           pre-deploy:
-            command: |
-              heroku login
+            steps: 
+              - run: heroku login
             

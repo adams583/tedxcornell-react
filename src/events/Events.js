@@ -12,6 +12,7 @@ import Carousel from "react-bootstrap/Carousel";
 import CarouselItem from "react-bootstrap/CarouselItem";
 import speaker_info from "./speakerInfo";
 import uproot from "../img/website-background.png"
+import unmuted from "../img/Unmuted_Logo.png"
 
 
 
@@ -109,6 +110,18 @@ export default function Home() {
           <h1>Past Events</h1>
           <Row className="pt-4">
             <Col md={4}>
+              <a href="/2022" style={{ textDecoration: 'none', color: 'white' }}>
+                <Card>
+                  <Card.Header as="p" className="event-date">April 16th 2022</Card.Header>
+                  <Card.Img src={unmuted}></Card.Img>
+                  <Card.Body>
+                    <Card.Title as="h4"><b>UnMuted</b></Card.Title>
+                    <Card.Text as="p">2022 <span style={{ color: 'red' }}><b>TEDx</b></span>Cornell</Card.Text>
+                  </Card.Body>
+                </Card>
+              </a>
+            </Col>
+            <Col md={4}>
               <a href="/2021" style={{ textDecoration: 'none', color: 'white' }}>
                 <Card>
                   <Card.Header as="p" className="event-date">May 7th 2021</Card.Header>
@@ -120,6 +133,7 @@ export default function Home() {
                 </Card>
               </a>
             </Col>
+
           </Row>
         </Container>
       </div>

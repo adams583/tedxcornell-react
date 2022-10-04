@@ -5,6 +5,7 @@ import Footer from "./common/Footer";
 import Home from "./home/Home";
 import Events from "./events/Events";
 import E2021 from "./events/2021";
+import E2022 from "./events/2022"
 import About from "./about/About";
 import Apply from "./apply/Apply";
 import AOS from "aos";
@@ -41,6 +42,7 @@ export default function App() {
             <Route exact path="/" component={Home} />
             <Route path="/past_events" component={Events} />
             <Route path="/2021" component={E2021}></Route>
+            <Route path="/2022" component={E2022}></Route>
             <Route path="/team" component={About} />
             <Route path="/apply" component={Apply} />
             <Route path="/sponsors" component={Sponsors} />

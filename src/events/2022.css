@@ -1,0 +1,87 @@
+#body {
+  /* display: none; */
+  background-color: DimGray;
+}
+
+.speech-info {
+  font-size: 18px;
+  line-height: 2em;
+}
+
+#year {
+  font-size: 60px;
+  /* background-color: #ff2a05;
+  border-radius: 20%; */
+}
+
+
+.countdown {
+  color: seashell
+}
+
+.countdown h1 {
+  font-size: 60px;
+}
+
+.countdown h4 {
+  font-size: 30px;
+}
+
+.countdown .btn {
+  border: 1px solid maroon;
+  width: 10em;
+}
+
+.event-info {
+  background-color: #303030;
+  color: white
+}
+
+.event-info h1 {
+  font-size: 50px;
+}
+
+.event-info p {
+  font-size: 18px;
+  line-height: 2em;
+}
+
+#event-name {
+  font-family: "Monoton";
+}
+
+#header-img {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+/* sm --- Small devices (landscape phones, 576px and up) */
+@media (max-width: 900px) {
+  #overlay {
+    transform: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  #overlay {
+    transform: translateY(-50%);
+  }
+
+  .speaker-card {
+    max-width: 95%;
+  }
+
+  .speaker-img {
+    height: 100% !important;
+  }
+
+}
+
+/* md --- Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* lg --- Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* xl --- Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

@@ -15,23 +15,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 library.add(faMicrophoneAlt, faVoteYea, faEnvelope, faBriefcase)
 
 const applyCards = [
-  {
-    fa: 'briefcase',
-    faType: 'fa-solid',
-    header: 'Join the TEDxCornell Team',
-    info: `We are currently looking for students to join our team to work with speakers, 
-    manage finances, or help market the event.`,
-    button: 'Apply Now!',
-    href: 'https://docs.google.com/forms/d/e/1FAIpQLSfijvdIv0EqYa4poFXA6KH0Elb2-vEeYQUbfAHDkXvsE9Rm9w/viewform'
-  },
+
   {
     fa: 'microphone-alt',
     header: 'Apply To Be Speaker',
     info: `Do you have an idea worth spreading? The TEDxCornell stage is the 
     perfect place to share it! Apply today to potentially get selected as a 
     speaker for our next event!`,
-    //   button: 'Apply Now!',
-    message: 'Applications are Closed'
+    button: 'Apply Now!',
+    href: 'https://forms.gle/RZ5eErCicEx55Lsi8'
   },
   {
     fa: 'vote-yea',
@@ -39,6 +31,14 @@ const applyCards = [
     info: `Is there someone you think would make a fantastic speaker at an event?
     Nominate them! `,
     message: 'Email: tedx@cornell.edu'
+  },
+  {
+    fa: 'briefcase',
+    faType: 'fa-solid',
+    header: 'Join the TEDxCornell Team',
+    info: `Our team application process is currently done for the semester. Check back in the Spring
+    for our next recruiting cycle!`,
+    message: "Applications are Closed"
   },
   {
     fa: 'envelope',

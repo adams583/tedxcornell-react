@@ -1,36 +1,4 @@
-.sponsors-image-panel {
-  height: 650px;
-  width: 100%;
-  display: flex;
-  margin: auto;
-  justify-content: left;
-  align-items: center;
-  flex-direction: row;
-  background-image: url("../img/jessenitai.jpg");
-  background-size: cover;
-  background-color: rgb(30, 30, 30);
-}
-
-.sponsors-content {
-  margin: 5% 10%;
-}
-
-.sponsors-text {
-  font-size: 1.3em;
-}
-
-#sponsors-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.sponsor-logo-container {
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-}
-
-.font-weight-light {
-  opacity: 0.7;
-  padding-top: 5px;
+li {
+  font-size: 24px;
+  padding: 0.5em 0 0.5em 0
 }

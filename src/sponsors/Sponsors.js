@@ -1,92 +1,109 @@
 import React, { Component } from "react";
 import "./Sponsors.css";
-import BottomPanel from "../common/panels/BottomPanel";
-import { Image, Col } from "react-bootstrap";
-import bpImg from "../img/partnership.jpg";
-import cals from "../img/cornellCals.png";
-import eng from "../img/cornellEng_logo.png";
-import firelight from "../img/firelight.png";
-import dw from "../img/DW_logo.png";
-import cc from "../img/class_council.png";
-import utea from "../img/utea.png";
-import farmersmkt from "../img/farmers_market.png";
-import khouse from "../img/khouse.jpg";
-import ctb from "../img/ctb.png";
+import ImageTextOverlay from "../common/ImageTextOverlay";
+import Container from "react-bootstrap/Container"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
+import header_img from "../img/cornellpic2.jpg"
+
+
+
+var platinum = {
+  color: '#e3e2e5', type: 'Platinum', bullets: ["10 reserved tickets to main event",
+    "Large size logo on all publicity materials",
+    "Opportunity to raffle out products or benefits during event",
+    "Honorary mentions and access to global audience outreach"]
+}
+
+var gold = {
+  color: '#FFD700', type: 'Gold', bullets: ["8 reserved tickets to main event ",
+    "Medium size logo all publicity material ",
+    "Opportunity to raffle out products or benefits during event ",
+    "Honorary mentions and access to global audience outreach"]
+}
+
+var silver = {
+  color: '#C0C0C0', type: 'Silver', bullets: ["5 reserved tickets to main event ",
+    "Medium size logo on all publicity materials ",
+    "Opportunity to raffle out products or benefits during event"]
+}
+
+var bronze = {
+  color: '#CD7F32', type: 'Bronze', bullets: ["3 reserved tickets to main event ",
+    "Small size logo on all publicity materials ",
+    "Opportunity to raffle out products or benefits during event"]
+}
+
+function Tier(props) {
+
+  return <Row className="justify-content-center py-3 " style={{
+    backgroundColor: props.color,
+  }}>
+    <Col md={8} className="justify-content-center">
+      <h1 className="text-center "><u>{props.type}</u></h1>
+      <ul>
+        {
+          props.bullets.map(bullet =>
+            <li>
+              {bullet}
+            </li>
+          )
+        }
+      </ul>
+
+    </Col>
+  </Row>
+}
 
 class Sponsors extends Component {
-  sponsorLogos = [cals, eng, firelight, dw, cc, farmersmkt, khouse, utea, ctb];
-  sponsorInfo = [
-    { img: cals, desc: "" },
-    { img: eng, desc: "" },
-    { img: firelight, desc: "Free 2-night Stay" },
-    { img: dw, desc: "2 Free Bundle Boxes" },
-    { img: cc, desc: "" },
-    { img: farmersmkt, desc: "$25 Certificate + Gift Bag" },
-    { img: khouse, desc: "Free Karaoke Hour + Gift Bag" },
-    { img: utea, desc: "$25 Certificate + Gift Bag" },
-    { img: ctb, desc: "" }
-  ];
+
 
   render() {
     return (
-      <div id="sponsors-container">
-        <div className="sponsors-image-panel">
-          <div className="sp-content-container half-width">
-            <div className="sp-content">
-              <h1>Sponsors</h1>
+      <div>
+        <ImageTextOverlay
+          title="Sponsorship Opportunities"
+          body="Do you believe in our mission? Let's talk business"
+        img={header_img}
+        >
+        </ImageTextOverlay>
+        <div>
 
-              <p className="lead font-weight-normal">
-                <em>Thank you to all of our 2019 partners</em>
-              </p>
-            </div>
-          </div>
         </div>
-
-        <div className="sponsors-content">
-          <div className="sponsors-text">
-            <h3>Sponsors</h3>
-            <div className="left-border">
-              <p>
-                Our event would not have been possible without our amazing
-                sponsors! We’d love to recognize them for all their
-                contributions to TEDxCornell 2019.
-              </p>
-              <p>
-                Every event ticket gave a free entry into our raffle. See below
-                for the prizes our raffle sponsors contributed.
-              </p>
-            </div>
-          </div>
-
-          <div className="logos-container">
-            {this.sponsorInfo.map((sponsor, ind) => (
-              <Col
-                xl={3}
-                lg={3}
-                md={4}
-                sm={6}
-                xs={6}
-                key={ind}
-                className="sponsor-logo-container"
-              >
-                <Image src={sponsor.img} responsive />
-                <span className="text-center font-weight-light">
-                  {sponsor.desc}
-                </span>
+        <div id="sponsorship-tiers">
+          <Container fluid>
+            {/* <Row className="justify-content-center border" style={{
+              backgroundColor: '#E5E4E2'
+            }}>
+              <Col md={8} className="justify-content-center border">
+                <h1 className="text-center ">Platinum</h1>
+                <ul>
+                  <li>
+                    10 reserved tickets to main event
+                  </li>
+                  <li>
+                    Large size logo on all publicity materials
+                  </li>
+                  <li>
+                    Opportunity to raffle out products or benefits during event
+                  </li>
+                  <li>
+                    Honorary mentions and access to global audience outreach
+                  </li>
+                </ul>
               </Col>
-            ))}
-          </div>
+            </Row> */}
+            <Tier {...platinum}></Tier>
+            <Tier {...gold}></Tier>
+            <Tier {...silver}></Tier>
+            <Tier {...bronze}></Tier>
+
+          </Container>
         </div>
-        {/* <BottomPanel
-          img={bpImg}
-          title="Interested in partnering with us?"
-          txt="Are you interested in helping support TEDxCornellUniversity? Is there something you think you could offer to improve our event? If so, we'd love to get in touch!"
-          button="Contact Us"
-          buttonHref="/apply"
-        /> */}
+
+
       </div>
     );
   }
 }
-
 export default Sponsors;

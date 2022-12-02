@@ -20,6 +20,7 @@ function TopNav(props) {
         { title: "Home", href: "/" },
         { title: "Past Events", href: "/past_events" },
         { title: "Our Story", href: "/team" },
+        // { title: "Sponsor Us", href: "/sponsor" },
         { title: "Apply", href: "/apply" },
         { title: "FAQ", href: "/faq" },
     ]

@@ -19,18 +19,12 @@ const applyCards = [
   {
     fa: 'microphone-alt',
     header: 'Apply To Be Speaker',
-    info: `Do you have an idea worth spreading? The TEDxCornell stage is the 
-    perfect place to share it! Apply today to potentially get selected as a 
-    speaker for our next event!`,
-    button: 'Apply Now!',
-    href: 'https://forms.gle/RZ5eErCicEx55Lsi8'
-  },
-  {
-    fa: 'vote-yea',
-    header: 'Nominate A Speaker',
-    info: `Is there someone you think would make a fantastic speaker at an event?
-    Nominate them! `,
-    message: 'Email: tedx@cornell.edu'
+    info: `Applications to be a speaker at this year's event are now closed. 
+    Check back next fall to apply for next year's event!`,
+    // button: 'Apply Now!',
+    // href: 'https://forms.gle/RZ5eErCicEx55Lsi8'
+    message: "Applications are Closed"
+
   },
   {
     fa: 'briefcase',

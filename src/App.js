@@ -45,7 +45,7 @@ export default function App() {
             <Route path="/2022" component={E2022}></Route>
             <Route path="/team" component={About} />
             <Route path="/apply" component={Apply} />
-            <Route path="/sponsors" component={Sponsors} />
+            {/* <Route path="/sponsor" component={Sponsors} /> */}
             <Route exact path="/faq" component={FAQ} />
             {Object.keys(speakers_2019).map(key => (
               <Route

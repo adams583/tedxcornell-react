@@ -65,13 +65,11 @@ class Events extends Component {
           <Container className="d-flex justify-content-center ">
               <Card style={{ width: '30em', border: '1px solid black', boxShadow: '-3px 3px 3px' }} className="px-4 py-3 text-center">
                 <Card.Body>
-                  <Card.Title className="text-center"><h1>Apply to be a Speaker!</h1></Card.Title>
+                  <Card.Title className="text-center"><h1>Applications Closed!</h1></Card.Title>
                   <Card.Text className="py-3">
-                    Do you have an Idea Worth Sharing?
-                    TEDxCornell is currently looking for speakers for our 2023 event! Apply or Nominate
-                    a speaker now!
+                    Applications to be a speaker at this year's event are now closed.
                   </Card.Text>
-                <Button variant="outline-danger" href="https://forms.gle/RZ5eErCicEx55Lsi8"className="px-4 py-2">Apply!</Button>
+                {/* <Button variant="outline-danger" href="https://forms.gle/RZ5eErCicEx55Lsi8"className="px-4 py-2">Apply!</Button> */}
                 </Card.Body>
               </Card>
           </Container>
